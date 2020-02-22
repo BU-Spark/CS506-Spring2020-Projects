@@ -106,3 +106,5 @@ venv.bak/
 # IDE/Code editor settings directories
 .vscode/
 .idea/
+
+original.csv
