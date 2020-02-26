@@ -109,4 +109,5 @@ venv.bak/
 
 original.csv
 
-/data/
+data/*
+cleanON/*
