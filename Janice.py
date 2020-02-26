@@ -1,4 +1,6 @@
 import time
+import operator from itemgetter
+
 start_time = time.time()
 
 # Imports data, filters it to just return columns: owner_name and owner_address (concatenated with city and state)
