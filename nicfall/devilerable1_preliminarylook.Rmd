@@ -1,0 +1,127 @@
+---
+title: "Deliverable 1"
+author: "Nicola Kriefall"
+date: "2/26/2020"
+output: html_document
+---
+
+# Deliverable 1
+
+## Overview 
+
+For my project, I am analyzing bacterial microbiomes hosted by corals in the Florida Keys. Tissue samples of corals were collected at 6 sites throughout the Florida Keys in 2015, 2017 (just after Hurricane Irma), and 2018. I will be determining whether we can see an impact of Hurricane Irma in disrupted microbial networks at the Irma timepoint. Sequencing data collected from these samples were analyzed following [Callahan et al., 2016](https://www.nature.com/articles/nmeth.3869) to identify which types of bacteria are present in the coral samples. 
+
+For a preliminary look at the data, I'm only looking at 1 of the 6 sites and only 2015 & 2017. 
+
+### Workflow
+
+Begin by installing necessary packages.
+
+```{r}
+# Install Required packages 
+#install.packages("igraph") 
+library("igraph")
+#install.packages("qgraph") 
+library("qgraph")
+#install.packages("MCL")
+library("MCL")
+#install.packages("vegan")
+library("vegan")
+# Install SpiecEasi package 
+#install.packages("devtools") 
+library(devtools) 
+#install_github("zdk123/SpiecEasi")
+library("SpiecEasi")
+```
+
+### Reading in & renaming data
+
+Data is organized with coral samples in rows, and the types of bacteria the corals host in columns. The data are counts of the number of sequence reads that matched each type of bacteria.
+
+```{r}
+#there were originally ~30,000 types of bacteria in these samples, but I cut it down to 150 to save computational time. I'll hvae to revisit this issue.
+data_15 <- read.csv("coral_microbes_reduced15.csv") #from 2015
+data_17 <- read.csv("coral_microbes_reduced17.csv") #from 2017
+
+#the bacteria names in columns are a little unwieldy, so changing them here
+#OTU stands for operational taxonomic unit - we aren't sure that each of these sequences represent true species so we use 'OTU' instead
+colnames(data_15) <- sapply(1:ncol(data_15), function(x) paste("OTU", x, sep = "_")) 
+colnames(data_17) <- sapply(1:ncol(data_17), function(x) paste("OTU", x, sep = "_")) 
+#renaming sample names too for simplicity's sake
+rownames(data_15) <- sapply(1:nrow(data_15), function(x) paste("Sample", x, sep = "_"))
+rownames(data_17) <- sapply(1:nrow(data_17), function(x) paste("Sample", x, sep = "_"))
+```
+
+### Building the network
+
+This is a network of correlations of the abundances of the types of bacteria across samples. Following instructions [here](https://www-ncbi-nlm-nih-gov.ezproxy.bu.edu/pubmed/30298259).
+
+```{r}
+# SparCC network
+sparcc.matrix_15 <- sparcc(data_15)
+sparcc.matrix_17 <- sparcc(data_17)
+sparcc.cutoff <- 0.3
+sparcc.adj_15 <- ifelse(abs(sparcc.matrix_15$Cor) >= sparcc.cutoff, 1, 0)
+sparcc.adj_17 <- ifelse(abs(sparcc.matrix_17$Cor) >= sparcc.cutoff, 1, 0)
+
+# Add OTU names to rows and columns
+rownames(sparcc.adj_15) <- colnames(data_15) 
+colnames(sparcc.adj_17) <- colnames(data_17)
+# Build network from adjacency
+sparcc.net_15 <- graph.adjacency(sparcc.adj_15,
+                              mode = "undirected",
+                              diag = FALSE)
+sparcc.net_17 <- graph.adjacency(sparcc.adj_17,
+                              mode = "undirected",
+                              diag = FALSE)
+
+# Use sparcc.net for the rest of the method 
+net_15 <- sparcc.net_15
+net_17 <- sparcc.net_17
+# Hub detection
+net_15.cn <- closeness(net_15)
+net_15.bn <- betweenness(net_15) 
+net_15.pr <- page_rank(net_15)$vector 
+net_15.hs <- hub_score(net_15)$vector
+net_15.hs.sort <- sort(net_15.hs, decreasing = TRUE)
+net_15.hs.top5 <- head(net_15.hs.sort, n = 5)
+
+net_17.cn <- closeness(net_17)
+net_17.bn <- betweenness(net_17) 
+net_17.pr <- page_rank(net_17)$vector 
+net_17.hs <- hub_score(net_17)$vector
+net_17.hs.sort <- sort(net_17.hs, decreasing = TRUE)
+net_17.hs.top5 <- head(net_17.hs.sort, n = 5)
+```
+
+### Plotting the network
+
+```{r}
+# Function 2: Plot network with node size scaled to hubbiness 
+plot.net <- function(net, scores, outfile, title) {
+# Convert node label from names to numerical IDs. 
+  features <- V(net)$name
+  col_ids <- seq(1, length(features))
+  V(net)$name <- col_ids
+  node.names <- features[V(net)] # Nodes’ color.
+  V(net)$color <- "white"
+  # Define output image file.
+  outfile <- paste(outfile, "jpg", sep=".") # Image properties.
+  jpeg(outfile, width = 4800, height = 9200, res = 300, quality = 100)
+  par(oma = c(4, 1, 1, 1))
+  # Main plot function.
+  plot(net, vertex.size = (scores*5)+4, vertex.label.cex = 1) 
+  title(title, cex.main = 4)
+  # Plot legend containing OTU names.
+  labels = paste(as.character(V(net)), node.names, sep = ") ") 
+  legend("bottom", legend = labels, xpd = TRUE, ncol = 5, cex = 1.2) 
+  dev.off()
+}
+
+plot.net(net_15, net_15.hs, outfile = "network_15", title = "My Network")
+plot.net(net_17, net_17.hs, outfile = "network_17", title = "My Network")
+```
+
+### Looking at results
+
+Opening up the .jpg files created in the step above (network_15.jpg & network_17.jpg), it looks like there are a lot less connections in the microbiome in 2017 (Hurricane Irma timepoint), which is exactly what I was hypothesizing. I'm going to need to figure out how to quantify that though. 
