@@ -107,7 +107,6 @@ venv.bak/
 .vscode/
 .idea/
 
-original.csv
-
-data/*
+data/original.csv
 cleanON/*
+.DS_Store	
