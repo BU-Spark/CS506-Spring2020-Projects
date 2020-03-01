@@ -3,6 +3,7 @@ from fuzzywuzzy import process
 import os
 import re
 from operator import itemgetter
+import pandas as pd
 
 #read data in batches,
 def readfile():
@@ -10,63 +11,58 @@ def readfile():
     streets = []
     ownerNames=[]
     for entry in entries:
-        f2=open("NameAndAddress.txt","w")
+        # f2=open("NameAndAddress.txt","w")
         with open(os.path.join("data/",entry),'r') as f:
-            for line in f.readlines()[1:]:
-                line=line.split(",");
-                # string=""
-                # for elem in line:
-                #     string+=elem+","
-                # f2.write(string)
-
-                # print(line)
-                # for col in line:
-
-                #ignore rows with empty owner address or owner names
-                if(line[31]!='""' and line[30]!='""' and len(line[31])!=0 and len(line[30])!=0):
-                    # if(line[31][0].isalpha() or line[31][0].isdigit() and line[30][0].isdigit() or line[30][0].isalpha()):
-                    #take care of address having commas
-                    # if(len(line[32])!=0):
-                    #     if(line[32][0]==" "):
-                    #         streets.append(line[31][1:]+line[32][:-1]+" "+line[33]+" "+line[34])
-                    #     else:
-                    #         streets.append(line[31] + " " + line[32] + " " + line[33])
-
-                    if (len(line[31]) != 0):
-                        index = 31
-                        st = line[31]
-                        while (True):
-                            if (len(line[index + 1]) != 0):
-                                if (line[index + 1][0] == " "):
-                                    st += line[index + 1]
-                                else:
-                                    break
-                            index += 1
-                        st+=" "+line[index+1]+" "+line[index+2]
-                        streets.append(st)
-
-                    if(len(line[30])!=0):
-                        index=30
-                        name=line[30]
-                        while(True):
-                            if(len(line[index+1])!=0):
-                                if(line[index+1][0]==" "):
-                                    name+=line[index+1]
-                                else:
-                                    break
-                            index+=1
-                        ownerNames.append(name)
+            # for line in f.readlines()[1:]:
+            #     line=line.split(",");
+            #
+            #     #ignore rows with empty owner address or owner names
+            #     if(line[31]!='""' and line[30]!='""' and len(line[31])!=0 and len(line[30])!=0):
+            #
+            #         if (len(line[31]) != 0):
+            #             index = 31
+            #             st = line[31]
+            #             while (True):
+            #                 if (len(line[index + 1]) != 0):
+            #                     if (line[index + 1][0] == " "):
+            #                         st += line[index + 1]
+            #                     else:
+            #                         break
+            #                 index += 1
+            #             st+=" "+line[index+1]+" "+line[index+2]
+            #             streets.append(st)
+            #
+            #         if(len(line[30])!=0):
+            #             index=30
+            #             name=line[30]
+            #             while(True):
+            #                 if(len(line[index+1])!=0):
+            #                     if(line[index+1][0]==" "):
+            #                         name+=line[index+1]
+            #                     else:
+            #                         break
+            #                 index+=1
+            #             ownerNames.append(name)
+            df = pd.read_csv(os.path.join("data/",entry))
+            x = pd.DataFrame(df.owner_addr)
+            y = pd.DataFrame(df.owner_name)
+            z = pd.DataFrame(df.owner_city)
+            q = pd.DataFrame(df.owner_stat)
+            result = pd.concat([x,z,q,y], axis=1, join='inner')
+            result = result.values[:3000].tolist()
+            for row in result:
+                streets.append(str(row[0])+" "+str(row[1])+" "+str(row[2]))
+                ownerNames.append(row[3])
 
         # read only 1 file so far
         break
         f.close()
-    #need to take care of address having commas
-    #need to take care of empty address
 
-    for i in range(len(streets)):
-        f2.write(streets[i]+ "             "+ownerNames[i]+"\n")
+    # for i in range(len(streets)):
+    #     f2.write(streets[i]+ "             "+ownerNames[i]+"\n")
 
-    f2.close()
+    # f2.close()
+    print(list(zip(streets, ownerNames)))
     return list(zip(streets, ownerNames))
 
 def compareOwnerNames(tuples):
@@ -170,12 +166,9 @@ def test(str):
 def main():
     data=readfile()
     streets=sort_streets(data)
-    print(streets)
+    # print(streets)
     # print(data)
-    #
-    # streets=sort_streets([('126 JOHN STREET, SUITE 10', "CHELSEA HOMES 1 LIMITED PARTNERSHIP"),
-    #                       ('126 JOHN STREET, SUITE 10', 'BELANGER ERICA'),
-    #                       ('126 JOHN STREET, SUITE 10', 'BELANGER ERICA')])
+
     compareOwnerNames(streets)
     # testdata='""'
     # test(testdata)
