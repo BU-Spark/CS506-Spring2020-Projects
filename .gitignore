@@ -108,3 +108,6 @@ venv.bak/
 .idea/
 
 original.csv
+
+data/*
+cleanON/*
