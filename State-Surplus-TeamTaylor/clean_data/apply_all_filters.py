@@ -19,10 +19,7 @@ def read_pdf(filename):
 
 """
 
-#filters mapc dataset by land use code, poly-type, and lots with buildings
-
-
-
+# filters mapc dataset by land use code, poly-type, and lots with buildings
 df = pd.read_csv('mapc.ma_parcels_metrofuture.csv')
 
 
