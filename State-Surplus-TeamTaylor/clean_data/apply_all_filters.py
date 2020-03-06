@@ -1,25 +1,10 @@
 import pandas as pd
 import numpy as np
-import PyPDF2
 
-"""
-def read_pdf(filename):
-  pdf_file = open(filename,'rb')
-  read_pdf = PyPDF2.PdfFileReader(pdf_file)
-  number_of_pages = read_pdf.getNumPages()
+#filters mapc dataset by land use code, poly-type, and lots with buildings
 
-  state_agencies = []
-  for i in range(number_of_pages):
-    page = read_pdf.getPage(i)
-    page_content = page.extractText()
-    page_content = page_content.split('\n')
-    state_agencies.append(page_content)
 
-  return state_agencies
 
-"""
-
-# filters mapc dataset by land use code, poly-type, and lots with buildings
 df = pd.read_csv('mapc.ma_parcels_metrofuture.csv')
 
 
@@ -34,11 +19,12 @@ def filter_luc(df):
           df['luc_adj_2'].isin(accepted_codes)]
 
 
+
 def filter_poly_typ(dataframe):
   # filter out data only with poly_typ equal to FEE or TAX
   accepted_codes = ['FEE', 'TAX']
-  dataframe = dataframe['poly_typ'].isin(accepted_codes)
-  return dataframe
+  return dataframe[dataframe['poly_typ'].isin(accepted_codes)]
+#return dataframe
 
 
 def filter_bldg(dataframe):
@@ -53,19 +39,16 @@ def filter_bldg(dataframe):
       sqm_bldg - parcel area estimated to be covered by a building (sq meters)
       pct_bldg - % parcel area estimated to be covered by a building
   '''
-  return dataframe[dataframe['bldg_value']>0 | \
-                   dataframe['bldg_area']> 0 | \
-                   dataframe['bldgv_psf']> 0 | \
-                   dataframe['sqm_bldg'] > 0 | \
-                   dataframe['pct_bldg'] > 0 & \
-                   dataframe['luc_1'] & \
-                   dataframe['luc_2'] & \
-                   dataframe['luc_adj_1']&\
-                   dataframe['luc_adj_2']&\
-                   dataframe['poly_typ']]
+  return dataframe.query('bldg_value >0 | \
+                         bldg_area > 0  | \
+                         bldgv_psf > 0  | \
+                         sqm_bldg  > 0  | \
+                         pct_bldg  >0')
+
                    
 
-df= filter_luc(df)
+df = filter_luc(df)
 df = filter_poly_typ(df)
-df = filter_bldg(df)
-print(df.head(15))
+#df = filter_bldg(df)
+df.to_csv('usable_state_land.csv',index=False)
+print(df[['poly_typ','luc_1','bldg_value']].head())
