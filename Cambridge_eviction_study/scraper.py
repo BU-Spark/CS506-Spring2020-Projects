@@ -29,13 +29,13 @@ def main():
     #
     # directory = sys.argv[1]
     # print(directory==r'data/2019/Jan')
-    directory = r'data/2019/Jan'
+    directory = r'data/2020/Mar'
 
     # Connect to Access Database
     driver = r'DRIVER={Microsoft Access Driver (*.mdb, *.accdb)}; '
 
     # Database Location
-    db = r'DBQ=C:\Users\CT-2.0\Desktop\Ca\eviction-data.accdb;'
+    db =r'DBQ=C:\Users\18656\LEARNING\CS506\ca\eviction-data.accdb;'
     conn, c = access_connect(driver, db)
     print("Connected to database")
 

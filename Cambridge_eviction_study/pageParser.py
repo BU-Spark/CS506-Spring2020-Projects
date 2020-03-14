@@ -141,8 +141,17 @@ class PageParser():
                 return ("", "NA", "NA")
 
             else:
-                docket = self.s.find(id="docketInfo").find("tbody")
-                events = self.s.find(id="eventInfo").find("tbody")
+                docketInfo = self.s.find(id="docketInfo")
+                if docketInfo is None:
+                    return ("", "NA", "NA")
+                docket = docketInfo.find("tbody")
+
+                eventInfo = self.s.find(id="eventInfo")
+                if eventInfo is None:
+                    return ("", "NA", "NA")
+                events = eventInfo.find("tbody")
+
+
 
                 # Repeated phrases
                 phrases = ["Notice of dismissal without prejudice",
