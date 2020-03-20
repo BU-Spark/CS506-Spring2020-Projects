@@ -1,0 +1,13 @@
+                                            Scrum Report, Mar 20
+                                    Team Members - Shubhangi Jain, Nada Shalash
+
+
+Work Completed:
+We were assigned to review the data collected by Fall 2019 team. This task is completed.The division of the data is on the basis of neighborhoods(as that was their target) and they have pretty much-covered everything(Word count, top distinctive words, etc) with respect to that.  But as that data is completely w.r.t neighborhood, we will not be able to use it for sub-neighborhood findings.
+
+Next Week Target:
+We are trying to make the script run(issue reported in below as well as in last scrum report) . Once the issue is resolved we will start scraping the news report from the Boston Herald.
+
+Difficulties Faced(Same as reported in the last scrum as well):
+1. We are down from 4 people to 2 people. One of the team members (Krishna Chaitanya:pallekc@bu.edu) dropped the course. Another team member (Sabrina: sabrinaa@bu.edu) got dropped from the course as her waitlist didn’t clear. It will be really helpful if we can have one more person on the team. 
+2. Scraping script which was given us to collect the data from the Boston Herald was not working, so it became a major road blocker for the project objective.
