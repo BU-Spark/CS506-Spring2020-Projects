@@ -2,22 +2,6 @@ import pandas as pd
 import numpy as np
 import PyPDF2
 
-"""
-def read_pdf(filename):
-  pdf_file = open(filename,'rb')
-  read_pdf = PyPDF2.PdfFileReader(pdf_file)
-  number_of_pages = read_pdf.getNumPages()
-
-  state_agencies = []
-  for i in range(number_of_pages):
-    page = read_pdf.getPage(i)
-    page_content = page.extractText()
-    page_content = page_content.split('\n')
-    state_agencies.append(page_content)
-
-  return state_agencies
-
-"""
 
 #filters mapc dataset by land use code, poly-type, and lots with buildings
 
@@ -40,7 +24,7 @@ def filter_luc(df):
 def filter_poly_typ(dataframe):
   # filter out data only with poly_typ equal to FEE or TAX
   accepted_codes = ['FEE', 'TAX']
-  dataframe = dataframe['poly_typ'].isin(accepted_codes)
+  dataframe = dataframe[dataframe'poly_typ'].isin(accepted_codes)
   return dataframe
 
 
@@ -70,5 +54,7 @@ def filter_bldg(dataframe):
 
 df= filter_luc(df)
 df = filter_poly_typ(df)
-df = filter_bldg(df)
+#df = filter_bldg(df)
 print(df.head(15))
+
+df.to_csv('usable_state_land.csv')
