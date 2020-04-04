@@ -1,11 +1,9 @@
 # Importing required libraries
 import requests 
-import json 
-
+import json
 import pandas as pd 
 from geopy.geocoders import Nominatim
 from geopy.exc import GeocoderTimedOut
-
 import time
 from uszipcode import SearchEngine
 
@@ -84,6 +82,11 @@ for i in range(0, df.shape[0]):
     print(zipCode)
     print('Finding ',i,'th location')
     if not zipCode or zipCode == '':
+        if df[muni][i] != '':
+            town = df[muni][i]
+            res = search.by_city_and_state(df[town], "ma")
+            zipCode = res[0]
+            geoLocations[i] = findLatitude_Longitude('', zipCode, 'MA', 'United States', locator, searchEngine)
         geoLocations[i] = [None, None]
     else:
         geoLocations[i] = findLatitude_Longitude(street, zipCode, 'MA','United States', locator, searchEngine)
@@ -121,7 +124,7 @@ def get_nearby_places(lat, long, business_type, next_page, radius=805):
         print('here')
         get_nearby_places(lat, long, business_type, next_page_token, radius=805)
     except KeyError:
-		#no next page
+        #no next page
         return
 
 #initialize variables to store location proximity information
@@ -267,22 +270,7 @@ for i in range(len(geoLocations)):
 #         avgDistanceSubwayStops[i] = -1
 #         print(i,'th Location info not available!')
 #
-# ##get avg dist from nearby train stops within 1/2 miles
-# for i in range(len(geoLocations)):
-#     lat = str(geoLocations[i][0])
-#     long = str(geoLocations[i][1])
-#     if lat != 'None' and long != 'None':
-#         time.sleep(1)
-#         avgDistance = get_avg_distance(lat, long, business_types[2],'')
-#         # get avg distance of xxx stops for ith location
-#         if len(avg_distance) > 0:
-#             avgDistanceTrainStops[i] = sum(avg_distance)/len(avg_distance)
-#         else:
-#             avgDistanceTrainStops[i] = 0
-#     else:
-#         avgDistanceTrainStops[i] = -1
-#         print(i,'th Location info not available!')
-        
+
 # =============================================================================
 # Append coordinate locations on the final dataframe
 # =============================================================================
