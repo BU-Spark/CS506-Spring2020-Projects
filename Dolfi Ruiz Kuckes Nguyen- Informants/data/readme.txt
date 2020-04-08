@@ -1,4 +1,4 @@
-Both cases.json and case_appeals.json were collected by groups in 2019, 
-working on the benchmarks project. They are data on criminal and civil case (appeals)
-in Massachussets from, as far as we can tell, 2008-2018. As far as we can tell, 
-they are completely disjoint. 
+
+
+
+In all three folders there is a division between files called "cases" and files called "case_appeals". "Cases" are the full text of decisions from the SJC (supreme judicial court). "case_appeals" are decisions from the statewide appeals courts. The folder "new data with right fields" contains the new scraped data in a better format. The new data is from roughly 2000-2008 and 2018-march 2020
