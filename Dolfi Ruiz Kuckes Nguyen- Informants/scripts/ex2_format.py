@@ -41,13 +41,13 @@ for c in cases:
     case_info = {} 
     try:
         name = driver.find_element_by_xpath( "/html/body/header/h1")
-        case_info["case:"] = name.text[:-8]
+        case_info["case"] = name.text[:-8]
     except NoSuchElementException:
         not_handled.append(c)
         continue
     try:
         header = driver.find_element_by_xpath( "/html/body/section[1]")
-        case_info["header:"] = header.text
+        case_info["headnote"] = header.text
     except NoSuchElementException:
         not_handled.append(c)
         continue
@@ -59,7 +59,7 @@ for c in cases:
         continue
 
     date = driver.find_element_by_xpath( "/html/body/header/h3")
-    case_info["Date:"] = date.text
+    case_info["date"] = date.text
     print(date.text)
 
     try:
@@ -67,7 +67,7 @@ for c in cases:
         county = county.text
     except NoSuchElementException:
         county = ""
-    case_info["County:"] = county
+    case_info["county"] = county
     date_test = 0 
     if date.text[-1] == ".":
         date_test = int(date.text[-5:-1])
@@ -88,25 +88,25 @@ for a in appeals:
     case_info = {} 
     try:
         name = driver.find_element_by_xpath( "/html/body/header/h1")
-        case_info["case:"] = name.text[:-8]
+        case_info["case"] = name.text[:-8]
     except NoSuchElementException:
         not_handled.append(c)
         continue
     try:
         header = driver.find_element_by_xpath( "/html/body/section[1]")
-        case_info["header:"] = header.text
+        case_info["headnote"] = header.text
     except NoSuchElementException:
         not_handled.append(c)
         continue
     try: 
         des = driver.find_element_by_xpath( "/html/body/section[2]")
-        case_info["text:"] = des.text
+        case_info["text"] = des.text
     except NoSuchElementException:
         not_handled.append(c)
         continue
     try: 
         date = driver.find_element_by_xpath( "/html/body/header/h3")
-        case_info["Date:"] = date.text
+        case_info["date"] = date.text
     except:
         not_handled.append(c)
         continue 
@@ -115,7 +115,7 @@ for a in appeals:
         county = county.text
     except NoSuchElementException:
         county = ""
-        case_info["County:"] = county
+        case_info["county"] = county
         continue
     date_test = 0 
     if date.text[-1] == ".":
@@ -130,10 +130,10 @@ for a in appeals:
         appeals_des.append(case_info)
     else:
         continue
-with open('cases_mass_new.json', 'w') as fout:
+with open('cases_mass_4_9.json', 'w') as fout:
     json.dump(cases_des , fout, indent =2 )   
 
-with open('appeal_mass_new.json', 'w') as fout:
+with open('appeal_mass_4_9.json', 'w') as fout:
     json.dump(appeals_des , fout, indent = 2 ) 
 
 
