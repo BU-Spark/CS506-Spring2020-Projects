@@ -1,0 +1,14 @@
+                                              Scrum Report, Apr 10
+                                    Team Members - Shubhangi Jain, Nada Shalash
+
+
+Work Completed:
+We were asked to look at the subset of Boston Globe articles that explicitly mention race as well as homicide coverage. We have prepared the code base for pre-processing the text and removing stop words, creating tokens, and searching for key words.
+
+Next Week Target:
+We will work on de-bugging the code base and preparing a draft/initial results about the topics most closely related to articles that explicitly mention race as well as the volume of homicide coverage of Black/African-American victims relative to people of other racial groups. 
+
+Difficulties Faced:
+1. We are having some issues with our code for pre-processing the text and need help debugging it. 
+
+
