@@ -112,4 +112,4 @@ env/*
 .DS_Store	
 
 config/
-data/
+data/\n
