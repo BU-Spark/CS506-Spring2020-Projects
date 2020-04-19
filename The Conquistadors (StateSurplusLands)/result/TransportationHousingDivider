@@ -1,0 +1,20 @@
+import pandas as pd
+
+agencynames = pd.read_csv("MatchWithAgencyNames.csv")
+
+
+new_column = []
+for i in range(len(agencynames['std_name'])):
+    if 'transportation' in agencynames['std_name'][i].lower():
+        new_column.append(1)
+    else: # Housing
+        new_column.append(0)
+
+# agencynames = agencynames.drop(columns = ['std_name'])
+agencynames['std_binary'] = new_column
+housing = agencynames[agencynames.std_binary == 0]
+transportation = agencynames[agencynames.std_binary == 1]
+
+
+housing.to_csv("housing.csv")
+transportation.to_csv("transportation.csv")
