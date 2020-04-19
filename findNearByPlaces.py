@@ -56,8 +56,16 @@ def findLatitude_Longitude(street, zipCode, state, country, locator, searchEngin
 # =============================================================================
 # read filtered dataframe csv file
 # =============================================================================
-df = pd.read_csv('filtered_state_land.csv')
+df = pd.read_csv('/Users/taylorhazlett/Documents/spring2020/cs506/usable_std_land_std_agencies.csv')
 df =  df.loc[:,df.columns]
+df.sort_values(by=['objectid'])
+
+# Update dataset to maintain lat_long columns.
+lat_long = pd.read_csv('/Users/taylorhazlett/Documents/spring2020/cs506/CS506-Spring2020-Projects/State-Surplus-TeamTaylor/data/state_land_plus_long_lat.csv')
+lat_long = lat_long.sort_values(by=['objectid'])
+
+df['longitude'] = lat_long['longitude']
+df['latitude'] = lat_long['latitude']
 
 #clean zipcode
 addressZip = df['addr_zip']
@@ -65,7 +73,7 @@ addressZip = addressZip.astype(str)
 addressZip = addressZip.apply(convertZip)
 df['addr_zip'] = addressZip
 
-# get latitude and longitude of each address
+
 # clean address column
 address = df['addr_str']
 df['addr_str'] = address.astype(str)
@@ -73,30 +81,32 @@ df['addr_str'] = address.astype(str)
 locator = Nominatim(user_agent="myGeocoder")
 searchEngine= SearchEngine(simple_zipcode=True)
 
-# save [latitude, longitude]
+
 geoLocations = [0 for i in range(df.shape[0])]
 for i in range(0, df.shape[0]):
-    street = df['addr_str'][i]
-    print(street)
-    zipCode = df['addr_zip'][i]
-    print(zipCode)
-    print('Finding ',i,'th location')
-    if not zipCode or zipCode == '':
-        if df[muni][i] != '':
-            town = df[muni][i]
-            res = search.by_city_and_state(df[town], "ma")
-            zipCode = res[0]
-            geoLocations[i] = findLatitude_Longitude('', zipCode, 'MA', 'United States', locator, searchEngine)
-        geoLocations[i] = [None, None]
-    else:
-        geoLocations[i] = findLatitude_Longitude(street, zipCode, 'MA','United States', locator, searchEngine)
+    lat = df['latitude'][i]
+    long = df['longitude'][i]
+    # street = df['addr_str'][i]
+    # print(street)
+    # zipCode = df['addr_zip'][i]
+    # print(zipCode)
+    # print('Finding ',i,'th location')
+    # if not zipCode or zipCode == '':
+    #     if df[muni][i] != '':
+    #         town = df[muni][i]
+    #         res = search.by_city_and_state(df[town], "ma")
+    #         zipCode = res[0]
+    #         geoLocations[i] = [lat,long]
+    geoLocations[i] = [lat, long]
+    # else:
+    #     geoLocations[i] = findLatitude_Longitude(street, zipCode, 'MA','United States', locator, searchEngine)
 
 # =============================================================================
 # Google Places API Find nearby places
 # =============================================================================
 #REAL KEY
 #api_key='AIzaSyBzJPJge8tfHAsbR4tDlEglR9XF4DJwIBQ'
-api_key = 'AIzaSyBat0stmX_TWGWc6gU-Yn__Tr2WJiEBvmo' #You'll need your own API key: https://developers.google.com/places/web-service/get-api-key
+api_key = 'AIzaSyA6RX2rguyDZmChndJsSz4OuVaMDSneQ4o' #You'll need your own API key: https://developers.google.com/places/web-service/get-api-key
 business_types = ['transit_station']
 
 
@@ -128,9 +138,6 @@ def get_nearby_places(lat, long, business_type, next_page, radius=805):
         return
 
 #initialize variables to store location proximity information
-# numBusStops = [-1 for i in range(len(geoLocations))]
-# numSubwayStops = [-1 for i in range(len(geoLocations))]
-# numTrainStops = [-1 for i in range(len(geoLocations))]
 numTransitStops = [-1 for i in range(len(geoLocations))]
 
 # get number of nearby transit stops within 1/2 mile
@@ -211,9 +218,6 @@ def get_avg_distance(lat, long, business_type, next_page,radius=805):
 
 
 #initialize vars to hold transportation proximity information
-# avgDistanceBusStops = [-1 for i in range(len(geoLocations))]
-# avgDistanceTrainStops = [-1 for i in range(len(geoLocations))]
-# avgDistanceSubwayStops = [-1 for i in range(len(geoLocations))]
 avgDistanceTransitStops = [-1 for i in range(len(geoLocations))]
 
 # get avg dist from nearby transit stops within 1/2 miles
@@ -272,24 +276,11 @@ for i in range(len(geoLocations)):
 #
 
 # =============================================================================
-# Append coordinate locations on the final dataframe
-# =============================================================================
-df['latitude'] = [x[0] for x in geoLocations]
-df['longitude'] = [x[1] for x in geoLocations]
-
-# =============================================================================
 # Append avg distance to stations within 1/2 mile on the final dataframe
 # =============================================================================
-# df['avgDistanceBusStops'] = avgDistanceBusStops
-# df['avgDistanceSubwayStops'] = avgDistanceSubwayStops
-# df['avgDistanceTrainStops'] = avgDistanceTrainStops
 df['avgDistanceTransitStops'] = avgDistanceTransitStops
 
-# df['numBusStops'] = numBusStops
-# df['numSubwayStops'] = numSubwayStops
-# df['numTrainStops'] = numTrainStops
 df['numTransitStops'] = numTransitStops
-
 
 # save final result as csv
 df.to_csv('transport_proximity.csv',index=False)
