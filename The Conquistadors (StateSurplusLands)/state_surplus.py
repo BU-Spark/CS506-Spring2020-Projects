@@ -54,5 +54,5 @@ df = filter_poly_typ(df)
 #df = filter_bldg(df)
 print(df.head(15))
 
-df.to_csv('./data/usable_state_land.csv')
+df.to_csv('./result/usable_state_land.csv')
 print(df.shape)

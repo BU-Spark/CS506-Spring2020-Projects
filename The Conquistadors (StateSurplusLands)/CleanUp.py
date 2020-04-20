@@ -59,23 +59,28 @@ def matchOnAddress(x,agencylist,matchflag):
         matchflag.append(0)
         return originalName
 
+#filename is AgencyList data
 def matchAgencyNames(filename,data):
-    # print(data.columns.values)
     df = pd.read_csv(os.path.join("data/",filename),encoding = "ISO-8859-1")
     agency = pd.DataFrame(df.Agency)
     address = pd.DataFrame(df.Address)
     choice = pd.concat([agency,address],axis=1,join='inner')
     choice = choice.values.tolist()
     matchflag=[]
+
     #match names with agencynames if score>50 otherwise keep original names
+
     data['std_name']=data['std_name'].apply(lambda x: matchOnName(x,choice,matchflag))
     # data['std_name'] = data.apply(lambda x: matchOnAddress(x,choice,matchflag),axis=1)
     data['matchAgencyList']=pd.DataFrame(matchflag)
 
-    # print(data['matchAgencyList'])
     print("Done")
     print(sum(matchflag))
+
+    #if match on name, write to MatchWithAgencyNames.csv, if match on address, write to MatchWithAgencyAddresses.csv
+
     data.to_csv("./result/MatchWithAgencyNames.csv", index=False)
+    # data.to_csv("./result/MatchWithAgencyAddresses.csv", index=False)
 
     return data
 
@@ -174,35 +179,26 @@ def mergeDatasetWithOtherTeam():
     print("dataset1 shape",dataset1.shape)
     print("dataset2 shape",dataset2.shape)
 
-    dataset1 = pd.concat([dataset1["objectid"], dataset1["std_name"],dataset1["FullOwnerAddress"]],axis=1)
+    dataset1 = pd.concat([dataset1["objectid"], dataset1["std_name"],dataset1["FullOwnerAddress"], dataset1["TransportationOrHousing"]],axis=1)
     res=dataset2.merge(dataset1, on="objectid", how="outer")
-    res.to_csv("./data/mergedDataset.csv",index=False)
+    res.to_csv("./result/mergedDataset.csv",index=False)
     print("---------------------")
     print(res.shape)
     print(res.columns.values)
     # print("nan values",res["mapc_id"].isna())
 
-def highlightdiffernce(row):
-        print(row)
-
-        color = 'white'
-        if row["std_name"] != row["agency_name"]:
-            print("not equal")
-            color = 'yellow'
-
-        return ['background-color: %s' % color]*len(row.values)
 
 def main():
-    # data=readfile("original_luc_gt_909.csv")
-    # print("finished reading data")
+    data=readfile("original_luc_gt_909.csv")
+    print("finished reading data")
 
-    # streets=sort_streets(data)
-    # print("finished sorted street")
+    streets=sort_streets(data)
+    print("finished sorted street")
 
-    # data=compareOwnerNames(streets)
-    # print("finished comparing owner names")
+    data=compareOwnerNames(streets)
+    print("finished comparing owner names")
 
-    # matchAgencyNames("MassGovernmentAgencyList.csv",data)
+    matchAgencyNames("MassGovernmentAgencyList.csv",data)
 
 
     mergeDatasetWithOtherTeam()
