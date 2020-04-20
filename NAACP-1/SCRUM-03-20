@@ -1,0 +1,8 @@
+1. What work has the team done toward the project this week?
+ We used a tool, Geocoder US Census Geographies, to find the corresponding census tracts for each sub-neighborhood so that we can identify the black community based on the census tracts (as we have collected the population data for each census tracts before).
+
+2. Is the team having any issues?
+ The way to figure out the corresponding census tracts for each sub-neighborhood that the mentor gave us is not applicable, so one of our team members figured out a new way and finally we solved this issues.
+
+3. What work does the team plan to do next week?
+ We plan to utilize Scrapy to scrape the texts between Year 2014 and Year 2018 from Boston Globe and Boston Herald websites.
