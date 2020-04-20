@@ -1,0 +1,148 @@
+---
+title: "haverhill map"
+author: "Zhitong Su"
+date: "4/2/2020"
+output: html_document
+---
+
+## read csv
+
+```{r q1}
+library(tidyverse)
+Haverhill <- read_csv("Haverhill.csv",
+                      col_types = cols(
+                        Request_ID = col_double(),
+                        Master_Request = col_double(),
+                        Has_Links = col_logical(),
+                        Status_Code = col_double(),
+                        Work_Order_Created = col_logical(),
+                        Request_Type_ID = col_double(),
+                        Request_Type_Private = col_logical(),
+                        Department_ID = col_double(),
+                        Street_ID = col_double(),
+                        City_ID = col_double(),
+                        Cross_Street_ID = col_double(),
+                        District_ID = col_double(),
+                        Escalations = col_double(),
+                        Priority = col_double(),
+                        Longitude = col_double(),
+                        Latitude = col_double(),
+                        Origin_ID = col_double()
+                      ))
+
+Haverhill
+
+```
+
+
+## Including Plots
+
+```{r q2}
+library(sf)
+
+pw <- st_read("haverhill_pw/Hav_Precincts_Wards_WGS84.shp", quiet = TRUE)
+pw <- pw %>% filter(Map_Year == 2011) %>% st_transform(4326)
+print(pw, n=21)
+
+
+```
+
+```{r q3}
+(requests <- Haverhill %>%
+st_as_sf(coords = c("Longitude", "Latitude")) %>%
+st_set_crs(4326))
+```
+
+## The heat map of all requests in Haverhill
+```{r q4}
+ggplot() + geom_sf(data = pw) +
+  geom_sf(data = requests, alpha = .01, color = "red")
+
+
+```
+
+
+```{r q5}
+(precinct = st_intersects(requests, pw, prepared = TRUE))
+
+
+```
+
+```{r q6}
+precinct <- precinct %>% as.data.frame()
+precinct <- precinct %>% mutate(
+  Precinct = case_when(
+    col.id == 1 ~ "5_3",
+    col.id == 2 ~ "5_2",
+    col.id == 3 ~ "5_1",
+    col.id == 4 ~ "2_3",
+    col.id == 5 ~ "1_1",
+    col.id == 6 ~ "1_3",
+    col.id == 7 ~ "6_1",
+    col.id == 8 ~ "6_3",
+    col.id == 9 ~ "6_2",
+    col.id == 10 ~ "3_3",
+    col.id == 11 ~ "1_2",
+    col.id == 12 ~ "3_1",
+    col.id == 13 ~ "3_2",
+    col.id == 14 ~ "4_1",
+    col.id == 15 ~ "4_2",
+    col.id == 16 ~ "4_3",
+    col.id == 17 ~ "7_3",
+    col.id == 18 ~ "7_1",
+    col.id == 19 ~ "2_1",
+    col.id == 20 ~ "2_2",
+    col.id == 21 ~ "7_2"
+  )
+)
+
+precinct
+```
+
+```{r q7}
+precinct <- precinct %>% mutate(
+  Precinct_Name = case_when(
+    col.id == 1 ~ "West Congregational Church (Worship Center)",
+    col.id == 2 ~ "First Presbyterian Church",
+    col.id == 3 ~ "Julian Steele Elderly Housing",
+    col.id == 4 ~ "Moody School",
+    col.id == 5 ~ "Consentino School",
+    col.id == 6 ~ "Haverhill High School (Gym)",
+    col.id == 7 ~ "Haverhill High School (Gym)",
+    col.id == 8 ~ "Pentucket Lake School (Music Room)",
+    col.id == 9 ~ "J.G. Whittier School (Library)",
+    col.id == 10 ~ "Universalist Unitarian Church",
+    col.id == 11 ~ "Washington Sq. Elderly Housing",
+    col.id == 12 ~ "Haverhill Citizen Center",
+    col.id == 13 ~ "Haverhill Public Library",
+    col.id == 14 ~ "Nettle School",
+    col.id == 15 ~ "Northern Essex Community College (Technology Center)",
+    col.id == 16 ~ "Kennedy Circle (Comm. Room)",
+    col.id == 17 ~ "Bradford Elementary School",
+    col.id == 18 ~ "Bradford Ter. Elderly Housing (Comm. Room)",
+    col.id == 19 ~ "Zion Bible College (Library)",
+    col.id == 20 ~ "Hunking School (Art Room)",
+    col.id == 21 ~ "Hunking School (Library)"
+  )
+)
+precinct
+
+```
+
+```{r q8}
+precinct <- precinct %>% mutate (Template = Precinct) %>%
+  separate(Template, into = c("Ward", "Ward_Sub"),
+  sep = "_")
+
+```
+
+```{r q9}
+Haverhill <- Haverhill %>%
+  mutate(Ward = precinct$Ward, Ward_Precinct = precinct$Precinct, Polling_Station_Name = precinct$Precinct_Name)
+
+Haverhill
+```
+
+```{r q10}
+write_csv(Haverhill, "Haverhill.csv")
+```

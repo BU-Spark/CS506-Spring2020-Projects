@@ -1,0 +1,536 @@
+---
+title: "Haverhill_EDA"
+author: "Haverhill Jing-Yu Team"
+output: pdf_document
+---
+
+
+## The Haverhill dataset
+```{r q0, include=FALSE}
+library(tidyverse)
+
+```
+
+```{r q1, echo=FALSE}
+Haverhill <- read_csv("Haverhill.csv",
+                      col_types = cols(
+                        Request_ID = col_double(),
+                        Master_Request = col_double(),
+                        Has_Links = col_logical(),
+                        Status_Code = col_double(),
+                        Work_Order_Created = col_logical(),
+                        Request_Type_ID = col_double(),
+                        Request_Type_Private = col_logical(),
+                        Department_ID = col_double(),
+                        Street_ID = col_double(),
+                        City_ID = col_double(),
+                        Cross_Street_ID = col_double(),
+                        District_ID = col_double(),
+                        Escalations = col_double(),
+                        Priority = col_double(),
+                        Longitude = col_double(),
+                        Latitude = col_double(),
+                        Origin_ID = col_double(),
+                        Ward = col_character(),
+                        Ward_Precinct = col_character(),
+                        CDBG = col_integer()
+                      
+                      ))
+                     
+Haverhill
+```
+
+
+```{r q2.1, echo=FALSE}
+library(sf)
+
+pw <- st_read("haverhill_pw/Hav_Precincts_Wards_WGS84.shp", quiet = TRUE)
+pw <- pw %>% filter(Map_Year == 2011) %>% st_transform(4326)
+
+
+```
+
+```{r q2.2, echo=FALSE}
+library(sf)
+
+cdbg <- st_read("haverhill_cdbg/Hav_CDBG_Area_WGS84.shp", quiet = TRUE)
+cdbg <- cdbg %>% st_transform(4326)
+
+
+```
+
+```{r q3, echo=FALSE}
+requests <- Haverhill %>%
+st_as_sf(coords = c("Longitude", "Latitude")) %>%
+st_set_crs(4326)
+```
+
+## The Heatmap of Requests
+```{r q4, echo=FALSE}
+ggplot() + 
+  geom_sf(data = pw) +
+  geom_sf(data = cdbg, color = "red") +
+  geom_sf(data = requests, alpha = .01)
+
+ 
+```
+
+
+## The Number of Requests per Ward&Precinct
+```{r q5, echo=FALSE}
+Haverhill %>% count(Ward_Precinct) %>% arrange(desc(n))
+
+Haverhill %>% count(Ward_Precinct) %>%
+  ggplot(aes(Ward_Precinct,n)) + geom_bar(stat = "identity")
+```
+
+
+## The Number of Requests in CDBG
+```{r q6, echo=FALSE}
+Haverhill %>% count(CDBG) %>% arrange(desc(n))
+
+Haverhill %>% count(CDBG) %>%
+  ggplot(aes(CDBG,n)) + geom_bar(stat = "identity")
+
+```
+
+
+## Haverhill Request Type Frequency
+```{r q7, echo=FALSE}
+Haverhill %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% 
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+
+
+```
+
+## Haverhill CDBG Request Type Frequency
+```{r q8, echo=FALSE}
+Haverhill %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% 
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+
+
+```
+
+## Haverhill Ward&Precinct 1-1 Request Type Frequency
+```{r q1-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "1_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "1_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 1-2 Request Type Frequency
+```{r q1-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "1_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "1_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 1-3 Request Type Frequency
+```{r q1-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "1_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "1_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 2-1 Request Type Frequency
+```{r q2-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "2_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "2_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 2-2 Request Type Frequency
+```{r q2-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "2_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "2_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 2-3 Request Type Frequency
+```{r q2-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "2_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "2_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 3-1 Request Type Frequency
+```{r q3-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "3_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "3_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 3-2 Request Type Frequency
+```{r q3-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "3_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "3_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+ 
+
+## Haverhill Ward&Precinct 3-3 Request Type Frequency
+```{r q3-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "3_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "3_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 4-1 Request Type Frequency
+```{r q4-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "4_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "4_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 4-2 Request Type Frequency
+```{r q4-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "4_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "4_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 4-3 Request Type Frequency
+```{r q4-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "4_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "4_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 5-1 Request Type Frequency
+```{r q5-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "5_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "5_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 5-2 Request Type Frequency
+```{r q5-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "5_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "5_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 5-3 Request Type Frequency
+```{r q5-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "5_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "5_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 6-1 Request Type Frequency
+```{r q6-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "6_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "6_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 6-2 Request Type Frequency
+```{r q6-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "6_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "6_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 6-3 Request Type Frequency
+```{r q6-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "6_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "6_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 7-1 Request Type Frequency
+```{r q7-1, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "7_1") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "7_1") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 7-2 Request Type Frequency
+```{r q7-2, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "7_2") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "7_2") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+
+## Haverhill Ward&Precinct 7-3 Request Type Frequency
+```{r q7-3, echo=FALSE}
+Haverhill %>% 
+  filter(Ward_Precinct == "7_3") %>% 
+  count(Request_Type) %>%
+  arrange(desc(n))
+
+Haverhill %>% filter(Ward_Precinct == "7_3") %>%
+  count(Request_Type) %>% arrange(desc(n)) %>% head(10) %>%
+  ggplot(aes(reorder(Request_Type,n),n)) + 
+  geom_bar(stat = "identity") + coord_flip() +
+  labs(x = "Request_Type")
+  
+```
+
+## Top 10 Location Requesting Services
+```{r q9, echo=FALSE}
+Haverhill %>% count(Address) %>% 
+  filter(min_rank(desc(n)) <= 10) %>%
+  arrange(desc(n))
+
+```
+
+## Illegal Dumping Sites
+```{r q10.1, echo=FALSE}
+Haverhill %>% 
+  filter(Request_Type == "Trash - Illegal Dumping") %>%
+  count(Address) %>% 
+  filter(min_rank(desc(n)) <= 10) %>%
+  arrange(desc(n))
+
+```
+
+```{r q10.2, echo=FALSE}
+illegal_DS <-requests %>% 
+  filter(Request_Type == "Trash - Illegal Dumping")
+
+ggplot() + 
+  geom_sf(data = pw) +
+  geom_sf(data = cdbg, color = "red") +
+  geom_sf(data = illegal_DS, alpha = .5)
+  
+
+```
+
+## Trash Missed Pickups
+```{r q11.1, echo=FALSE}
+Haverhill %>% 
+  filter(Request_Type == "TRASH - Missed Pick Up") %>%
+  count(Address) %>% 
+  filter(min_rank(desc(n)) <= 10) %>%
+  arrange(desc(n))
+
+```
+
+```{r q11.2, echo=FALSE}
+trash_MP <-requests %>% 
+  filter(Request_Type == "TRASH - Missed Pick Up")
+
+ggplot() + 
+  geom_sf(data = pw) +
+  geom_sf(data = cdbg, color = "red") +
+  geom_sf(data = trash_MP, alpha = .3)
+  
+
+```
+
+## Recycling Missed Pickups
+```{r q12.1, echo=FALSE}
+Haverhill %>% 
+  filter(Request_Type == "RECYCLING - Missed Pick Up") %>%
+  count(Address) %>% 
+  filter(min_rank(desc(n)) <= 10) %>%
+  arrange(desc(n))
+
+```
+
+```{r q12.2, echo=FALSE}
+trash_MP <-requests %>% 
+  filter(Request_Type == "RECYCLING - Missed Pick Up")
+
+ggplot() + 
+  geom_sf(data = pw) +
+  geom_sf(data = cdbg, color = "red") +
+  geom_sf(data = trash_MP, alpha = .5)
+  
+
+```
+

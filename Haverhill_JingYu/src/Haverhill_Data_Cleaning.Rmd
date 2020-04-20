@@ -1,0 +1,49 @@
+---
+title: "Haverhill_Data_Cleaning"
+author: "Zhitong Su"
+date: "4/20/2020"
+output: html_document
+---
+
+## read csv
+```{r q1}
+library(tidyverse)
+Haverhill <- read_csv("haverhill-request.csv",
+                      col_types = cols(
+                        Request_ID = col_double(),
+                        Master_Request = col_double(),
+                        Has_Links = col_logical(),
+                        Status_Code = col_double(),
+                        Work_Order_Created = col_logical(),
+                        Request_Type_ID = col_double(),
+                        Request_Type_Private = col_logical(),
+                        Department_ID = col_double(),
+                        Street_ID = col_double(),
+                        City_ID = col_double(),
+                        Cross_Street_ID = col_double(),
+                        District_ID = col_double(),
+                        Escalations = col_double(),
+                        Priority = col_double(),
+                        Longitude = col_double(),
+                        Latitude = col_double(),
+                        Origin_ID = col_double()
+                      ))
+                     
+Haverhill
+
+```
+
+# filter out unnecessary rows
+```{r q2}
+Haverhill <- Haverhill %>% filter(!(Request_Type == "Information Other" | 
+                                    Request_Type == "Transfer Other"))
+Haverhill <- Haverhill %>% filter(!(is.na(Longitude) | is.na(Latitude)))
+Haverhill <- Haverhill %>% filter(!(Longitude == 0 | Latitude == 0))
+Haverhill
+```
+
+# write to Haverhill.csv
+```{r q3}
+write_csv(Haverhill, "Haverhill.csv")
+
+```

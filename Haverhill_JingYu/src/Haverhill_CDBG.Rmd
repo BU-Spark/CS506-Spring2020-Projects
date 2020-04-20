@@ -1,0 +1,106 @@
+---
+title: "Haverhill_CDBG"
+author: "Zhitong Su"
+date: "4/12/2020"
+output: html_document
+---
+
+## read csv
+
+```{r q1}
+library(tidyverse)
+Haverhill <- read_csv("Haverhill.csv",
+                      col_types = cols(
+                        Request_ID = col_double(),
+                        Master_Request = col_double(),
+                        Has_Links = col_logical(),
+                        Status_Code = col_double(),
+                        Work_Order_Created = col_logical(),
+                        Request_Type_ID = col_double(),
+                        Request_Type_Private = col_logical(),
+                        Department_ID = col_double(),
+                        Street_ID = col_double(),
+                        City_ID = col_double(),
+                        Cross_Street_ID = col_double(),
+                        District_ID = col_double(),
+                        Escalations = col_double(),
+                        Priority = col_double(),
+                        Longitude = col_double(),
+                        Latitude = col_double(),
+                        Origin_ID = col_double(),
+                        Ward = col_character(),
+                        Ward_Precint = col_character()
+                      
+                      ))
+                     
+Haverhill
+
+```
+
+```{r q2.1}
+library(sf)
+
+cdbg <- st_read("haverhill_cdbg/Hav_CDBG_Area_WGS84.shp", quiet = TRUE)
+cdbg <- cdbg %>% st_transform(4326)
+print(cdbg)
+
+
+```
+
+```{r q2.2}
+library(sf)
+
+pw <- st_read("haverhill_pw/Hav_Precincts_Wards_WGS84.shp", quiet = TRUE)
+pw <- pw %>% filter(Map_Year == 2011) %>% st_transform(4326)
+print(pw, n=1)
+
+
+```
+
+```{r q3}
+(requests <- Haverhill %>%
+st_as_sf(coords = c("Longitude", "Latitude")) %>%
+st_set_crs(4326))
+```
+
+```{r q4}
+ggplot() + 
+  geom_sf(data = pw) +
+  geom_sf(data = cdbg, color = "red") +
+  geom_sf(data = requests, alpha = .01)
+
+ 
+```
+
+
+```{r q5}
+(cdbg = st_intersects(requests, cdbg, prepared = TRUE))
+
+
+```
+
+```{r q6}
+for(i in 1:length(cdbg)) {
+  if (length(cdbg[[i]]) == 0){
+    cdbg[[i]] <- 0
+  }
+
+}
+
+cdbg
+```
+
+```{r q7}
+(cdbg <- cdbg %>% as.data.frame())
+```
+
+```{r q8}
+Haverhill <- Haverhill %>%
+  mutate(CDBG = cdbg$col.id)
+  
+Haverhill
+```
+
+```{r q9}
+write_csv(Haverhill, "Haverhill.csv")
+```
