@@ -1,0 +1,8 @@
+1. What has the team done towards the project this week?
+The team finished cleaning the data using TF-IDF, nltk, and TextBlob packages
+
+2. Is the team having any issue?
+When we searched the sub-neighborhood name in the articles, the articles sometimes do not return effective results. For example, it would either return none or multiple sub-neighborhoods. We are having trouble deciding whether this is an black sub-neighborhood related news or not.
+
+3. What work does the team plan to do next week?
+The team wants to separate articles by labling the as black or non-black sub-neighborhood related news and apply sentiment analysis to them.
