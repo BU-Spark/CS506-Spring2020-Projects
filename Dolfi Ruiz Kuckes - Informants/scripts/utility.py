@@ -24,7 +24,10 @@ appeals_old = json.load(open(old_appeals_court))
 
 #returns all cases, cleaned and grouped into two categories
 #Daniel's code
+<<<<<<< HEAD
 #return all_sjc, all_state_appeals
+=======
+>>>>>>> selenium_base
 def combine_cases():
     import pandas as pd
 
