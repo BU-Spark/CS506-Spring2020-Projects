@@ -352,7 +352,7 @@ plt.show()
 
 
 units = np.array(df['units'])
-number = np.nonzero(df['units'])
+number = np.nonzero(units)
 number = np.array(number)
 units_final = units[number]
 units_final = np.transpose(units_final.astype(int))
