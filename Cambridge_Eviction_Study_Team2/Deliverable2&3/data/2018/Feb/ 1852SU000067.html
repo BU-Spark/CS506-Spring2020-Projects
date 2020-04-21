@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case Details - Massachusetts Trial Court 5</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterJavaScriptResourceReference/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterParsersJavaScriptResourceReference/jquery.tablesorter.parsers.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterMetadataJavaScriptResourceReference/jquery.metadata.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterCSSResourceReference/jquery.tablesorter.css" />
+<script type="text/javascript" id="wiquery-gen-1582485416693"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 'auto', minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 'auto', maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane', size: 'auto'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: true, resizable: true, fxName: 'none', paneSelector: '#WestPane', initClosed: true, slidable: true, slideTrigger_open: 'click', slideTrigger_close: 'click', togglerAlign_open: 'center', togglerAlign_closed: 'center'}, center: {paneSelector: '#mainContent'}});
+$('#ide51').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#ide51').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+$('#ide5b').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ide5c').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ide5d').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: false}, 2: { sorter: 'cjsCurrency'}, 3: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ide5e').tablesorter({debug: false, headers: { 0: { sorter: 'text'}, 1: { sorter: 'cjsDate'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgeS7qv8ICclD43iD3fOyg2l5WlbaLm85SqNSRorNAKrs9UCK8mckfeq4FutfvtIgc67PZDbjyCrRg8Hdo5PayjUhYk*SJWkPDNhGteTNE7E65',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('ide5f'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" id="closeDialogJS"><!--/*--><![CDATA[/*><!--*/
+$('#processingDialog').dialog('close');
+/*-->]]>*/</script>
+
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { $(document).ready(function(){$('#caseHeader').css('margin-top', $('#titleBar').height() + 6);});;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/com.cjs.wicket.component.CancelEventPropagationResource/CancelEventPropagation.js"></script>
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="ide60">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="ide61" href="#" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgeSZ5V5bBX7zWLDCHu8HQGYEioT1AhIJFpr1EN9WiSD0ZzmxMBktacNDcE9YQF9GEhSxv1KSvrhJvN5JQKpZ5lmGbH8D8N0Cd37M6CIHN63ua',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide61') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li><a class="link" href="home.page">Home</a></li>
+	<li><a class="link" href="?x=OIdqSYS8*1c4rTYd0ovgeSZ5V5bBX7zWLDCHu8HQGYEioT1AhIJFpjyop2K4EmbumC2NUWMBGcExXO*54WZF-xrKM4RaGtVEtl9W95ZIKDstsSHKM*X1jA">Search</a></li>
+ 	<li><a class="link" title="Search Results" href="?x=OIdqSYS8*1c4rTYd0ovgeSZ5V5bBX7zWLDCHu8HQGYEioT1AhIJFpu*60*bCB4mvMidYHSTo7KMm44Z6u987XeD0hj41t-*OpzHsM*-MWaqFW2zFWsFxbg">Results</a></li>
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="ide62" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="WestPane" class="ui-layout-west">
+	<div>
+<div class="dynamicNav" id="ide63" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	
+<div id="caseDetail">
+	<div id="caseDetailHeader">
+
+
+	
+
+
+
+
+	
+		<div id="titleBar" class="sectionHeader">
+			<h1>
+				
+		
+			<ul>
+				
+				<li class="displayData">1852SU000067 J P Realty Trust v. Junior, Jose Sena</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			</h1>
+		</div>
+		<div id="caseHeader" class="caseInfo formSec bgClr1">
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Type</li>
+				<li class="caseHdrInfo">Summary Process</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Status</li>
+				<li class="caseHdrInfo">Disposed for Statistical Purposes</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">File Date</li>
+				<li class="caseHdrInfo">02/02/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">DCM Track:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Initiating Action:</li>
+				<li class="caseHdrInfo">Summary Process - Residential (c239)</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Status Date:</li>
+				<li class="caseHdrInfo">02/15/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Judge:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Next Event:</li>
+				<li class="caseHdrInfo">
+<!-- $Id: CourtViewNextEventPanel.html,v 1.1 2011/04/12 18:55:38 stheisen Exp $ -->
+  <span></span>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div class="infoBox">
+		
+			<ul>
+				
+				<li class="displayData">
+
+<!-- added -->
+	<div class="housingPropertyDetailBox subsection3"> <!-- was caseInfoDetailBox -->
+		<div class="additionalCaseInfoPanel">
+			<div class="subSectionHeader2">
+				<h4><span>Property Address</span></h4>
+			</div>
+			<div id="addressInfo" class="containerSpacing">
+				<!-- CASEHOUS -->
+				<div>
+					<span>123</span> 
+					<span></span>
+					<span>Clifton</span> 
+					<span>Street</span>
+					<span>Apt 1</span>
+				</div>
+				<div>
+					<span>Cambridge</span> 
+					<span>MA        </span> 
+					<span>02140     </span>
+				</div>
+				
+				<!-- LCCASE -->
+				<div>
+					<span></span> 
+					<span></span>
+					<span></span> 
+			   </div>
+			   <div>
+					<span></span>
+				</div>
+			   <div>
+			   		<span></span>
+			   </div>
+
+				<!-- CASEPF -->
+				<div>
+					<div></div>
+					<div></div>
+					<!-- <div wicket:id="pf_mrag_dt"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div class="infoBox">
+		
+			<ul>
+				
+				
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+
+
+			<div class="buttonBar">
+				<div id="ide64">
+	
+</div>
+				
+				
+				<div id="ide65" style="display:none"></div>
+			</div>
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	<div class="tabSection" id="CaseDetailPanelTabSection" aria-live="assertive" aria-atomic="true" aria-relevant="all">
+		<div id="ide66">
+<div class="tab-row">
+<ul>
+	<li class="tab0 selected">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH2UXdVhmzaCXLBmAePYWeWk*4Ap4t9eAXm495gGf8YSP" id="ide67" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH2UXdVhmzaCXh5ZzsWcFWEEI8E7LCqQc0-tg*RE0MH2k',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide67') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>All Information</span></a>
+	</li><li class="tab1">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH98OaZaaTzE1ixby7t0wT0tuRuo5DLVht0e5DjXTe2LH" id="ide68" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH98OaZaaTzE12BXjhDzYKeX79beeR7L28V3pck0F16Ur',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide68') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Party</span></a>
+	</li><li class="tab2">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH0F5GWwlR2TCV2Qm5nMDUZ4sd3NK1xWgJkCMklYuR8GY" id="ide69" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH0F5GWwlR2TCYelcPzuvXf4VHY9PQ-uWha-EJohGPK7Q',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide69') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Judgment</span></a>
+	</li><li class="tab3">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH4BAJhs8XbM4c8jCYogZtMfX-Cb6Szevf77xVt4ZnIAR" id="ide6a" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH4BAJhs8XbM4gUJqxqp-ncW6dPuc6-h4KAW8HS*lGi9G',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide6a') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Event</span></a>
+	</li><li class="tab4">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH6XZ89RR7xDdy7VH4GiMBCNJlDuEycbCygQFkn-edzSM" id="ide6b" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH6XZ89RR7xDdiQHKlj1VBOxrzzWl2-CpXRM1zZb3h*sS',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide6b') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Docket</span></a>
+	</li><li class="tab5 last">
+		<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH5Ue9d0rEeBBalJaL5j09rqgGe61Vglitz23CkiIDEJ*" id="ide6c" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q3UGi51yXY2ee*34V-6ZAVJGk*b7K6uRH5Ue9d0rEeBBEHnq0zN4M0aElXsgzSmnSpDhfDvRfVsp',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide6c') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Disposition</span></a>
+	</li>
+</ul>
+</div>
+<div class="tab-panel">
+	
+		<div class="allInfoPanel" id="ide6d">
+
+
+	
+
+
+
+
+	
+		<div id="ide6e" style="display:none">
+	
+</div>
+		<div id="ide6f" style="display:none">
+	
+</div>
+		<div id="ptyInfo" class="subsection2 bgClr1">
+			<div class="subSectionHeader">
+				<h4>
+					Party Information
+				</h4>
+			</div>
+			<div id="ptyContainer" class="infoChildSection">
+				<div class="rowodd">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			J P Realty Trust
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Plaintiff
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			<div class="displayData">
+
+
+
+
+	
+<div class="rowodd">
+	<div>
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Attorney</li>
+				<li class="ptyAttyInfo">Wolsky, Esq., Alfred</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Bar Code</li>
+				<li class="ptyAttyInfo">533060</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Address </li>
+				<li class="ptyAttyInfo">
+
+	<div class="addrLn1">Wolsky &amp; Vincent</div>
+	<div class="addrLn2">58 Medford St</div>
+	<div class="addrLn3"></div>
+	<span>Arlington</span><span>,</span>&nbsp;<span>MA        </span>&nbsp;<span>02474-3124</span>
+
+
+
+
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Phone Number</li>
+				<li class="ptyAttyInfo">(781)325-3293</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="ide70" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL2mAXTVahspsbWh25G56AGpr3hLyKBqwX4sD8Oz3wkJn02cGCQYf4OYzjszrkLnGt9x0*NOiWs7Mg8ei3XEQHWkDZooae*2*LA',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide70') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div><div class="roweven">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Junior, Jose Sena
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Defendant
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="ide71" onclick="var wcall=wicketAjaxGet('?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL2mAXTVahspsbWh25G56AGpWbsQa3iam*C8VDjqkAKLy-u6qutZ04lHIKRU0khDkQItkk6n0TeAcqo1TsQ366VCJfvkOZjuJYg',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ide71') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel">
+
+
+	
+
+
+
+
+	
+<div class="subsection2 bgClr1 judgementsInfo">
+	<div class="subSectionHeader"><h4><span>Judgments</span></h4></div>
+	<table id="ide5b" summary="Table displaying the Judgments on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL5n8ztCr-2R8wBiTUotFHHbWcl2gWGtgYOWVRRGY37BizS18qOr9L7XQn9ZhOoKqAJccx6ntn2rK*CYS4aQreaTMmIOwT6-x08jesokk8RCQNaQ0dqE8hqg"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL5n8ztCr-2R8wBiTUotFHHbWcl2gWGtgYOWVRRGY37BizS18qOr9L7XTTriwUkFBs-4N2GRhznYuXJ4kyIMktOunABA*wR*8ecDZ-lcE058*FUGz7yJfnLE"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Method">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL5n8ztCr-2R8wBiTUotFHHbWcl2gWGtgYOWVRRGY37BizS18qOr9L7W03gTAf*ZOigO*I-IwtbymvBSe6esPxmASMz4WpIj38yNy*8MZ4wBHzpXUm9DUMTw"><span>Method</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="For">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL5n8ztCr-2R8wBiTUotFHHbWcl2gWGtgYOWVRRGY37BizS18qOr9L7V89rmmBPQhTBJ0Lt0ajprM6GFK*wVl--AlYlu-693XWmw7qIzTr-yAe*Y6ZdS8954"><span>For</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Against">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL5n8ztCr-2R8wBiTUotFHHbWcl2gWGtgYOWVRRGY37BizS18qOr9L7WzE29xKQj0nrfzKIZ9s1FYx6KUzJrFFehf4TYqqhE8FcsYQcKGVsuwuv3tHbXA0t0"><span>Against</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>02/15/2018</span></td><td><span>Judgment for Plaintiff for Possession and Rent</span></td><td><span>, by agreement of the parties</span></td><td><span>J P Realty Trust</span></td><td><span>Junior, Jose Sena</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="ide72">
+
+
+	
+
+
+
+
+	
+<div id="eventInfo" class="subsection2 bgClr1">
+	<div class="subSectionHeader"><h4><span>Events</span></h4></div>
+	<table id="ide5c" summary="Table displaying the events related to this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL3VOiE28SAD-bzJf5E1H5YtBQcJ53gQ9Q3tlI-taSsYbuF9sosTsZa2XQ65JARzYyiuSeUcBMRQRByUCi6vEE6UaTf*dcVKf1uv6Q66WxkaMjWqR9MJ61Ko"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Session">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL3VOiE28SAD-bzJf5E1H5YtBQcJ53gQ9Q3tlI-taSsYbuF9sosTsZa2fHefshCPB3rha5AYPqB-96NfSsuXrRaKYLIVKepg56PdNgPyqWiOPl0Fr-*D*bKY"><span>Session</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Location">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL3VOiE28SAD-bzJf5E1H5YtBQcJ53gQ9Q3tlI-taSsYbuF9sosTsZa0Of4WDsq5e7DwJG5iU-6qGn4lYZrEzfKxylUrSPVaXVRXoEV7ngPpFwH3eXXmiV34"><span>Location</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL3VOiE28SAD-bzJf5E1H5YtBQcJ53gQ9Q3tlI-taSsYbuF9sosTsZa2PRb1vTqDgKbaiDmZY9eiednN7VHLL0f9TMUbQ2bJqQr0qyrWZlF54OcXTBXERxw0"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Result">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL3VOiE28SAD-bzJf5E1H5YtBQcJ53gQ9Q3tlI-taSsYbuF9sosTsZa1K9xrUNp76DAKXeUmH6QSuS4uMrkygvnSIMcw0cUMT0XuOS36gjgEoKGg*x8bMmJ4"><span>Result</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>02/15/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Not Held But Event Resolved</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="ide73">
+
+
+	
+
+
+
+
+	
+<div id="docketInfo" class="subsection2 bgClr1 financialSection">
+	<div class="subSectionHeader"><h4><span>Docket Information</span></h4></div>
+	<table id="ide5d" class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Docket Date">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpLwqM5OeMDklCbcf7BCxTAmrCjM5t*X2ZPo4nwBkY40rjAwsfF0RSwJ*LvjXq*GnMjdwIQ4I8kmZJKa7r92Nwrl38HKILNNHT8tbhaIUdXiL3lzZF*EZ67y8"><span>Docket Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Docket Text">
+					<span><em><span>Docket Text</span></em></span>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Amount Owed" class="currency">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpLwqM5OeMDklCbcf7BCxTAmrCjM5t*X2ZPo4nwBkY40rjAwsfF0RSwJ8j9SxtcYQsxdlDmQ0WzCOceIIIEpxsdaSGJj362keZ6nJRgbSk8Pmv48XLXB4BprA"><span>Amount Owed</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="File Ref Nbr.">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpLwqM5OeMDklCbcf7BCxTAmrCjM5t*X2ZPo4nwBkY40rjAwsfF0RSwJ8et9hekI7*RRvg3TEKpl2*sID3N1VjoOezRb-9wdX8OTQUitIy2eTy254H7uI6Mz0"><span>File Ref Nbr.</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="roweven">
+                <td>02/02/2018</td><td class="formattedText">Appearance filed
+On this date Alfred Wolsky, Esq. added as Private Counsel for Plaintiff J P Realty Trust</td><td class="currency"></td><td>1</td>
+        </tr><tr class="rowodd">
+                <td>02/02/2018</td><td class="formattedText">Complaint filed</td><td class="currency"></td><td>2</td>
+        </tr><tr class="roweven">
+                <td>02/02/2018</td><td class="formattedText">Termination notice filed (Uniform Summary Process Rule 2).</td><td class="currency"></td><td>3</td>
+        </tr><tr class="rowodd">
+                <td>02/02/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 02/15/2018  Time: 09:00 AM
+Result: Not Held But Event Resolved</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/12/2018</td><td class="formattedText">Answer filed by Jose Sena Junior.</td><td class="currency"></td><td>4</td>
+        </tr><tr class="rowodd">
+                <td>02/15/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Bench Trial (CV) scheduled for 02/15/2018 09:00 AM has been resulted as follows: 
+Result: Not Held But Event Resolved 
+Reason: Settled</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/15/2018</td><td class="formattedText">Judgment Entered:: Judgment for Plaintiff for Possession and Rent    , by agreement of the parties    Presiding: Hon. Dominic J Paratore
+ 
+	Judgment For:		J P Realty Trust
+
+	Judgment Against:	Jose Sena Junior
+
+Terms of Judgment:  Interest Begins: 02/02/2018 Jdgmnt Date: 02/15/2018  Interest Rate: .12 Daily Interest Rate: .000329 
+Damages: Damage Amt: .00</td><td class="currency"></td><td></td>
+        </tr>
+</tbody>
+</table>
+	  
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="ide74">
+
+
+	
+
+
+
+
+	
+<div id="dispositionInfo" class="subsection2 bgClr1">
+	 <div class="subSectionHeader"><h4><span>Case Disposition</span></h4></div>
+	<table id="ide5e" summary="Table displaying the dispositions on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Disposition">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL44hc-rN3z0F-vaBnVEWUtx0NjE-oBlCzwlYx2aIY6ARwYFxyIZ1wN1V8BTfWUNEmpsmWBNFwa522kKqVhr5QjYyOMa8q*SGidxMWXF8QBwFDNs-0XFwEeg"><span>Disposition</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=OIdqSYS8*1c4rTYd0ovgecM9kFbZeMr5OX7vuhoCxG34jIsD9u82Q2WOureXm7wxNePt34tq0bHmefLaCTbpL44hc-rN3z0F-vaBnVEWUtx0NjE-oBlCzwlYx2aIY6ARwYFxyIZ1wN331Dh-wOp5RJY111lI18GlphyfEBWVURpU5HfuMuk0YBGZle-*P3d6FOT2GIlxkK4"><span>Date</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td>Pending</td><td></td>
+        </tr>
+</tbody>
+</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+</div>
+</div>
+	</div>
+	<div id="moreInformationContainer" aria-live="assertive" aria-atomic="true" aria-relevant="all"></div>
+</div>
+
+</div>
+
+<div id="ide5f"></div>
+<div id="ide75" style="display:none">
+	<div id="ide76" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="processingDialog">
+	<b><span id="ide77" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html">iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html</a></html>

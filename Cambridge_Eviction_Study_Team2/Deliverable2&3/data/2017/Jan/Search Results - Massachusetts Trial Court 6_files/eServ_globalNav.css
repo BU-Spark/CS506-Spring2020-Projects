@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_globalNav.css,v 1.15 2014/10/06 22:20:30 zcarter Exp $ */
+
+.globalNavigation { position:absolute; top:62px; left:0; width:100%; display:block; border-bottom:#222 solid 1px; background:#fff; }
+
+.globalNavigation ul { display:inline-block; float:left; text-decoration: none; }
+
+.globalNavigation ul li { display:inline-block; margin: 0; padding:0 4px; font-weight:bold; border-left: transparent solid 1px; border-right: transparent solid 1px; }
+
+.currentPage { background: #e0e0e0; }
+
+.globalNavigation ul li:hover { background:#e3e3e3; border-left:#999 solid 1px; border-right:#999 solid 1px; }
+
+.globalNavigation ul a { text-decoration: none; color:#000 }
+
+.navLoggedInUser { }
+/*
+.globalNavigation ul { border-left:transparent solid 1px; border-right:transparent solid 1px; background-color:#fff; }
+*/
+.MenuBarHorizontal { }
+
+.globalNavigation #navigationSectionLeft { } 
+
+.globalNavigation #navigationSectionRight { float: right; }
+
+.print { background: url(../images/print-small.png) left no-repeat; padding-left: 16px; }
+.notificationIcon { background: url(../images/email-small.png) left no-repeat; padding-left: 20px; }
+
+.notificationUnreadCount { width: 10px; }
+
+#notificationItem { min-width: 50px; text-align: left; }

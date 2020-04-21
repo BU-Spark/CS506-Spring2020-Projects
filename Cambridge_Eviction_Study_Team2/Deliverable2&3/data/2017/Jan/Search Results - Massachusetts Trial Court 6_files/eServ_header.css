@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_header.css,v 1.6 2013/03/05 19:48:38 kcrawford Exp $ */
+
+#header { position:absolute; top:0;  padding: 0; height:62px; width:100%; background: #ddd url(../resources/images/headerImage) no-repeat;  text-align:right;}
+
+.ui-layout-north { padding:0px !important; }

@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_buttons.css,v 1.8 2015/08/03 19:21:20 zcarter Exp $ */
+
+/* ************** div style for centered bar of buttons ******************** */
+
+.buttonBar { text-align:left; margin:5px 10px 1px 0px; clear:both; }
+
+.financialSection .buttonBar, .caseInfo .buttonBar { }
+
+
+/* ********************* Button styles for form input tags **************************** */
+
+.button,  input[type="submit"], input[type="button"], button, .formButtons input[type="submit"], .formButtons input[type="button"], .formButtons button, .anchorButton, .payButton { background:#41537c url(../images/themes/default/button2.gif) repeat-x; border:#222 solid 1px; padding: 1px 5px; font-weight:bold; font-size:1em; color:#fff; background-position:center bottom; border-radius:4px; } 
+
+.formButtons input[type="submit"], .formButtons input[type="button"], .formButtons button { margin-top:5px; }
+
+.button:hover, input[type="submit"]:hover, input[type="button"]:hover, button:hover, .formButtons input[type="submit"]:hover, .formButtons input[type="button"]:hover, .formButtons button:hover, .anchorButton:hover, .payButton:hover { color:#fff;  background:#58678b url(../images/themes/default/buttonOver2.gif) repeat-x; background-position:center bottom;  }
+
+.button:disabled, input[type="submit"]:disabled , input[type="button"]:disabled , button:disabled, .formButtons input[type="submit"]:disabled , .formButtons input[type="button"]:disabled , .formButtons button:disabled { color:#999;  background:#58678b url(../images/themes/default/buttonDisabled.gif) repeat-x; background-position:center bottom; border:#ccc solid 1px; }
+
+/* ******************************************  Button Modifiers **************************************** */
+
+.anchorButton { color:#fff !important; text-decoration:none; clear:both; float:none; margin-top:5px; }
+
+.anchorButton:hover { color:#fff !important; }
+
+.payButton { background:#427c46 url(../images/themes/default/payButton.gif) repeat-x !important; color:#fff !important; text-decoration:none; clear:both; float:none; margin-top:5px; }
+
+.payButton:hover { background:#588b5c url(../images/themes/default/payButtonOver.gif) repeat-x !important; color:#fff !important; }
+
+.navLink { background: #CCCCCC; border:#222 solid 1px; font-weight:bold; font-size: 1em; color: #fff; background-position: center bottom; border-radius: 4px; }
+
+
+.favorite { color: #fcb245; }
+.favorite-o:hover { color: #fcb245; }
+.icon-button { }
+.icon-button:hover { background-color: #CCCCCC; }

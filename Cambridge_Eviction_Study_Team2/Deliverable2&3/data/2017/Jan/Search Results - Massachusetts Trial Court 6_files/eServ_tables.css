@@ -1,0 +1,87 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_tables.css,v 1.20 2017/05/30 16:39:34 mbuckingham Exp $ */
+
+/************************* Global table styles *************************************/
+
+table { width: 100%; border-collapse:collapse; }
+
+table caption { display:none; }
+
+tr { cursor:default; vertical-align:top; }
+
+thead { background: #CCCCCC; border: 1px #CCCCCC solid; }
+tfoot { background: #CCCCCC; }
+
+thead th { font-weight:bold; text-align:left; padding: 2px; font-size:1em; color:#41537c; }
+
+tfoot th {  padding: 0px 8px 0px 0px; } 
+
+td { padding: 2px 8px 2px 2px; }
+
+.financialFooter {
+	padding: 2px 4px 2px 2px;
+	font-weight: bold;
+}
+
+.wicketExtensionsWizardOuterTable tbody td { padding:0 0 0 0 !important; }
+
+td img, td a img { border:none; }
+
+.rowodd, tr.odd { background-color: #fff; }
+
+.rowodd_green { background-color: #fff; color: #228B22; font-weight: bold; } 
+
+.roweven, tr.even { background-color: #f7f6f6; }
+
+.roweven_green { background-color: #eaeaea; color: #228B22; font-weight: bold; }
+
+.minimal { width: 1%; }
+ 
+/* table.tablesorter thead tr .header { background-image:url(../images/themes/default/bg.gif) } Conflicts with JQuery placed sorter images*/
+ 
+#Manage table.tablesorter thead tr .header { background-image:none !important; }
+
+.formElementTbl { border-top:#fff solid 0px; }
+
+.formElementTbl tr { background:#d8d8d8; }
+
+.formElementTbl tr td, .formElementTbl tr th { background:#d8d8d8; }
+
+.formElementTbl tr td:first-child, .formElementTbl tr th:first-child { text-align:right; }
+
+.formElementTbl .alignLeft { text-align: left; }
+
+.formElementTbl label { font-weight:bold; color:#41537c; }
+
+.label { font-weight: bold; color:#41537c; }
+
+.table { display: table; }
+.table-row { display: table-row; vertical-align: top; }
+.table-cell { display: table-cell; padding-right: 5px; }
+
+th.wicket_orderUp   { background-position: right; background-repeat: no-repeat; background-color: white; background-image: url(../images/themes/default/arrow_up.gif); }
+th.wicket_orderDown { background-position: right; background-repeat: no-repeat; background-color: white; background-image: url(../images/themes/default/arrow_down.gif); }
+
+.checkColumn { width: 1%; text-align: center; padding: 2px 2px 2px 2px; }
+.checkColumn input[type="checkbox"] { margin: 2px 2px 2px 2px; }
+
+table .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus { border: 1px solid #fbcb09; background: #fdf5ce url(images/ui-bg_glass_100_fdf5ce_1x400.png) 50% 50% repeat-x; font-weight: normal; color: black;}
+
+.navigation { padding : 1px; width: 100%; }
+.navigation.float { display: inline-block; }
+.navigatorLabel { float: left; font-weight: bolder; }
+.navigator { text-align: right; }
+
+th.currencyColumn { width: 1%; text-align: right; }
+td.currencyColumn { width: 1%; white-space: nowrap; text-align: right; }
+
+.norecords { font-weight: bold; font-size: larger; }
+
+tr.summary { border-top: 1px solid black; border-bottom: 1px solid black; font-weight: bold; }
+
+th > a {text-decoration: none;}
+
+.searchResults  {/*added 20151021 12:58 swd*/
+	/*font-size: 12px;*/
+}

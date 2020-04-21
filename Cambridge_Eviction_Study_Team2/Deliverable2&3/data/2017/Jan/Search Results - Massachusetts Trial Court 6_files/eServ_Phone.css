@@ -1,0 +1,292 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_Phone.css,v 1.3 2013/08/23 13:19:59 zcarter Exp $ */
+
+/*  ***************************************************************************************************************** */
+/*  ****************************************  Global Panel Layout Styles ******************************************** */
+
+body { border:none; height:auto; margin:0; overflow:auto !important; padding:0; position:static !important; display:block !important; font-size:99% !important; }
+
+#header { position:static !important; display:block !important; width:100%; height:auto; overflow:hidden; text-align:left !important; }
+
+.pane, .ui-layout-pane, #WestPane, #calendarPagePaneEast, #calendarPagePaneCenter, #mainContent, .ui-layout-south { position:static !important; display:block !important; background-color:inherit; border:1px solid #777777; overflow:auto !important; padding:0 !important; width:auto !important; height:auto !important; }
+
+.ui-layout-north { padding:0px !important; height:auto !important; position:static !important; display:block !important; }
+
+#WestPane-resizer { display:none !important; }
+
+.dynamicNav { float:none; width:auto; padding:0 0 10px 0; }
+
+#mainContent, #calendarPagePaneEast, #calendarPagePaneCenter { background-color:#98a7ac; }
+
+#EastPane { display:none !important; }
+
+
+/*  ****************************************  Global Modal Styles *************************************************** */
+
+.wicket-modal { left:15px !important; width:96% !important; }
+
+.wicket-modal dl { width:15.7em; }
+
+.wicket-modal dt { width:6.7em; }
+
+.wicket-modal dd { width:7.9em; }
+
+.wicket-modal .subBox { width:96%; }
+
+.ui-dialog { left:5px !important; width:96% !important; }
+
+.ui-dialog-content { margin:0 !important; padding:0 !important; position:static !important; width:310px !important; }
+
+.ui-dialog-content form { margin:0 !important; padding:5px !important; position:static !important; width:290px !important; }
+
+.ui-dialog-content form .anchorButton  { display:inline-block; margin-top:15px; }
+
+
+/*  ****************************************  Global Navigation Styles ********************************************** */
+
+.globalNavigation { position:static !important; display:block !important; margin-top:62px; width:auto; height:auto; }
+
+.globalNavigation ul { display:block !important; float:none !important; }
+
+.globalNavigation ul li { display:block !important; margin:5px 4px 5px 0; }
+
+.globalNavigation ul li:hover { background:none; border-left:#999 solid 0px; border-right:#999 solid 0px; }
+
+.globalNavigation ul a { text-decoration:underline; }
+
+.globalNavigation #navigationSectionLeft { } 
+
+.globalNavigation #navigationSectionRight { float:none !important; }
+
+.navLoggedInUser { min-width:0; }
+
+.MenuBarHorizontal { min-width:0; }
+
+
+/*  ****************************************  Footer Styles ********************************************************* */
+
+.ui-layout-south { position:static !important; display:block !important; height:auto !important; }
+
+#footer { height:auto; width:auto; }
+
+#footer #footerLogo, #wicketDebugLink { display:none; }
+
+
+/*  ****************************************  Container Styles ****************************************************** */
+
+.formSec { margin:22px 10px; }
+
+.formSec2 { margin:0px 5px 30px 5px; }
+
+.formSec3 { margin:22px 10px; }
+
+.formSec p, .formSec ul, .formSec ol, .formSec .tab-row p, .formSec .tab-row ul, .formSec .tab-row ol  { margin:5px 5px 0 0px; }
+
+.subsection1 { margin:5px 0; }
+
+.subsection2 { margin:0px 5px 30px 5px; }
+
+.subsection3 { margin-right:5px; }
+
+.tabSection { margin:22px 10px; }
+
+
+/*  ****************************************  Form Styles *********************************************************** */
+
+select { max-width:140px; min-width:25px; }
+
+form select { max-width:140px; min-width:25px; }
+
+input[type=textarea], textarea { width:130px; height:120px; }
+
+.formElement label { width:90px; }
+
+.formElement .requiredField { width:80px; }
+
+.formElement .fieldHint { font-size:.75em; }
+
+.formElement input { max-width:130px; }
+
+
+/*  ****************************************  Search Styles ********************************************************* */
+
+.locationForm .formElement { display:block; }
+
+#SSNSearch label { width:80px !important; }
+
+#advAttorneyFieldset, #nameFieldset { width:auto; display:block; }
+
+#caseTypeFieldset { width:auto; display:block; }
+
+#caseTypeFieldset label { width:90px; }
+
+#caseTypeFieldset select { max-width:130px; }
+
+#nameFieldset select { max-width:130px; }
+
+
+/*  ****************************************  Search Result Styles ************************************************** */
+
+#mainContent .searchResults #grid { display:block !important; width:99%; max-height:180px; overflow:scroll; table-layout:auto; }
+
+
+/*  ****************************************  Case Detail Styles **************************************************** */
+
+.caseInfoItems { display:block; width:auto; }
+
+.caseInfoItems dl { width:285px; }
+
+.caseInfoItems dd { width:185px; }
+
+#caseDetail .tab-panel .infoChildSection .subSectionHeader2 { display:block !important; width:96%; max-height:180px; overflow:scroll; }
+
+#caseDetail .tab-panel .box { display:block !important; width:95%; height:auto; overflow:auto; }
+
+#caseDetail .tab-panel dl { width:16em; }
+
+#caseDetail .tab-panel dt { width:6.7em; }
+
+#caseDetail .tab-panel dd { width:8.5em; }
+
+#caseDetail .tablesorter { display:block !important; width:100%; max-height:180px; overflow:scroll; }
+
+#caseDetail .judgementTbl, #caseDetail .judgementsInfo table { display:block !important; width:96%; max-height:180px; overflow:scroll; }
+
+.moreInfo { text-align:left; }
+
+.splitTable { width:96%; }
+
+
+/*  ****************************************  Efile Styles ********************************************************** */
+/* **************** Efile List ********************* */
+#efileListPanel .efileStatusSec, #efileListPanel .efileSearchTypSec { float:none; margin-bottom:10px; width:98%; }
+
+#efileListPanel .efileSrchCritSec, #efileListPanel .efileDateCritSec { float:none; margin-bottom:10px; width:98%; }
+
+#efileListPanel .efileDateCritSec label { width:90px !important; }
+
+.efileDataTable { display:block !important; width:96%; max-height:180px; overflow:scroll; }
+
+/* **************** Efile Edit General Styles ************ */
+
+.efileEditPanel label { width:85px !important; margin-right:2px; }
+
+.efileEditPanel .requiredField { width:75px !important; margin-right:2px; }
+
+.efileSaveButtons .anchorButton { display:inline-block; }
+
+.efileEditReviewerTxt { padding-bottom:30px; width:auto; }
+
+.efileEditPanel textarea { height:58px; width:140px !important; }
+
+/* **************** Efile Edit Info ********************* */
+.efileInfo fieldset { display:block; width:99% !important; }
+
+.efileInfo .efileDisplay { display:inline-block; max-width:140px !important; margin-right:2px; }
+
+/* **************** Efile Edit Party  ********************* */
+.efilePtyIdentInfo, .efilePtyAddrInfo, .efilePtyContactInfo { width:99%; }
+
+.efilePartyList { margin:0 !important; }
+
+.efileEditPanel select, .efileEditPanel input { max-width:140px !important; margin-right:2px; }
+
+.efilePtyAddr2 input[type="text"], .efilePtyAddr3 input[type="text"] { margin-left:96px; }
+
+.efileAfflInfo { margin:0 5px 10px; }
+
+.efileAfflSec { margin:5px 0px 5px 0px; width:99%; padding-bottom:28px; }
+
+/* **************** Efile Edit Docket  ********************* */
+.efileDocketInfo, .efileDocketFiles { display:block; width:98% !important; }
+
+.efileEditPanel .efileDocketInfo label { width:90px !important; margin-right:2px; }
+
+.efileEditPanel .efileDocketInfo .requiredField { width:80px !important; margin-right:2px; }
+
+.efileDocketFiles fieldset { display:block; width:100% !important; }
+
+.efileDocUploadTbl { display:block !important; width:100% !important; max-height:180px; overflow:scroll !important; }
+
+.uploadForm { margin-bottom:14px; }
+
+.uploadForm label { display:block; width:260px !important; text-align:left; }
+
+.uploadForm input { display:block; width:260px !important; max-width:260px !important; }
+
+/* **************** Efile Edit Fees/Notes  ********************* */
+.efileFees, .efileNotes { display:block; float:none; width:auto !important; min-height:0px; }
+
+.efileFees label { width:160px !important; }
+
+.efileFees .efileDisplay { width:85px !important; }
+
+/* **************** Efile Cart  ********************* */
+.efileDataTable tfoot dl { width:260px !important; }
+
+.efileDataTable tfoot dt { width:160px !important; }
+
+.efileDataTable tfoot dd { width:85px !important; }
+
+.efileCartButtons .delButton { float:none; display:block; margin-top:15px; }
+
+
+/*  ****************************************  Epay Styles *********************************************************** */
+/* **************** Epay Options  ********************* */
+.ePayOption, .ePayCaseInfo { width:99% !important; display:block !important; }
+
+.epayOptionsTable { display:block !important; width:auto !important; max-height:180px; overflow:scroll !important; }
+
+.epayOptionsTable tbody label { width:140px; float:none; display:inline-block; margin-right:25px; vertical-align:top; }
+
+.epayOptionsTable thead .optionsCol { width:320px !important; }
+
+.epayOptionsTable .optionAmt { text-align:right; width:90px !important; vertical-align:top; display:inline-block !important; margin-right:50px; }
+
+.epayOptionsTable tbody fieldset input { position:absolute; right:140px; }
+
+.epayOptionsTable tbody fieldset { position:relative; text-align:right; width:320px !important; }
+
+/* **************** Epay Proof  ********************* */
+.ePayProof { margin-top:10px; display:block !important; }
+
+.ePayProof .formElement label { width:115px !important; }
+
+.ePayProof .formElement input { width:110px !important; }
+
+.ePayProof .formElement .date { width:75px !important; }
+
+/* **************** Epay Payor  ********************* */
+.ePayPayor { width:99% !important; }
+
+.PaymentInfo .requiredField { width:80px !important; }
+
+/* **************** Epay Balance  ********************* */
+.ePayBalance  { display:block; margin-top:10px; width:auto !important;}
+
+.ePayBalance label { width:115px !important; }
+
+.ePayBalance .requiredField, .ePayBalance input { width:105px !important; }
+
+/* **************** Epay Case Info  ********************* */
+.ePayCaseInfo label { width:85px !important; }
+
+.ePayCaseInfo .requiredField { width:75px !important; }
+
+.advanceCaseDrivLicNbr input, .advanceCaseLicPlateNbr input { width:95px !important; margin-right:2px; }
+
+.advanceCaseDrivLicNbr select, .advanceCaseLicPlateNbr select { width:45px !important; margin-right:0px; }
+
+
+/*  ****************************************  Calendar Styles ******************************************************* */
+
+#calendarPagePaneEast-resizer, #calendarPagePaneNorth-resizer, #calendarPagePaneSouth-resizer { display:none !important; }
+
+.listPanelResults { margin:0px; width:95% !important; }
+
+.listTable { display:block !important; width:100% !important; max-height:180px; overflow:scroll !important; }
+
+.calSearchFilters .calFilter { display:block; width:auto !important; }
+
+.calSearchFilters .calFilter select { box-shadow:none; height:25px; width:270px !important; max-width:270px !important; }

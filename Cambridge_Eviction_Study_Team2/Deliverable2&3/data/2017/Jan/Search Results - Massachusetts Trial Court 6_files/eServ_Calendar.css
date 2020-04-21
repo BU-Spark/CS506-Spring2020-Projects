@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_Calendar.css,v 1.24 2016/10/21 19:01:30 mfuller Exp $ */
+
+/* ********************************* Calendar Layout Styles *********************************** */
+
+#calendarPagePaneWest {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding-bottom:10px; overflow:auto; }
+
+#calendarPagePaneEast {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding:0 0 10px 0; overflow:auto; }
+
+#calendarPagePaneCenter {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding-bottom:10px; overflow:auto; }
+
+#calendarPagePaneSouth { padding:0 !important; }
+
+.ui-layout-toggler-east { background:#2e6e9e url(../images/themes/default/paneCollapse2.png) no-repeat center center !important; width:15px !important; border-right:#2e6e9e solid 1px !important; } 
+
+.ui-layout-toggler-east-open { background:#2e6e9e url(../images/themes/default/paneCollapse.png) no-repeat center center !important; width:15px !important; border-right:#2e6e9e solid 1px !important; } 
+
+
+/* ********************************* Calendar Styles *********************************** */
+
+.judgeCalendar { display:block; min-height:265px; }
+
+.LargeViewCalendar { display:table !important; width:100%; clear: both; }
+
+.LargeViewCalendar .week { height: 35px !important; width:auto !important; text-align:center; display:table-row !important; float:none !important; }
+
+
+.LargeViewCalendar .day:first-child { width:16% !important; }
+
+.LargeViewCalendar .day h5 {  background:#f6e7d1 !important; padding-right:2px; text-align:right; }
+
+
+
+.LargeViewCalendar .day a label { cursor:pointer; }
+
+
+
+.calEventList .userTable .ui-state-hover { background: #f6e7d1 !important; background-image:none !important; color:#222 !important; border:none !important; }
+.calEventList .centeredImagePanel { display:block; margin-left:auto; margin-right:auto; } 
+.calMetaLink a:link { padding : 6px;  } 
+
+/* ********************************* Calendar Header Styles *********************************** */
+
+.monthLbl { margin-right:8px; font-weight:bold; font-size:1.1em; }
+
+.calDays { display:block; margin:0 !important; }
+
+.calDays li { float:left; width:14%; text-align:center; list-style:none; font-weight:bold; }
+
+.calDays li:first-child  { width:16%; }
+
+.calJudgeCalSec #calPrev { display:inline-block; width:16px; height:16px; vertical-align:middle; }
+
+.calJudgeCalSec #calPrev input[type="button"] { background:url(../images/themes/default/calPrevMon.png) no-repeat; width:16px; height:16px; border: 0 solid #222222; }
+
+.calJudgeCalSec #calPrev input[type="button"]:disabled { background:url(../images/themes/default/calPrevMonDisabled.png) no-repeat; }
+
+.calJudgeCalSec #calNext { display:inline-block; width:16px; height:16px; vertical-align:middle; }
+
+.calJudgeCalSec #calNext input[type="button"] { background:url(../images/themes/default/calNextMon.png) no-repeat; width:16px; height:16px; border: 0px solid #222222; }
+
+.calJudgeCalSec #calNext input[type="button"]:disabled { background:url(../images/themes/default/calNextMonDisabled.png) no-repeat; }
+
+.calJudgeCalSec #calToday { display:inline-block; width:auto; vertical-align: middle; padding:0 5px; }
+
+.calJudgeCalSec #calMonthLbl { float: right; }
+
+
+/* ********************************* Calendar Filter Styles *********************************** */
+
+.calSearchFilters .calFilter { display:table-cell; padding:0 2px; width:33%; }
+
+.calSearchFilters .calFilter select { width:100%; height:88px; box-shadow:none; }
+
+.calSearchFilters .includeResults { margin:8px 2px 0 2px; display:block; padding:3px; background:#ccc; border:#ccc solid 1px; }
+
+.calSearchFilters .includeResults label { display:inline; background:none; padding:0px; border:none; margin:0px 5px 0px 0px;  }
+
+.calSearchFilters .includeResults input { margin-right:2px;}
+
+/* ********************************* Calendar Selection Table Styles *********************************** */
+
+.calListSec .subsection2 { border:none; background:none; box-shadow:none; margin:0; }
+
+
+/* ********************************* Calendar Detail Pane Styles *********************************** */
+
+.calInstruct { min-height:150px; }
+
+.calInstruct p { margin:8px 0px; text-align:left; }
+
+.calInstruct .instructSec p { margin:5px; }
+
+.instructSec { margin:0px 5px 15px 5px; }
+
+.eServCalendar #mainContent  { padding-left:0px; padding-top:0px; }
+
+.eServCalendar .caseInfo .caseInfoItems { width:auto; }
+
+.eServCalendar .caseInfo .caseInfoItems dl { width:430px; }
+
+.eServCalendar .caseInfo .caseInfoItems dt { clear:both; width:25%; }
+
+.eServCalendar .caseInfo .caseInfoItems dd { width:65%; }
+
+.infoWidth120 {
+	width: 100px;
+}
+
+.caseHdrInfo {
+	width: 55%;
+}
+
+.eServCalendar .ptyContact, .eServCalendar .ptyAffl, .eServCalendar .ptyAtty,
+	.eServCalendar .ptyPersInfo, .eServCalendar .chgPhase, .eServCalendar .chgOffense,
+	.eServCalendar .citOfficer, .eServCalendar .citIncident, .eServCalendar .citLicense,
+	.eServCalendar .citVehicle {
+	display: inline-block;
+	float: none;
+}
+
+.ptyContact {
+	vertical-align: top;
+}
+
+.ptyContactInfo {
+	width: 172px;
+}
+
+.ptyPersInfo {
+	width: 260px;
+	padding-right: 4px;
+}
+
+/* ******************************* Scrollable Event List Panel Styles ***************************** */
+.allColumnHeadings { 
+	vertical-align: bottom;
+	height: 30px; 
+}
+
+/* this is used by the report only */
+.printDateList { display: none; }
