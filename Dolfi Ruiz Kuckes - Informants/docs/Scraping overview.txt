@@ -1,0 +1,5 @@
+﻿-took cases off the mass website from the cases and appeals sections
+-used selenium and chrome driver to scrape the information off the thousands of pages 
+-started with the 5 pages with the list of the cases we wanted to scrape 
+-used a combination of for toops, x_paths, tags, and attributes to get to the the sites of all the cases we wanted to get 
+-
