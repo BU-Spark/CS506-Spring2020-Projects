@@ -38,17 +38,66 @@ def get_filtered_data_real(filename):
                         temp.append(occupation.lower())
                         data.append(temp)
                         break
-    with open('./raw_real_estate.csv', 'w') as file:
-        for d in data:
-            for i in d:
-                file.write(i + ',')
-            file.write('\n')
+    # with open('./raw_real_estate.csv', 'w') as file:
+    #     for d in data:
+    #         for i in d:
+    #             file.write(i + ',')
+    #         file.write('\n')
+    return data
+
+def get_all(filename):
+    data = []
+    with open(filename) as file:
+        for line in file:
+            temp = []
+            line = line.replace('\n', '')
+            line = line.split(',')
+            for i in line:
+                temp.append(i)
+            data.append(temp)
+    return data
+
+def get_filtered_health(filename):
+    data = []
+    keywords_occupation = ['Nurse','Doctor','Physician','MD',
+                           'Medical','Hospital','Clinical','RN',
+                           'Patient','Health','Patient']
+    keywords_employer = ['Hospital','Health','Healthcare','Medical']
+
+    with open(filename) as file:
+        for line in file:
+            temp = []
+            line = line.replace('\n', '')
+            line = line.split(',')
+            for i in line:
+                temp.append(i)
+            flag = False
+            for occupation in keywords_occupation:
+                if occupation.lower() in line[2].lower():
+                    temp.append('occupation')
+                    temp.append(occupation.lower())
+                    data.append(temp)
+                    flag = True
+                    break
+            if not flag:
+                for employer in keywords_employer:
+                    if employer.lower() in line[3].lower():
+                        temp.append('employer')
+                        temp.append(employer.lower())
+                        data.append(temp)
+                        flag = True
+                        break
+    # with open('./raw_real_estate.csv', 'w') as file:
+    #     for d in data:
+    #         for i in d:
+    #             file.write(i + ',')
+    #         file.write('\n')
     return data
 
 def get_filtered_data_law(filename):
     data = []
-    keywords_occupation = ['Police', 'Officer', 'Sheriff', 'District Attorney', 'Prosecutor', 'Patrol']
-    keywords_employer = ['Police', 'Sheriff', 'District Attorney', 'Corrections', 'DAO']
+    keywords_occupation = ['President', 'Provost', 'Dean']
+    keywords_employer = ['College', 'University']
     keywords_PACS = []
 
     with open(filename) as file:
@@ -92,17 +141,52 @@ def compute_amount_by_cpfid(data):
     cpf_id = {}
     for row in data:
         try:
-            cpf_id[(row[9].upper(), row[8].upper())] += float(row[7])
-        except KeyError:
-            cpf_id[(row[9].upper(), row[8].upper())] = float(row[7])
+            try:
+                cpf_id[(row[9].upper(), row[8].upper())] += float(row[7])
+            except KeyError:
+                cpf_id[(row[9].upper(), row[8].upper())] = float(row[7])
+        except ValueError:
+            print(row)
     cpf_id = sorted(cpf_id.items(), key=lambda x:x[1])
+    sum = 0
     for key in cpf_id:
+        sum += key[1]
         print(key[0][0] + ": " + key[0][1] + ": " + str(key[1]))
-
+    print(sum)
     # with open('./temp_amount.csv', 'w') as file:
     #     for key in cpf_id:
     #         file.write(key[0][0] + ',' + key[0][1] + ',' + str(key[1]) + ',')
     #         file.write('\n')
+
+def compute_amount_by_cpfid_v2(ind_data, data):
+    import numpy as np
+    value = []
+    id = '15563'
+    for row in data:
+        if row[9] == id:
+            value.append(float(row[7]))
+    a = np.array(value).sum()
+    print(a)
+    for row in ind_data:
+        if row[9] == id:
+            value.append(float(row[7]))
+    value = np.array(value)
+    print(value.sum())
+    print(value.sum() - a)
+    print(value.mean())
+    print(value.std())
+
+def compute_amount_by_cpfid_v3(data):
+    import numpy as np
+    value = []
+    id = '17105'
+    for row in data:
+        if row[9] == id:
+            value.append(float(row[7]))
+    value = np.array(value)
+    print(value.sum())
+    print(value.mean())
+    print(value.std())
 
 def get_season_index(date):
     date_splited = date.split('-')
@@ -346,15 +430,127 @@ def computer_amount_by_contributor_type(data, com_data):
 def import_com_data():
     import csv
     data = []
-    all_data = csv.reader(open('D:/506_final/pac/pac_ocpf.csv'))
+    all_data = csv.reader(open('D:/506_final/ocpf_data/pac_ocpf.csv'))
     for i in all_data:
         data.append(i)
     return data
 
-# ind_data = get_filtered_data_real('./temp_all.csv')
+def import_law_data():
+    import csv
+    data = []
+    all_data = csv.reader(open('D:/506_final/raw_law.csv'))
+    for i in all_data:
+        data.append(i)
+    return data
+
+
+def import_law_pac():
+    import csv
+    data = []
+    all_data = csv.reader(open('D:/506_final/ocpf_data/law_pac.csv'))
+    for i in all_data:
+        data.append(i)
+    return data
+
+
+def import_health_pac():
+    import csv
+    data = []
+    all_data = csv.reader(open('D:/506_final/ocpf_data/health_pac.csv'))
+    for i in all_data:
+        data.append(i)
+    return data
+
+
+def the_most(data):
+    import numpy as np
+    name = {}
+    company = {}
+    name_total = {}
+    company_total = {}
+    for i in data:
+    #     cur_name = i[4] + ' ' + i[5]
+    #     cur_name = cur_name.upper()
+        cur_com = i[3].upper()
+        # try:
+        #     name[cur_name] += float(i[7])
+        # except KeyError:
+        #     name[cur_name] = float(i[7])
+        # try:
+        #     name_total[cur_name].append(float(i[7]))
+        # except KeyError:
+        #     name_total[cur_name] = [float(i[7])]
+        if cur_com == 'NONE' or cur_com == 'AT HOME' or cur_com == 'HOMEMAKER':
+            continue
+        if cur_com == 'SELF' or cur_com == 'SELF EMPLOYED':
+            cur_com = 'SELF-EMPLOYED'
+        try:
+            company[cur_com] += float(i[7])
+        except KeyError:
+            company[cur_com] = float(i[7])
+        try:
+            company_total[cur_com].append(float(i[7]))
+        except KeyError:
+            company_total[cur_com] = [float(i[7])]
+    # name = sorted(name.items(), key=lambda x: x[1], reverse=True)
+    # company = sorted(company.items(), key=lambda x: x[1], reverse=True)
+    # for i in name[:10]:
+    #     total = np.array(name_total[i[0]])
+    #     print(i[0] + " " + str(i[1]) + " " + str(total.mean()) + " " + str(total.std()))
+    # print()
+    company_average = {}
+    company_number = {}
+    for key in company_total.keys():
+        company_average[key] = np.array(company_total[key]).mean()
+        company_number[key] = len(company_total[key])
+    company_average = sorted(company_average.items(), key=lambda x: x[1], reverse=True)
+    company_number = sorted(company_number.items(), key=lambda x: x[1], reverse=True)
+    for i in company_average[:10]:
+        print(i[0] + " " + str(i[1]))
+    print('')
+    for i in company_number[:10]:
+        print(i[0] + " " + str(i[1]))
+
+
+def companies_insight(data):
+    import numpy as np
+    compnies = {}
+    names = {}
+    for i in data:
+        cur_com = i[3].upper()
+        reciver_id = int(i[9])
+        names[reciver_id] = i[8]
+        if cur_com == 'NONE' or cur_com == 'AT HOME' or cur_com == 'HOMEMAKER':
+            continue
+        if cur_com == 'SELF' or cur_com == 'SELF EMPLOYED':
+            cur_com = 'SELF-EMPLOYED'
+        try:
+            compnies[cur_com][reciver_id].append(float(i[7]))
+        except KeyError:
+            try:
+                compnies[cur_com][reciver_id] = [float(i[7])]
+            except KeyError:
+                compnies[cur_com] = {reciver_id: [float(i[7])]}
+    for key in compnies:
+        donor = compnies[key]
+        for id in donor:
+            if len(donor[id]) > 1000:
+                total = np.array(donor[id])
+                print(key + ", " + names[id] + ", " + str(len(donor[id])) + ", " + str(total.sum()))
+    print(' ')
+    for key in compnies:
+        if len(compnies[key]) > 100:
+            print(key + ", " + str(len(compnies[key])))
+
+
+
+ind_data = get_filtered_data_law('./temp_all.csv')
+compute_amount_by_cpfid(ind_data)
 #data = get_filtered_data_law('./temp_all.csv')
-com_data = import_com_data()
-compute_amount_by_cpfid(com_data)
+# com_data = import_health_pac()
+# compute_amount_by_cpfid(com_data)
+# data = get_all('./temp_all.csv')
+# compute_amount_by_cpfid_v3(data)
 # compute_amount_by_season(ind_data, com_data)
 # compute_amount_by_year(ind_data, com_data)
 # computer_amount_by_size(ind_data, com_data)
