@@ -1,0 +1,8 @@
+1. What the team has done toward the project this week?
+We wrote the scrpy code and tried to scrap from Boston Herald website.
+
+2. Is the team having any issue?
+The Boston Herald website does not allow scrapping.The mentor provided us with the data from Boston Globe and an API that allow us to scrap from Boston Herald.
+
+3. What work does the team plan to do next week?
+The team plans to pre-pocess the data from Boston Globe and label the articles as black sub-neighborhood related articles or not. 
