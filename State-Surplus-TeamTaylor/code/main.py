@@ -4,7 +4,8 @@ import add_median_income_by_xy
 import pandas as pd
 #from findNearByPlaces import *
 
-df = pd.read_csv('/Users/taylorhazlett/Documents/spring2020/cs506/CS506-Spring2020-Projects/State-Surplus-TeamTaylor/data/usable_std_land_std_agencies.csv')
+
+df = pd.read_csv('../data/usable_std_land_std_agencies.csv')
 
 df = apply_all_filters.apply_all(df)
 df = add_long_lat.add_long_lat(df)
