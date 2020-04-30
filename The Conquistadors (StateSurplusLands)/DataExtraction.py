@@ -85,6 +85,7 @@ def GetNeighborhoodID(areas="json"):
             return area.get("id")
 
 
+"""retrieve neighborhood average price for properties given id"""
 def GetNeighborhoodInfo(id=""):
     print("GetNeighborhoodInfo")
     global ApiCallCounts
@@ -110,11 +111,9 @@ def GetNeighborhoodInfo(id=""):
     # print(data.decode("utf-8"))
     return price
 
+"""apply all the above helper function to get an average value estimation for a property"""
 def RetrievePropertyValuesHelper(x):
-    # print(x["FullOwnerAddress"])
-    # address=x["owner_addr"]+", "+x["owner_city"]+", "+x["owner_stat"]
     address=x
-    print(address)
     profile=GetPropertyDetails(address)
     profileJson=json.loads(profile)
     if(profileJson.get("property")!=None):
@@ -124,10 +123,11 @@ def RetrievePropertyValuesHelper(x):
             return GetNeighborhoodInfo(ID)
     return -1
 
-
+"""calculate the current minute"""
 def GetCurrMinute():
     return str(datetime.datetime.now().time()).split(":")[1]
 
+"""take in a dataset and retrieve property values for all addresses"""
 def RetrievePropertyValues(filename):
     global lastmin
     lastmin = GetCurrMinute()

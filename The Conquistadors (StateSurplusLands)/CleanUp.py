@@ -6,7 +6,7 @@ from operator import itemgetter
 import pandas as pd
 import numpy as np
 
-#read data in batches,
+"""read data in batches"""
 def readfile(filename):
     # entries=os.listdir("data/")
     streets = []
@@ -29,10 +29,10 @@ def readfile(filename):
     df["FullOwnerAddress"].fillna("",inplace=True)
     df["owner_name"] = pd.DataFrame(ownerNames)
     df["owner_name"].fillna("",inplace=True)
-    print(df["FullOwnerAddress"].head)
-    print(df.shape)
+
     return df
 
+"""helper function to match with MassGovernmentList on agency name"""
 def matchOnName(x,agencylist,matchflag):
     # agencylist -> [(name,address)]
     highestscorematch= max([(fuzz.ratio(x,i),i) for (i,j) in agencylist],key=itemgetter(0))
@@ -44,6 +44,7 @@ def matchOnName(x,agencylist,matchflag):
         matchflag.append(0)
         return x
 
+"""helper function to match with MassGovernmentList on agency address"""
 def matchOnAddress(x,agencylist,matchflag):
     # x is a row from the dataframe
     # print(x.head)
@@ -59,7 +60,9 @@ def matchOnAddress(x,agencylist,matchflag):
         matchflag.append(0)
         return originalName
 
-#filename is AgencyList data
+"""match dataset with MassGovernmentAgencyList
+    filename = agencylist
+    data = input dataset"""
 def matchAgencyNames(filename,data):
     df = pd.read_csv(os.path.join("data/",filename),encoding = "ISO-8859-1")
     agency = pd.DataFrame(df.Agency)
@@ -74,9 +77,6 @@ def matchAgencyNames(filename,data):
     # data['std_name'] = data.apply(lambda x: matchOnAddress(x,choice,matchflag),axis=1)
     data['matchAgencyList']=pd.DataFrame(matchflag)
 
-    print("Done")
-    print(sum(matchflag))
-
     #if match on name, write to MatchWithAgencyNames.csv, if match on address, write to MatchWithAgencyAddresses.csv
 
     data.to_csv("./result/MatchWithAgencyNames.csv", index=False)
@@ -85,7 +85,7 @@ def matchAgencyNames(filename,data):
     return data
 
 
-
+"""standardize owner names in input dataset base on same addresses using FuzzyWuzzy"""
 def compareOwnerNames(data):
     tuples = pd.concat([data["FullOwnerAddress"],data["owner_name"]],axis=1).values.tolist()
     curr=""
@@ -118,31 +118,26 @@ def compareOwnerNames(data):
             backtrack=tup
 
     print("comparing owner names")
-    # print(data["FullOwnerAddress"].head())
-    # print(data["objectid"].head())
+
     df = pd.DataFrame(tuples,columns=['FullOwnerAddress',"std_name"])
     df.reset_index(drop=True, inplace=True)
     data.reset_index(drop=True, inplace=True)
     df = pd.concat([df, data["objectid"]],axis=1)
-    # print(df["FullOwnerAddress"].head())
-    # print("data",data["objectid"].head())
-    # print("df", df['objectid'].head())
+
     result = data.merge(df, on=["objectid","FullOwnerAddress"])
-    print("df",df.shape)
-    print("data",data.shape)
-    print("result",result.columns.values)
-    print("result",result.shape)
+
     return result
 
 
-
+"""sort/group data base on street address"""
 def sort_streets(data):
 
     data["FullOwnerAddress"] = data["FullOwnerAddress"].apply(lambda x: cleanupStreet(x))
     data.sort_values(by=['FullOwnerAddress'],inplace=True)
-    print(data.shape)
+
     return data
 
+"""standardize street addresses prefix"""
 def cleanupStreet(street):
 
     regex = re.compile(
@@ -161,17 +156,23 @@ def cleanupStreet(street):
 def extractStreetTuple(street):
     return (street[0][1],street[0][0])
 
+"""general purpose merging file function"""
 def mergeFile(dataset1,dataset2):
 
-    # print(dataset1.objectid.head())
-    # dataset1.objectid=dataset1.objectid.astype(np.int64)
-    # dataset2=dataset2.astype(object)
-    # print("dataset1",dataset1.dtypes)
-    result=dataset1.merge(dataset2,left_on="std_name",right_on="Agency")
-    print(result.shape)
+    data1 = pd.read_csv("./result/"+dataset1)
+    data2 = pd.read_csv("./result/"+dataset2)
 
+    data1 = {'objectid':data1['objectid'],'matchAgencyList':data1['matchAgencyList']}
+    data1 = pd.DataFrame(data1)
+
+    result=data2.merge(data1,on="objectid",how='left')
+
+    print(result.shape)
+    # result.to_csv("./result/mergedDataset.csv",index=False)
+
+"""general purpose merging file function"""
 def mergeDatasetWithOtherTeam():
-    dataset1=pd.read_csv("./data/usable_state_land.csv")
+    dataset1=pd.read_csv("./result/usable_state_land.csv")
     dataset2=pd.read_csv("./data/TaylorTeamData.csv")
     dataset1.drop(dataset1.columns[[0, 1]], axis=1, inplace=True)
     dataset2.drop(dataset2.columns[[0]], axis=1, inplace=True)
@@ -179,28 +180,27 @@ def mergeDatasetWithOtherTeam():
     print("dataset1 shape",dataset1.shape)
     print("dataset2 shape",dataset2.shape)
 
-    dataset1 = pd.concat([dataset1["objectid"], dataset1["std_name"],dataset1["FullOwnerAddress"], dataset1["TransportationOrHousing"]],axis=1)
+    dataset1 = pd.concat([dataset1["objectid"], dataset1["std_name"],dataset1["FullOwnerAddress"], dataset1["TransportationOrHousing"],
+                          dataset1["owner_addr"],dataset1["owner_city"],dataset1["owner_stat"],dataset1['matchAgencyList']],axis=1)
     res=dataset2.merge(dataset1, on="objectid", how="outer")
     res.to_csv("./result/mergedDataset.csv",index=False)
-    print("---------------------")
-    print(res.shape)
-    print(res.columns.values)
-    # print("nan values",res["mapc_id"].isna())
+
+
 
 
 def main():
-    data=readfile("original_luc_gt_909.csv")
-    print("finished reading data")
+    # data=readfile("original_luc_gt_909.csv")
+    # print("finished reading data")
+    #
+    # streets=sort_streets(data)
+    # print("finished sorted street")
+    #
+    # data=compareOwnerNames(streets)
+    # print("finished comparing owner names")
+    #
+    # matchAgencyNames("MassGovernmentAgencyList.csv",data)
 
-    streets=sort_streets(data)
-    print("finished sorted street")
-
-    data=compareOwnerNames(streets)
-    print("finished comparing owner names")
-
-    matchAgencyNames("MassGovernmentAgencyList.csv",data)
-
-
-    mergeDatasetWithOtherTeam()
+    mergeFile("usable_state_land.csv","mergedDataset.csv")
+    # mergeDatasetWithOtherTeam()
 
 main()

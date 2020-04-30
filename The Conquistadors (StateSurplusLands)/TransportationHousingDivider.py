@@ -1,8 +1,10 @@
 import pandas as pd
 
+"""check if name belongs to Transportation category"""
 def isTransportation(name):
     return any( (x in name.lower()) for x in ['trans','transit','transportation'])
 
+"""check if name belongs to Housing category"""
 def isHousing(name):
     return any((x in name.lower()) for x in ['house', 'housing'])
 
