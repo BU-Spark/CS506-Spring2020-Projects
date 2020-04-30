@@ -1,0 +1,3 @@
+1. Our team perform data cleaning on the most recent version of the 3-1-1 requests CSV file. Because  this CSV file contains more than 150,000 data entries, with 33 attributes for each data entry, causing this a great obstacle for us to divide the types of data into categories, and further manipulate them within each wards / precincts.  Also, we make use of the types of calls made, and create heatmaps separately for easier visualization for the decision makers to divide labor accordingly to our visual analysis.
+2.  We plan to draw the boundaries in the specific region in order to have a clear perspective and plot different wards/precincts with different colors.
+3. We have issues about how to use GIS.

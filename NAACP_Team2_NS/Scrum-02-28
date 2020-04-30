@@ -1,0 +1,20 @@
+                                                      Scrum Report, Feb 28
+                                        Team Members - Shubhangi Jain, Nada Shalash
+
+Work Completed:
+
+1. We aimed to find the sub-neighborhoods in Suffolk County and the population in these neighborhoods by race. The major division for the race is the white and black communities. 
+2. To approach this target, we scraped the data from the census tract list available on the American FactFinder. It holds the previous years’ census tract records for all the states and counties in the USA.
+3. As a team, we scraped 100+ census tract records from the above data source into the spreadsheet. As part of data scraping, we collected population numbers for various races recorded in these tracts. 
+
+Next Week Target:
+1. We are to going to collect the past 5 years (January 1, 2014 - December 31, 2018) of news articles from the Boston Herald newspaper. 
+2. Review these articles to find a reference to Black people and Black neighborhoods. 
+3. The motive behind this to understand how the black neighborhood and black communities are cited in the news reported. 
+
+Difficulties Faced:
+1. It took some time for everyone involved in the project to figure out what should be the approach to find the sub-neighborhoods and race division in these neighborhoods. Until now all the work done to analyze reports mentioning the black community was at the neighborhood level. 
+2. We are down from 4 people to 2 people. One of the team members (Krishna Chaitanya:pallekc@bu.edu) dropped the course. Another team member (Sabrina: sabrinaa@bu.edu) got dropped from the course as her waitlist didn’t clear. It will be really helpful if we can have one more person on the team. 
+
+
+

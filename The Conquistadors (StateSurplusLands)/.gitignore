@@ -105,6 +105,7 @@ venv.bak/
 
 # IDE/Code editor settings directories
 .vscode/
+
 .idea/
 
 data/original.csv
@@ -113,3 +114,9 @@ env/*
 
 config/
 data/
+
+.idea/.DS_Store
+Dolfi Ruiz Kuckes Nguyen- Informants/scripts/.project
+Dolfi Ruiz Kuckes Nguyen- Informants/scripts/.pydevproject
+.DS_Store
+

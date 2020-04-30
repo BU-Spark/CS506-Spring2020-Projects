@@ -1,0 +1,38 @@
+Deliverable 1
+Team: Brandon Im, Sandy Seedhom, Laura Reeve, Nick Cheng-Yen Huang
+
+Goals: 
+
+- Extract government salary data for our cities, extract police data from there, and then compare with the decertifications list.
+
+We used govsals.py to scrape the relevant pages from govsalaries.com for public salary info in Worcester, Lowell, Quincy, and New Bedford, dumping each into it's own csv file. After this, we are going to parse the data to leave only the relevant rows (police salaries). 
+
+
+Difficulties: 
+
+- Couldn't find any salaries for Fall River other than school district salaries.
+
+- One difficult aspect is fire dept. data -- it oftentimes uses the same position names as the police department (ex. Lieutenant, Captain, etc.). We will spend more time trying to ensure that we aren't missing any positions or including irrelevant positions down the road. We have some ideas of how to process the data more efficiently and will spend some time working on this.
+
+- Some of the city data had "N/A" for position.
+
+
+Accomplished:
+
+- Extracted the data from govsalaries and formatted it into CSV files to make it easier for us to work with.
+
+- Began parsing data to only include entries that are relevant (i.e., police force data).
+
+- Began writing code to cross-reference the govsalaries data with the decertification data from USA today. We will continue to do this and run scripts on each dataset over the next week.
+
+
+Goals for upcoming week:
+
+- Find and extract data for town of Fall River.
+
+- Parse decertification list to only include police force data.
+
+- Continue to process data that we have and check it against decert list.
+
+- Create file for all entries that match (i.e., policeman decertified, still registered) and then check to ensure that they are the same person.
+

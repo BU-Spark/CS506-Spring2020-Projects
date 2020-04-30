@@ -1,0 +1,1 @@
+1. Progress this weekFinish Labeling data from twitter by analyzing their attitude toward the company (either positive or negative).2. Plan for next weekOur plan for next week is collecting data from Facebook.
