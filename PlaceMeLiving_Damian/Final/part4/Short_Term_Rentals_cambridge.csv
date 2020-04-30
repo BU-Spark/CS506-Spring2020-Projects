@@ -1,0 +1,844 @@
+ID,Issue Date,Status,Location,Latitude,Longitude,Short Term Rental Type,Property Type,Property Type Additional Description,Condo Association,Total Bedrooms,Rented Bedrooms,Maximum Renter Capacity,Kitchen,Bathrooms,Airbnb,HomeAway,FlipKey,VRBO,Craigslist,Couch Surfing,Boston Rentals,Other,Other Platform Descriptions,All Rental Services
+13727,March 27 2018,Complete,"65 Pearl St
+Cambridge, MA 02139
+(42.363228, -71.104202)",42.3633,-71.1043,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,4,Yes,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+14766,April 26 2018,Complete,"34 Essex St
+Cambridge, MA 02139
+(42.366748, -71.101654)",42.3667,-71.1016,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13941,January 13 2020,Complete,"24 Corporal Mcternan St
+Cambridge, MA 02139
+(42.361299, -71.108347)",42.3612,-71.1083,This application is for an OPERATOR-OCCUPIED short-term rental,Other,"Park View Cooperative is a 12 unit cooperative with 2 entrances. 6 of the units are 1 bedroom, including mine. 4 of the units are 1.5 bedroom units and the remaining 2 units are 2 bedroom",No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+54029,November 27 2019,Complete,"152 Berkshire St
+Cambridge, MA 02141
+(42.372124, -71.089837)",42.3722,-71.0897,This application is for an OPERATOR-OCCUPIED short-term rental,Other,The unit is one of approximately 30 units in the condo association.,Yes,1,1,4,Yes,1,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+46488,July 09 2019,Complete,"26 Sacramento St
+Cambridge, MA 02138
+(42.382554, -71.117114)",42.3825,-71.1172,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,4,6,Yes,2,TRUE,,,,,,,,,Airbnb
+11734,March 26 2018,Complete,"31 Inman St
+Cambridge, MA 02139
+(42.368168, -71.10424)",42.3682,-71.1043,This application is for an OWNER-OCCUPIED short-term rental,Two-family dwelling,,No,4,3,6,No,2,TRUE,,,,,,,,,Airbnb
+13880,May 22 2018,Complete,"2 Washington Ct
+Cambridge, MA 02139
+(42.365517, -71.098163)",42.3656,-71.0982,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,Yes,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+15249,April 29 2019,Complete,"32 Suffolk St
+Cambridge, MA 02139
+(42.366383, -71.100068)",42.3663,-71.1001,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,4,2,4,No,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+14033,June 25 2018,Complete,"84 Thorndike St
+Cambridge, MA 02141
+(42.369879, -71.081958)",42.3698,-71.082,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,4,3,6,Yes,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+28660,January 24 2019,Complete,"305 Washington St
+Cambridge, MA 02139
+(42.365251, -71.098097)",42.3653,-71.0981,This application is for an OPERATOR-OCCUPIED short-term rental,Other,6 unit apartment building,No,3,2,3,Yes,1,TRUE,,,,,,,,,Airbnb
+12092,March 25 2019,Complete,"14 Lee St
+Cambridge, MA 02139
+(42.368375, -71.107202)",42.3683,-71.1071,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14635,April 29 2019,Complete,"117 Trowbridge St
+Cambridge, MA 02138
+(42.376873, -71.10957)",42.3769,-71.1097,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,3,4,Yes,3,TRUE,,,,,,,,,Airbnb
+53615,November 04 2019,Complete,"109 Pleasant St
+Cambridge, MA 02139
+(42.361433, -71.11127)",42.3614,-71.1114,This application is for an OPERATOR-OCCUPIED short-term rental,Other,8-unit townhouses,Yes,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+62160,January 28 2020,Complete,"86 Sciarappa St
+Cambridge, MA 02141
+(42.369566, -71.081877)",42.3696,-71.0818,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,1,1,Yes,2,TRUE,,,,,,,,,Airbnb
+18635,December 11 2019,Complete,"199 Mt Auburn St
+Cambridge, MA 02138
+(42.374609, -71.129086)",42.3747,-71.1291,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,7,Yes,1,TRUE,,,,,,,,,Airbnb
+12127,March 26 2018,Complete,"50 Inman St
+Cambridge, MA 02139
+(42.369678, -71.103204)",42.3697,-71.1031,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+62555,January 10 2020,Complete,"69 Vassal Ln
+Cambridge, MA 02138
+(42.382826, -71.136052)",42.3829,-71.1359,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,Yes,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+13672,March 28 2018,Complete,"346 Washington St
+Cambridge, MA 02139
+(42.365528, -71.099197)",42.3655,-71.0992,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,4,Yes,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+14784,May 18 2018,Complete,"57 Rice St
+Cambridge, MA 02140
+(42.394324, -71.129571)",42.3945,-71.1297,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,2 unit condo association,Yes,5,1,2,No,1,TRUE,,,,,,,,,Airbnb
+14868,April 19 2018,Complete,"404-A Broadway
+Cambridge, MA 02139
+(42.371998, -71.1078)",42.3719,-71.1079,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15495,May 21 2019,Complete,"112 Prospect St
+Cambridge, MA 02139
+(42.367818, -71.102077)",42.3678,-71.1019,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Attached Single Family.&nbsp; Separate owner on other side of building.,No,6,3,6,No,2,,,,,,,,TRUE,website,website
+16006,November 25 2019,Complete,"1531 Cambridge St
+Cambridge, MA 02139
+(42.374346, -71.105722)",42.3745,-71.1057,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,9,3,6,Yes,3,TRUE,,,,,,,,,Airbnb
+13530,March 20 2019,Complete,"48 Berkshire St
+Cambridge, MA 02141
+(42.369553, -71.091315)",42.3695,-71.0912,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,2,4,Yes,1,TRUE,TRUE,,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+13327,July 15 2019,Complete,"11 Miller Ave
+Cambridge, MA 02140
+(42.392468, -71.120672)",42.3925,-71.1207,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,2,No,1,TRUE,,,,,,,,,Airbnb
+13493,March 26 2018,Complete,"6 Hurlbut St
+Cambridge, MA 02138
+(42.383613, -71.120481)",42.3836,-71.1204,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,1,1,No,1,TRUE,,,,,,,,,Airbnb
+13330,March 26 2019,Complete,"12 Harrington Rd
+Cambridge, MA 02140
+(42.396669, -71.131531)",42.3967,-71.1316,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,1,1,Yes,2,TRUE,,,,,,,,,Airbnb
+59484,November 07 2019,Complete,"11 Sargent St
+Cambridge, MA 02140
+(42.392712, -71.131983)",42.3927,-71.1321,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,3,6,Yes,2,TRUE,TRUE,,,,,TRUE,,,"Airbnb, HomeAway, Boston_Rentals"
+63423,January 17 2020,Complete,"311 Pearl St
+Cambridge, MA 02139
+(42.357029, -71.110918)",42.3572,-71.1109,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13637,March 30 2018,Complete,"41 Pleasant St
+Cambridge, MA 02139
+(42.364207, -71.108007)",42.3643,-71.1081,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,7,Yes,2,TRUE,,,,,,,,,Airbnb
+13177,March 26 2020,Complete,"105 Chestnut St
+Cambridge, MA 02139
+(42.356914, -71.109298)",42.357,-71.1092,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15955,May 29 2018,Complete,"28 Andrew St
+Cambridge, MA 02139
+(42.361383, -71.112144)",42.3614,-71.112,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13985,July 05 2019,Complete,"34 Prentiss St
+Cambridge, MA 02140
+(42.384392, -71.117088)",42.3843,-71.1171,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+14650,April 30 2019,Complete,"562 Franklin St
+Cambridge, MA 02139
+(42.368095, -71.112102)",42.3679,-71.1122,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,2,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+17697,August 13 2018,Complete,"23 Sullivan Rd
+Cambridge, MA 02138
+(42.3758, -71.153812)",42.3758,-71.1537,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,Yes,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+15004,May 29 2018,Complete,"30 Andrew St
+Cambridge, MA
+(42.361743, -71.111718)",42.3614,-71.112,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,2,2,Yes,2,TRUE,,,,,,,,,Airbnb
+16228,July 09 2019,Complete,"55 Belmont St
+Cambridge, MA 02138
+(42.374955, -71.152338)",42.3751,-71.1523,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13313,March 26 2018,Complete,"149 Norfolk St
+Cambridge, MA 02139
+(42.367815, -71.099504)",42.3679,-71.0996,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,1,2,No,1,TRUE,,,,,,,,,Airbnb
+13577,March 26 2018,Complete,"113 Pleasant St
+Cambridge, MA 02139
+(42.36121, -71.111526)",42.3614,-71.1115,This application is for an OPERATOR-OCCUPIED short-term rental,Other,8 unit condo association. All 8 units are townhouses and all are owner occupied.,Yes,3,2,4,Yes,3.5,TRUE,,,,,,,,,Airbnb
+13896,April 08 2019,Complete,"427 Putnam Ave
+Cambridge, MA 02139
+(42.359459, -71.111647)",42.3594,-71.1118,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,5,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14863,July 11 2018,Complete,"95 Jackson St
+Cambridge, MA 02140
+(42.396167, -71.135283)",42.3962,-71.1352,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,1,6,Yes,1,,,,,,,,TRUE,Colbyco Vacation Rentals,Colbyco Vacation Rentals
+33443,March 27 2019,Complete,"10 Springfield St
+Cambridge, MA 02139
+(42.374033, -71.100436)",42.374,-71.1005,This application is for an OPERATOR-OCCUPIED short-term rental,Other,mixed use building with two residential units,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13673,March 28 2018,Complete,"344 Washington St
+Cambridge, MA 02139
+(42.36552, -71.099169)",42.3655,-71.0992,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+13791,February 03 2020,Complete,"13 Fulkerson St
+Cambridge, MA 02141
+(42.371475, -71.086994)",42.3715,-71.0871,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+59653,January 21 2020,Complete,"60 Rice St
+Cambridge, MA 02140
+(42.394229, -71.12973)",42.3942,-71.1296,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,2,4,No,2,TRUE,,,,,,,,,Airbnb
+13348,March 25 2020,Complete,"356-A Concord Ave
+Cambridge, MA 02138
+(42.384863, -71.136407)",42.3848,-71.1365,This application is for an OWNER-ADJACENT short-term rental,Single-family detached dwelling,,No,1,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+15162,April 10 2019,Complete,"30 Carver St
+Cambridge, MA 02138
+(42.382189, -71.112904)",42.3823,-71.1128,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,5,Yes,2,TRUE,,,,,,,,,Airbnb
+15661,March 18 2019,Complete,"12 Tremont St
+Cambridge, MA 02139
+(42.369617, -71.099447)",42.3696,-71.0993,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,TRUE,,,,,,,"Airbnb, FlipKey"
+23373,November 13 2018,Complete,"1 Pine St
+Cambridge, MA 02139
+(42.364066, -71.098362)",42.3641,-71.0985,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2.5,2,4,Yes,1.5,TRUE,TRUE,,TRUE,,,,TRUE,Sabbatical Homes,"Airbnb, HomeAway, VRBO, Sabbatical Homes"
+59384,November 26 2019,Complete,"235 Brookline St
+Cambridge, MA 02139
+(42.358314, -71.107038)",42.3584,-71.1071,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,3,4,Yes,1,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+13965,April 05 2019,Complete,"55 Maple Ave
+Cambridge, MA 02139
+(42.373696, -71.103668)",42.3738,-71.1038,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,house w/2 condos,Yes,4,2,3,No,1,TRUE,,,,,,,,,Airbnb
+49891,September 11 2019,Complete,"47 Fairmont St
+Cambridge, MA 02139
+(42.362088, -71.111489)",42.3622,-71.1115,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14643,July 11 2018,Complete,"149 Walden St
+Cambridge, MA 02140
+(42.387366, -71.12771)",42.3874,-71.1278,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,2,3,Yes,1,TRUE,,,,,,,,,Airbnb
+13862,March 19 2019,Complete,"81 Kirkland St
+Cambridge, MA 02138
+(42.377864, -71.108306)",42.378,-71.1084,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,1,2,No,1,TRUE,,,,,,,,,Airbnb
+14807,April 26 2018,Complete,"322 Pearl St
+Cambridge, MA 02139
+(42.356877, -71.111068)",42.3569,-71.111,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,3,No,1,TRUE,,,,,,,,,Airbnb
+13682,April 03 2018,Complete,"80 Normandy Ave
+Cambridge, MA 02138
+(42.394116, -71.155588)",42.3942,-71.1556,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,1,TRUE,,,TRUE,,,,,,"Airbnb, VRBO"
+30910,February 06 2019,Complete,"116 Henry St
+Cambridge, MA 02139
+(42.356637, -71.110903)",42.3566,-71.111,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,4,8,Yes,2,TRUE,,,,,,,,,Airbnb
+14729,April 29 2019,Complete,"283 Sidney St
+Cambridge, MA 02139
+(42.355668, -71.107766)",42.3557,-71.1078,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13885,April 13 2020,Complete,"12 Tremont St
+Cambridge, MA 02139
+(42.369617, -71.099447)",42.3696,-71.0993,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,TRUE,,,,,,,"Airbnb, FlipKey"
+14730,April 09 2019,Complete,"620 Cambridge St
+Cambridge, MA 02141
+(42.371875, -71.086571)",42.3718,-71.0867,This application is for an OPERATOR-OCCUPIED short-term rental,Other,4 units dwelling owned by same owner,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14035,April 05 2018,Complete,"80 Sixth St
+Cambridge, MA 02141
+(42.369065, -71.085406)",42.369,-71.0853,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,3,Yes,1,TRUE,,,,,,,,,Airbnb
+50860,July 15 2019,Complete,"70 Reed St
+Cambridge, MA 02140
+(42.395423, -71.132141)",42.3954,-71.1322,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+11735,March 26 2018,Complete,"31-A Inman St
+Cambridge, MA 02139
+(42.368165, -71.104242)",42.3682,-71.1043,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+62029,January 10 2020,Complete,"28 Royal Ave
+Cambridge, MA 02138
+(42.382165, -71.132477)",42.3822,-71.1324,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13751,June 24 2019,Complete,"161 Raymond St
+Cambridge, MA 02140
+(42.388156, -71.127985)",42.3882,-71.1279,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,1,4,Yes,1,TRUE,,,,,,,,www.sabbaticalhomes.com,Airbnb
+20171,January 03 2020,Complete,"195 Grove St
+Cambridge, MA 02138
+(42.383593, -71.158634)",42.3838,-71.1584,This application is for an OWNER-ADJACENT short-term rental,Single-family detached dwelling,,No,8,2,5,Yes,7,TRUE,,,,,,,,,Airbnb
+46428,May 16 2019,Complete,"195 Erie St
+Cambridge, MA 02139
+(42.36024, -71.107973)",42.3603,-71.1079,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+12096,March 19 2019,Complete,"13 Tremont St
+Cambridge, MA 02139
+(42.369397, -71.099601)",42.3695,-71.0997,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,6,Yes,2,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,"Bed and Breakfast Associate Bay Colony, bnbboston.com","Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals, Bed and Breakfast Associate Bay Colony, bnbboston.com"
+53564,August 26 2019,Complete,"9 Remington St
+Cambridge, MA 02138
+(42.371153, -71.113432)",42.3712,-71.1135,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,2,2,4,No,1,TRUE,,,,,,,,,Airbnb
+13681,March 26 2020,Complete,"74 Ellery St
+Cambridge, MA 02138
+(42.373139, -71.109454)",42.3731,-71.1093,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,4,3,6,No,3,,,,,,,,TRUE,"eviivo, Parkside (GoDaddy Host) TripAdvisor, Bay Colony Associates, Expedia, Hotel.com","eviivo, Parkside (GoDaddy Host) TripAdvisor, Bay Colony Associates, Expedia, Hotel.com"
+14591,March 15 2019,Complete,"93 Third St
+Cambridge, MA 02141
+(42.36992, -71.080102)",42.37,-71.0802,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+62339,March 09 2020,Complete,"81 Sixth St
+Cambridge, MA 02141
+(42.368823, -71.085461)",42.3688,-71.0855,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,2,9,Yes,1,TRUE,,,,,,,,,Airbnb
+13863,April 16 2019,Complete,"20 Forest St
+Cambridge, MA 02140
+(42.3852, -71.116461)",42.3851,-71.1165,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,3,2,2,Yes,2,TRUE,,,,,,,,,Airbnb
+18602,January 06 2020,Complete,"191 Mt Auburn St
+Cambridge, MA 02138
+(42.374587, -71.128748)",42.3747,-71.1287,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+30438,April 16 2019,Complete,"13 Hunting St
+Cambridge, MA 02141
+(42.373127, -71.091044)",42.3731,-71.0911,This application is for an OPERATOR-OCCUPIED short-term rental,Other,There are 6 units in the building,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13943,April 10 2018,Complete,"340 Putnam Ave
+Cambridge, MA 02139
+(42.361439, -71.113402)",42.3616,-71.1133,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+59485,November 07 2019,Complete,"13 Sargent St
+Cambridge, MA 02140
+(42.392712, -71.131983)",42.3927,-71.1321,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,2,4,No,2,TRUE,TRUE,,,,,TRUE,,,"Airbnb, HomeAway, Boston_Rentals"
+13347,March 27 2018,Complete,"48 Seventh St
+Cambridge, MA 02141
+(42.371433, -71.085608)",42.3714,-71.0855,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,2,3,Yes,1,TRUE,,,,,,,,,Airbnb
+13495,March 27 2018,Complete,"133 Chestnut St
+Cambridge, MA 02139
+(42.35736, -71.110063)",42.3574,-71.1099,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,3,7,Yes,2.5,TRUE,,,,,,,,,Airbnb
+15094,May 15 2019,Complete,"36-A Dana St
+Cambridge, MA 02138
+(42.371689, -71.109027)",42.3716,-71.109,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+67341,March 04 2020,Complete,"6 Forest St
+Cambridge, MA 02140
+(42.385305, -71.118277)",42.3852,-71.1183,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,3,6,No,1,TRUE,,,,,,,,,Airbnb
+13728,March 27 2018,Complete,"63 Pearl St
+Cambridge, MA 02139
+(42.363246, -71.104182)",42.3634,-71.1043,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,2,Yes,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+17249,July 12 2019,Complete,"73 Plymouth St
+Cambridge, MA 02141
+(42.368985, -71.093748)",42.3691,-71.0938,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,3,6,Yes,1,TRUE,,,,,,,,,Airbnb
+13319,March 15 2019,Complete,"11 Market St
+Cambridge, MA 02139
+(42.366969, -71.094108)",42.3671,-71.094,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,1,1,3,Yes,1,,,,,,,,TRUE,Bed &amp; Breakfast Associates,Bed &amp; Breakfast Associates
+14764,March 25 2019,Complete,"372-A Broadway
+Cambridge, MA 02139
+(42.370902, -71.105017)",42.3708,-71.1051,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,6,3,8,Yes,1.5,TRUE,,,,,,,,,Airbnb
+15178,May 02 2018,Complete,"305 Washington St
+Cambridge, MA 02139
+(42.365251, -71.098097)",42.3653,-71.0981,This application is for an OPERATOR-OCCUPIED short-term rental,Other,6 family apartment building&nbsp;,No,3,2,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13415,April 09 2019,Complete,"250 Broadway
+Cambridge, MA 02139
+(42.367356, -71.096038)",42.3673,-71.0961,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+13895,November 21 2019,Complete,"2 Lamson Pl
+Cambridge, MA 02139
+(42.367181, -71.101134)",42.3672,-71.1011,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+46141,July 03 2019,Complete,"44-A Cottage St
+Cambridge, MA 02139
+(42.363612, -71.107596)",42.3635,-71.1078,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+55534,October 24 2019,Complete,"28 Pleasant St
+Cambridge, MA 02139
+(42.364657, -71.107469)",42.3646,-71.1074,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,2,2,Yes,1,TRUE,,,,,,,,,Airbnb
+66523,March 12 2020,Complete,"62 Granville Rd
+Cambridge, MA 02138
+(42.383359, -71.135933)",42.3834,-71.1358,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,Yes,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13696,March 26 2018,Complete,"284 Harvard St
+Cambridge, MA 02139
+(42.369275, -71.104516)",42.3692,-71.1045,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Multi-dwelling of a 37-unit Condominium,Yes,3,2,2,Yes,2,TRUE,,,,,,,,,Airbnb
+13904,August 06 2018,Complete,"63 Sacramento St
+Cambridge, MA 02138
+(42.382595, -71.113622)",42.3827,-71.1136,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,4,10,Yes,3,TRUE,,,,,,,,,Airbnb
+31824,June 06 2019,Complete,"18 Plymouth St
+Cambridge, MA 02141
+(42.368631, -71.091404)",42.3686,-71.0915,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14917,April 04 2019,Complete,"272 Huron Ave
+Cambridge, MA 02138
+(42.381498, -71.134846)",42.3814,-71.1348,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+12123,May 28 2019,Complete,"70 Griswold St
+Cambridge, MA 02138
+(42.392806, -71.156051)",42.3928,-71.1559,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,1,1,Yes,1,TRUE,,,,,,,,,Airbnb
+16221,December 04 2018,Complete,"285 Third St
+Cambridge, MA 02142
+(42.364905, -71.082869)",42.365,-71.083,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Single-family apartment,No,1.5,1.5,1,Yes,1,TRUE,,,,,,,,,Airbnb
+63143,January 16 2020,Complete,"351 Pearl St
+Cambridge, MA 02139
+(42.356217, -71.111784)",42.3563,-71.1119,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13655,February 21 2020,Complete,"17 Traymore St
+Cambridge, MA 02140
+(42.384115, -71.115053)",42.3841,-71.1151,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+15230,June 11 2018,Complete,"94 Reed St
+Cambridge, MA 02140
+(42.395977, -71.132169)",42.396,-71.1323,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,2,2,Yes,2,TRUE,,,,,,,,,Airbnb
+14778,January 16 2020,Complete,"130 Oxford St
+Cambridge, MA 02140
+(42.385038, -71.116146)",42.3851,-71.1159,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,No,1,TRUE,,,,,,,,,Airbnb
+13972,April 03 2018,Complete,"71 Spring St
+Cambridge, MA 02141
+(42.369073, -71.081187)",42.3691,-71.0812,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,4,No,1,TRUE,,,,,,,,,Airbnb
+58641,January 22 2020,Complete,"7 Murdock St
+Cambridge, MA 02139
+(42.371592, -71.098701)",42.3716,-71.0988,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,3,8,Yes,3,TRUE,,,,,,,,,Airbnb
+14648,May 23 2018,Complete,"41 Magnolia Ave
+Cambridge, MA 02138
+(42.376699, -71.106198)",42.3766,-71.1062,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+31805,February 26 2020,Complete,"100 Thorndike St
+Cambridge, MA 02141
+(42.369941, -71.082459)",42.3699,-71.0825,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+13781,May 21 2019,Complete,"79 Norfolk St
+Cambridge, MA 02139
+(42.366163, -71.100654)",42.3662,-71.1008,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,4,Yes,2.5,TRUE,,,,,,,,,Airbnb
+17465,July 17 2018,Complete,"16 Surrey St
+Cambridge, MA 02138
+(42.368725, -71.114153)",42.3687,-71.1142,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,4,Yes,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals, "
+23961,January 27 2020,Complete,"111 1 2 Inman St
+Cambridge, MA 02139
+(42.372491, -71.101246)",42.3726,-71.1013,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+13901,May 24 2019,Complete,"153 Richdale Ave
+Cambridge, MA 02140
+(42.389228, -71.12675)",42.3893,-71.1267,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+67586,March 02 2020,Complete,"234 Allston St
+Cambridge, MA 02139
+(42.359611, -71.109901)",42.3595,-71.1099,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,2,4,No,2,,,,,,,,,,
+15365,May 11 2018,Complete,"10 Notre Dame Ave
+Cambridge, MA 02140
+(42.391781, -71.13113)",42.3917,-71.1312,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+12922,March 26 2018,Complete,"99 Thorndike St
+Cambridge, MA 02141
+(42.369955, -71.082571)",42.37,-71.0826,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14710,April 06 2018,Complete,"44 Pleasant St
+Cambridge, MA 02139
+(42.363913, -71.108352)",42.3638,-71.1083,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,2,4,Yes,3,TRUE,TRUE,,,TRUE,,,,,"Airbnb, HomeAway, Craigslist"
+13529,March 20 2019,Complete,"48 Berkshire St
+Cambridge, MA 02141
+(42.369553, -71.091315)",42.3695,-71.0912,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,2,4,Yes,1,TRUE,TRUE,TRUE,,TRUE,,TRUE,,,"Airbnb, HomeAway, FlipKey, Craigslist, Boston_Rentals"
+14739,May 15 2018,Complete,"30 Agassiz St
+Cambridge, MA 02138
+(42.385257, -71.121844)",42.3853,-71.1217,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,3,8,Yes,2.5,,,,TRUE,,,,,,VRBO
+13748,April 10 2019,Complete,"118 Kinnaird St
+Cambridge, MA 02139
+(42.367732, -71.112939)",42.3678,-71.113,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,4,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14667,July 13 2019,Complete,"43 Kinnaird St
+Cambridge, MA 02139
+(42.366115, -71.109191)",42.366,-71.1093,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,2,TRUE,,,,,,,,,Airbnb
+48849,June 20 2019,Complete,"1168 Massachusetts Ave
+Cambridge, MA 02138
+(42.371474, -71.114684)",42.3714,-71.1147,This application is for an OPERATOR-OCCUPIED short-term rental,Other,apartment in a condo,Yes,2,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13963,March 15 2019,Complete,"8 King Pl
+Cambridge, MA 02139
+(42.37083, -71.101863)",42.3708,-71.1019,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Single family attached dwelling.,No,3,1,2,No,1,TRUE,,,,,,,,,Airbnb
+51368,July 30 2019,Complete,"46 Fayette St
+Cambridge, MA 02139
+(42.372945, -71.102891)",42.3729,-71.1028,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+11739,March 16 2020,Complete,"12 Douglass St
+Cambridge, MA 02139
+(42.364462, -71.100604)",42.3644,-71.1005,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,5,Yes,2,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+62074,December 19 2019,Complete,"207 Harvard St
+Cambridge, MA 02139
+(42.367207, -71.098498)",42.3673,-71.0984,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+20166,September 20 2018,Complete,"21 Parker St
+Cambridge, MA 02138
+(42.379941, -71.128097)",42.38,-71.1282,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,TRUE,Harvard Off Campus Housing,"Airbnb, Harvard Off Campus Housing"
+15206,June 14 2019,Complete,"20 Greenough Ave
+Cambridge, MA 02139
+(42.373522, -71.10622)",42.3735,-71.1063,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13366,April 03 2018,Complete,"7 Wendell St
+Cambridge, MA 02138
+(42.381663, -71.118694)",42.3818,-71.1187,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Apartment&nbsp;,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13432,March 19 2019,Complete,"237 Norfolk St
+Cambridge, MA 02139
+(42.369988, -71.098146)",42.37,-71.0983,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,2,No,1,TRUE,,,,,,,,,Airbnb
+14815,July 19 2019,Complete,"106 Harvey St
+Cambridge, MA 02140
+(42.397364, -71.133539)",42.3972,-71.1335,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,1,2,No,1,TRUE,,,,,,,,,Airbnb
+61570,January 28 2020,Complete,"877 Cambridge St
+Cambridge, MA 02141
+(42.372514, -71.091496)",42.3726,-71.0915,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13569,July 11 2019,Complete,"26 Tremont St
+Cambridge, MA 02139
+(42.370403, -71.098908)",42.3704,-71.0988,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,5,Yes,1,TRUE,,,,,,,,,Airbnb
+15115,August 14 2018,Complete,"60 Rice St
+Cambridge, MA 02140
+(42.394229, -71.12973)",42.3942,-71.1296,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,1,1,No,1,TRUE,,,,,,,,,Airbnb
+13695,March 15 2019,Complete,"1 Newport Rd
+Cambridge, MA 02140
+(42.38579, -71.11865)",42.3857,-71.1188,This application is for an OPERATOR-OCCUPIED short-term rental,Other,42 unit condominium building,Yes,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15706,May 16 2019,Complete,"145 Bishop Allen Dr
+Cambridge, MA 02139
+(42.367054, -71.104308)",42.367,-71.1041,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,3,7,Yes,2,TRUE,,,,,,,,,Airbnb
+13285,March 25 2020,Complete,"157 Raymond St
+Cambridge, MA 02140
+(42.38803, -71.127912)",42.3881,-71.1278,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,3,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14824,May 24 2018,Complete,"29 Crescent St
+Cambridge, MA 02138
+(42.383012, -71.115205)",42.3831,-71.1151,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+15578,June 04 2019,Complete,"148 Berkshire St
+Cambridge, MA 02141
+(42.372124, -71.089837)",42.3721,-71.0898,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Multi-unit building more than 4 units owned by different owners,Yes,1,1,3,Yes,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+16791,July 05 2018,Complete,"1 Pine St
+Cambridge, MA 02139
+(42.364066, -71.098362)",42.3641,-71.0985,This application is for an OWNER-ADJACENT short-term rental,Other,<undefined>Single family with legal accessory unit<br></undefined>,No,1,1,2,Yes,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+13321,April 04 2019,Complete,"125 Fresh Pond Pkwy
+Cambridge, MA 02138
+(42.380606, -71.144629)",42.3806,-71.1444,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,5,5,14,Yes,2,TRUE,,,,,,,,,Airbnb
+13547,March 27 2020,Complete,"55 Mt Pleasant St
+Cambridge, MA 02140
+(42.388135, -71.125277)",42.3881,-71.1253,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+13680,March 26 2018,Complete,"4 Humboldt St
+Cambridge, MA 02138
+(42.384989, -71.120773)",42.3851,-71.1207,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14608,May 15 2019,Complete,"81 Pine St
+Cambridge, MA 02139
+(42.36545, -71.097825)",42.3654,-71.098,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Multi-family dwelling 6 units,Yes,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+19477,October 29 2019,Complete,"145 Bishop Allen Dr
+Cambridge, MA 02139
+(42.367054, -71.104308)",42.367,-71.1041,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+59596,November 06 2019,Complete,"12 Sargent St
+Cambridge, MA 02140
+(42.392794, -71.131987)",42.3928,-71.1319,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13334,March 23 2020,Complete,"50 Cedar St
+Cambridge, MA 02140
+(42.394722, -71.130823)",42.3947,-71.1307,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,Yes,3,2,4,Yes,2,TRUE,,,,,,,TRUE,MisterBandB,"Airbnb, MisterBandB"
+13733,April 25 2018,Complete,"10 Antrim St
+Cambridge, MA 02139
+(42.370722, -71.103521)",42.3706,-71.1034,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,3,TRUE,TRUE,TRUE,TRUE,,,,,,"Airbnb, HomeAway, FlipKey, VRBO"
+64188,March 05 2020,Complete,"64 Winter St
+Cambridge, MA 02141
+(42.372629, -71.081379)",42.3726,-71.0813,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+12897,August 19 2019,Complete,"20 Maple Ave
+Cambridge, MA 02139
+(42.372395, -71.104781)",42.3723,-71.1046,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Four condo unit building of which I own two of the units.<br>,Yes,2,1,2,Yes,1,TRUE,,,TRUE,,,,TRUE,I have had an agent for these nine years.,"Airbnb, VRBO, I have had an agent for these nine years."
+13659,March 16 2020,Complete,"10 Shepard St
+Cambridge, MA 02138
+(42.381578, -71.121129)",42.3815,-71.1211,This application is for an OPERATOR-OCCUPIED short-term rental,Other,8 unit condominium building<br>,Yes,2,1,1,Yes,1,TRUE,,,,,,,,,Airbnb
+14799,August 19 2019,Complete,"88 Hancock St
+Cambridge, MA 02139
+(42.368793, -71.108277)",42.3688,-71.1082,This application is for an OPERATOR-OCCUPIED short-term rental,Other,"We live in an 18 unit building that was built in 1894. Some owner occupied, some rentals.&nbsp;",Yes,2,1,2,No,1,TRUE,,,,,,,,,Airbnb
+13629,March 27 2020,Complete,"69 Thorndike St
+Cambridge, MA 02141
+(42.369742, -71.080944)",42.3698,-71.081,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,8,Yes,3,,TRUE,,,,,,,,HomeAway
+48329,July 22 2019,Complete,"236 Pearl St
+Cambridge, MA 02139
+(42.359106, -71.108699)",42.3591,-71.1086,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15809,June 29 2018,Complete,"343 Pearl St
+Cambridge, MA 02139
+(42.356315, -71.111672)",42.3564,-71.1117,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13865,May 21 2019,Complete,"174 Hamilton St
+Cambridge, MA 02139
+(42.359662, -71.108413)",42.3596,-71.1084,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+15087,July 05 2019,Complete,"257 Charles St
+Cambridge, MA 02141
+(42.368286, -71.085894)",42.3684,-71.0859,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,1,1,Yes,1,TRUE,,,,,,,,,Airbnb
+16093,October 02 2019,Complete,"64 Granville Rd
+Cambridge, MA 02138
+(42.383357, -71.135933)",42.3834,-71.1358,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,4,2,4,Yes,1,,,,,,,,,,
+15361,August 26 2019,Complete,"87 Fresh Pond Pkwy
+Cambridge, MA 02138
+(42.378794, -71.144185)",42.3789,-71.144,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,5,Yes,1,TRUE,,,TRUE,,,,,,"Airbnb, VRBO"
+13991,March 29 2018,Complete,"89 Washington Ave
+Cambridge, MA 02140
+(42.38648, -71.12382)",42.3864,-71.1239,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,3,6,Yes,3,TRUE,,,,,,,,,Airbnb
+29320,February 01 2019,Complete,"16 Surrey St
+Cambridge, MA 02138
+(42.368725, -71.114153)",42.3687,-71.1142,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,1,4,No,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals"
+13850,April 06 2020,Complete,"160 Fifth St
+Cambridge, MA 02141
+(42.3683, -71.083873)",42.3683,-71.0838,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+43569,May 09 2019,Complete,"12 Leonard Ave
+Cambridge, MA 02139
+(42.375454, -71.105654)",42.3755,-71.1058,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+13755,April 11 2018,Complete,"257 Cambridge St
+Cambridge, MA 02141
+(42.371076, -71.080312)",42.3712,-71.0802,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Owner is operators parent<br>,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+12112,March 26 2018,Complete,"18-A Highland Ave
+Cambridge, MA 02139
+(42.372253, -71.106333)",42.3721,-71.1059,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Single family attached house; one half of carriage house,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+52148,July 31 2019,Complete,"18 Farwell Pl
+Cambridge, MA 02138
+(42.374992, -71.120872)",42.3749,-71.1208,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,No,1,TRUE,,,,,,,,,Airbnb
+13504,March 29 2020,Complete,"67 Clifton St
+Cambridge, MA 02140
+(42.395581, -71.136297)",42.3956,-71.1362,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,5,Yes,2,TRUE,TRUE,TRUE,TRUE,TRUE,,TRUE,,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Boston_Rentals"
+13917,March 25 2019,Complete,"61 Elm St
+Cambridge, MA 02139
+(42.368581, -71.097965)",42.3686,-71.0981,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,3,5,No,2,TRUE,,,,,,,,,Airbnb
+20478,November 14 2019,Complete,"10 Porter St
+Cambridge, MA 02141
+(42.373483, -71.08832)",42.3734,-71.0883,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+63106,January 13 2020,Complete,"13 James Way
+Cambridge, MA 02141
+(42.370223, -71.088787)",42.3701,-71.0888,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Townhouse,No,3,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13956,April 13 2020,Complete,"246 Norfolk St
+Cambridge, MA 02139
+(42.370219, -71.098011)",42.3702,-71.0979,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,5,3,3,Yes,3,TRUE,,,,,,,,,Airbnb
+14776,October 04 2019,Complete,"118 Elm St
+Cambridge, MA 02139
+(42.369823, -71.097249)",42.3698,-71.0972,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,1,1,Yes,1,TRUE,,,,,,,,,Airbnb
+23974,November 18 2019,Complete,"24 Glenwood Ave
+Cambridge, MA 02139
+(42.356955, -71.112224)",42.3569,-71.1123,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+13891,July 02 2019,Complete,"66 Reed St
+Cambridge, MA 02140
+(42.395229, -71.132135)",42.3952,-71.1325,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,2,4,No,1,TRUE,,,,,,,,,Airbnb
+13717,March 25 2020,Complete,"63 Sixth St
+Cambridge, MA 02141
+(42.369703, -71.085258)",42.3698,-71.0854,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,1,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+50059,July 15 2019,Complete,"100 Gore St
+Cambridge, MA 02141
+(42.372053, -71.082284)",42.372,-71.0823,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,5,Yes,2,TRUE,,,,,,,,,Airbnb
+54783,September 09 2019,Complete,"201 Franklin St
+Cambridge, MA 02139
+(42.363426, -71.103339)",42.3636,-71.1032,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,3,No,1,TRUE,,,,,,,,,Airbnb
+14913,June 07 2019,Complete,"114 Harvey St
+Cambridge, MA 02140
+(42.397381, -71.133816)",42.3973,-71.1338,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+17994,August 09 2019,Complete,"63 Magee St
+Cambridge, MA 02139
+(42.365823, -71.11164)",42.3658,-71.1115,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,3,7,Yes,3,TRUE,TRUE,,TRUE,TRUE,,TRUE,,,"Airbnb, HomeAway, VRBO, Craigslist, Boston_Rentals"
+13971,March 30 2018,Complete,"71 Spring St
+Cambridge, MA 02141
+(42.369073, -71.081187)",42.3691,-71.0812,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14713,April 08 2019,Complete,"2 Cottage Ct
+Cambridge, MA 02139
+(42.362393, -71.106066)",42.3622,-71.1058,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,1,2,Yes,1.5,TRUE,,,,,,,,,Airbnb
+31631,February 19 2019,Complete,"78 Spring St
+Cambridge, MA 02141
+(42.369126, -71.08162)",42.369,-71.0816,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,6,Yes,1,TRUE,,,,,,,,,Airbnb
+67901,March 09 2020,Complete,"220 Pearl St
+Cambridge, MA 02139
+(42.359365, -71.108423)",42.3593,-71.1083,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,4,No,1,TRUE,,,,,,,,,Airbnb
+14751,June 11 2018,Complete,"183 Putnam Ave
+Cambridge, MA 02138
+(42.364911, -71.113899)",42.3647,-71.114,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Individual Entrance town house,Yes,4,4,9,Yes,3,TRUE,,,,,,,,,Airbnb
+32062,February 11 2020,Complete,"72 Spring St
+Cambridge, MA 02141
+(42.369093, -71.08135)",42.369,-71.0814,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+11943,March 20 2019,Complete,"13 Hollis St
+Cambridge, MA 02140
+(42.39404, -71.128166)",42.3941,-71.1282,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+62076,December 19 2019,Complete,"207 Harvard St
+Cambridge, MA 02139
+(42.367207, -71.098498)",42.3673,-71.0984,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,3,6,Yes,1,TRUE,,,,TRUE,,,,,"Airbnb, Craigslist"
+50414,July 08 2019,Complete,"406 Franklin St
+Cambridge, MA 02139
+(42.36667, -71.108842)",42.3666,-71.1089,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,5,12,Yes,5,TRUE,,,,,,,,,Airbnb
+13834,August 24 2018,Complete,"124 Auburn St
+Cambridge, MA 02139
+(42.362857, -71.10384)",42.3628,-71.1039,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,2,3,Yes,2,TRUE,,,,,,,,,Airbnb
+15209,June 20 2019,Complete,"1683 Cambridge St
+Cambridge, MA 02138
+(42.375084, -71.111384)",42.3752,-71.1113,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13444,March 31 2020,Complete,"24 Decatur St
+Cambridge, MA 02139
+(42.361196, -71.105658)",42.3611,-71.1057,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,4,8,Yes,3,TRUE,,,,,,,,,Airbnb
+15138,April 16 2019,Complete,"67 Jay St
+Cambridge, MA 02139
+(42.36656, -71.110151)",42.3665,-71.1105,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,6,Yes,2,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+57457,November 05 2019,Complete,"50 Inman St
+Cambridge, MA 02139
+(42.369678, -71.103204)",42.3697,-71.1031,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,2,2,6,Yes,1,TRUE,,,,,,,,,Airbnb
+20621,November 22 2019,Complete,"146 Berkshire St
+Cambridge, MA 02141
+(42.372124, -71.089837)",42.372,-71.0898,This application is for an OPERATOR-OCCUPIED short-term rental,Other,condo in multi-family building,Yes,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13990,April 02 2020,Complete,"333 Mt Auburn St
+Cambridge, MA 02138
+(42.375001, -71.135458)",42.3752,-71.1356,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,No,1,TRUE,,,,,,,,,Airbnb
+14647,March 02 2020,Complete,"16 Lopez Ave
+Cambridge, MA 02141
+(42.368525, -71.079792)",42.3685,-71.0797,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+17468,July 17 2018,Complete,"16 Surrey St
+Cambridge, MA 02138
+(42.368725, -71.114153)",42.3687,-71.1142,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,2,6,Yes,1,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,"Airbnb, HomeAway, FlipKey, VRBO, Craigslist, Couch_Surfing, Boston_Rentals, "
+14804,June 06 2019,Complete,"86 Pine St
+Cambridge, MA 02139
+(42.365499, -71.097807)",42.3655,-71.0977,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13597,June 13 2018,Complete,"75 Plymouth St
+Cambridge, MA 02141
+(42.368986, -71.093742)",42.369,-71.0938,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,5,Yes,1,TRUE,,,,,,,,,Airbnb
+13693,April 22 2019,Complete,"60 Roseland St
+Cambridge, MA 02140
+(42.386687, -71.116705)",42.3866,-71.1168,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,2,4,No,1,TRUE,,,,,,,,,Airbnb
+13295,March 25 2020,Complete,"6 Fairview Ave
+Cambridge, MA 02138
+(42.378998, -71.155439)",42.3789,-71.1554,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+14836,June 13 2019,Complete,"32 Elm St
+Cambridge, MA 02139
+(42.367962, -71.098336)",42.368,-71.0983,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,3,10,Yes,1,TRUE,,,,TRUE,,,,,"Airbnb, Craigslist"
+13900,April 18 2019,Complete,"128 Oxford St
+Cambridge, MA 02140
+(42.38485, -71.116126)",42.3849,-71.1159,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,Yes,2,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+64481,March 18 2020,Complete,"4 Trowbridge Pl
+Cambridge, MA 02138
+(42.372497, -71.111976)",42.3726,-71.1119,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Condo in a high rise building,Yes,2,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+13631,April 06 2018,Complete,"31 Fairmont Ave
+Cambridge, MA 02139
+(42.361718, -71.112584)",42.3617,-71.1126,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13719,March 27 2018,Complete,"64 Willow St
+Cambridge, MA 02141
+(42.371453, -71.092454)",42.3715,-71.0925,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+18429,July 02 2019,Complete,"249 Lexington Ave
+Cambridge, MA 02138
+(42.382701, -71.141996)",42.3828,-71.1419,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,4,2,3,No,1,TRUE,,,,,,,,,Airbnb
+15588,January 06 2020,Complete,"199 Mt Auburn St
+Cambridge, MA 02138
+(42.374609, -71.129086)",42.3747,-71.1291,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,1,7,Yes,1,TRUE,,,,,,,,,Airbnb
+15829,May 17 2019,Complete,"16 Berkeley St
+Cambridge, MA 02138
+(42.378347, -71.12565)",42.3783,-71.1257,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,6,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13284,March 14 2019,Complete,"142 Pine St
+Cambridge, MA 02139
+(42.36637, -71.097473)",42.3663,-71.0971,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,1,1,Yes,0,TRUE,,,,,,,,,Airbnb
+14665,March 29 2019,Complete,"47 Montgomery St
+Cambridge, MA 02140
+(42.39484, -71.133164)",42.3948,-71.133,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,6,Yes,1,TRUE,,,,,,,,,Airbnb
+13357,March 18 2019,Complete,"17 Meacham Rd
+Cambridge, MA 02140
+(42.395775, -71.126454)",42.3958,-71.1266,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+14912,May 30 2019,Complete,"47 Eighth St
+Cambridge, MA 02141
+(42.370149, -71.086522)",42.3702,-71.0868,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+12140,March 26 2018,Complete,"10 Howland St
+Cambridge, MA 02138
+(42.381477, -71.1139)",42.3816,-71.1138,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13734,April 01 2019,Complete,"6 Peters St
+Cambridge, MA 02139
+(42.357565, -71.106818)",42.3575,-71.1067,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,1,2,No,1,TRUE,,,,,,,,,Airbnb
+15516,October 02 2018,Complete,"1522 Cambridge St
+Cambridge, MA 02139
+(42.37431, -71.105426)",42.3742,-71.1055,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+62909,January 06 2020,Complete,"24-B Union St
+Cambridge, MA 02141
+(42.369755, -71.095278)",42.3698,-71.0952,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14798,July 10 2019,Complete,"75 Montgomery St
+Cambridge, MA 02140
+(42.39552, -71.133189)",42.3955,-71.1331,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,1,1,Yes,1,TRUE,,,,,,,,,Airbnb
+13536,March 26 2018,Complete,"82 Richdale Ave
+Cambridge, MA 02140
+(42.388707, -71.124055)",42.3886,-71.1241,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+54175,September 09 2019,Complete,"52 1 2 Kinnaird St
+Cambridge, MA 02139
+(42.366365, -71.109521)",42.3664,-71.1093,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,5,Yes,1,TRUE,,,,,,,,,Airbnb
+48642,August 28 2019,Complete,"112 Upland Rd
+Cambridge, MA 02140
+(42.3874, -71.123478)",42.3873,-71.1234,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,4,No,1,TRUE,,,,,,,,www.sabbaticalhomes.com,Airbnb
+13918,June 14 2018,Complete,"48 Norfolk St
+Cambridge, MA 02139
+(42.365308, -71.101238)",42.3653,-71.1011,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,3,7,Yes,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+13870,June 18 2019,Complete,"163 Mt Auburn St
+Cambridge, MA 02138
+(42.3744, -71.125997)",42.3745,-71.126,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+18954,November 13 2018,Complete,"383 Cardinal Medeiros Ave
+Cambridge, MA 02141
+(42.370868, -71.089164)",42.3709,-71.0893,This application is for an OPERATOR-OCCUPIED short-term rental,Other,This is a small apartment building (6 units). I am the tenant living in unit 1F.,No,3,2,4,No,1,TRUE,,,,,,,,,Airbnb
+28731,December 12 2019,Complete,"53 Hayes St
+Cambridge, MA 02139
+(42.366534, -71.11136)",42.3666,-71.1114,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13957,April 13 2020,Complete,"246 Norfolk St
+Cambridge, MA 02139
+(42.370219, -71.098011)",42.3702,-71.0979,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+13517,March 29 2020,Complete,"67 Clifton St
+Cambridge, MA 02140
+(42.395581, -71.136297)",42.3956,-71.1362,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,2,Yes,2,TRUE,,,,,,,,,Airbnb
+13333,March 27 2018,Complete,"192 Rindge Ave
+Cambridge, MA 02140
+(42.393435, -71.132184)",42.3934,-71.1322,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+59297,November 13 2019,Complete,"67 Montgomery St
+Cambridge, MA 02140
+(42.39535, -71.133183)",42.3954,-71.1331,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,4,10,Yes,2,TRUE,,,,,,,,,Airbnb
+15054,April 18 2018,Complete,"67 Montgomery St
+Cambridge, MA 02140
+(42.39535, -71.133183)",42.3954,-71.1331,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,8,Yes,2,TRUE,,,,,,,,,Airbnb
+66608,March 04 2020,Complete,"208 Prospect St
+Cambridge, MA 02139
+(42.370486, -71.100198)",42.3705,-71.1001,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,2,6,Yes,2,TRUE,,,,,,,,,Airbnb
+16063,June 25 2018,Complete,"285 Third St
+Cambridge, MA 02142
+(42.364905, -71.082869)",42.365,-71.083,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Large apartment building with property management on site,No,2,2,5,Yes,2,TRUE,,,,,,,,,Airbnb
+13660,March 28 2018,Complete,"236 Allston St
+Cambridge, MA 02139
+(42.359603, -71.109886)",42.3595,-71.1099,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,4,4,8,Yes,3,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+14032,June 03 2019,Complete,"60 Buckingham St
+Cambridge, MA 02138
+(42.380433, -71.129876)",42.3805,-71.1297,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15279,May 18 2019,Complete,"10 Watson St
+Cambridge, MA 02139
+(42.361923, -71.104061)",42.3619,-71.1041,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,3,1,2,No,1,TRUE,,,,,,,,,Airbnb
+14772,April 04 2019,Complete,"45 Garfield St
+Cambridge, MA 02138
+(42.383708, -71.117688)",42.3838,-71.1176,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,2,2,No,2,TRUE,,,,,,,,,Airbnb
+13324,March 27 2018,Complete,"151 Appleton St
+Cambridge, MA 02138
+(42.381702, -71.134005)",42.3817,-71.1342,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,4,4,10,Yes,2,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+12121,March 26 2018,Complete,"108 Gore St
+Cambridge, MA 02141
+(42.372087, -71.082567)",42.372,-71.0827,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Unit in 4 Unit Condo Association,Yes,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13754,April 11 2018,Complete,"257 Cambridge St
+Cambridge, MA 02141
+(42.371076, -71.080312)",42.3712,-71.0802,This application is for an OPERATOR-OCCUPIED short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,2,2,5,Yes,1,TRUE,,,,,,,,,Airbnb
+14611,April 09 2018,Complete,"87 Tremont St
+Cambridge, MA 02139
+(42.372931, -71.097239)",42.373,-71.0973,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13676,April 02 2018,Complete,"82 Avon Hill St
+Cambridge, MA 02140
+(42.385519, -71.124859)",42.3856,-71.1247,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,2,2,No,1.5,TRUE,,,,,,,TRUE,bedandbreakfast.com; avonhillhouse dot com,"Airbnb, bedandbreakfast.com; avonhillhouse dot com"
+48266,June 20 2019,Complete,"7 Vineyard St
+Cambridge, MA 02138
+(42.378817, -71.152612)",42.3789,-71.1526,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,4,3,5,Yes,2,TRUE,,,,,,,,Sabbatical Homes,Airbnb
+52764,August 07 2019,Complete,"48 Seventh St
+Cambridge, MA 02141
+(42.371433, -71.085608)",42.3714,-71.0855,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,2,2,5,Yes,2,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+20433,November 02 2018,Complete,"285 Third St
+Cambridge, MA 02142
+(42.364905, -71.082869)",42.365,-71.083,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,3,Yes,2,TRUE,,,,,,,,,Airbnb
+13851,March 25 2020,Complete,"7 Pleasant Pl
+Cambridge, MA 02139
+(42.363294, -71.108119)",42.3633,-71.1081,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+25341,November 05 2018,Complete,"18 Howard St
+Cambridge, MA 02139
+(42.364244, -71.110688)",42.3643,-71.1106,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,Our 2 family house is a one family house with a finished basement apartment. The STR would be the basement apartment.,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+14851,May 21 2019,Complete,"42 Reed St
+Cambridge, MA 02140
+(42.394602, -71.132114)",42.3946,-71.1323,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13449,April 23 2018,Complete,"44-A Sacramento St
+Cambridge, MA 02138
+(42.382553, -71.115313)",42.3825,-71.1153,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+15216,April 22 2019,Complete,"140 Columbia St
+Cambridge, MA 02139
+(42.366624, -71.098056)",42.3666,-71.0979,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,duplex condo,Yes,3,3,6,Yes,2,TRUE,,,,,,,,,Airbnb
+61356,January 15 2020,Complete,"1359 Cambridge St
+Cambridge, MA 02139
+(42.373638, -71.100138)",42.3738,-71.1002,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Mixed use,No,3,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+14805,February 19 2020,Complete,"36 Jefferson St
+Cambridge, MA 02141
+(42.373125, -71.089828)",42.3731,-71.0898,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,5,Yes,2,TRUE,,,,,,,,,Airbnb
+13356,March 20 2019,Complete,"48 Berkshire St
+Cambridge, MA 02141
+(42.369553, -71.091315)",42.3695,-71.0912,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,3,3,4,Yes,1,TRUE,TRUE,TRUE,,TRUE,,TRUE,,,"Airbnb, HomeAway, FlipKey, Craigslist, Boston_Rentals"
+13635,August 14 2018,Complete,"53 Fresh Pond Ln
+Cambridge, MA 02138
+(42.377962, -71.144596)",42.378,-71.1444,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+16481,September 20 2019,Complete,"286 Windsor St
+Cambridge, MA 02139
+(42.368322, -71.094951)",42.3683,-71.0949,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,2,2,4,Yes,2,TRUE,,,,,,,,,Airbnb
+15836,June 05 2018,Complete,"249 Hurley St
+Cambridge, MA 02141
+(42.368551, -71.082533)",42.3686,-71.0825,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,2,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13300,March 25 2020,Complete,"192 Larch Rd
+Cambridge, MA 02138
+(42.381017, -71.143789)",42.381,-71.1439,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+52032,August 12 2019,Complete,"15 Bowdoin St
+Cambridge, MA 02138
+(42.382733, -71.120694)",42.3827,-71.1208,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,3,Yes,1,TRUE,,,,,,,,,Airbnb
+13970,April 09 2019,Complete,"119 Pine St
+Cambridge, MA 02139
+(42.366088, -71.097583)",42.3661,-71.0977,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+49184,July 03 2019,Complete,"53-R Cedar St
+Cambridge, MA 02140
+(42.394578, -71.130821)",42.3946,-71.1313,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+50480,July 03 2019,Complete,"19 Haskell St
+Cambridge, MA 02140
+(42.393091, -71.127132)",42.3931,-71.1272,This application is for an OWNER-ADJACENT short-term rental,Three-family structure,,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+11950,March 20 2019,Complete,"13 Hollis St
+Cambridge, MA 02140
+(42.39404, -71.128166)",42.3941,-71.1282,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,3,6,No,1,TRUE,,,,,,,,,Airbnb
+14653,April 11 2020,Complete,"135 Tremont St
+Cambridge, MA 02139
+(42.373964, -71.096664)",42.3741,-71.097,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,3,Yes,1,TRUE,,,,,,,,,Airbnb
+14761,March 19 2019,Complete,"94 Thorndike St
+Cambridge, MA 02141
+(42.369913, -71.082231)",42.3698,-71.0822,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Semi Attached Brownstone,No,4,2,4,No,2,TRUE,,,,,,,,,Airbnb
+62355,February 14 2020,Complete,"208 Prospect St
+Cambridge, MA 02139
+(42.370486, -71.100198)",42.3705,-71.1001,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,3,3,8,Yes,3,TRUE,TRUE,,TRUE,,,,,,"Airbnb, HomeAway, VRBO"
+13807,March 15 2019,Complete,"13 Holmes St
+Cambridge, MA 02138
+(42.377639, -71.149691)",42.3777,-71.1497,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,2,2,2,Yes,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+17593,August 08 2018,Complete,"241 Norfolk St
+Cambridge, MA 02139
+(42.370126, -71.098066)",42.3701,-71.0982,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,3,3,8,Yes,1.5,TRUE,,,,,,,,,Airbnb
+13899,July 08 2019,Complete,"24-B Mt Auburn St
+Cambridge, MA 02138
+(42.370774, -71.115287)",42.3707,-71.1153,This application is for an OWNER-ADJACENT short-term rental,"Multi-family dwelling of four units or less, all of which are owned by the operator",,No,1,1,4,Yes,1,TRUE,,,,,,,,,Airbnb
+67971,March 04 2020,Complete,"8 Dover St
+Cambridge, MA 02140
+(42.39473, -71.126635)",42.3947,-71.1266,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Multi Unit building - I rent out a unit I occupy,No,2,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+14725,October 21 2019,Complete,"16 Market St
+Cambridge, MA 02139
+(42.367255, -71.094562)",42.3672,-71.0946,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,3,2,3,Yes,2,TRUE,,,,,,,,,Airbnb
+13583,March 26 2018,Complete,"16 Bowdoin St
+Cambridge, MA 02138
+(42.382714, -71.120679)",42.3827,-71.1205,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,4,2,3,No,3,TRUE,,,,,,,,,Airbnb
+13233,March 29 2019,Complete,"34 May St
+Cambridge, MA 02138
+(42.379085, -71.15375)",42.3791,-71.1538,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+15150,June 26 2018,Complete,"191 Western Ave
+Cambridge, MA 02139
+(42.364799, -71.110073)",42.3649,-71.1101,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,1,1,5,Yes,1,TRUE,,,,,,,,,Airbnb
+18433,September 25 2019,Complete,"198 Franklin St
+Cambridge, MA 02139
+(42.36339, -71.103281)",42.3633,-71.1033,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,2,8,Yes,2,TRUE,,,,,,,,,Airbnb
+13726,April 04 2018,Complete,"15 Holmes St
+Cambridge, MA 02138
+(42.377639, -71.149724)",42.3777,-71.1498,This application is for an OWNER-ADJACENT short-term rental,Two-family dwelling,,No,4,4,8,Yes,2,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"
+13687,April 16 2019,Complete,"9 Forest St
+Cambridge, MA 02140
+(42.385292, -71.118028)",42.3854,-71.118,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,4,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+15634,August 13 2018,Complete,"4-A Mt Auburn St
+Cambridge, MA 02138
+(42.370211, -71.113694)",42.3699,-71.1138,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,5,3,6,Yes,4,TRUE,,,,,,,,,Airbnb
+13886,April 06 2018,Complete,"397 Norfolk St
+Cambridge, MA 02139
+(42.373935, -71.095758)",42.374,-71.0958,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,3,1,2,Yes,1,TRUE,,,,,,,,,Airbnb
+13988,March 25 2019,Complete,"59 Elm St
+Cambridge, MA 02139
+(42.368581, -71.097965)",42.3686,-71.0981,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,No,3,2,3,No,2,TRUE,,,,,,,,,Airbnb
+56532,October 09 2019,Complete,"126 Garden St
+Cambridge, MA 02138
+(42.384397, -71.130644)",42.3843,-71.1307,This application is for an OPERATOR-OCCUPIED short-term rental,Other,Single Family attached house,No,4,1,3,No,1,TRUE,,,,,,,,,Airbnb
+32814,April 04 2019,Complete,"285 Third St
+Cambridge, MA 02142
+(42.364905, -71.082869)",42.365,-71.083,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,2,2,5,Yes,2,TRUE,,,,,,,,,Airbnb
+14646,April 05 2018,Complete,"139 Magazine St
+Cambridge, MA 02139
+(42.358477, -71.111777)",42.3585,-71.1119,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,4,3,6,Yes,3,TRUE,,,,,,,,,Airbnb
+13856,April 05 2019,Complete,"53 Ellery St
+Cambridge, MA 02138
+(42.372064, -71.110188)",42.3721,-71.1103,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,3,5,Yes,3,TRUE,,,,,,,,,Airbnb
+48801,January 16 2020,Complete,"42 Bowdoin St
+Cambridge, MA 02138
+(42.383883, -71.121647)",42.3839,-71.1216,This application is for an OPERATOR-OCCUPIED short-term rental,Two-family dwelling,,Yes,5,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+31371,April 08 2019,Complete,"184 Green St
+Cambridge, MA 02139
+(42.363624, -71.102262)",42.3636,-71.1023,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,Yes,3,3,6,Yes,1,TRUE,,,,,,,,,Airbnb
+44924,May 09 2019,Complete,"100 Auburn St
+Cambridge, MA 02139
+(42.362472, -71.103169)",42.3624,-71.1032,This application is for an OPERATOR-OCCUPIED short-term rental,Three-family structure,,No,3,2,4,Yes,1,TRUE,,,,,,,,,Airbnb
+13922,May 16 2019,Complete,"51 Avon Hill St
+Cambridge, MA 02138
+(42.384815, -71.124425)",42.3848,-71.1247,This application is for an OPERATOR-OCCUPIED short-term rental,Single-family detached dwelling,,No,7,1,2,No,1,TRUE,TRUE,,,,,,,,"Airbnb, HomeAway"

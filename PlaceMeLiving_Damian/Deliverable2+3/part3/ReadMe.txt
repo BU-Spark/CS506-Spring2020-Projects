@@ -1,9 +1,9 @@
-﻿Part3: possible customer and their expected prices
+Part3: possible customer and their expected prices
 
 
 How to run:
 * Open jupyter notebook and open file cleandata 
-   * we cleanup dataset usa00011 and we also provides dataset we use for next file which is dataMA.csv
+   * we cleanup dataset usa_00011 and we also provides dataset we use for next file which is dataMA.csv
 * Now run rent2 in jupyter notebook, remember to change the filename to dataMA.csv
 
 
