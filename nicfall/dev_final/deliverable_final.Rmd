@@ -139,12 +139,6 @@ eigen.15.sorted$sqs <- rownames(eigen.15.sorted)
 eigen.15.top10 <- eigen.15.sorted[1:10,]
 sqs_order <- eigen.15.top10$sqs
 eigen.15.top10$sqs <- factor(eigen.15.top10$sqs,levels=sqs_order)
-gg.eig.15 <- ggplot(eigen.15.top10,aes(x=sqs,y=vector))+
-  geom_bar(stat="identity")+
-  theme(axis.text.x=element_text(angle=90,hjust=1))+
-  ylab("Eigenvector centrality")+
-  xlab("Bacterial sequence")+
-  ggtitle("2015 & 2016 (pre-Irma)")
 
 eigen.17 <- eigen_centrality(net_17)
 eigen.17.tosort <- data.frame(eigen.17[["vector"]])
@@ -154,12 +148,6 @@ eigen.17.sorted$sqs <- rownames(eigen.17.sorted)
 eigen.17.top10 <- eigen.17.sorted[1:10,]
 sqs_order <- eigen.17.top10$sqs
 eigen.17.top10$sqs <- factor(eigen.17.top10$sqs,levels=sqs_order)
-gg.eig.17 <- ggplot(eigen.17.top10,aes(x=sqs,y=vector))+
-  geom_bar(stat="identity")+
-  theme(axis.text.x=element_text(angle=90,hjust=1))+
-  ylab("Eigenvector centrality")+
-  xlab("Bacterial sequence")+
-  ggtitle("2017 (Irma)")
 
 eigen.18 <- eigen_centrality(net_18)
 eigen.18.tosort <- data.frame(eigen.18[["vector"]])
@@ -169,17 +157,39 @@ eigen.18.sorted$sqs <- rownames(eigen.18.sorted)
 eigen.18.top10 <- eigen.18.sorted[1:10,]
 sqs_order <- eigen.18.top10$sqs
 eigen.18.top10$sqs <- factor(eigen.18.top10$sqs,levels=sqs_order)
-gg.eig.18 <- ggplot(eigen.18.top10,aes(x=sqs,y=vector))+
+
+ggplot(eigen.15.top10,aes(x=sqs,y=vector))+
   geom_bar(stat="identity")+
   theme(axis.text.x=element_text(angle=90,hjust=1))+
   ylab("Eigenvector centrality")+
   xlab("Bacterial sequence")+
-  ggtitle("2018 (post-Irma)")
+  ggtitle("2015 & 2016 (pre-Irma)")+
+  geom_hline(yintercept=0.7885872,color="#781C6D")
 
-ggarrange(gg.eig.15,gg.eig.17,gg.eig.18)
+ggplot(eigen.17.top10,aes(x=sqs,y=vector))+
+  geom_bar(stat="identity")+
+  theme(axis.text.x=element_text(angle=90,hjust=1))+
+  ylab("Eigenvector centrality")+
+  xlab("Bacterial sequence")+
+  ggtitle("2017 (Irma)")+
+  geom_hline(yintercept=0.7885872,color="#781C6D")+
+  geom_hline(yintercept=0.7140983,color="#AE305C")
+
+ggplot(eigen.18.top10,aes(x=sqs,y=vector))+
+  geom_bar(stat="identity")+
+  theme(axis.text.x=element_text(angle=90,hjust=1))+
+  ylab("Eigenvector centrality")+
+  xlab("Bacterial sequence")+
+  ggtitle("2018 (post-Irma)")+
+  geom_hline(yintercept=0.7140983,color="#AE305C")
 ```
 
-### Eigenvector centrality
+#### Analysis
+
+Lots of cool things here: 
+I put a solid line at the lowest eigenvector centrality of the 2015 data and a dashed line at the lowest of the 2018 data, and put both of these lines on the 2017 data to show that most of the top 10 most central nodes in 2017 didn't come anywhere near as close to the other years in this metric. There are 2 bacterial families that show up as most central between all three time points. However, **five** families are shared between pre-Irma & post-Irma, while only 1 family is shared between pre-Irma & Irma and another 1 family shared between Irma & post-Irma. In other words, Irma had the most unique central nodes, while the pre & post time points are more similar in their top 10 compositions. This could all be evidence of a disrupted network due to Hurricane Irma.
+
+### Betweenness centrality
 
 ```{r network networks 2}
 btwn.15.tosort <- data.frame(betweenness(net_15))
@@ -189,12 +199,6 @@ btwn.15.sorted$sqs <- rownames(btwn.15.sorted)
 btwn.15.top10 <- btwn.15.sorted[1:10,]
 sqs_order <- btwn.15.top10$sqs
 btwn.15.top10$sqs <- factor(btwn.15.top10$sqs,levels=sqs_order)
-gg.btwn.15 <- ggplot(btwn.15.top10,aes(x=sqs,y=vector))+
-  geom_bar(stat="identity")+
-  theme(axis.text.x=element_text(angle=90,hjust=1))+
-  ylab("Betweenness centrality")+
-  xlab("Bacterial sequence")+
-  ggtitle("2015 & 2016 (pre-Irma)")
 
 btwn.17.tosort <- data.frame(betweenness(net_17))
 btwn.17.tosort$vector <- btwn.17.tosort$betweenness.net_17.
@@ -203,12 +207,6 @@ btwn.17.sorted$sqs <- rownames(btwn.17.sorted)
 btwn.17.top10 <- btwn.17.sorted[1:10,]
 sqs_order <- btwn.17.top10$sqs
 btwn.17.top10$sqs <- factor(btwn.17.top10$sqs,levels=sqs_order)
-gg.btwn.17 <- ggplot(btwn.17.top10,aes(x=sqs,y=vector))+
-  geom_bar(stat="identity")+
-  theme(axis.text.x=element_text(angle=90,hjust=1))+
-  ylab("Betweenness centrality")+
-  xlab("Bacterial sequence")+
-  ggtitle("2017 (Irma)")
 
 btwn.18.tosort <- data.frame(betweenness(net_18))
 btwn.18.tosort$vector <- btwn.18.tosort$betweenness.net_18.
@@ -217,15 +215,32 @@ btwn.18.sorted$sqs <- rownames(btwn.18.sorted)
 btwn.18.top10 <- btwn.18.sorted[1:10,]
 sqs_order <- btwn.18.top10$sqs
 btwn.18.top10$sqs <- factor(btwn.18.top10$sqs,levels=sqs_order)
-gg.btwn.18 <- ggplot(btwn.18.top10,aes(x=sqs,y=vector))+
+
+ggplot(btwn.15.top10,aes(x=sqs,y=vector))+
+  geom_bar(stat="identity")+
+  theme(axis.text.x=element_text(angle=90,hjust=1))+
+  ylab("Betweenness centrality")+
+  xlab("Bacterial sequence")+
+  ggtitle("2015 & 2016 (pre-Irma)")
+
+ggplot(btwn.17.top10,aes(x=sqs,y=vector))+
+  geom_bar(stat="identity")+
+  theme(axis.text.x=element_text(angle=90,hjust=1))+
+  ylab("Betweenness centrality")+
+  xlab("Bacterial sequence")+
+  ggtitle("2017 (Irma)")
+
+ggplot(btwn.18.top10,aes(x=sqs,y=vector))+
   geom_bar(stat="identity")+
   theme(axis.text.x=element_text(angle=90,hjust=1))+
   ylab("Betweenness centrality")+
   xlab("Bacterial sequence")+
   ggtitle("2018 (post-Irma)")
-
-ggarrange(gg.btwn.15,gg.btwn.17,gg.btwn.18)
 ```
+
+#### Analysis
+
+Again, these values look more similar between pre & post-Irma time points than either of these with the Irma time point. 
 
 ### Visualizing network from adjacency matrix
 
@@ -233,17 +248,15 @@ ggarrange(gg.btwn.15,gg.btwn.17,gg.btwn.18)
 #devtools::install_github("briatte/ggnet")
 library(ggnet)
 
-gg.net15 <- ggnet2(sparcc.adj_15,size="degree",size.cut=TRUE,alpha=0.5,color="#781C6D")+
+ggnet2(sparcc.adj_15,size="degree",size.cut=TRUE,alpha=0.5,color="#781C6D")+
   ggtitle('Pre-Irma (2015)')
-gg.net17 <- ggnet2(sparcc.adj_17,size="degree",size.cut=TRUE,alpha=0.5,color="#F8850F")+
+ggnet2(sparcc.adj_17,size="degree",size.cut=TRUE,alpha=0.5,color="#F8850F")+
   ggtitle('Irma (2017)')
-gg.net18 <- ggnet2(sparcc.adj_18,size="degree",size.cut=TRUE,alpha=0.5,color="#AE305C")+
+ggnet2(sparcc.adj_18,size="degree",size.cut=TRUE,alpha=0.5,color="#AE305C")+
   ggtitle('Recovery? (2018)')
-
-ggarrange(gg.net15,gg.net17,gg.net18)
 ```
 
 ### Looking at results
 
-It looks like there are a lot less connections in the microbial networks in 2017 (Hurricane Irma timepoint), which is exactly what I was hypothesizing. If I had more time, I would figure out how to do the statistics on these analyses. 
+It looks like there are a lot less connections in the microbial networks in 2017 (Hurricane Irma timepoint; shown by the disconnected nodes off to the side that did not correlate with other nodes) which is exactly what I was hypothesizing (that the Irma timepoint would be the most disrupted). In addition, there appears to be more dispersion in the network during Irma (more spread out nodes rather than the huge hubs we see in the other two time points). You can clearly see the quantiles of degree ranges in the legends are the smallest during Irma (highest degree range was 14-62 during Irma as compared to 31-90 and 38-84 pre & post-Irma, respectively). PR oIf I had more time, I would figure out how to do the statistics on these analyses. 
 
