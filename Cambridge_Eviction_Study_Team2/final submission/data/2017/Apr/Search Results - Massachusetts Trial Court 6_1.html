@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Search Results - Massachusetts Trial Court 6</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.page.UniversalPaymentInfo/SearchResultsResizable.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<script type="text/javascript" id="wiquery-gen-1582484579287"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 'auto', minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 'auto', maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane', size: 'auto'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: true, resizable: true, fxName: 'none', paneSelector: '#WestPane', initClosed: true, slidable: true, slideTrigger_open: 'click', slideTrigger_close: 'click', togglerAlign_open: 'center', togglerAlign_closed: 'center'}, center: {paneSelector: '#mainContent'}});
+$('#processingDialog').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#idbb6').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+$('#grid').kiketable_colsizable({dragMove: true, dragProxy: 'line', fixWidth: true, minWidth: 80});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=swgfSNS-bo5-7SXUGBDV1A97sfTJjYxiod1IebxEFgABzm9gm4t0n1M-zHFMHJGyNY5YVI3c6c6HB7hz8iNYr5EFZIpK8sPJudZtb9q6IgyXqskt4Rr3bz92tSTlekSw',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('idc02'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="idc03">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="idc04" href="#" onclick="var wcall=wicketAjaxGet('?x=swgfSNS-bo5-7SXUGBDV1DlgZuexFQh*xP1LD8nCUzyhLtpZf2Va-3xKmbjcVNMwjqF-eFPeLbJVLKll*Ula3JOPgDsKF621Dxzjntg0r*sQopVQ0uyzuaMhbSCyXoJX',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idc04') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li><a class="link" href="home.page">Home</a></li>
+	<li><a class="link" href="?x=swgfSNS-bo5-7SXUGBDV1DlgZuexFQh*xP1LD8nCUzyhLtpZf2Va-yc8PTuYZqmZKCUdCMFpX-F7hNw1YOEYs1sMK1lIJx9w05xathMdibou7h0ZapC7TA">Search</a></li>
+ 	<li class="currentPage"><a class="link" title="Search Results" href="?x=swgfSNS-bo5-7SXUGBDV1DlgZuexFQh*xP1LD8nCUzyhLtpZf2Va-2z3bVZjGvSYNZ6yoL7t6pH2yCnXe8verpRSckSh2zGEp2lT5k1mFEC8rclXvciOig">Results<span class="visually-hidden">currently selected</span></a></li>
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="idc05" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="WestPane" class="ui-layout-west">
+	<div>
+<div class="dynamicNav" id="idc06" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	<div class="sectionHeader"><h1>Search Results</h1></div>
+	<div class="formSec bgClr1 searchResults">
+		<div id="srchResultNotice" class="feedback">Displaying all 84 matches.</div>
+		
+		<div id="idc07">
+			<table id="grid" summary="Search Results Grid" class="tableResults">
+
+<caption>Table of results for the search, initially ordered by case description in ascending order.</caption>
+<colgroup>
+  <col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/><col/>
+</colgroup>
+<thead>
+  
+	<tr class="headers">
+		
+			<th><span></span></th>
+		
+			<th><span></span></th>
+		
+			<th class="wicket_orderUp" aria-sort="ascending" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAyNegjg-BDEFUnZ3EEYxYhYDxdp5WYtQFY8ImHMZt7vmJ*9NS4utvq*ewzVckTu-*"><span>Case Number</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxArcDPWfHXEGaTqcshzny*9HdhSfOd7GR7hPyjq8tvthQuolyMwEIkZkSrjYsU5PUP"><span>Case Type</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAFaIZNzu7yaMGi8sEldT8VAAO*JAiAXOPaHtr0l*zLFTf5dAY24xtbb-EyPbEeS9x"><span>File Date</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAmSe1uNPGezTokxB8cdmG2ZbgFfqhhBYS10xi1IE3qAUBdLDIamxoKaXdvSBQAB8p"><span>Initiating Action</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAmMu4aXHlBsdCsuXT10uhbyruSewkRFYWlek6lCua6aleewUnfwNahugE56Gs4h*Z"><span>Party/Company</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAq7Mm92Tlb7f4ddO1UXtB6rDE9NW5of6MTdk5fJrW53YMHCZbLYeB8yEFkKhCkdkR"><span>Party Type</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxA4KiCr05cdZDwyvGnCa54w5NYn9DO2D8CiYVjyeYX-YxeF-eD6gLA8vcb2pI7WKpW"><span>Date of Birth</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAts8ZICwfB8MG*UC6NsvBVox3S0rsAIXxQ-j78oLMHLyfdXkw*ZVaqrGD3wx30B1x"><span>Case Status</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAGT9nTK5fe5Hyt-gGJaJRJAkwcOwQJHGlCbLqIHhgJGb7MNF0ErMXaMVghUrSzdkw"><span>Court</span></a></th>
+		
+			<th class="wicket_orderNone" aria-sort="none" role="columnheader"><a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVsrqQZBQQ2vil0SfTJeUVvgXiSQxoJrqZocVXdyLWtxAi7fYIULGq0Tgd6VC2*adQR8Ex5*v8WqQ1pzPS2zXIHwF86S22BPSpNaGp4dFXOFI"><span>Affiliation</span></a></th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+	
+	<tr class="navigation">
+		<td colspan="12">
+			<div style="float: left;" class="navigatorLabel"><span>Showing 76 to 84 of 84</span></div>
+			<div style="text-align: right;" class="navigator"><span>
+	<a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVrx52qEni200tjwaGyMvnW51twHpcsodCvkCWxmL3tYoiuklvNUaR88JKCcClottRlgLIKh078xZSaHdvzermk9o56TYjCnpjg" title="Go to first page">&lt;&lt;</a>&nbsp;<a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVrx52qEni200tjwaGyMvnW51twHpcsodCvkCWxmL3tYoiuklvNUaR8-E3QgyQXZfxOYmjtzVCpKXYf6h2Tbcz*ryJ4-z0nLZQQ" title="Go to previous page">&lt;</a>
+    <span>
+		  <a href="?x=swgfSNS-bo5-7SXUGBDV1BNP*lU5bAniOajTN4XH*NqPPpT1Hv0GVrx52qEni200tjwaGyMvnW51twHpcsodCvkCWxmL3tYoiuklvNUaR8-vweTnoUvHztdk-ZDcayUkzfE*J-04R57O4PWjJlnXhlvGJakHNta3wjfVrDDHzEs" title="Go to page 1"><span>1</span></a>
+    </span><span>
+		  <span title="Go to page 2"><em><span>2</span></em></span>
+    </span>
+    <span title="Go to next page"><em>&gt;</em></span>&nbsp;<span title="Go to last page"><em>&gt;&gt;</em></span>
+  </span></div>
+		</td>
+	</tr>
+
+</tfoot>
+<tbody>
+	<tr class="roweven">
+		<td id="grid$row:76$cell:1" class="column40px">
+			
+		</td><td id="grid$row:76$cell:2" class="column40px">
+			
+		</td><td id="grid$row:76$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="ideb7"></i><span>1752SU000206</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="ideb8"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="ideb9"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="ideba"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idebb"></i><span>Cambridge Housing  Authority</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idebc"></i><span>Plaintiff</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:76$cell:9$link"><i id="idebd"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:76$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idebe"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjb3buiV1tbmB5KFo-7sDgUg" id="grid$row:76$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idebf"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:76$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="rowodd">
+		<td id="grid$row:77$cell:1" class="column40px">
+			
+		</td><td id="grid$row:77$cell:2" class="column40px">
+			
+		</td><td id="grid$row:77$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="idec0"></i><span>1752SU000207</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="idec1"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idec2"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idec3"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idec4"></i><span>Hawkins, Louis</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idec5"></i><span>Defendant</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:77$cell:9$link"><i id="idec6"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:77$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idec7"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:77$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idec8"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:77$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="roweven">
+		<td id="grid$row:78$cell:1" class="column40px">
+			
+		</td><td id="grid$row:78$cell:2" class="column40px">
+			
+		</td><td id="grid$row:78$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="idec9"></i><span>1752SU000207</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="ideca"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idecb"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idecc"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idecd"></i><span>Cambridge Housing  Authority</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idece"></i><span>Plaintiff</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:78$cell:9$link"><i id="idecf"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:78$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="ided0"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRupkQXC-TwJMjUKlywBydXlp*NGbqYyIy-Q" id="grid$row:78$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="ided1"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:78$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="rowodd">
+		<td id="grid$row:79$cell:1" class="column40px">
+			
+		</td><td id="grid$row:79$cell:2" class="column40px">
+			
+		</td><td id="grid$row:79$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="ided2"></i><span>1752SU000208</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="ided3"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="ided4"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="ided5"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="ided6"></i><span>Mondesir, Jean-Claude</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="ided7"></i><span>Defendant</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:79$cell:9$link"><i id="ided8"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:79$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="ided9"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:79$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="ideda"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:79$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="roweven">
+		<td id="grid$row:80$cell:1" class="column40px">
+			
+		</td><td id="grid$row:80$cell:2" class="column40px">
+			
+		</td><td id="grid$row:80$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="idedb"></i><span>1752SU000208</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="idedc"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idedd"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idede"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idedf"></i><span>Cambridge Housing  Authority</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idee0"></i><span>Plaintiff</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:80$cell:9$link"><i id="idee1"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:80$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idee2"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYhly*7UnmKrLIAT5oP9KyoA" id="grid$row:80$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idee3"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:80$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="rowodd">
+		<td id="grid$row:81$cell:1" class="column40px">
+			
+		</td><td id="grid$row:81$cell:2" class="column40px">
+			
+		</td><td id="grid$row:81$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="idee4"></i><span>1752SU000209</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="idee5"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idee6"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idee7"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idee8"></i><span>Muncy, Sarah</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idee9"></i><span>Defendant</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:81$cell:9$link"><i id="ideea"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:81$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="ideeb"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:81$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="ideec"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:81$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="roweven">
+		<td id="grid$row:82$cell:1" class="column40px">
+			
+		</td><td id="grid$row:82$cell:2" class="column40px">
+			
+		</td><td id="grid$row:82$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="ideed"></i><span>1752SU000209</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="ideee"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="ideef"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idef0"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idef1"></i><span>Cambridge Housing  Authority</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idef2"></i><span>Plaintiff</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:82$cell:9$link"><i id="idef3"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:82$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idef4"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRunaAvbX0HECYo5Jw5zvrm5wPrf0Jtzgbvg" id="grid$row:82$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idef5"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:82$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="rowodd">
+		<td id="grid$row:83$cell:1" class="column40px">
+			
+		</td><td id="grid$row:83$cell:2" class="column40px">
+			
+		</td><td id="grid$row:83$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="idef6"></i><span>1752SU000210</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="idef7"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idef8"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idef9"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idefa"></i><span>Moses, Mark</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idefb"></i><span>Defendant</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:83$cell:9$link"><i id="idefc"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:83$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idefd"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:83$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idefe"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:83$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr><tr class="roweven">
+		<td id="grid$row:84$cell:1" class="column40px">
+			
+		</td><td id="grid$row:84$cell:2" class="column40px">
+			
+		</td><td id="grid$row:84$cell:3" class="bookmarkablePageLinkPropertyColumnLink">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:3$link" onclick="$('#processingDialog').dialog('open');"><i id="ideff"></i><span>1752SU000210</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:4" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:4$link" onclick="$('#processingDialog').dialog('open');"><i id="idf00"></i><span>Summary Process</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:5" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:5$link" onclick="$('#processingDialog').dialog('open');"><i id="idf01"></i><span>05/01/2017</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:6" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:6$link" onclick="$('#processingDialog').dialog('open');"><i id="idf02"></i><span>Summary Process - Residential (c239)</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:7" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:7$link" onclick="$('#processingDialog').dialog('open');"><i id="idf03"></i><span>Cambridge Housing  Authority</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:8" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:8$link" onclick="$('#processingDialog').dialog('open');"><i id="idf04"></i><span>Plaintiff</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:9" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<span id="grid$row:84$cell:9$link"><i id="idf05"></i><span></span></span>
+
+</span>
+		</td><td id="grid$row:84$cell:10" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:10$link" onclick="$('#processingDialog').dialog('open');"><i id="idf06"></i><span>Disposed for Statistical Purposes</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:11" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+<a href="?x=STLrMU9lNBSE9oW*OplFfgdJEY61ByqG6dfUdy7DUyyqLBmt69JRuhLn3N4LoM*4bxX*0A1B7wEFF14lN0b-fQ" id="grid$row:84$cell:11$link" onclick="$('#processingDialog').dialog('open');"><i id="idf07"></i><span>Cambridge District Court</span></a>
+
+</span>
+		</td><td id="grid$row:84$cell:12" class="bookmarkablePageLinkPropertyColumn">
+			<span>
+
+<!-- $Id: BookmarkablePageLinkPanel.html,v 1.2 2015/07/17 21:22:42 zcarter Exp $ -->
+
+
+</span>
+		</td>
+	</tr>
+</tbody>
+
+</table>
+		</div>	
+	</div>
+</div>
+
+<div id="idc02"></div>
+<div id="ideab" style="display:none">
+	<div id="ideac" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="processingDialog">
+	<b><span id="idead" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/ZwzUSVMfJ68bM_eKH7hYADeHaDBTerI2KNuVCCoYRlo=.html">ZwzUSVMfJ68bM_eKH7hYADeHaDBTerI2KNuVCCoYRlo=.html</a></html>

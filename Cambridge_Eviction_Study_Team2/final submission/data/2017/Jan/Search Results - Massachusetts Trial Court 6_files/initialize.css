@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Initialize Styles to set identical standards for all browsers */
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table, dl,dd, dt { border:0; margin: 0; padding:0; }
+
+body { background:#fff; text-align:left; } /* sets default theme background color */
+
+* { word-wrap:break-word; }
+
+.visually-hidden
+{
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);  /* for Internet Explorer */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.skipLink a {
+	position: absolute;
+	left: -1000px;
+	z-index: 3;
+	margin: 0;
+	padding: .5em;
+	background: #fff;
+	font-size: 200%;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.skipLink a:active, .skipLink a:focus, .skipLink a:hover {
+	display: inline;
+	top: 0;
+	left: 0;
+	color: #fff;
+	background: #000;
+}
