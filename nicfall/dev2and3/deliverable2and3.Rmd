@@ -45,6 +45,11 @@ data_1516 <- read.csv("seq.trim.sid.1516.no0 copy.csv",row.names=1) #from 2015&2
 data_17 <- read.csv("seq.trim.sid.17.no0 copy.csv",row.names=1) #from 2017
 data_18 <- read.csv("seq.trim.sid.18.no0 copy.csv",row.names=1) #from 2018
 
+#testing
+data_1516 <- read.csv("seq.glom.15.no0.csv",row.names=1) #from 2015
+data_17 <- read.csv("seq.glom.17.no0.csv",row.names=1) #from 2017
+data_18 <- read.csv("seq.glom.18.no0.csv",row.names=1) #from 2018
+
 #removing samples with less than an average of 2 reads per OTU - recommended by authors
 data_1516_2 <- data_1516[,-which(colMeans(data_1516) <= 2)]
 data_17_2 <- data_17[,-which(colMeans(data_17) <= 2)]
