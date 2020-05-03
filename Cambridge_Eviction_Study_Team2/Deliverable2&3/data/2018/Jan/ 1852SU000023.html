@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case Details - Massachusetts Trial Court 5</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterJavaScriptResourceReference/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterParsersJavaScriptResourceReference/jquery.tablesorter.parsers.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterMetadataJavaScriptResourceReference/jquery.metadata.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterCSSResourceReference/jquery.tablesorter.css" />
+<script type="text/javascript" id="wiquery-gen-1582484477601"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 'auto', minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 'auto', maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane', size: 'auto'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: true, resizable: true, fxName: 'none', paneSelector: '#WestPane', initClosed: true, slidable: true, slideTrigger_open: 'click', slideTrigger_close: 'click', togglerAlign_open: 'center', togglerAlign_closed: 'center'}, center: {paneSelector: '#mainContent'}});
+$('#id5aa').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#id5aa').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+$('#id5b4').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#id5b5').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#id5b6').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: false}, 2: { sorter: 'cjsCurrency'}, 3: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#id5b7').tablesorter({debug: false, headers: { 0: { sorter: 'text'}, 1: { sorter: 'cjsDate'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMhN2wvcfrfSmBsKplCXMbwdjNwJ7K14qufnTeEhYgBpYN*YCzBocXk1wujCJeExRQmz76Ej86ZBl8E4y1gVWQH511DWuNJatbtQ6FPNauAyz',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('id5b8'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" id="closeDialogJS"><!--/*--><![CDATA[/*><!--*/
+$('#processingDialog').dialog('close');
+/*-->]]>*/</script>
+
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { $(document).ready(function(){$('#caseHeader').css('margin-top', $('#titleBar').height() + 6);});;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/com.cjs.wicket.component.CancelEventPropagationResource/CancelEventPropagation.js"></script>
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="id5b9">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="id5ba" href="#" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMsNUthTNDGBnclSPkU-tEX*tbwCbnZjrGldbJzvylpT9ZZomt1pyL9bZMCqP4GBSHe88mas6lyJcwM1TM6OX6keQAX81LhRXySOX5aWaw2U8',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5ba') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li><a class="link" href="home.page">Home</a></li>
+	<li><a class="link" href="?x=eStohASe0RIlrjqZgJLpMsNUthTNDGBnclSPkU-tEX*tbwCbnZjrGvtI1grpyatmnCMcfBc9qUdhBMglDQQrFep8IG02A0*oF9Y8Lw-PVijoH4QD9A8yMg">Search</a></li>
+ 	<li><a class="link" title="Search Results" href="?x=eStohASe0RIlrjqZgJLpMsNUthTNDGBnclSPkU-tEX*tbwCbnZjrGoRlpLrd-EolGDCkp4Zu9Rl33kMHe47Mba5zCSLZUtYWiyJCdI4l4rh7FcRFB-FMXg">Results</a></li>
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="id5bb" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="WestPane" class="ui-layout-west">
+	<div>
+<div class="dynamicNav" id="id5bc" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	
+<div id="caseDetail">
+	<div id="caseDetailHeader">
+
+
+	
+
+
+
+
+	
+		<div id="titleBar" class="sectionHeader">
+			<h1>
+				
+		
+			<ul>
+				
+				<li class="displayData">1852SU000023 North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc. v. Magan, Alina</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			</h1>
+		</div>
+		<div id="caseHeader" class="caseInfo formSec bgClr1">
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Type</li>
+				<li class="caseHdrInfo">Summary Process</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Status</li>
+				<li class="caseHdrInfo">Disposed for Statistical Purposes</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">File Date</li>
+				<li class="caseHdrInfo">01/16/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">DCM Track:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Initiating Action:</li>
+				<li class="caseHdrInfo">Summary Process - Residential (c239)</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Status Date:</li>
+				<li class="caseHdrInfo">01/26/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Judge:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Next Event:</li>
+				<li class="caseHdrInfo">
+<!-- $Id: CourtViewNextEventPanel.html,v 1.1 2011/04/12 18:55:38 stheisen Exp $ -->
+  <span></span>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div class="infoBox">
+		
+			<ul>
+				
+				<li class="displayData">
+
+<!-- added -->
+	<div class="housingPropertyDetailBox subsection3"> <!-- was caseInfoDetailBox -->
+		<div class="additionalCaseInfoPanel">
+			<div class="subSectionHeader2">
+				<h4><span>Property Address</span></h4>
+			</div>
+			<div id="addressInfo" class="containerSpacing">
+				<!-- CASEHOUS -->
+				<div>
+					<span>One</span> 
+					<span></span>
+					<span>Leighton</span> 
+					<span>Street</span>
+					<span>#1010</span>
+				</div>
+				<div>
+					<span>Cambridge</span> 
+					<span>MA        </span> 
+					<span>02141     </span>
+				</div>
+				
+				<!-- LCCASE -->
+				<div>
+					<span></span> 
+					<span></span>
+					<span></span> 
+			   </div>
+			   <div>
+					<span></span>
+				</div>
+			   <div>
+			   		<span></span>
+			   </div>
+
+				<!-- CASEPF -->
+				<div>
+					<div></div>
+					<div></div>
+					<!-- <div wicket:id="pf_mrag_dt"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div class="infoBox">
+		
+			<ul>
+				
+				
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+
+
+			<div class="buttonBar">
+				<div id="id5bd">
+	
+</div>
+				
+				
+				<div id="id5be" style="display:none"></div>
+			</div>
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	<div class="tabSection" id="CaseDetailPanelTabSection" aria-live="assertive" aria-atomic="true" aria-relevant="all">
+		<div id="id5bf">
+<div class="tab-row">
+<ul>
+	<li class="tab0 selected">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nvAF-qvzCTci63nsTA4P1wl7HamJHhbLH*xzAR7oKyDU" id="id5c0" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nvAF-qvzCTcistkLIWIuf6ITruklvGuT98LlsKkGEYYy',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c0') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>All Information</span></a>
+	</li><li class="tab1">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nnZ-ZbX4jaDIAGyH*nkCxNYLAxrXMKuzpUklXQW1C3LM" id="id5c1" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nnZ-ZbX4jaDIzfCrTQg8s3rCJoxC5ZPpCyonER1RLQXo',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c1') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Party</span></a>
+	</li><li class="tab2">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nkdcxb4ujeKnJTRXST5VKgEF3H4IxmYChlEFhsk8rjNT" id="id5c2" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nkdcxb4ujeKn5J5cYUWgRDw2AHfDcoH6ZbQ2ebb7pKc3',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c2') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Judgment</span></a>
+	</li><li class="tab3">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nlN-BCdB4fJWy*74bdZAOM7Wh8gBjoO60rapTMeazz02" id="id5c3" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nlN-BCdB4fJWTHtvNhq9ASjqsla7*Z6kRnLEVS6FQsk4',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c3') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Event</span></a>
+	</li><li class="tab4">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nlcjHh6XqI-B1rUVoucQNIocINTso89Sg4UYPFQzdoDb" id="id5c4" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nlcjHh6XqI-Bs56574mEq37F3GwK0wNpekliphE8Xfh7',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c4') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Docket</span></a>
+	</li><li class="tab5 last">
+		<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nnUdG5hom6E97IDlOzoqWgeo4m-xJgsFJxfkqrbDyOpX" id="id5c5" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlh4h97RyjXn255sp5AaAvqqyKoHgrZdg2nnUdG5hom6E9K5fDa*eyJIQSthXubJCXkBH*v5OdqVb*',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c5') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Disposition</span></a>
+	</li>
+</ul>
+</div>
+<div class="tab-panel">
+	
+		<div class="allInfoPanel" id="id5c6">
+
+
+	
+
+
+
+
+	
+		<div id="id5c7" style="display:none">
+	
+</div>
+		<div id="id5c8" style="display:none">
+	
+</div>
+		<div id="ptyInfo" class="subsection2 bgClr1">
+			<div class="subSectionHeader">
+				<h4>
+					Party Information
+				</h4>
+			</div>
+			<div id="ptyContainer" class="infoChildSection">
+				<div class="rowodd">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Plaintiff
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			<div class="displayData">
+
+
+
+
+	
+<div class="rowodd">
+	<div>
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Attorney</li>
+				<li class="ptyAttyInfo">Weil, Esq., Steven David</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Bar Code</li>
+				<li class="ptyAttyInfo">548522</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Address </li>
+				<li class="ptyAttyInfo">
+
+	<div class="addrLn1">Doherty, Dugan, Cannon, Raymond &amp; Weil, PC</div>
+	<div class="addrLn2">124 Grove St</div>
+	<div class="addrLn3">Suite 220</div>
+	<span>Franklin</span><span>,</span>&nbsp;<span>MA        </span>&nbsp;<span>02038     </span>
+
+
+
+
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Phone Number</li>
+				<li class="ptyAttyInfo">(508)541-3000</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="id5c9" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V1CtUwBApjojpK*pAZpbAlg**AnUymcLzZN4JCZYHRz39j*n7IQmrJrMxhiE1Q-EU2q3EiPCnRkRcSifjTkR7KT45IaJ06sDqQ',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5c9') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div><div class="roweven">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Magan, Alina
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Defendant
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="id5ca" onclick="var wcall=wicketAjaxGet('?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V1CtUwBApjojpK*pAZpbAlg5znjpMrCfwkoH6qPqx9B0rWhr1954Ad8J4Qj6ZiS15rDdp18CKMf0g57m6btf8LIbJAr35XLLpQ',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('id5ca') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel">
+
+
+	
+
+
+
+
+	
+<div class="subsection2 bgClr1 judgementsInfo">
+	<div class="subSectionHeader"><h4><span>Judgments</span></h4></div>
+	<table id="id5b4" summary="Table displaying the Judgments on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V2yp5S5UOZbo1MCiHZMo9xmzIy2gPl607iaVgQkKW4j2MnoLxrpQwlR4qA2XqQwGtoHGG4lOG78x8CR9iBf7pSfzJ7obZ1CDy1WQoKf-lEOg9F9yyFiWEZ0"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V2yp5S5UOZbo1MCiHZMo9xmzIy2gPl607iaVgQkKW4j2MnoLxrpQwlQF8OGVGv5EbEk*269IORvja*iVyqTuohWa*IcEuUxVrXpVyEw7D3B2GOVddovVJ*Q"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Method">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V2yp5S5UOZbo1MCiHZMo9xmzIy2gPl607iaVgQkKW4j2MnoLxrpQwlRmcO1g7cks4xoGMKqOeopAaJ8*ZcAXjd*s8JWkS-oPvTnHHN9vcXok63yt1*UnkA0"><span>Method</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="For">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V2yp5S5UOZbo1MCiHZMo9xmzIy2gPl607iaVgQkKW4j2MnoLxrpQwlRpP3tOO*err3xElCC4hsYO3SRdKPoWVRudt-YWRhimHG0UyO3VnrdlGnlXqjbAmmo"><span>For</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Against">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V2yp5S5UOZbo1MCiHZMo9xmzIy2gPl607iaVgQkKW4j2MnoLxrpQwlTtObjppYZR7XIVw**Qp7-Kx3gLPvHIbxnc*8T7b-Un6fiKN*w8vfYWlIXKytAx9II"><span>Against</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>01/26/2018</span></td><td><span>Judgment for Plaintiff for Possession and Rent</span></td><td><span>, after defendant(s) failed to appear</span></td><td><span>North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.</span></td><td><span>Magan, Alina</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="id5cb">
+
+
+	
+
+
+
+
+	
+<div id="eventInfo" class="subsection2 bgClr1">
+	<div class="subSectionHeader"><h4><span>Events</span></h4></div>
+	<table id="id5b5" summary="Table displaying the events related to this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85Vxyws-hLx37sKPtvzbimJ65eGNLrSLAc8fM36FfM63cxFgAEm*b82mMydGOYZw5Pv5ij*7jodLdmLLrSk5qUWBcX*kLdQNJJoWUc9ooq*RNHQv6TJBSEqBo"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Session">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85Vxyws-hLx37sKPtvzbimJ65eGNLrSLAc8fM36FfM63cxFgAEm*b82mOp*3HUtNh41gn7oIgOgXR2dJpsg0QELzq-8LUOmHmb7xmaY99bKyIsr57e-mkz8Xw"><span>Session</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Location">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85Vxyws-hLx37sKPtvzbimJ65eGNLrSLAc8fM36FfM63cxFgAEm*b82mNpBuQfMXm6xQ8fY-10sVCfSRAUZh-IQjsApIR1WAXJMnAGDvPEsN9GniMYukUoC-8"><span>Location</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85Vxyws-hLx37sKPtvzbimJ65eGNLrSLAc8fM36FfM63cxFgAEm*b82mMMsNToDgdGHmgWL1PVFGtjWIbaTxfzH3L3xsQxueBazu3NCBqz*y0PJdlURz4jEnU"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Result">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85Vxyws-hLx37sKPtvzbimJ65eGNLrSLAc8fM36FfM63cxFgAEm*b82mMnwacxonPbauyck38P3IGgmUFUoVN*WWzrlXLyMNMtlWLpNkeCFmZ4adIkm93ySOg"><span>Result</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>01/25/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Defendant Failed To Appear</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="id5cc">
+
+
+	
+
+
+
+
+	
+<div id="docketInfo" class="subsection2 bgClr1 financialSection">
+	<div class="subSectionHeader"><h4><span>Docket Information</span></h4></div>
+	<table id="id5b6" class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Docket Date">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V*oMGNexYyV2l9wuncCMQJDXD8SJQqRoLZJXEW0PQ97dX*fpd65hINQfdMdx-q33qea4wVapn21ErJEumRjXwVjGwmJxwpvclEmptiqqsyepRE5ANvjHUwk"><span>Docket Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Docket Text">
+					<span><em><span>Docket Text</span></em></span>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Amount Owed" class="currency">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V*oMGNexYyV2l9wuncCMQJDXD8SJQqRoLZJXEW0PQ97dX*fpd65hINRdn86wBCarp9IyFu6rqW6PZt5gwdnI5*HoPVqPsWQSvFJK1B8zC*o*X*Ho1vHtTW0"><span>Amount Owed</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="File Ref Nbr.">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V*oMGNexYyV2l9wuncCMQJDXD8SJQqRoLZJXEW0PQ97dX*fpd65hINRGylVVSIMwm-DZ9Itr9gB1JV4NAtSvCNqcL34g0F1*qmRSHpdBrg2k0vHWld*MrqY"><span>File Ref Nbr.</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="roweven">
+                <td>01/16/2018</td><td class="formattedText">Appearance filed
+On this date Steven David Weil, Esq. added as Private Counsel for Plaintiff North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.</td><td class="currency"></td><td>1</td>
+        </tr><tr class="rowodd">
+                <td>01/16/2018</td><td class="formattedText">Complaint filed</td><td class="currency"></td><td>2</td>
+        </tr><tr class="roweven">
+                <td>01/16/2018</td><td class="formattedText">Termination notice filed (Uniform Summary Process Rule 2).</td><td class="currency"></td><td>3</td>
+        </tr><tr class="rowodd">
+                <td>01/16/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 01/25/2018  Time: 09:00 AM
+Result: Defendant Failed To Appear</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>01/25/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Bench Trial (CV) scheduled for 01/25/2018 09:00 AM has been resulted as follows: 
+Result: Defendant Failed To Appear</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>01/25/2018</td><td class="formattedText">Millitary affidavit filed as to party&#039;s millitary service. (Servicemembers Civil Relief Act, P.L. 108-189 &#167;201, 50 U.S.C. App. &#167;421).
+Applies To: Magan, Alina (Defendant)</td><td class="currency"></td><td>4</td>
+        </tr><tr class="roweven">
+                <td>01/26/2018</td><td class="formattedText">Judgment Entered:: Judgment for Plaintiff for Possession and Rent    , after defendant(s) failed to appear    Presiding: Hon. Dominic J Paratore
+ 
+	Judgment For:		North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.
+
+	Judgment Against:	Alina Magan
+
+Terms of Judgment:  Interest Begins: 01/16/2018 Jdgmnt Date: 01/26/2018  
+Damages: Damage Amt: 8760.08 Filing Fees: 250.00 
+	Judgment Total: 9,010.08
+
+</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>02/06/2018</td><td class="formattedText">Execution Issued:
+Execution on Money Judgment
+Judgment Debtor: Magan, Alina
+Judgment Creditor: North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.
+Terms of Execution:
+EXON Issuance Date:  02/06/2018
+Judgment Total:  9,010.08			
+Execution Subtotal:  9,010.08		
+Execution Total:  9,010.08</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/06/2018</td><td class="formattedText">Execution Issued:
+Execution on Possession of a Dwelling
+Judgment Debtor: Magan, Alina
+Judgment Creditor: North Point Apartments Limited Partnership by and through its managing agent Avalon Bay Communities, Inc.
+Terms of Execution:
+EXON Issuance Date:  02/06/2018
+Judgment Total:  9,010.08			
+Execution Subtotal:  9,010.08		
+Execution Total:  9,010.08</td><td class="currency"></td><td></td>
+        </tr>
+</tbody>
+</table>
+	  
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="id5cd">
+
+
+	
+
+
+
+
+	
+<div id="dispositionInfo" class="subsection2 bgClr1">
+	 <div class="subSectionHeader"><h4><span>Case Disposition</span></h4></div>
+	<table id="id5b7" summary="Table displaying the dispositions on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Disposition">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V52muEc09NoM1*WTAqos7cYrliIgH9VVtYYYeCiy0A3ZM6*zvjH5TtfpIWjQhEfTKikkqgthbQBDg*B0ULRv502SHUaMN1cGYNt5DQ5stIibzuxgjNGBt0M"><span>Disposition</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=eStohASe0RIlrjqZgJLpMgvMnDIkZtCaW5YD88mFmydOeLcWSiLlhxnbarD*5ZRVgC2Gtp4utNmXSvT6ZU85V52muEc09NoM1*WTAqos7cYrliIgH9VVtYYYeCiy0A3ZM6*zvjH5Ttd6w5BeLs-cDbxnjPnM-Gkpziou8Ctz6VgL713xc5fmMiDXVFnaVepp3jKAa8yz6lY"><span>Date</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td>Pending</td><td></td>
+        </tr>
+</tbody>
+</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+</div>
+</div>
+	</div>
+	<div id="moreInformationContainer" aria-live="assertive" aria-atomic="true" aria-relevant="all"></div>
+</div>
+
+</div>
+
+<div id="id5b8"></div>
+<div id="id5ce" style="display:none">
+	<div id="id5cf" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="processingDialog">
+	<b><span id="id5d0" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html">iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html</a></html>

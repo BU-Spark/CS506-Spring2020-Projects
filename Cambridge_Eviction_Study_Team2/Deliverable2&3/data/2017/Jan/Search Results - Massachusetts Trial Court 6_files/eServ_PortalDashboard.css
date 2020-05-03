@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_PortalDashboard.css,v 1.5 2015/08/05 14:05:41 zcarter Exp $ */
+
+
+/* ********************************* Portal Dashboard Layout Styles *********************************** */
+
+#portalDashboardPagePaneWest {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding-bottom:10px; overflow:auto; }
+
+#portalDashboardPagePaneEast {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding:0 0 10px 0; overflow:auto; }
+
+#portalDashboardPagePaneCenter {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding-bottom:10px; overflow:auto; }
+
+#portalDashboardPagePaneSouth { padding:0 !important; }
+
+.ui-layout-resizer-east { background:#c5dbec!important; width:15px !important; border-right:#2e6e9e solid 1px !important; } 
+
+.ui-layout-toggler-east { background:#2e6e9e url(../images/themes/default/paneCollapse2.png) no-repeat center center !important; width:15px !important; border-right:#2e6e9e solid 1px !important; } 
+
+.ui-layout-toggler-east-open { background:#2e6e9e url(../images/themes/default/paneCollapse.png) no-repeat center center !important; width:15px !important; border-right:#2e6e9e solid 1px !important; } 
+
+.eServPortalDashboard #mainContent  { padding-left:0px; padding-top:0px; }
+
+.eServPortalDashboard .caseInfo .caseInfoItems { width:auto; }
+
+.eServPortalDashboard .caseInfo .caseInfoItems dl { width:430px; }
+
+.eServPortalDashboard .caseInfo .caseInfoItems dt { float:left; clear:both; width:25%; }
+
+.eServPortalDashboard .caseInfo .caseInfoItems dd { width:65%; }
+
+.eServPortalDashboard .ptyContact, .eServPortalDashboard .ptyAffl, .eServPortalDashboard .ptyAtty, .eServPortalDashboard .ptyPersInfo, .eServPortalDashboard .chgPhase, .eServPortalDashboard .chgOffense, .eServPortalDashboard .citOfficer, .eServPortalDashboard .citIncident, .eServPortalDashboard .citLicense, .eServPortalDashboard .citVehicle {
+display: block;
+}
+
+
+.eServPortalDashboard .formSec {margin: 0px 0px 0px 0px; }
+
+#portalSearch .formElement {display:inline-block; text-align:left;}
+
+#portalSearch .formElement label {text-align:left; display:block;}
+
+#nameFieldset input[type=text] { width:150px; }
+
+#caseNumberFieldset input[type=text] { width:150px; }
+
+#selectElementFieldset select {max-width: 200px;}
+
+.eServPortalDashboard .adminMainHeader { display: none !important; }
+.eServPortalDashboard .breadCrumb {font-size: 1.6em; background: #fcb245 url("../images/themes/default/eFileHeader.gif") repeat-x center bottom; border: #999 solid 1px; border-bottom: #555 solid 1px; color: #555; font-weight: bold; padding-left: 5px;}
+
+
+.favoriteCaseRequestFormElements label { display: block; text-align: left; }
+.favoriteCaseRequestFormElements input[type="text"] { width: 150px; }

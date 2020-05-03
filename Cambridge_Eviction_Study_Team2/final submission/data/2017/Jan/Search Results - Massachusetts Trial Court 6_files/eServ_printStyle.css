@@ -1,0 +1,1461 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_printStyle.css,v 1.10 2016/12/28 16:59:26 sdavies Exp $ */
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* *******************************************  initialize.css  ******************************************************* */
+
+html, body, ul, ol, li, p, h1, h2, h3, h4, h5, h6, form, fieldset, table { border:0; margin: 0; padding:0; }
+
+body { background:none; text-align:left; } /* sets default theme background color */
+
+* { word-wrap:break-word; }
+
+html, body { overflow:visible !important; width:auto !important; height:auto !important; }
+
+.ui-layout-pane, .ui-layout-resizer, .ui-layout-toggler, #wicketAjaxDebugWindow, #wicketDebugLink, .toggler { display:none !important; }
+
+/* SHOW ONLY the panes you want */
+.ui-layout-pane-north, .ui-layout-pane-south, .ui-layout-pane-center, .ui-layout-pane-east { display:block !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* **********************************************  fonts.css  ********************************************************* */
+
+body { font-size:69%; font-family:Arial, Microsoft Sans Serif, sans-serif; }  /* default percentage for display */
+
+p { font-size:1em; }
+
+/*********** Default Header Styles *************************/
+
+h1, h2, h3, h4, h5, h6 {font-weight:bold;}
+
+h1 {font-size:1.8em;}
+
+h2 {font-size:1.6em;}
+
+h3 {font-size:1.4em;}
+
+h4 {font-size:1.2em;}
+
+h5 {font-size:1em;}
+
+h6 {font-size:.9em;}
+
+/*********** Default Anchor Styles *************************/
+
+a, a:visited { color:#0f1784; }
+
+a:active{ color:#3f597f; }
+
+a:focus, a:hover { color:#222; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* **********************************************  header.css  ******************************************************** */
+
+#header { display:none; }
+
+.ui-layout-north { padding:0px !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* *********************************************  application.css  **************************************************** */
+
+/************************* standard styles for adding to elements **********************/
+
+.ctr { text-align:center; }
+
+.phone, .b { font-weight:bold; }
+
+.hidden { display:none; }
+
+.contentCenter { margin:0 auto; }
+
+.clearfloat { clear:both; }
+
+.clearBorder { border:none !important; }
+
+.clearMargin { margin:0 !important; }
+
+.allcaps { text-transform:uppercase; }
+
+.currency, .numeric { text-align:right; }
+
+thead .currency:before { content: none; text-align:right; }
+
+.fltrt { float: right; margin-left: 8px; }
+
+.fltlft { float: left; margin-right: 8px; }
+
+.noHover { background:none !important; background-image:none !important; }
+
+.disabledLink { color:#999; }
+
+.formattedText { white-space:pre-wrap; }
+
+thead .currency:before { content: none; text-align:right; }
+
+.clickable { cursor:pointer; }
+
+.inlineBlk { display: inline-block; }
+
+.nowrap { white-space: nowrap; }
+
+
+/************************ Error Styles ***************************/
+
+.feedback { color:#f30; margin-top:5px; font-weight:bold; padding-top:5px; }
+
+.feedback ul li { list-style:none; }
+
+.feedbackPanel { background:#f6e7d1; border-radius: 5px 5px 5px 5px; display:block; margin:10px !important; width:auto; padding: 2px 5px; border:#ccc solid 1px; }
+
+.feedbackPanelERROR { display:block; color:#f30; font-weight:bold !important; font-size:1em; text-align:left; }
+
+#LoginPage .feedbackPanelERROR { text-align:center; }
+
+.feedback .feedbackPanel .feedbackPanelINFO span { background: url(../images/themes/default/valid.gif) left center no-repeat; padding:8px 5px 8px 25px; }
+
+.feedback .feedbackPanel .feedbackPanelERROR span { background: url(../images/themes/default/alertIcon.gif) left center no-repeat; padding:8px 5px 8px 25px; }
+
+.helpPanel { display:none; }
+
+.restricted { margin-top:5px; }
+
+
+/************************* Spinner icon, no markup **********************/
+
+.loadingIcon { display:none; }
+
+
+/************************* Global jQuery override styles  **********************/
+
+.ui-widget { font-size:1em !important; }  /* overrides the default size of 1.1em that makes the font sizing inconsistant */
+
+.ui-widget-header { background:#c2d2e4 url(../images/themes/default/collapseBar2.gif) repeat-x !important; background-position:0px -38px !important; }
+
+.ui-state-highlight { border: 2px solid #f00 !important; vertical-align:bottom; height:12px; }
+
+.dialogTxt { margin-bottom:10px; }
+
+.pane, .ui-layout-pane { border:none !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ********************************************  globalNav.css  ******************************************************* */
+
+#globalNavigation { display:none !important; }
+
+.ui-layout-west, .pane-west { display:none !important; }
+
+.ui-layout-north, .pane-north { display:none !important; position:static !important; height:auto; }
+
+.ui-layout-south, .pane-south { display:none !important; position:static !important; }
+
+.ui-layout-center, .pane-center { display:inline !important; position:static !important; height:auto !important; background:none;}
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ***********************************************  footer.css  ******************************************************* */
+
+#footer { display:none; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ************************************************  forms.css  ******************************************************* */
+
+/*********************** Global form styles *****************************/
+
+form legend { display:none; } /* legend tag to appear only in aural style sheet */
+
+input { border:#ccc solid 1px; font-size:1em; margin:0 10px 0 0; border-radius:3px; box-shadow: 2px 2px 3px #ccc; vertical-align:top; }
+
+input[type=checkbox], input[type=radio], input[type=hidden] { border:none; } /* uniform for all browsers */
+
+input[type=text], input[type=password], input[type=textarea] { padding:1px 3px 1px 3px; } /* for text input character spacing */
+
+select { width:auto; max-width:500px; min-width:50px; font-size:1em; border-radius:3px; padding:2px 4px; border:#ccc solid 1px;box-shadow: 2px 2px 3px #ccc; }
+
+form select { width:auto; max-width:500px; min-width:50px; font-size:1em; border-radius:3px; border:#ccc solid 1px; box-shadow: 2px 2px 3px #ccc; }
+
+input[type=textarea], textarea { width:73%; height:75px; font-size:1.2em; font-weight:normal !important; border-radius:3px; border:#ccc solid 1px; box-shadow: 2px 2px 3px #ccc; }
+
+form select option { width:auto; font-size:1em; }
+
+form select .long { width:auto; max-width:500px; min-width:50px; }
+
+
+/* ************************************  Form Element styles ******************************** */
+
+.formElements { background:#eee; padding:3px 5px 10px; border-radius:5px; margin-bottom:10px; box-shadow:0 2px 3px #999999; margin-top:5px; margin-right:10px; }
+
+.formElement { margin-top:5px !important; }
+
+.formElement label { display:inline-block; margin:0 10px 0 0; font-weight:bold; padding-right:5px; vertical-align:top; text-align:right; width:120px; color:#41537c; }
+
+.formElement .requiredField { color:#900 !important; font-weight:bold; background:url(../images/themes/default/requiredField.gif) right no-repeat; padding-right:15px; width:110px; }
+
+.formElement .date { margin-right:2px; }
+
+.formElement .fieldHint { float:none !important; font-weight:normal !important; color:#6B6B6B; padding-left:4px; text-align:left; }
+
+
+/* ************************************  Check Select styles ******************************** */
+
+.checkSelect { margin-top:5px; }
+
+.checkSelect label { font-weight:bold; color:#41537c; margin-top:5px; }
+
+
+/************************ Input styles for field length ********************************/
+
+.month, .day, .stateAbbr { width:26px; }
+
+.year { width: 38px; }
+
+.date { width:75px; }
+
+.small, .zip { width:55px; }
+
+.phoneNum { width:95px; }
+
+.exSmall { width:40px; }
+
+.long { width:230px; }
+
+.exLong { width:380px; }
+
+.widthAutoOverride { width:auto !important }
+
+.formSeparator { margin-top:5px; }
+
+.yui-skin-sam img { display:none; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* **********************************************  containers.css  **************************************************** */
+
+/* ******************************************** Container Styles ***************************************** */
+
+.formSec { border-radius:5px; margin: 22px 5px; padding:4px 4px 4px 8px; border: gray solid 1px; }
+
+.formSec2 { border-radius:5px; margin:0px 10px 30px 10px; border: gray solid 1px; }
+
+.formSec3 { border-radius:5px; margin: 22px 5px; border: gray solid 1px; }
+
+.formSec p, .formSec ul, .formSec ol, .formSec .tab-row p, .formSec .tab-row ul, .formSec .tab-row ol  { margin:5px 5px 0 0px; }
+
+.subsection1 { border:#ccc solid 1px; border-radius:5px; margin:10px 0; padding:5px 0; width:auto; }
+
+.subsection2 { border:#ccc solid 1px; border-radius:5px; box-shadow: 4px 4px 5px #000000; margin:0px 10px 30px 10px; }
+
+.subsection3 { border-left:#ccc solid 1px; border-top:#ccc solid 1px; border-radius:5px; box-shadow:2px 2px 2px #777; display:inline-block; margin-right:10px; vertical-align:top; }
+
+.subsection4 { display:inline-block; vertical-align:top; padding-bottom:10px; }
+
+.subsection5 { border:#ccc solid 1px; border-radius:5px; display:block; vertical-align:top; }
+
+.subsectionInlineForm { border:#ccc solid 1px; border-radius:5px; display:block; vertical-align:top; margin-top:5px; padding:4px 0px 4px 0px; }
+
+.subsectionInlineForm2 { border:none; border-radius:5px; display:block; vertical-align:top; margin-top:5px; padding:4px 0px 4px 0px; }
+
+.bgClr1 { background:#eee; }  /* gray1 */
+
+.bgClr2 { background:#d8d8d8; }  /* gray3 */
+
+.bgClr3 { background:#fff; }  /* white */
+
+.bgClr4 { background:#f6e7d1; }  /* ivory */
+
+.bgClr5 { background:#ccc; }  /* gray4 */
+
+.bgClr6 { background:#e3e3e3; }  /* gray2 */
+
+.containerSpacing { padding:4px 4px 4px 8px; }
+
+#mainContent { background:#fff; margin:0px; padding:0px; padding-bottom:10px; }
+
+
+/* ******************************************** Header Styles ***************************************** */
+
+.sectionHeader { background:#fcb245 url("../images/themes/default/eFileHeader.gif") repeat-x center bottom; border:#999 solid 1px; border-bottom:#555 solid 1px; color:#555; font-weight:bold; padding-left:5px;  }
+
+.subSectionHeader { padding:2px 5px; background:#c2d2e4 url(../images/themes/default/collapseBar2.gif) repeat-x;  background-position:0px -38px; color:#000; border-bottom:#999 solid 1px; border-radius:5px 5px 0 0; }
+
+.subSectionHeader2 { display:block; background:#f6e7d1; padding:1px 5px; font-weight:bold; color:#222; border-radius: 5px 5px 0 0; box-shadow:0px 2px 3px #999; margin-bottom:3px; border-top:#ccc solid 1px; } 
+
+.subSectionHeader3 { display:block; background:#ccc; padding:1px 5px; font-weight:bold; color:#222; border-radius: 5px 5px 0 0; box-shadow:0px 2px 3px #999; margin-bottom:3px; } 
+
+.subSectionHeaderInst { border-bottom:#ccc solid 1px; margin:0 0 5px 0; background:#d8d8d8; padding:3px 5px; }
+
+
+/* ******************************************** Tabbed Section Styles ***************************************** */
+
+.tab-row {  margin:0 0 4px 0; }
+
+.tab-row li { display:inline-block; padding:0; margin: 0px -4px 0px 0px; box-shadow:2px 4px 3px #000000; }
+
+.tab-row li a { position: relative; top: 1px; padding: 4px 10px; margin: 0px 0px 0px 0px; font-size:0.85em;  font-weight:bold; background:#ddd url(../images/themes/default/tabBack.jpg) bottom repeat-x; list-style: none; border-left: solid 1px #ccc; border-bottom: solid 1px #999; border-top: solid 1px #999; border-right: solid 1px #999; -moz-user-select: none; -khtml-user-select: none; cursor: pointer; text-decoration:none; margin: 0 0 -4px; display:block; }
+
+.tab-row li a:hover { background-color: #ccc; color:#222; background-image:none; }
+
+.tab-row .selected a { background-color: #fff; border-bottom: 1px solid #eee; color:#0f1784; background-image:none; }
+
+.tab-panel{ border:none; background-color: #fff; padding:15px 8px 8px 8px; border-radius:0 5px 5px 5px; box-shadow:#000 5px 5px 4px; position:relative; }
+
+.tabSection { margin:22px 5px; padding:0; background:none; }
+
+
+/* ******************************************** Definition list Styles ***************************************** */
+
+dl { margin:1px 0 0 3px; }
+
+dt { display:inline-block; margin:0 4px 0 0; vertical-align:top; font-weight:bold; color:#41537c; width:120px; }
+
+dd { display:inline-block; vertical-align:top; width:150px; margin-left:5px !important; margin-left:0px !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* *************************************************  tables.css  ***************************************************** */
+
+table { border-top: gray solid 1px; width:100%; border-collapse:collapse; page-break-inside:auto !important; page:auto; page-break-after:auto !important; page-break-before:avoid; }
+
+table caption { display:none !important; }
+
+tr { background-color:#fff; vertical-align:top; border:#fff solid 0px; page-break-after:auto !important;  border-bottom:#ccc solid 1px; }
+
+thead th { background:#fff; font-weight:bold; text-align:left; padding:1px 8px 0px 0px; font-size:1em; color:#41537c; }
+
+tfoot th {  padding:0 8px 0 0; }
+
+td { padding:2px 8px 2px 0; font-weight:normal; }
+
+.wicketExtensionsWizardOuterTable tbody td { padding:0 0 0 0 !important; }
+
+td img, td a img { border:none; }
+
+.rowodd { background-color:#fff; page-break-after:auto !important; }
+
+.roweven td { background-color:#eaeaea;  }
+
+.minimal { width: 1%; }
+ 
+table.tablesorter thead tr .header { background-image:none !important; padding-left:4px !important; }
+ 
+table.tablesorter thead tr .currency { background-image:none !important; padding-right:4px !important; }
+ 
+#Manage table.tablesorter thead tr .header { background-image:none !important; }
+
+.kiketable-th { height:auto !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* **************************************************  buttons.css  *************************************************** */
+
+.button,  input[type="submit"], input[type="button"], button, .formButtons input[type="submit"], .formButtons input[type="button"], .formButtons button, .anchorButton, .payButton { display:none; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* **************************************************  eaccess.css **************************************************** */
+
+/*  ***************************************  Password styles  *********************************** */
+
+#passwordChange { margin:10px 5px 30px 0; } /*  password change panel in display mode. */
+
+.dialogBoxSmall { width:340px;  margin:20px auto 0px auto; padding:5px; }
+
+#loginFieldset .formButtons { text-align:center; }
+
+
+/*  ***************************************  Main Page styles  *********************************** */
+
+.dynamicNav { display:block; float: left; width:18em; padding:0 0 20px 0; }
+
+.dynamicNav ul li { margin:5px 10px; list-style:none; }
+
+.dynamicNav ul li a { font-size:.95em; }
+
+.captcha { display:none; } 
+
+#acknowledgement { margin:20px 0px 0px 0; font-weight:bold; }
+
+#acknowledgement .anchorButton { display:none; }
+
+.acknowlegeText { margin-left:5px; }
+
+#welcomePageHeader { display:none !important; }  /* hides header from config version of page */
+
+.inputSection * { font-family:inherit; }  /* required so the styles configured in the rich markup editor are preserved */
+
+
+/*  **************************************  Search Page styles  *********************************** */
+
+.instructions { margin-bottom:8px; }
+
+.locationForm label { vertical-align:top; margin:0 10px 0 0; font-weight:bold; padding-right:14px; width:auto !important; }
+
+.locationForm .formElement { display:inline-block; vertical-align:top; }
+
+#SSNSearch label { width:150px !important; }
+
+#searchTabSection { position:relative; }
+
+.portalInstructions { padding:5px; text-align:center; width:auto; } /* my cases */
+
+#advAttorneyFieldset, #nameFieldset { display:block; }
+
+#caseTypeFieldset { display:block; }
+
+#caseTypeFieldset label { width:80px; }
+
+#caseTypeFieldset select { max-width:300px; }
+
+#nameFieldset select { max-width:120px; }
+
+
+/*  *****************************  Search Results Page styles  ********************************* */
+
+#srchResultNotice { color:#000; height:22px; }
+
+#srchResultNotice .feedbackPanel .feedbackPanelINFO span  { color:#000; background: none; background-image:none; padding-top: 8px; padding-right: 5px; padding-bottom: 8px; padding-left: 1px; }
+
+#srchResultNoticeNomatch { color:#f30; height:22px; background: none; background-image:none; padding-top: 8px; padding-right: 5px; padding-bottom: 8px; padding-left: 1px; }
+
+.bookmarkablePageLinkPropertyColumn { cursor: pointer; }
+
+.bookmarkablePageLinkPropertyColumn a { color: #000; text-decoration: none; }
+
+.bookmarkablePageLinkPropertyColumnLink { cursor: pointer; }
+
+.bookmarkablePageLinkPropertyColumnLink a { text-decoration: underline; }
+
+
+/*  *****************************  Case Detail Page styles  ********************************* */
+
+.caseInfoItems { width:600px; display:block; }
+				
+.caseInfoItems dt { width:70px !important; }
+
+.caseInfoItems dd { width:210px !important; }
+
+.caseInfo{ margin-bottom:0px; }
+
+.caseInfo .buttonBar div { display:none; }
+
+#caseInfo .additionalCaseInfoPanel { border:#ccc solid 1px; width:30%; overflow:hidden; }
+
+.caseInfoDetailBox { width:30%; border:#ccc solid 1px; background:#e3e3e3; }
+
+.caseInfoDetailBox h4 { font-size:1em; }
+
+
+/* **************************************  Inherited <div> Data Panel Styles  ************************************ */
+
+.box { float:left; margin:2px 10px 3px 3px; border-radius:5px; }
+
+.infoInstance { margin:5px 0 8px 0; }
+
+.infoChildSection .infoInstance:after { content: "."; display: block; height:0; font-size:0; clear: both; visibility:hidden; } /* IMPORTANT: expands containing div to include floated content */
+
+.moreInfo { display:block; clear:both; padding:0 3px 3px 3px; text-align:right; }
+
+.wicket-modal { padding:0px; }
+
+.wicket-modal .subBox {  border:#ccc solid 1px; display:inline-block; width:450px; margin:10px 0 0 10px; vertical-align:top; border-radius: 5px; box-shadow:2px 2px 3px #999; }
+
+.wicket-modal .subBox h6 { font-size:1em; font-weight:bold; background:#d8d8d8; padding:1px 3px; color:#2873c7; border-radius:5px 5px 0 0; }
+
+.wicket-modal dd { width:220px; }
+
+
+/* ******************************************  Party Panel Styles  **************************************** */
+
+.ptyPersInfo { width:240px; }
+
+.ptyPersInfo dt { width:70px; }
+
+.ptyContact { width:240px; padding:2px; border:#ccc solid 1px; background:#e3e3e3; }
+
+.ptyContact dt { width:55px; }
+
+.ptyAddr .displayData div { display:block; width:160px; }
+
+.ptyAffl { width:265px; padding:2px; border:#ccc solid 1px; }
+
+.ptyAffl .ptyAfflName { width:140px; display:inline-block; vertical-align:middle; }
+
+.ptyAffl .ptyAfflDscr { width:105px; display:inline-block; vertical-align:middle; }
+
+.ptyAffl .rowodd { background-color:#dedede; }
+
+.ptyAtty { width:325px; padding:2px; border:#999 solid 1px; background:#d8d8d8; }
+
+.ptyType { font-weight:normal; color:#000; vertical-align:middle; } /*  Also used in the PtychrgPanel and PtychrgSentencePanel */
+
+.ptyExtRepCap { border:none !important; padding-left:10px; display:block; }
+
+#ptyAttyListTbl { border:none; }
+
+#ptyAttyListTbl tr { background:none; }
+
+#ptyAttyListTbl thead tr th { border:none; background:none; }
+
+#ptyAttyListTbl .rowodd td { background:#e3e3e3; }
+
+#ptyAttyListTbl .roweven td { background:#d8d8d8; }
+
+.ptyAffl dl dt, .ptyAffl dl dd { margin:0; border:none; } 
+
+.ptyAffl dl dt:nth-of-type(odd), .ptyAffl dl dd:nth-of-type(odd) { background:#e3e3e3; }
+
+.ptyAffl h5 { background:none; color:#41537C; }
+
+
+/* ******************************************  Judgement Panel  **************************************** */
+
+#judmntPgInfo .judgementTbl { border-top:none; margin:5px; }
+
+#judmntPgInfo dt { width:90px; }
+
+#judmntPgInfo dd { width:110px; }
+
+#judmntPgInfo #additionalFieldsInfo, #judmntPgInfo .judgementsInfo { box-shadow:none; margin:0; }
+
+#judmntPgInfo #additionalFieldsInfo .subSectionHeader, #judmntPgInfo .judgementsInfo .subSectionHeader { background:#f6e7d1; background-image:none; }
+
+#judmntPgInfo #additionalFieldsInfo .subsection2, #judmntPgInfo .judgementsInfo .subsection2 { margin:0; }
+
+.judgementsInfo { display:block; }
+
+.judgementsInfo table { border-top:none; margin:5px; }
+
+
+/* *****************************************  Charge Panel Styles  **************************************** */
+
+.chgLbl { background:#555; border-radius:3px; color:#fff; display: inline; padding:1px 3px; font-weight:bold; }
+
+.chgHeadInfo { margin:10px 20px 5px 20px; }
+
+.chgHeadActn { padding-left:10px; color:#41537c; }
+
+.chgHeadDeg { color:#41537c; }
+
+.chgHeadDscr { padding-left:20px; font-weight:normal; }
+
+.chgPhase { width:390px; }
+
+.chgPhase dt { width:100px; }
+
+.chgPhase dd { width:270px; }
+
+.chgOffense { width:230px; border:#ccc solid 1px; padding:2px; background:#e3e3e3; }
+
+.chgOffense dt { width:90px; }
+
+.chgOffense dd { width:120px; }
+
+.subSectionHeader2 h5 { display:inline; background:none; border:none; }
+
+.chgDisp { width:280px; border:#999 solid 1px;  }
+
+.chgDisp dt { width:90px; }
+
+.chgDisp dd { width:160px; }
+
+.chgDisp h6 { font-size:1em; font-weight:bold; border-bottom:none; background:#c2d2e4 !important; border-radius:5px 5px 0 0; padding-left:3px;}
+
+.costFine .currency { background:#e3e3e3; } /* needed for right justification of currency fields to show alignment */
+
+
+/* ****************************************  Cost Summary Panel Styles  *************************************** */
+
+.splitTable  { width:47%; display:inline-block; vertical-align:top; margin:5px; border-radius:5px; box-shadow:2px 2px 3px #999;border:#ccc solid 1px; }
+
+
+/* ****************************************    Docket Panel Styles    *************************************** */
+
+.dktImage { display:block; padding-left:25px; background: url(../images/themes/default/document2.gif) no-repeat; height:19px;  }
+
+.financialSection { padding-bottom:10px; }
+
+
+/* ****************************************  Citation Panel Styles  *************************************** */
+
+#citInfo h5 { color:#41537c; }
+
+.citOffDt { margin-left:45px; font-weight:normal; color:#000; vertical-align:middle; }
+
+#citInfo .subSectionHeader2 div { display:inline; }
+
+#citInfo .subSectionHeader2 dl { display:inline; margin-left:60px; }
+
+#citInfo .subSectionHeader2 dt { width:75px; }
+
+.citOfficer { width:280px; }
+
+.citOfficer dt { width:85px; }
+
+.citOfficer dd { width:180px; }
+
+.citIncident { width:240px; padding:2px; border:#ccc solid 1px; background:#e3e3e3; }
+
+.citIncident dt { width:85px; }
+
+.citIncident dd { width:140px; }
+
+.citLicense { width:300px; padding:2px; border:#ccc solid 1px; }
+
+.citLicense dt { width:95px; }
+
+.citLicense dd { width:190px; }
+
+.citVehicle { width:200px; padding:2px; border:#999 solid 1px; background:#d8d8d8; }
+
+.citVehicle dt { width:45px; }
+
+.citVehicle dd { width:140px; }
+
+
+/* ****************************************  Additional Fields Panel Styles  *************************************** */
+
+.addlFldsSec { width:480px; float:none; }
+
+.addlFields dt { width:250px; }
+
+.addlFields dd { width:210px; }
+
+
+/* ****************************************  Tooltip Styles  *************************************** */
+
+.ui-cluetip-header { padding:2px !important }
+
+.cluetip-jtip #cluetip-outer { background:#fff; }
+
+.cluetip-jtip #cluetip-inner { border:none !important; width:96%; }
+
+.cluetip-jtip #cluetip-inner table { margin-bottom:20px; }
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ********************************************* eService eFile Styles ************************************************ */
+
+/* **********************************   Efile global classes ******************************** */
+
+.errorIcon { background: url(../images/themes/default/alertIcon.gif) right no-repeat; width:16px; height:16px;}
+
+.efileInput.invalid { border:#f30 1px solid; }
+
+.efileInputIndicator.invalid { display:inline-block; width:18px; height:16px; background: url(../images/themes/default/alertIcon.gif) right no-repeat; }
+
+.rejectedIcon { display:inline-block !important; width:17px; height:17px; background:url(../images/themes/default/caution.png) no-repeat; }
+
+.rejected { display:block !important; background-color:gold; }
+
+
+/* ********************************** Main Efile classes ******************************** */
+
+.efileAddSec { padding-top:2px !important; }
+
+.efileAddSec .anchorButton { display:none; }
+
+.efileEditReviewerTxt { padding:5px; margin-bottom:-18px; width:91%; }
+
+.efileReviewSec textarea { width:45%; height:58px; }
+
+.efileReviewSec label { width:140px !important; }
+
+.efileSecFeedbk { margin:0 0 0 8px; width:91%; }
+
+.efileItemButtonDelete { position:absolute; bottom:8px; right:4px; }
+
+.efileEditPanel { font-size:.9em; }
+
+.efileEditPanel input[type="text"] { margin-right:0; }
+
+
+/* ********************************** Efile Info Section classes ******************************** */
+
+#eFilePanelHeader { display:none !important; }
+
+.efileInfo label { width:65px  !important; }
+
+.efileInfo .requiredField { width:50px !important; }
+
+.efileInfo input[type="text"] { width:70px; }
+
+.efileInfoFiler { width:36% !important; }
+
+.efileInfoAtty { width:31% !important; }
+
+.efileInfoReviewer { width:31% !important; }
+
+.efileInfoSelections { padding: 8px 0; }
+
+.efileInfoSelections label { width:105px !important; }
+
+.efileInfoSelections .requiredField { width:90px !important; }
+
+.efileInfoSelections select { max-width:800px; }
+
+
+/* **********************************   Party Section styles ******************************** */
+					
+.efilePartyList { position:relative; border:#999 solid 0px; padding:18px 0 18px 0; margin:0; }
+
+.efilePartyList input { margin-right:4px; max-width:100px; vertical-align:top; }
+
+.efilePartyList select { max-width:110px; }
+
+.efilePtyIdentInfo, .efilePtyAddrInfo, .efilePtyContactInfo { width: 33%; }
+
+.efilePtyPnl label { width:75px; }
+
+.efilePtyPnl .requiredField { width:65px !important; }
+
+.efilePtyAddr2 input[type="text"], .efilePtyAddr3 input[type="text"] { display:inline; margin-left:93px; margin-top: 2px; }
+
+
+/* **********************************   Efile Affiliation styles ******************************** */
+
+.efileAfflSec { position: relative; width:350px; margin:5px 10px 5px 5px; }
+
+.efileAfflInfo { margin:0 10px 10px; }
+
+
+/* **********************************   Document Section styles ******************************** */
+
+.efileDocketInfo  { width:48%; display:inline-block; vertical-align:top; }
+
+.efileDocketInfo label { width:110px; }
+
+.efileDocketInfo .requiredField { width:100px !important; }
+
+.efileDocketInfo textarea { max-width:180px; height:42px; }
+
+.efileDocketFiles  { width:48%; }
+
+.efileDocketFiles input[type="button"] { padding:1px 5px; }
+
+.efileDocketFiles label { width: 140px; text-align: left; }
+
+.efileDocketList { position:relative; border:#999 solid 0px; padding:18px 0 18px 0; margin:0; }
+
+.efileDocketList .filingFee { float:left; width:210px; clear:none; }
+
+.efileDocketList .pageCount { float:left; width:210px; }
+
+.efileDocUploadTbl {  background:none; width:100%; border-top:0px solid #ababab; }
+
+.efileDocUploadTbl th { background:#d8d8d8; padding-left:3px; }
+
+.efileDocUploadTbl td { border-bottom:#d8d8d8 solid 1px; padding: 5px 0 5px 3px; }
+
+.efileDocUploadTbl .rejected { display:table-row !important; }
+
+.efileDocUploadTbl .rejected td { background:gold; }
+
+.efileDocUploadTbl .efileDateTime { width:110px; }
+
+.efileDocUploadTbl .efileDel { width:55px; }
+
+.efileDocUploadTbl td input[type="checkbox"] { margin-right: 0px; }
+
+.uploadForm { display:none; }
+
+
+/* ******************************   Efile Notes Section styles ***************************** */
+
+.efileNotes { width:61% !important; display:inline-block; vertical-align:top; min-height:65px; float:right; }
+
+.efileFees { width:30% !important; display:inline-block; vertical-align:top; float:left; }
+
+.efileFees .efileInput { width:55px; text-align:right; display:inline-block; }
+
+.efileFees label { width:120px; }
+
+.efileTotAmt .efileInput { border-top:#000 solid 1px; }
+
+.efileNotes textarea { width:60%; }
+
+
+/* **********************************   Efile Search styles ******************************** */
+
+#efileListPanel .REJECTED { color:#f30; }
+
+#efileListPanel .efileStatusSec { float:none; width:120px; margin-right:15px; margin-bottom:10px; display:inline-block; vertical-align:top; }
+
+#efileListPanel .efileSearchTypSec { float:none; width:160px; margin-right:15px; display:inline-block; vertical-align:top; }
+
+#efileListPanel .efileSrchCritSec { float:none; width:240px; margin-right:10px; display:inline-block; vertical-align:top; }
+
+#efileListPanel .efileSrchCritSec label { width:90px; }
+
+#efileListPanel .efileDateCritSec { float:none; width:360px; display:inline-block; vertical-align:top; }
+
+#efileListPanel .efileDateCritSec label { width:160px !important; }
+
+.eFileList .breadCrumb { display:none; }
+
+.efileQueueResults tr { height:21px; }
+
+.efileQueueResults .ui-state-hover, .efileQueueResults .ui-widget-content .ui-state-hover, .efileQueueResults .ui-state-focus, .ui-widget-content .ui-state-focus { background:#f6e7d1 !important; color:#000 !important; }
+
+.individualRow label { display:inline !important; }
+
+.eFileListDel { text-align:right; margin-right:0px; }
+
+.efileQueueCrit .buttonBar { clear:both; }
+
+
+/* **********************************   Efile Payment styles ******************************** */
+
+.efileDataTable { border-top:none; }
+
+.efileDataTable tbody { border-radius:5px; box-shadow:2px 2px 2px #777; padding-top:5px; border-top:#777 solid 2px; }
+
+.efileDataTable tfoot { border-radius:5px; box-shadow:2px 2px 2px #777; background:#ccc; padding-top:5px; }
+
+.efileDataTable tfoot tr { background:inherit; }
+
+.efileDataTable tbody dl { width:450px; }
+
+.efileDataTable tbody dd { width:300px; }
+
+.efileDataTable tfoot dt { width:90px; }
+
+.efileDataTable tfoot dd { width:55px; }
+
+.efileCartFees { width: 175px; }
+
+.efileCartButtons .delButton { float:right; }
+
+.efileCart { background: url(../images/cart.png) left no-repeat; padding-left:25px;}
+
+.buttonBarMsg { font-weight: bold; }
+
+.efileProcessStatus.SUCCESS { color: green; }
+
+.buttonBarMsg.error, .efileProcessStatus.FAILURE { color: red; }
+
+.efileProcessFailedTxt { font-weight: normal; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ***************************************************  epay.css ****************************************************** */
+
+/* **************************************  Epay payment screen styles  *************************************** */
+
+
+.paymentInfoPnl, .advPaymentPnl  { margin-top:25px; }
+
+.ePayPayor { width:320px; margin-bottom:10px; }
+
+.ePayPayor input {  width:152px; }
+
+.PaymentInfo .requiredField { width:100px !important; }
+
+/* **************************************  Epay option panel styles  *************************************** */
+
+.ePayOption { width:555px; }
+
+.epayOptionsTable { border-top:#ccc solid 0px; width:auto; margin:4px 4px 4px 8px; }
+
+.epayOptionsTable thead .optionsCol { width:240px; }
+
+.epayOptionsTable thead th { border-bottom:#ccc solid 1px; }
+
+.epayOptionsTable tbody tr { background:none; border-bottom:#ccc solid 1px;  }
+
+.epayOptionsTable tbody td { padding:2px 0;  }
+
+.epayOptionsTable tbody label { width:160px; text-align:left; float:left; }
+
+.epayOptionsTable tbody fieldset { width:100%; text-align:right; position:relative; }
+
+.epayOptionsTable tbody fieldset div { padding:2px 0; clear:both; }
+
+.epayOptionsTable tbody fieldset input { position:absolute; right:50px; }
+
+.epayOptionsTable tbody fieldset label {  font-weight:bold; color:#41537c; }
+
+.epayOptionsTable .optionAmt { width:90px; text-align:right;  }
+
+
+/* ***********************************  Epay proof of insurance panel styles  ********************************** */
+
+
+.policyDtRng h6 { color:#41537c; font-size:1em; }
+
+
+/* ***********************************  Epay balance panel styles  ********************************** */
+
+.ePayBalance  { width:580px; }
+
+.feeMessage  { margin-left:10px; width:230px; }
+
+.ePayBalance label {  width:155px; }
+
+.ePayBalance .requiredField {  width:145px !important; }
+
+.ePayBalance input { text-align:right; }
+
+.paymentInfoTotalPaymentAmount input { border:#e3e3e3 solid 0px; background:inherit !important; box-shadow:none; }
+
+/* *****************************  Epay advance payment case info panel styles  ****************************** */
+
+.ePayCaseInfo { width:545px; }
+
+.ePayCaseInfo label {  width:155px; }
+
+.ePayCaseInfo .requiredField {  width:145px !important; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ****************************************** eService Calendar Styles ************************************************ */
+
+/* ********************************* Calendar Layout Styles *********************************** */
+
+#calendarPagePaneEast {  background:none; padding:0 0 10px 0; overflow:auto; display:block !important; position:static !important; width:auto !important; height:auto !important; }
+
+#calendarPagePaneCenter {  background:none; padding-bottom:10px; overflow:auto; display:block !important; position:static !important; width:auto !important; }
+
+#calendarPagePaneSouth { padding:0 !important; }
+
+.ui-layout-resizer-east { display:none; } 
+
+.ui-layout-toggler-east { display:none; } 
+
+
+/* ********************************* Calendar Styles *********************************** */
+
+.judgeCalendar { display:block; height:265px; }
+
+.LargeViewCalendar { display:table !important; width:100%; clear: both; }
+
+.LargeViewCalendar .week { height: 35px !important; width:auto !important; text-align:center; display:table-row !important; float:none !important; }
+
+.LargeViewCalendar .day { height: 35px !important; width:14% !important; text-align:center; display:table-cell !important; float:none !important; }
+
+.LargeViewCalendar .day:first-child { width:16% !important; }
+
+.LargeViewCalendar .day h5 {  background:#f6e7d1 !important; padding-right:2px; text-align:right; }
+
+.LargeViewCalendar .day a { font-size:1.1em; display:block; width:100%; }
+
+.LargeViewCalendar .day a label { cursor:pointer; }
+
+.LargeViewCalendar .day.selected { background:#e3e3e3; }
+
+.calEventList .userTable .ui-state-hover { background: #f6e7d1 !important; background-image:none !important; color:#222 !important; border:none !important; } 
+
+
+/* ********************************* Calendar Header Styles *********************************** */
+
+.monthLbl { margin-right:8px; font-weight:bold; font-size:1.1em; }
+
+.calDays { display:block; margin:0 !important; }
+
+.calDays li { float:left; width:14%; text-align:center; list-style:none; font-weight:bold; }
+
+.calDays li:first-child  { width:16%; }
+
+.calJudgeCalSec { page-break-before:always; }
+
+.calJudgeCalSec #calPrev { display:inline-block; width:16px; height:16px; vertical-align:middle; }
+
+.calJudgeCalSec #calPrev input[type="button"] { background:url(../images/themes/default/calPrevMon.png) no-repeat; width:16px; height:16px; border: 0 solid #222222; }
+
+.calJudgeCalSec #calPrev input[type="button"]:disabled { background:url(../images/themes/default/calPrevMonDisabled.png) no-repeat; }
+
+.calJudgeCalSec #calNext { display:inline-block; width:16px; height:16px; vertical-align:middle; }
+
+.calJudgeCalSec #calNext input[type="button"] { background:url(../images/themes/default/calNextMon.png) no-repeat; width:16px; height:16px; border: 0px solid #222222; }
+
+.calJudgeCalSec #calNext input[type="button"]:disabled { background:url(../images/themes/default/calNextMonDisabled.png) no-repeat; }
+
+.calJudgeCalSec #calToday { display:none; }
+
+.calJudgeCalSec #calMonthLbl { float: right; }
+
+
+/* ********************************* Calendar Filter Styles *********************************** */
+
+.calSearchFilters .calFilter { display:table-cell; padding:0 2px; width:33%; }
+
+.calSearchFilters .calFilter select { width:100%; height:88px; box-shadow:none; }
+
+.calSearchFilters .includeResults { margin:8px 2px 0 2px; display:block; padding:3px; background:#ccc; border:#ccc solid 1px; }
+
+
+/* ********************************* Calendar Selection Table Styles *********************************** */
+
+.calListSec .subsection2 { border:none; background:none; box-shadow:none; margin:0; }
+
+
+/* ******************************************************************************************************************** */
+/* ******************************************************************************************************************** */
+/* ***********************************  Admin/Configuration Section General styles ************************************ */
+/* ******************************************************************************************************************** */
+
+#configTree { display:none; }
+
+#configPane { position:static; padding:15px; display:block; }
+
+#Manage #mainContent { background:#fff; background-image:none; padding-bottom:10px; }
+
+#Manage .subsection2 { margin:0 0 30px 0; background:#fff !important; border-left:#ccc solid 1px; }
+
+.adminContentHead { background:#d8d8d8 url(../images/themes/default/accordianHeadActive.jpg) repeat-x !important; border-bottom:#8c8c8c solid 2px !important; font-weight:bold !important; font-size:1em; height:16px; border-radius:5px 5px 0 0; }
+
+.adminContentHead span { display:block; padding:2px 0 0 5px; font-weight:bold; }
+
+
+/* *******  adminSubsection styles are for the secondary containers within the adminContent containers  *********  */
+
+.adminSubsection { border:#999 solid 1px; display:inline-block !important; vertical-align:top; margin:8px 0 8px 8px; width:97%; border-radius:5px; box-shadow:2px 2px 2px #777; }
+
+.admSubsectionHeader { display:block !important; margin-bottom:10px; border-bottom:#ccc solid 1px; width:100%; height:21px; background:#ccc; border-radius:5px 5px 0 0; color:#000;  }
+
+.admSubsectionHeader span { color:#000; display:block; font-weight:bold; padding-top:4px; }
+
+
+/* ************************************** Admin Configurable Tab styles ************************************** */
+						
+#Manage .tab-row { margin:0; }
+
+#Manage .tab-row  li  { position:relative; top:1px; padding:4px 0 4px 2px; margin:0px 0px 0px 0px; background:#ddd url(../images/themes/default/tabBack.jpg) bottom repeat-x; border:#999 solid 1px; border-left:solid 1px #ccc; cursor:pointer; }
+
+#Manage .tab-row  li input { margin:0 !important; vertical-align:middle; }
+
+#Manage .tab-row  li:hover  { background-color:#ccc; color:#222; background-image:none; }
+
+#Manage .tab-row  li a { padding:0 3px; font-size:.95em; background:none; border:none; display:inline-block; }
+
+#Manage .tab-row  .selected { background-color:#eee; border-bottom:1px solid #eee; background-image:none; }
+
+
+/* ************************************** selectable list table (palette) styles ************************************** */
+
+.palette { background:inherit !important; }
+
+.palette td { background:#d8d8d8; }
+
+.palette .header { background:#4e688e url(../images/themes/default/collapseBar.gif) repeat-x 1px center; color:#222; width:49% !important; }
+
+.palette select { height:250px !important; width:100% !important; }
+
+.palette button { width:23px !important; height:25px !important; background:#9bb8dc url(../images/themes/default/button.gif) repeat-x; border:#222 solid 1px; background-position:center bottom; border-radius:4px; width:auto !important; padding-left:1px; padding-right:1px; }
+
+.palette button:hover { background:#b7cce6 url(../images/themes/default/buttonOver.gif) repeat-x; background-position:center bottom;  }
+
+
+/* ************************************** SelectListPanel/ Breadcrumb styles ************************************** */
+
+.listPanelResults { margin:10px; display:block; }
+
+.listPanelResults table { border-top:none; }
+
+.listPanelResults tr { height:21px; cursor:pointer !important; }
+
+.listPanelResults .ui-state-hover, .listPanelResults .ui-widget-content .ui-state-hover, .listPanelResults .ui-state-focus, .ui-widget-content .ui-state-focus { background:#f6e7d1 !important; color:#000 !important; }
+
+.selectListHeader { height:18px; position:relative; }
+
+.selectListHeader span { padding:2px 0 0 5px; font-weight:bold; float:left; display:block;   }
+
+.selectListHeader a { display:none;  }
+
+.selectListHeader a:hover { background:url(../images/themes/default/addItemButtonOver.gif) no-repeat left center; }
+
+.selectListHeader a span { float:none; font-weight:bold; padding:1px; }
+			
+.searchParamElement { width:49%; display:inline-block; vertical-align:top; }
+
+.searchParamElement .date { margin-right:0px; }
+
+.breadCrumb { display:none; }
+
+
+/* ****************************************    Header Definitions    *************************************** */
+
+.adminMainHeader { display:none !important; }
+
+.adminMainHeaderImage { display:none !important; }
+
+
+/* ***************************  Admin/Configuration Section specific page styles ********************************* */
+/* *************************************************************************************************************** */
+
+/* ************************************** GeneralConfig styles ******************************************** */
+				
+.portalInfo dl { display:inline; }
+
+.portalInfo dt, #admGeneralConfig .portalInfo dd { width:auto; }
+
+.portalInfo .portalURL { display:block; }
+
+.deactivatePortal { width:27px; height:27px; background:url(../images/themes/default/powerBtnActive.png) no-repeat; margin-right:10px; border-width:0px !important; cursor:pointer; box-shadow:none; }
+
+.reactivatePortal { width:27px; height:27px; background:url(../images/themes/default/powerBtnInactive.png) no-repeat; margin-right:10px; border-width:0px !important; cursor:pointer; box-shadow:none; }
+
+.reactivatePortal:hover { background:url(../images/themes/default/powerBtnInactiveHover.png) no-repeat; }
+
+.authReqItems { display:inline; }
+
+.genSettingsConstraints .requiredField { width:280px !important; }
+
+.genSettingsConstraints label { width:293px !important; }
+
+.genSettingsAuthOptions { background:#f6e7d1; width:440px; padding-bottom:5px;  }
+
+.genSettingsAuthOptions .subsectionInlineForm2 label { width:240px; }
+
+.genSettingsEmail { width:200px; }
+
+.genSettingsEPayOptions { width:340px; }
+
+.genSettingsEPayOptions .subsectionInlineForm2 label { width:168px; }
+
+.genSettingsActions { width:170px; }
+
+#constraintImage { display:block !important; width:19px; height:19px; background: url(../images/themes/default/constraintIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#epayImage { display:block !important; width:23px; height:18px; background: url(../images/themes/default/epayIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#authenticationImage { display:block !important; width:30px; height:19px; background: url(../images/themes/default/authenticationIcon.png) no-repeat; margin:1px 8px 0 5px; float:left; }
+
+
+/* ************************************** InfoNavPanelConfig styles ******************************************** */
+
+#Manage .dynamicNav { display:block; background:#fff; float:none; margin:8px 10px 20px 0; border-left:#ccc solid 1px; border-top:#ccc solid 1px; border-radius:5px; box-shadow:2px 2px 2px #777; vertical-align:top; width:auto; padding:5px; }
+
+#Manage .dynamicNav ul li a { font-size:1em; }
+
+#Manage .dynamicNav .sectionHeader { position:relative; }
+
+#Manage .dynamicNav .sectionHeader .anchorButton { display:none; }
+
+#Manage .dynamicNav .formElement input { width:300px; }
+
+
+/* ************************************** SearchPanelTabConfig styles ******************************************** */
+
+.configTabBox { margin:15px 15px 15px 10px; }
+					
+.srchPanelHelpTextDiv textarea { height:140px; font-size:1.3em; }
+					
+.caseTypeSelection { display:block; margin-bottom:20px; }
+
+.compCaseSelector { padding:0px !important }
+
+/*  the following styles are from the SearchQualifierConfig panel JMAX only and need reviewed */
+					.editRadioGroup { border:#ccc solid 1px; background:#fff; padding: 5px; margin:15px 0 0 0; }
+					
+					.editRadioGroup img{ border:#777 solid 1px; margin:5px 0 0 0; }
+					
+					.editRadioGroup input { margin-left:40px; }
+
+
+/* ************************************** WelcomePagePanel styles ******************************************** */
+
+#Manage #welcomePageHeader { display:block !important; }
+
+#Manage .welcomePageSec { margin:22px 0; border-left:#ccc solid 1px; border-top:#ccc solid 1px; }
+
+#Manage .welcomePageSec .anchorButton span, #Manage .welcomePageSec .inputSection, #Manage .welcomePageSec .acknowlegeText span, #Manage .welcomePageSec #notice span span { border:#f00 solid 1px; padding:1px 3px; }
+
+#Manage .welcomePageSec .inputSection { border:#f00 solid 1px !important; }
+
+#Manage .welcomePageSec .anchorButton { display:inline-block; }
+
+.welcomePageSec .anchorButton input { width:40%; box-shadow:none; }
+
+.welcomePageSec #notice input { width:40%; }
+
+.welcomePageSec .acknowlegeText input { width:70%; }
+
+
+/* ************************************** CalendarConfig styles ******************************************** */
+
+#CalendarConfig .formElement label { width:300px; }
+
+.calJudgeSelection { display:block; margin-bottom:20px; margin-top:20px; }
+					
+.calEventSelection { display:block; margin-bottom:20px; }
+
+
+/* ************************************** CollectionJurisdiction styles ******************************************** */
+
+#jurisdictionDetail .collectionMsgs h5 { margin-top:15px; }
+
+
+/* ************************************** Detail Tabs styles ******************************************** */
+
+/* ******************  Case Type Selection Styles  ******************* */
+.formElement .configured { background:#c8e79f; }
+					
+.configCaseCd  { position:relative; margin-right:0px; }
+					
+.configCaseCd .published { background:#f9f5b8; color:#3856a5; }
+					
+.configCaseCd select { max-width:480px; }
+					
+.configLegend { border:#999 solid 1px; position:absolute; top:25px; left:30px; width:90px; border-radius:5px; }
+
+.configLegend h5 { padding:4px 0 0 4px; }
+					
+.configLegend select { width:90px; }
+
+.configLnk { margin:2px 0 0 0 !important; display:block !important; text-align:right; }
+
+.configLnk .anchorButton em { color:#777; }
+
+/* ******************  Results Section/Warning Styles  ******************* */
+.listWrapper { padding:10px 0; border-top:#d5cbbe solid 1px; }
+
+.cautionHead { background:#ad171b  url(../images/themes/default/cautionBack.gif) repeat-x; border-bottom:#777 solid 1px; min-height:19px; padding:2px; }
+
+.cautionHead h4 { background:url(../images/themes/default/caution.png) no-repeat; color:#fff; vertical-align:bottom; padding-left:25px; margin-left:4px;  }
+
+.configMsg { position:relative; }
+
+.configMsg h5  { padding-top:4px; display:block; font-weight:normal; }
+
+.configMsg .publishChkBx { position:absolute; top:3px; right:0; }
+
+.configMsg .publishChkBx  label {  display:inline; }
+
+.configMsg .publishChkBx  input { box-shadow:none; }
+
+.configMsg #configImage { display:block !important; width:19px; height:19px; background: url(../images/themes/default/constraintIcon.png) no-repeat; margin:0px 8px 0 5px; float:left; }
+
+.confirmList { padding:2px; }
+
+.confirmList div { display:inline-block; }
+
+.confirmList .site { width:180px; }
+
+.confirmList .casecd { font-weight:bold; }
+
+/* ******************  Detail Tab Common Styles  ******************* */
+.helpTooltipText { margin-bottom:10px; }
+
+.checkboxPanel label { font-weight:bold; color:#41537c; }
+
+#Manage .subSectionHeader2 h5, .wicket-modal .subSectionHeader2 h5 { display:inline-block; }
+
+#Manage .subSectionHeader2 .displayData { padding-right:15px; display:inline-block; }
+
+#Manage .financialSection { padding-bottom:0; }
+
+/* *************************************************************** */
+/* ******************  Party Panel Tab Styles  ******************* */
+#Manage .ptyPersInfo { width:125px; }
+
+
+/* ******************  Ticket/Citation Tab Styles  ******************* */
+#Manage .citOfficer, #Manage .citIncident { width:120px; }
+
+#Manage .citLicense { width:150px; }
+
+#Manage .citVehicle { width:80px; }
+
+
+/* ******************  Party Charge Tab Styles  ******************* */
+#Manage .chgPhase { width:150px; }
+
+#Manage .chgOffense { width:150px; }
+
+#Manage .chgDisp { width:150px; }
+
+.ptyChrgSentActnTrack .displayData { padding-right:275px; display:inline-block; }
+
+
+/* ******************  Judgement Tab Styles  ******************* */
+.jdgmntAddFields input[type="checkbox"] { float:left; margin:4px; }
+
+
+/* ************************************** Security Policy styles ******************************************** */
+
+.admSecurityCaptcha label { width:180px; }
+
+#passwordOptions, #otherSecurityOptions { width:430px; }
+
+#passwordHeader  #passwordHeadImage { display:block !important; width:31px; height:18px; background: url(../images/themes/default/passwordIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#userSecurityHeader  #userSecurityHeadImage { display:block !important; width:16px; height:19px; background: url(../images/themes/default/userSecurityIcon.png) no-repeat; margin:1px 8px 0 5px; float:left; }
+
+#userSecurityOptions { width:430px; }
+
+
+/* ************************************** Registered User styles ******************************************** */
+
+#regUserDetailPnl { min-height:500px; }
+
+.regUserPersInfo { width:430px; float:left; }
+
+.regUserEfileItems { width:430px; }
+
+.changePsswd { width:150px; }
+
+.selfRegItems { width:400px; }
+
+.regUserPortalPnl { width:250px; }
+
+#actionHeadImage { display:block !important; width:18px; height:18px; background:url(../images/themes/default/actionIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#selfRegHeadImage { display:block !important; width:18px; height:18px; background:url(../images/themes/default/selfRegIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#portalHeadImage { display:block !important; width:24px; height:18px; background:url(../images/themes/default/availPortalIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#persInformationImage { display:block !important; width:31px; height:18px; background:url(../images/themes/default/userPersInfoIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#eFileImage { display:block !important; width:37px; height:21px; background:url(../images/themes/default/userEfileIcon.png) no-repeat; margin:0px 8px 0 5px; float:left; }
+
+.addrLines { width:240px; display:inline-block; }
+
+.addrLines input:first-child { margin-top:0px; }
+
+.addrLines input { margin-top:5px; }
+
+
+/* ************************************** ePayment Type styles ******************************************** */
+
+#emailHeadImage { display:block !important; width:23px; height:18px; background:url(../images/themes/default/emailIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#epayTypeDetailPnl .formElement label { width:225px; }
+
+#epayTypeDetailPnl .formElement textarea { width:60%; }
+
+.radioSelectionItems { display:inline-block;  }
+
+.radioSelectionItems .radioItem { display:block; padding:0 15px 0 0; margin-bottom:2px; }
+
+#epayTypeDetailPnl .radioSelectionItems .radioItem label { width:auto; text-align:left; }
+
+#passwordLinks li { list-style:none; margin:6px 0 6px 0px; }
+
+.epayDtlFeePercent input { width:35px; margin-right:2px; }
+
+#epayDtlEmail  { width:300px; margin:5px 0; }
+
+
+/* ************************************** ePayment Options styles ******************************************** */
+
+#epayOptionsDetailPnl label  { width:150px; }
+
+#epayOptionsDetailPnl textarea  { width:60%; height:200px; }
+
+
+/* ************************************** eFile Code Maint styles ******************************************** */
+
+.eFileAdmTbl.listPanelResults tr { cursor:default !important }
+
+.eFileAdmTbl .cmsRow td { color:#41537C; font-weight:bold; }
+
+.eFileAdmTbl .eFileRow td { padding-bottom:4px; border-bottom:#ccc solid 1px; }
+
+.efileTblDscr { max-width:500px; }
+
+.eFileAdmTbl .minimal { padding-left:2px; }
+
+#Manage .navigator { text-align:right; }
+
+/* ************************************** eServiceConfigDetail styles ******************************************** */
+
+#eServiceConfigDetail label { width:230px; }
+
+.previewUpload { height:79px; width:700px; overflow:auto;  margin:2px 0 0 15px; }
+
+
+/* ************************************** LicenseConfigPanel styles ******************************************** */
+
+.manageLicense tbody tr { position:relative; }
+
+.manageLicense tr td, .manageLicense tr th { padding-left:2px; }
+
+.manageLicense tbody tr td label { margin-top:1px; }
+
+.manageLicense tbody tr td input { margin-top:1px; width:98%; }
+
+.delLicDialog .alert { display:block; float:left; margin-right:10px; background: url(../images/themes/default/alertIcon.gif) left center no-repeat; width:18px; height:16px; margin-bottom:20px; }
+
+.delLicDialog .alertTxt { color:#f30; font-weight:bold; }
+
+.delLicDialog .delKeyList { padding:5px 5px 5px 28px; margin:10px 0; font-weight:bold; }
+
+.delLicDialog .delKeyList p { color:#3d6bc8; }
+
+.editLinkSection td { background:#f6e7d1 !important; }
+
+						
+/* ************************************  Self Registration General Styles   *********************************** */
+					
+.wicketExtensionsWizard{ border-radius:5px; box-shadow:4px 4px 5px #000000; margin: 22px 18px; background:#e3e3e3; }
+
+.wicketExtensionsWizardOuterTable { border-top:none; width:100%; }
+
+.wicketExtensionsWizardInnerTable { border:#fff solid 0px !important; width:100% !important; }
+
+.wicketExtensionsWizardInnerTable tr { background:#e3e3e3; }
+
+.wicketExtensionsWizardHeaderRow { height: 20px; }
+
+.wicketExtensionsWizardHeader { border: 0px solid #fff !important; }
+
+.wicketExtensionsWizardHeaderTitle { background:#fcb245 url(../images/themes/default/eFileHeader.gif) repeat-x center bottom !important; border-bottom:#8c8c8c solid 2px !important; font-weight:bold !important; font-size:1em; height:14px; padding:2px; }
+
+.wicketExtensionsWizardHeaderSummary { margin: 10px 10px 5px; }
+
+.wicketExtensionsWizardView { border:0px solid #fff !important; }
+
+.wicketExtensionsWizard .formElement label { display:inline-block; width:220px !important; margin:0 10px 0 0; font-weight:bold; }
+
+.wicketExtensionsWizardOuterTable tbody .wicketExtensionsWizardButtonBar { text-align:left !important; padding:10px 0 20px 20px !important; }
+
+
+/* ******************************** Registration Wizard individual panel styles ********************************* */
+
+.captchaWizard .subsection1 { margin:0px; padding:0px; border:none; background:none !important; }
+
+.captchaWizard { margin:8px; background:url(../images/themes/default/captchaBack.jpg) no-repeat; width:698px; height:168px; padding-top:10px; }
+
+.captchaWizard .captchaInstructions { margin:15px 0 3px 260px; display:inline; font-style:italic; }
+
+.captchaWizard .captchaImg { margin:10px 0 3px 260px; }
+
+.captchaWizard .captchaTxt { margin:0 0 3px 260px; }
+
+.attyRegStep { margin:8px; background:url(../images/themes/default/attorneyBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }
+
+.emailRegStep  { margin:8px; background:url(../images/themes/default/emailBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }
+
+.emailRegInstructions  { margin:15px 0 3px 240px; display:block; font-style:italic; }
+
+.wicketExtensionsWizard #regUserDetailPnl .formElement label { width:120px !important; }
+
+.wicketExtensionsWizard #regUserDetailPnl .formElement .requiredField { width:110px !important; }
+
+.regConfirm { margin:8px auto; background:url(../images/themes/default/confirmBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }

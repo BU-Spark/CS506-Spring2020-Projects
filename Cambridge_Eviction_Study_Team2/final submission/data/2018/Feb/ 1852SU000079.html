@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case Details - Massachusetts Trial Court 5</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterJavaScriptResourceReference/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterParsersJavaScriptResourceReference/jquery.tablesorter.parsers.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterMetadataJavaScriptResourceReference/jquery.metadata.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterCSSResourceReference/jquery.tablesorter.css" />
+<script type="text/javascript" id="wiquery-gen-1582485552572"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 'auto', minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 'auto', maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane', size: 'auto'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: true, resizable: true, fxName: 'none', paneSelector: '#WestPane', initClosed: true, slidable: true, slideTrigger_open: 'click', slideTrigger_close: 'click', togglerAlign_open: 'center', togglerAlign_closed: 'center'}, center: {paneSelector: '#mainContent'}});
+$('#idfd7').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#idfd7').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+$('#idfe1').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#idfe2').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: false}, 2: { sorter: 'cjsCurrency'}, 3: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#idfe3').tablesorter({debug: false, headers: { 0: { sorter: 'text'}, 1: { sorter: 'cjsDate'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGkUOcfsrCSIJ*27W4cSaxqnapvS4u2xju1nABubOA497HSmbX8f1GooJUpi3XYIUaIsB7w0sH3cvuZyYTTE*A8SH7YYMPztJpvtR1kYro16C',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('idfe4'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" id="closeDialogJS"><!--/*--><![CDATA[/*><!--*/
+$('#processingDialog').dialog('close');
+/*-->]]>*/</script>
+
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { $(document).ready(function(){$('#caseHeader').css('margin-top', $('#titleBar').height() + 6);});;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/com.cjs.wicket.component.CancelEventPropagationResource/CancelEventPropagation.js"></script>
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="idfe5">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="idfe6" href="#" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGgjH9PHzmknpwwIO9Xb1sNUqo0Eaat5UOMTC0ThpyCx9*MPMCRPRBZOHxl8nPhG4oeVPNs8euOTG7rwB*pVOTZT7*DcNLzkUCDKMi9dGIa04',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idfe6') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li><a class="link" href="home.page">Home</a></li>
+	<li><a class="link" href="?x=IFNWZXUTjeT2RThWz6jfGgjH9PHzmknpwwIO9Xb1sNUqo0Eaat5UOBi69lRfuowKnPCVh73YkAPgwNfC6d8I5N-0bkJogCwUl5SrhADXvA1pgKs1Z*-gyQ">Search</a></li>
+ 	<li><a class="link" title="Search Results" href="?x=IFNWZXUTjeT2RThWz6jfGgjH9PHzmknpwwIO9Xb1sNUqo0Eaat5UODmrSQO-NaOvdemk0Ic5qQQc-DuR-tAj9VsIx56RVbZCflKasVQ2Mku34cSn0VjiNQ">Results</a></li>
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="idfe7" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="WestPane" class="ui-layout-west">
+	<div>
+<div class="dynamicNav" id="idfe8" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	
+<div id="caseDetail">
+	<div id="caseDetailHeader">
+
+
+	
+
+
+
+
+	
+		<div id="titleBar" class="sectionHeader">
+			<h1>
+				
+		
+			<ul>
+				
+				<li class="displayData">1852SU000079 Monteiro, Malvina G. v. Moore, Mildred Denise</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			</h1>
+		</div>
+		<div id="caseHeader" class="caseInfo formSec bgClr1">
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Type</li>
+				<li class="caseHdrInfo">Summary Process</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Status</li>
+				<li class="caseHdrInfo">Closed</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">File Date</li>
+				<li class="caseHdrInfo">02/20/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">DCM Track:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Initiating Action:</li>
+				<li class="caseHdrInfo">Summary Process - Residential (c239)</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Status Date:</li>
+				<li class="caseHdrInfo">09/26/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Judge:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Next Event:</li>
+				<li class="caseHdrInfo">
+<!-- $Id: CourtViewNextEventPanel.html,v 1.1 2011/04/12 18:55:38 stheisen Exp $ -->
+  <span></span>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div class="infoBox">
+		
+			<ul>
+				
+				<li class="displayData">
+
+<!-- added -->
+	<div class="housingPropertyDetailBox subsection3"> <!-- was caseInfoDetailBox -->
+		<div class="additionalCaseInfoPanel">
+			<div class="subSectionHeader2">
+				<h4><span>Property Address</span></h4>
+			</div>
+			<div id="addressInfo" class="containerSpacing">
+				<!-- CASEHOUS -->
+				<div>
+					<span>85</span> 
+					<span></span>
+					<span>Harvey</span> 
+					<span>Street</span>
+					<span>apt. 1</span>
+				</div>
+				<div>
+					<span>Cambridge</span> 
+					<span>MA        </span> 
+					<span>02140     </span>
+				</div>
+				
+				<!-- LCCASE -->
+				<div>
+					<span></span> 
+					<span></span>
+					<span></span> 
+			   </div>
+			   <div>
+					<span></span>
+				</div>
+			   <div>
+			   		<span></span>
+			   </div>
+
+				<!-- CASEPF -->
+				<div>
+					<div></div>
+					<div></div>
+					<!-- <div wicket:id="pf_mrag_dt"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div class="infoBox">
+		
+			<ul>
+				
+				
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+
+
+			<div class="buttonBar">
+				<div id="idfe9">
+	
+</div>
+				
+				
+				<div id="idfea" style="display:none"></div>
+			</div>
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	<div class="tabSection" id="CaseDetailPanelTabSection" aria-live="assertive" aria-atomic="true" aria-relevant="all">
+		<div id="idfeb">
+<div class="tab-row">
+<ul>
+	<li class="tab0 selected">
+		<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLCq7esIkKU0RPdDHmSjA5dEG3LteqpDBmZzalVyA*ROq" id="idfec" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLCq7esIkKU0Rv0*Qr3ldsr5ammKZ0hh-EK*bqmS63P2Y',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idfec') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>All Information</span></a>
+	</li><li class="tab1">
+		<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLAqGGHNUWo0ksXMX3PMDik3ZbdiS8--VlPv0BGF*H1Kt" id="idfed" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLAqGGHNUWo0kchRfJrqW*iokpSYR4pDE-hJhhA9cZ*m8',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idfed') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Party</span></a>
+	</li><li class="tab2">
+		<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLJ3BNuOjhQH1Uh6eCOlrhQxxjm80dBw9*sJUPJ*wm1pD" id="idfee" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLJ3BNuOjhQH1fBfPkkLK0Q2HcnX5ih1l6OKl7hODfday',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idfee') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Event</span></a>
+	</li><li class="tab3">
+		<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLBfTWbpi9QQBXjVeDY8Lj*PGae0MCC3gVH74M-O2BltD" id="idfef" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLBfTWbpi9QQB*NoNo-aLx3qXqntUr-KKHcuuGV*r6t0X',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idfef') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Docket</span></a>
+	</li><li class="tab4 last">
+		<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLCgb*0k5MNMAz32CnQgJ1kgFk5iBVNBpsI2SDxkbaL39" id="idff0" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pCxoDkM8EIWUR*klmXXsnd7GOJbJL2jtLCgb*0k5MNMAyp5Ab1-yGMDxbAPLn1iGBACxXCUtkKKn',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idff0') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Disposition</span></a>
+	</li>
+</ul>
+</div>
+<div class="tab-panel">
+	
+		<div class="allInfoPanel" id="idff1">
+
+
+	
+
+
+
+
+	
+		<div id="idff2" style="display:none">
+	
+</div>
+		<div id="idff3" style="display:none">
+	
+</div>
+		<div id="ptyInfo" class="subsection2 bgClr1">
+			<div class="subSectionHeader">
+				<h4>
+					Party Information
+				</h4>
+			</div>
+			<div id="ptyContainer" class="infoChildSection">
+				<div class="rowodd">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Monteiro, Malvina G.
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Plaintiff
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			<div class="displayData">
+
+
+
+
+	
+<div class="rowodd">
+	<div>
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Attorney</li>
+				<li class="ptyAttyInfo">Stamper, Esq., Linda A</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Bar Code</li>
+				<li class="ptyAttyInfo">542477</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Address </li>
+				<li class="ptyAttyInfo">
+
+	<div class="addrLn1">Linda A. Stamper, Esq.</div>
+	<div class="addrLn2">875 Massachusetts Ave</div>
+	<div class="addrLn3">Suite 31</div>
+	<span>Cambridge</span><span>,</span>&nbsp;<span>MA        </span>&nbsp;<span>02139     </span>
+
+
+
+
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Phone Number</li>
+				<li class="ptyAttyInfo">(617)864-8055</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="idff4" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU64ucyIHUZhSNUjqSuevNlCyWMczRAh-Q2qIM4BthMd8S*CJ-Z*DNYaXxAZSN0mqpx2XFnaS9ppTVUhib6v*6VFTkXi08KHuZwA',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idff4') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div><div class="roweven">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Moore, Mildred Denise
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Defendant
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			<div class="displayData">
+
+
+
+
+	
+<div class="rowodd">
+	<div>
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Attorney</li>
+				<li class="ptyAttyInfo">Fisher, Esq., Cheryl Watson</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Bar Code</li>
+				<li class="ptyAttyInfo">560093</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Address </li>
+				<li class="ptyAttyInfo">
+
+	<div class="addrLn1">City of Chelsea, City Hall</div>
+	<div class="addrLn2">500 Broadway</div>
+	<div class="addrLn3"></div>
+	<span>Chelsea</span><span>,</span>&nbsp;<span>MA        </span>&nbsp;<span>02150     </span>
+
+
+
+
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Phone Number</li>
+				<li class="ptyAttyInfo">(617)466-4150</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="idff5" onclick="var wcall=wicketAjaxGet('?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU64ucyIHUZhSNUjqSuevNlCzrx22lczpVPjRjfWT7223agDRTm8VuvRMpMdusDNhycSKitbX3Ey3LXMatKHkX-Hj0EYVOahGWmw',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idff5') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idff6">
+
+
+	
+
+
+
+
+	
+<div id="eventInfo" class="subsection2 bgClr1">
+	<div class="subSectionHeader"><h4><span>Events</span></h4></div>
+	<table id="idfe1" summary="Table displaying the events related to this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6xZXHleS6ld8KKpugx6G84ZedGX1TM6L8GvKAIO5b8zwO26fIgH9y4KOW2jZJxA-BT5ORL9MsiX2DnZsa7QfRrTDEc9V9W9gJpCnf3Th2bqUFvyQEWhIGkI"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Session">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6xZXHleS6ld8KKpugx6G84ZedGX1TM6L8GvKAIO5b8zwO26fIgH9y4KUCA3-k20wDQZmJ5XcBMJ2CcL0iQ-2GzZlzYpBCv7RNc*y4K8oK-RsF7Js0uhR2IU"><span>Session</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Location">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6xZXHleS6ld8KKpugx6G84ZedGX1TM6L8GvKAIO5b8zwO26fIgH9y4Lzbgzcd8gtr1OdWeLXjnnt374W0A2C5cTZIENj8bBNzmfgDoUtORJ*GJtzypaQdgc"><span>Location</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6xZXHleS6ld8KKpugx6G84ZedGX1TM6L8GvKAIO5b8zwO26fIgH9y4Jeey4VsutUNHlhCTdJl9fCue0gWYnXH06Xa0lh9d*enOJdREPhz0NY*mxJr78rPtc"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Result">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6xZXHleS6ld8KKpugx6G84ZedGX1TM6L8GvKAIO5b8zwO26fIgH9y4IwTyngcNEWsCq3WdCjn4W5m5QkEfxGrkIvaMdR6W-LOE4PzM-XShOQ340i-XaWvpo"><span>Result</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>03/01/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Event Continued</span></td>
+        </tr><tr class="roweven">
+                <td><span>03/08/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Pretrial Conference (CV)</span></td><td><span>Event Continued</span></td>
+        </tr><tr class="rowodd">
+                <td><span>03/15/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Pretrial Conference (CV)</span></td><td><span>Brought Forward</span></td>
+        </tr><tr class="roweven">
+                <td><span>03/22/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Pretrial Conference (CV)</span></td><td><span>Event Continued</span></td>
+        </tr><tr class="rowodd">
+                <td><span>04/12/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Pretrial Conference (CV)</span></td><td><span>Held</span></td>
+        </tr><tr class="roweven">
+                <td><span>06/04/2018  09:00 AM</span></td><td><span>Courtroom 3</span></td><td><span></span></td><td><span>Jury Trial (CV)</span></td><td><span>Brought Forward</span></td>
+        </tr><tr class="rowodd">
+                <td><span>06/25/2018  09:00 AM</span></td><td><span>Courtroom 3</span></td><td><span></span></td><td><span>Jury Trial (CV)</span></td><td><span>Not Held But Event Resolved</span></td>
+        </tr><tr class="roweven">
+                <td><span>07/17/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Not Held But Event Resolved</span></td>
+        </tr><tr class="rowodd">
+                <td><span>09/27/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Brought Forward</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idff7">
+
+
+	
+
+
+
+
+	
+<div id="docketInfo" class="subsection2 bgClr1 financialSection">
+	<div class="subSectionHeader"><h4><span>Docket Information</span></h4></div>
+	<table id="idfe2" class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Docket Date">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6wz3GRbprJ6XQXI4H1w-kFfN2W8r-Xjg2j8DStvsndda6aYIr8Cv3KlivJjdWuGJR-NxBBciO2YSK8exYmVFHuGKq9In6FhCYn*BtPAc6UbprW6hmrzD8OY"><span>Docket Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Docket Text">
+					<span><em><span>Docket Text</span></em></span>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Amount Owed" class="currency">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6wz3GRbprJ6XQXI4H1w-kFfN2W8r-Xjg2j8DStvsndda6aYIr8Cv3Km4WVlSFUbTupOnXwQ7*vRHH8ChAdipZsF9eHno5Epz4lnvivp1WMnOptwrSlXxeI8"><span>Amount Owed</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="File Ref Nbr.">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU6wz3GRbprJ6XQXI4H1w-kFfN2W8r-Xjg2j8DStvsndda6aYIr8Cv3Kmkss3F2KOkxo7g-SIsi9igTJDhnLRVprTZBOPP6lZ49nLEI1doUtYA9ehbQWGHP*g"><span>File Ref Nbr.</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="roweven">
+                <td>02/20/2018</td><td class="formattedText">Appearance filed
+On this date Linda A Stamper, Esq. added as Private Counsel for Plaintiff Malvina G. Monteiro</td><td class="currency"></td><td>1</td>
+        </tr><tr class="rowodd">
+                <td>02/20/2018</td><td class="formattedText">Complaint filed</td><td class="currency"></td><td>2</td>
+        </tr><tr class="roweven">
+                <td>02/20/2018</td><td class="formattedText">Termination notice filed (Uniform Summary Process Rule 2).</td><td class="currency"></td><td>3</td>
+        </tr><tr class="rowodd">
+                <td>02/20/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 03/01/2018  Time: 09:00 AM
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/26/2018</td><td class="formattedText">Answer filed by Mildred Denise Moore.</td><td class="currency"></td><td>4</td>
+        </tr><tr class="rowodd">
+                <td>02/26/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Bench Trial (CV) scheduled for 03/01/2018 09:00 AM has been resulted as follows: 
+Result: Event Continued 
+Reason: Discovery demand filed (Summary Process Rule 7[b])</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/26/2018</td><td class="formattedText">Event Scheduled
+Event: Pretrial Conference (CV)
+Date: 03/15/2018  Time: 09:00 AM
+Result: Brought Forward</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>02/26/2018</td><td class="formattedText">Jury trial claim on all issues endorsed upon pleading by Mildred Denise Moore (Uniform Summary Process Rule 8).</td><td class="currency"></td><td>5</td>
+        </tr><tr class="roweven">
+                <td>02/26/2018</td><td class="formattedText">Interrogatories directed to Malvina G. Monteiro filed by Mildred Denise Moore; trial automatically continued until 03/15/2018 (Uniform Summary Process Rule 7(b)).</td><td class="currency"></td><td>6</td>
+        </tr><tr class="rowodd">
+                <td>02/26/2018</td><td class="formattedText">Request for production of document(s) directed to Malvina G. Monteiro filed by Mildred Denise Moore; trial automatically continued until 03/15/2018 (Uniform Summary Process Rule 7(b)).</td><td class="currency"></td><td>7</td>
+        </tr><tr class="roweven">
+                <td>02/27/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Pretrial Conference (CV) scheduled for 03/15/2018 09:00 AM has been resulted as follows: 
+Result: Brought Forward</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>02/27/2018</td><td class="formattedText">Event Scheduled
+Event: Pretrial Conference (CV)
+Date: 03/08/2018  Time: 09:00 AM
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>03/08/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Pretrial Conference (CV) scheduled for 03/08/2018 09:00 AM has been resulted as follows: 
+Result: Event Continued 
+Reason: Plaintiff&#039;s counsel not present</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>03/08/2018</td><td class="formattedText">Appearance filed
+On this date Cheryl Watson Fisher, Esq. added as Private Counsel for Defendant Mildred Denise Moore</td><td class="currency"></td><td>8</td>
+        </tr><tr class="roweven">
+                <td>03/08/2018</td><td class="formattedText">Event Scheduled
+Event: Pretrial Conference (CV)
+Date: 03/22/2018  Time: 09:00 AM
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>03/22/2018</td><td class="formattedText">Event Resulted
+Judge: Sragow-Licht, Hon. Roanne
+The following event: Pretrial Conference (CV) scheduled for 03/22/2018 09:00 AM has been resulted as follows: 
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>03/22/2018</td><td class="formattedText">Event Scheduled
+Event: Pretrial Conference (CV)
+Date: 04/12/2018  Time: 09:00 AM
+Result: Held</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>04/12/2018</td><td class="formattedText">Event Resulted
+Judge: Sragow-Licht, Hon. Roanne
+The following event: Pretrial Conference (CV) scheduled for 04/12/2018 09:00 AM has been resulted as follows: 
+Result: Held</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>04/12/2018</td><td class="formattedText">Event Scheduled
+Event: Jury Trial (CV)
+Date: 06/04/2018  Time: 09:00 AM
+Result: Brought Forward</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>05/31/2018</td><td class="formattedText">Event Resulted:  Jury Trial (CV) scheduled on: 
+        06/04/2018 09:00 AM
+Has been: Brought Forward        For the following reason: Defendant ill
+Hon. Michele B Hogan, Presiding
+Appeared:
+Staff:</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>06/01/2018</td><td class="formattedText">Event Scheduled
+Event: Jury Trial (CV)
+Date: 06/25/2018  Time: 09:00 AM
+Result: Not Held But Event Resolved</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>06/25/2018</td><td class="formattedText">Event Resulted:  Jury Trial (CV) scheduled on: 
+        06/25/2018 09:00 AM
+Has been: Not Held But Event Resolved        For the following reason: Both Parties Request
+Hon. Dominic J Paratore, Presiding
+Appeared:
+Staff:</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>06/25/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 07/17/2018  Time: 09:00 AM
+Result: Not Held But Event Resolved</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>07/17/2018</td><td class="formattedText">Event Resulted:  Bench Trial (CV) scheduled on: 
+        07/17/2018 09:00 AM
+Has been: Not Held But Event Resolved
+Hon. Tejal Mehta, Presiding
+Appeared:
+Staff:</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>07/17/2018</td><td class="formattedText">Stipulation filed: The parties stipulate that the tenant, Mildred D. Moore, will vacate the premises (85 Harvard St Apt 1) by August 31, 2018
+The parties agree to try the counterclaim if no further settlement can be reached. The parties request that a further trial date be scheduled.</td><td class="currency"></td><td>9</td>
+        </tr><tr class="rowodd">
+                <td>07/17/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 09/27/2018  Time: 09:00 AM
+Result: Brought Forward</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>09/26/2018</td><td class="formattedText">Event Resulted:  Bench Trial (CV) scheduled on: 
+        09/27/2018 09:00 AM
+Has been: Brought Forward        For the following reason: Settled
+Hon. Dominic J Paratore, Presiding
+Appeared:
+Staff:</td><td class="currency"></td><td></td>
+        </tr>
+</tbody>
+</table>
+	  
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idff8">
+
+
+	
+
+
+
+
+	
+<div id="dispositionInfo" class="subsection2 bgClr1">
+	 <div class="subSectionHeader"><h4><span>Case Disposition</span></h4></div>
+	<table id="idfe3" summary="Table displaying the dispositions on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Disposition">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU63PPBKH6nZyrL-j8WHaow3a9TYp6jtENvJsglH7EJFQCVNTfsQRv5mFkn*3yBrhYF7DQGhIUcJtsAfG03ivvj7HD9oi**6iXWjslwTQS0McJyMMukDCAIwk"><span>Disposition</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=IFNWZXUTjeT2RThWz6jfGh4iSPpyL6gdiFOpG549*ZBxU3uHDWm5pH*kU-fSFDRvRPMtgPRkN*hJ9t2edCwU63PPBKH6nZyrL-j8WHaow3a9TYp6jtENvJsglH7EJFQCVNTfsQRv5mEt02ns285duU*hTUFmHW0A1KI7zRuW7m*JxZ9NF*kXLT44YwY1Ojt-bemoqAgpPEo"><span>Date</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td>Pending</td><td></td>
+        </tr>
+</tbody>
+</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+</div>
+</div>
+	</div>
+	<div id="moreInformationContainer" aria-live="assertive" aria-atomic="true" aria-relevant="all"></div>
+</div>
+
+</div>
+
+<div id="idfe4"></div>
+<div id="idff9" style="display:none">
+	<div id="idffa" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="processingDialog">
+	<b><span id="idffb" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html">iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html</a></html>

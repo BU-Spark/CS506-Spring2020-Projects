@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- $Id: EServiceBaseLayoutPage.html,v 1.13 2017/04/06 18:47:44 zliu Exp $ -->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Case Details - Massachusetts Trial Court 5</title>
+	<script type="text/javascript">window.cjsBrowserRenderStartTime = new Date();</script>
+	<link rel="icon" type="image/png" href="images/favicon.ico"/>
+	<link rel="stylesheet" type="text/css" href="css/eaccess.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/initialize.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_fonts.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_header.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_application.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_globalNav.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_footer.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_forms.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_containers.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_tables.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_buttons.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/efile.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/epay.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_Calendar.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_configStyles.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_PortalDashboard.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_NotifyPage.css?v=1.25.06" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="css/eServ_printStyle.css?v=1.25.06" media="print"/>
+	<link href="css/eServ_Phone.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:0px) and (max-device-width:380px)"/>
+	<link href="css/eServ_Tablet.css?v=1.25.06" rel="stylesheet" type="text/css" media="only screen and (min-device-width:381px) and (max-device-width:900px)">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!--[if lte IE 7]>
+	
+	<style type="text/css">
+	.ui-dropdown-content ul ul li { display: inline; width: 100%; }
+	.ui-dropdown-content ul ul li a { border-right: none; width: 100%; display: inline-block; }
+	</style>
+  <![endif]-->
+<script type="text/javascript" src="resources/org.odlabs.wiquery.core.commons.CoreJavaScriptResourceReference/jquery/jquery-1.5.1.min.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.odlabs.wiquery.ui.themes.WiQueryCoreThemeResourceReference/uilightness/jquery-ui-1.8.10.custom.css" />
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.core.CoreUIJavaScriptResourceReference/jquery.ui.core.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJQueryUICustomJavaScriptResourceReference/jquery.ui.custom.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.layout.LayoutJavaScriptResourceReference/jquery.layout.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowJavaScriptResourceReference/jquery.window.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.widget.WidgetJavascriptResourceReference/jquery.ui.widget.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.mouse.MouseJavascriptResourceReference/jquery.ui.mouse.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.position.PositionJavascriptResourceReference/jquery.ui.position.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.dialog.DialogJavaScriptResourceReference/jquery.ui.dialog.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.button.ButtonJavascriptResourceReference/jquery.ui.button.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.draggable.DraggableJavaScriptResourceReference/jquery.ui.draggable.min.js"></script>
+<script type="text/javascript" src="resources/org.odlabs.wiquery.ui.resizable.ResizableJavaScriptResourceReference/jquery.ui.resizable.min.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterJavaScriptResourceReference/jquery.tablesorter.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterParsersJavaScriptResourceReference/jquery.tablesorter.parsers.js"></script>
+<script type="text/javascript" src="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterMetadataJavaScriptResourceReference/jquery.metadata.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.BodyLayoutPlugin/layout/jquery.layout.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.window.WindowCSSResourceReference/jquery.window.css" />
+<link rel="stylesheet" type="text/css" href="resources/com.cjs.wicket.core.wiquery.plugin.tablesorter.TablesorterCSSResourceReference/jquery.tablesorter.css" />
+<script type="text/javascript" id="wiquery-gen-1582484968995"><!--/*--><![CDATA[/*><!--*/
+(function($) {
+$(document).ready(function() {
+window.bodyLayout=$('#body').layout({name: 'bodyLayout', defaults: {size: 'auto', minSize: 50, paneClass: 'pane', resizerClass: 'resizer', togglerClass: 'toggler', buttonClass: 'button', togglerLength_open: 35, togglerLength_closed: 35, fxName: 'slide', contentSelector: '.content', contentIgnoreSelector: 'span', hideTogglerOnSlide: true, togglerTip_open: 'Close This Pane', togglerTip_closed: 'Open This Pane', resizerTip: 'Resize This Pane', fxSpeed_open: 750, fxSpeed_close: 1500, fxSettings_open: { easing: 'easeInQuint' }, fxSettings_close: { easing: 'easeInQuint' }}, north: {size: 'auto', minSize: 82, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, south: {size: 'auto', maxSize: 44, closable: false, resizable: false, slidable: false, spacing_open: 0, togglerLength_closed: -1, fxName: 'none'}, east: {initHidden: true, paneSelector: '#EastPane', size: 'auto'}, west: {size: 'auto', minSize: 200, togglerTip_open: 'Close Navigations', togglerTip_closed: 'Open Navigations', resizerTip: 'Resize Navigations', closable: true, resizable: true, fxName: 'none', paneSelector: '#WestPane', initClosed: true, slidable: true, slideTrigger_open: 'click', slideTrigger_close: 'click', togglerAlign_open: 'center', togglerAlign_closed: 'center'}, center: {paneSelector: '#mainContent'}});
+$('#ida84').dialog({autoOpen: false, position: 'center', open: function(event, ui) {
+$('#ida84').parents('.ui-dialog:first').find('.ui-dialog-titlebar-close').hide();
+}, minimizable: false, maximizable: false, modal: true, resizable: false, title: 'Please Wait...'});
+$('#ida8e').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ida8f').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: 'text'}, 2: { sorter: 'text'}, 3: { sorter: 'text'}, 4: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ida90').tablesorter({debug: false, headers: { 0: { sorter: 'cjsDate'}, 1: { sorter: false}, 2: { sorter: 'cjsCurrency'}, 3: { sorter: 'text'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+$('#ida91').tablesorter({debug: false, headers: { 0: { sorter: 'text'}, 1: { sorter: 'cjsDate'} } , dateFormat: 'mm/dd/yyyy', widgets: ['zebraNested'], widgetZebra: {css: ['roweven','rowodd']}});
+});
+})(jQuery);
+
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/org.apache.wicket.markup.html.WicketEventReference/wicket-event.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.ajax.WicketAjaxReference/wicket-ajax.js"></script>
+<script type="text/javascript" src="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/modal.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/org.apache.wicket.extensions.ajax.markup.html.modal.ModalWindow/res/modal.css" />
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { setTimeout("var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24MXMQ58r1Od4PCJ8ZROlJJz8o4q26UedaMMiEiGNqQseOONZFpXospvwd7iXdspVkm0Hb0MTNxGnzih*ohV1Q*xO1Bk9GGAvTP8vfA7-wAup',function() { }.bind(this),function() { }.bind(this), function() {var c = Wicket.$('ida92'); return typeof(c) != 'undefined' && c != null}.bind(this));", 60000);;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" id="closeDialogJS"><!--/*--><![CDATA[/*><!--*/
+$('#processingDialog').dialog('close');
+/*-->]]>*/</script>
+
+<script type="text/javascript" ><!--/*--><![CDATA[/*><!--*/
+Wicket.Event.add(window, "load", function(event) { $(document).ready(function(){$('#caseHeader').css('margin-top', $('#titleBar').height() + 6);});;});
+/*-->]]>*/</script>
+
+<script type="text/javascript" src="resources/com.cjs.wicket.component.CancelEventPropagationResource/CancelEventPropagation.js"></script>
+</head>
+<body id="body">
+<div class="skipLink"><a href="#mainContent">Skip to main content</a></div>
+<div class="ui-layout-north" role="banner">
+	<div id="header">
+	<!-- <span class="visually-hidden">CourtView</span> -->
+	<div class="globalNavigation" id="ida93">
+<ul id="navigationSectionLeft" class="MenuBarHorizontal">
+<!--
+	<li wicket:id="menu"></li>
+-->
+	<li class="navLoggedInUser"><a id="ida94" href="#" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24FCHzk-t2AOnkiDiLvei-5wsojoTTlScMXACd65DNxRF6IUDqfaKGo9EJ6rYqJavrVBxV*CsVw72Mn4bfXJhpTwHqhByvLugU7-ydJGxsG7E',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida94') != null;}.bind(this));return !wcall;" title="Your Account"><span title="Manage Your Account"></span></a></li>
+	<li><a class="link" href="home.page">Home</a></li>
+	<li><a class="link" href="?x=9ZjrNVGCd0yYHp6q-aD24FCHzk-t2AOnkiDiLvei-5wsojoTTlScMdGxwhUAE4DXLAoEIdQ5N1ygrFmS0sgdNm3Rk73D8LmsdRj*7WUzwBSUZUZGbjw6nA">Search</a></li>
+ 	<li><a class="link" title="Search Results" href="?x=9ZjrNVGCd0yYHp6q-aD24FCHzk-t2AOnkiDiLvei-5wsojoTTlScMeXHgXubUmD4HABqbGrSubjdW4g3tOOb6gAI39MgJqiDe7dIbEP4lRdrEmIEGy8SPg">Results</a></li>
+	
+	
+	
+	<li></li>
+	
+	
+	
+</ul>
+<ul id="navigationSectionRight" class="MenuBarHorizontal">
+	
+	
+	<li><a class="link" id="ida95" href="login.page">Log on</a></li>
+	
+	<li class="link"><span aria-label="Print" role="link" tabindex="0" class="print" title="Print" id="printLink" onclick="return window.print();"></span></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="WestPane" class="ui-layout-west">
+	<div>
+<div class="dynamicNav" id="ida96" role="navigation" aria-label="navigation menu">
+	<div class="menuSection">
+	<div class="sectionHeader">
+		<h3><span title="">Links</span></h3>
+		
+	</div>
+	<ul class="menuLinks">
+		<li><span>
+<a href="https://www.mass.gov/lists/land-court-masscourts-reports" title="">Land Court Reports</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/service-details/masscourts-email-questions" title="">Email a Question</a>
+</span></li><li><span>
+<a href="http://survey.vovici.com/se/54861F09525D6589" title="">Feedback Survey</a>
+</span></li><li><span>
+<a href="https://www.mass.gov/lists/masscourts-detailed-instructions" title="">Detailed Instructions</a>
+</span></li>
+		<li></li>
+	</ul>
+	</div>
+	
+</div>
+
+
+
+
+</div>
+</div>
+<div id="EastPane" class="ui-layout-east">
+</div>
+<div id="mainContent" role="main" tabindex="-1">
+	
+<div id="caseDetail">
+	<div id="caseDetailHeader">
+
+
+	
+
+
+
+
+	
+		<div id="titleBar" class="sectionHeader">
+			<h1>
+				
+		
+			<ul>
+				
+				<li class="displayData">1852SU000054 Hines MIP Cambridge Park Drive LLC v. Stephenson, Shiaye</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+			</h1>
+		</div>
+		<div id="caseHeader" class="caseInfo formSec bgClr1">
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Type</li>
+				<li class="caseHdrInfo">Summary Process</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Status</li>
+				<li class="caseHdrInfo">Disposed for Statistical Purposes</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">File Date</li>
+				<li class="caseHdrInfo">01/29/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">DCM Track:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Initiating Action:</li>
+				<li class="caseHdrInfo">Summary Process - Residential (c239)</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Status Date:</li>
+				<li class="caseHdrInfo">02/23/2018</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Case Judge:</li>
+				<li class="caseHdrInfo"></li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div>
+		
+			<ul>
+				<li class="caseHdrLabel infoWidth120">Next Event:</li>
+				<li class="caseHdrInfo">
+<!-- $Id: CourtViewNextEventPanel.html,v 1.1 2011/04/12 18:55:38 stheisen Exp $ -->
+  <span></span>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+			<div class="caseInfo-col3">
+				<div class="infoBox">
+		
+			<ul>
+				
+				<li class="displayData">
+
+<!-- added -->
+	<div class="housingPropertyDetailBox subsection3"> <!-- was caseInfoDetailBox -->
+		<div class="additionalCaseInfoPanel">
+			<div class="subSectionHeader2">
+				<h4><span>Property Address</span></h4>
+			</div>
+			<div id="addressInfo" class="containerSpacing">
+				<!-- CASEHOUS -->
+				<div>
+					<span>165</span> 
+					<span></span>
+					<span>Cambridge Park</span> 
+					<span>Drive</span>
+					<span>Apt #614</span>
+				</div>
+				<div>
+					<span>Cambridge</span> 
+					<span>MA        </span> 
+					<span>02140     </span>
+				</div>
+				
+				<!-- LCCASE -->
+				<div>
+					<span></span> 
+					<span></span>
+					<span></span> 
+			   </div>
+			   <div>
+					<span></span>
+				</div>
+			   <div>
+			   		<span></span>
+			   </div>
+
+				<!-- CASEPF -->
+				<div>
+					<div></div>
+					<div></div>
+					<!-- <div wicket:id="pf_mrag_dt"></div> -->
+				</div>
+			</div>
+		</div>
+	</div>
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+				<div class="infoBox">
+		
+			<ul>
+				
+				
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			</div>
+
+
+			<div class="buttonBar">
+				<div id="ida97">
+	
+</div>
+				
+				
+				<div id="ida98" style="display:none"></div>
+			</div>
+		</div>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	<div class="tabSection" id="CaseDetailPanelTabSection" aria-live="assertive" aria-atomic="true" aria-relevant="all">
+		<div id="ida99">
+<div class="tab-row">
+<ul>
+	<li class="tab0 selected">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBsIwKsTq2x0ukW9CRvWUBH0qjF4Z4k2hWHO7uNV4wkCe" id="ida9a" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBsIwKsTq2x0uEVOP*tX-zZoOG*Ea5u9pJ64nAWvqjfCQ',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9a') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>All Information</span></a>
+	</li><li class="tab1">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBvc9hd55vtyDjJp7Ua8wIWslyz7-s*zMgmh8eE5nxwuo" id="ida9b" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBvc9hd55vtyDJB0jVJikrnpAz8l8Z3MtlXZduggYuDfv',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9b') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Party</span></a>
+	</li><li class="tab2">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBgbawnyGOsAMj1A8mqceqSUyXzKla1ppBGd0QbqNCmBs" id="ida9c" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBgbawnyGOsAMjYKlUk3z2f2NkocN9H7O-F1fr0a-rjVW',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9c') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Judgment</span></a>
+	</li><li class="tab3">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBlWlTPEFH*laHhLtxSVC5eO*kE4yB7e453HaKYIt3FtD" id="ida9d" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBlWlTPEFH*lafO3kKitnQbWT7Zp93QMs4ABzVZO74T6j',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9d') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Event</span></a>
+	</li><li class="tab4">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBiBQPWVJxB4hhiDJxy0*oDRkMGpu9o2FTD6*sVKzKBlY" id="ida9e" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBiBQPWVJxB4hlbWeG6enu7PPhpouPKhWciX8gIfVaC6y',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9e') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Docket</span></a>
+	</li><li class="tab5 last">
+		<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBg*czXjRI0-fKE7ETVODdKAhXOd6-5nXssnNGS9yjxxQ" id="ida9f" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgpTz*dnxCmLqh0YQX0i-2BahvW9aLS*wBg*czXjRI0-fW2gIRD5*XehKNFeLUm*dmoV7cz3-Qs88',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('ida9f') != null;}.bind(this));return !wcall;" aria-controls="CaseDetailPanelTabSection"><span>Disposition</span></a>
+	</li>
+</ul>
+</div>
+<div class="tab-panel">
+	
+		<div class="allInfoPanel" id="idaa0">
+
+
+	
+
+
+
+
+	
+		<div id="idaa1" style="display:none">
+	
+</div>
+		<div id="idaa2" style="display:none">
+	
+</div>
+		<div id="ptyInfo" class="subsection2 bgClr1">
+			<div class="subSectionHeader">
+				<h4>
+					Party Information
+				</h4>
+			</div>
+			<div id="ptyContainer" class="infoChildSection">
+				<div class="rowodd">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Hines MIP Cambridge Park Drive LLC
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Plaintiff
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			<div class="displayData">
+
+
+
+
+	
+<div class="rowodd">
+	<div>
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Attorney</li>
+				<li class="ptyAttyInfo">Ashton, Esq., Donna M</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Bar Code</li>
+				<li class="ptyAttyInfo">634984</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Address </li>
+				<li class="ptyAttyInfo">
+
+	<div class="addrLn1">Ashton Law PC</div>
+	<div class="addrLn2">28 Church St</div>
+	<div class="addrLn3">Suite 10</div>
+	<span>Winchester</span><span>,</span>&nbsp;<span>MA        </span>&nbsp;<span>01890     </span>
+
+
+
+
+</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+		
+		
+			<ul>
+				<li class="ptyAttyLabel">Phone Number</li>
+				<li class="ptyAttyInfo">(781)756-6600</li>
+			</ul>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="idaa3" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDMladq7TkmsvKHp8YUC0EB0Pvj5LiEkaB1R7*KwtA*5cKBEYvwausIPUvyNp8MHdhUxUUOfy*M4A3eFIznv-*MHClObEwVCD9g',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idaa3') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div><div class="roweven">
+					
+			<div class="subSectionHeader2">
+				<h5>
+					<div class="ptyInfoLabel">
+		
+			
+			Stephenson, Shiaye
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+					<div class="ptyType">
+		
+			
+			 - Defendant
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div> 
+					
+				</h5>
+			</div>
+			
+			
+			<div class="box ptyAffl">
+		
+			<h5>Alias</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="box ptyAtty">
+		
+			<h5>Party Attorney</h5>
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
+</div>
+			<div class="moreInfo ptyMore">
+				<a href="#" id="idaa4" onclick="var wcall=wicketAjaxGet('?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDMladq7TkmsvKHp8YUC0EB3MlhqgPBj5Go2esI-lT2nhDCu1AmqhQwgXWlQtzc6lBpQl8slfJPinthZH2iymnIGgRHUkUarmSA',function() { }.bind(this),function() { }.bind(this), function() {return Wicket.$('idaa4') != null;}.bind(this));return !wcall;" aria-controls="moreInformationContainer">More Party Information</a>
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+			<div class="moreInfo">
+				
+			</div>
+		
+					<div style="display: none;">This is tooltip Text. It should display nicely.</div>
+				</div>
+			</div>
+		</div>
+
+		
+		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel">
+
+
+	
+
+
+
+
+	
+<div class="subsection2 bgClr1 judgementsInfo">
+	<div class="subSectionHeader"><h4><span>Judgments</span></h4></div>
+	<table id="ida8e" summary="Table displaying the Judgments on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDHZT2ttITcjISbXVQRKOD4zyqe7cebwVoBSibuWgMYwRgFxm0CzgMIUY6eRnMjqYmcRN5MCBL2UEi4yrit61o-IvHfftNvzj6sgugzbScL2deiKAv-nRKNM"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDHZT2ttITcjISbXVQRKOD4zyqe7cebwVoBSibuWgMYwRgFxm0CzgMIWKfsOKUcoZwn7SYlf0ozUhjcvEYKUNKmoAoPcnbZmaT9JeXeNk92G89Bg7CI6bogA"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Method">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDHZT2ttITcjISbXVQRKOD4zyqe7cebwVoBSibuWgMYwRgFxm0CzgMIXUgPbmZfgGwV0-HX6Y4PW2KHzAZSr2M0aT2nfbjfGE3aG1Mq4dKIsngdZbWAY4pTc"><span>Method</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="For">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDHZT2ttITcjISbXVQRKOD4zyqe7cebwVoBSibuWgMYwRgFxm0CzgMIWlD-bBaVvDI5lt3Bl5E8716Z*HY3V2Kz-jGkmUosVlJa6LNlBlm3IyJAr8zFYLvq8"><span>For</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Against">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDHZT2ttITcjISbXVQRKOD4zyqe7cebwVoBSibuWgMYwRgFxm0CzgMIUEjBpCj1WmPbCSpg8qqeVxLQxYFW0iiS-uuTJmOuHUWsB9zCJ2bLv5pszrmBKbQSw"><span>Against</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>01/08/2019</span></td><td><span>Judgment for Plaintiff for Possession and Rent</span></td><td><span>, by agreement of the parties</span></td><td><span>Hines MIP Cambridge Park Drive LLC</span></td><td><span>Stephenson, Shiaye</span></td>
+        </tr><tr class="roweven">
+                <td><span>02/23/2018</span></td><td><span>Judgment for Plaintiff for Possession and Rent</span></td><td><span>, after defendant(s) failed to appear</span></td><td><span>Hines MIP Cambridge Park Drive LLC</span></td><td><span>Stephenson, Shiaye</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idaa5">
+
+
+	
+
+
+
+
+	
+<div id="eventInfo" class="subsection2 bgClr1">
+	<div class="subSectionHeader"><h4><span>Events</span></h4></div>
+	<table id="ida8f" summary="Table displaying the events related to this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDOyfFLyYcFSBuAzBE0Ydr6Bi6z6sFl5ctWaMDFS8Vpo7lqxPt45xH-xCNuresm*85kkH3dn*BVLAWVo8EA88BLqIKr8KHsdog6b3wAzkzBDnsKSX7DoORk0"><span>Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Session">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDOyfFLyYcFSBuAzBE0Ydr6Bi6z6sFl5ctWaMDFS8Vpo7lqxPt45xH-xyVnnykpm-aq0K0Z*0gjFLbHYZtU9B8TJJ7-rIl0yzLEhz1Qnjj22CmSoNL0hhiTs"><span>Session</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Location">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDOyfFLyYcFSBuAzBE0Ydr6Bi6z6sFl5ctWaMDFS8Vpo7lqxPt45xH-wqMZIc9AjJb9rdYAgYwJli7m4614VyYQ2L12pIz5TrmmnKM-Vt1BCusEZlEavxYL8"><span>Location</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Type">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDOyfFLyYcFSBuAzBE0Ydr6Bi6z6sFl5ctWaMDFS8Vpo7lqxPt45xH-wvwPnDoDoRTdKRlnY3yFe2s3EyECfLsY3ZLVg-QXGfItU95Pn2rM-We5omKAL7m50"><span>Type</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Result">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDOyfFLyYcFSBuAzBE0Ydr6Bi6z6sFl5ctWaMDFS8Vpo7lqxPt45xH-yK7PZuJJlJDfMMIUYTMgeJnwJlAj1qZf6cVkeKN3ahye9YRaEyKh*ZeSYQ46H0-Gc"><span>Result</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td><span>02/08/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Event Continued</span></td>
+        </tr><tr class="roweven">
+                <td><span>02/22/2018  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Bench Trial (CV)</span></td><td><span>Defendant Failed To Appear</span></td>
+        </tr><tr class="rowodd">
+                <td><span>01/03/2019  09:00 AM</span></td><td><span>Courtroom 2</span></td><td><span></span></td><td><span>Hearing</span></td><td><span>Not Held But Event Resolved</span></td>
+        </tr>
+</tbody>
+</table>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idaa6">
+
+
+	
+
+
+
+
+	
+<div id="docketInfo" class="subsection2 bgClr1 financialSection">
+	<div class="subSectionHeader"><h4><span>Docket Information</span></h4></div>
+	<table id="ida90" class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Docket Date">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDFDdazATSSnMyeFqa1WhdJ86V5mOiKXrG*d8cLI8C9ZxUBdnFBhm8PO0KQ*BJGYS97dY6TLJT3QYYmZ5l4wVnFSeJLvi49jaFQxozBlqSHCVdCGIjtY-RDs"><span>Docket Date</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Docket Text">
+					<span><em><span>Docket Text</span></em></span>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Amount Owed" class="currency">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDFDdazATSSnMyeFqa1WhdJ86V5mOiKXrG*d8cLI8C9ZxUBdnFBhm8PMujAZyAXmMXWX2c*foDGBQ2pufGuBwrs4YH3fi4pjeos1bMAhWAB6-vuuKcA1-ivI"><span>Amount Owed</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="File Ref Nbr.">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDFDdazATSSnMyeFqa1WhdJ86V5mOiKXrG*d8cLI8C9ZxUBdnFBhm8PPbZ5*BrwMmWUUwcuzvM911YINoSOm2zcmIAeGbOE66LxbulZ0ESPpmsO-6KMIZpU4"><span>File Ref Nbr.</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="roweven">
+                <td>01/29/2018</td><td class="formattedText">Appearance filed
+On this date Donna M Ashton, Esq. added as Private Counsel for Plaintiff Hines MIP Cambridge Park Drive LLC</td><td class="currency"></td><td>1</td>
+        </tr><tr class="rowodd">
+                <td>01/29/2018</td><td class="formattedText">Complaint filed</td><td class="currency"></td><td>2</td>
+        </tr><tr class="roweven">
+                <td>01/29/2018</td><td class="formattedText">Termination notice filed (Uniform Summary Process Rule 2).</td><td class="currency"></td><td>3</td>
+        </tr><tr class="rowodd">
+                <td>01/29/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 02/08/2018  Time: 09:00 AM
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/08/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Bench Trial (CV) scheduled for 02/08/2018 09:00 AM has been resulted as follows: 
+Result: Event Continued</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>02/08/2018</td><td class="formattedText">Event Scheduled
+Event: Bench Trial (CV)
+Date: 02/22/2018  Time: 09:00 AM
+Result: Defendant Failed To Appear</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>02/22/2018</td><td class="formattedText">Event Resulted
+Judge: Paratore, Hon. Dominic J
+The following event: Bench Trial (CV) scheduled for 02/22/2018 09:00 AM has been resulted as follows: 
+Result: Defendant Failed To Appear</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>02/22/2018</td><td class="formattedText">Millitary affidavit filed as to party&#039;s millitary service. (Servicemembers Civil Relief Act, P.L. 108-189 &#167;201, 50 U.S.C. App. &#167;421).</td><td class="currency"></td><td>4</td>
+        </tr><tr class="roweven">
+                <td>02/23/2018</td><td class="formattedText">Judgment Entered:: Judgment for Plaintiff for Possession and Rent    , after defendant(s) failed to appear    Presiding: Hon. Dominic J Paratore
+ 
+	Judgment For:		Hines MIP Cambridge Park Drive LLC
+
+	Judgment Against:	Shiaye Stephenson
+
+Terms of Judgment:  Interest Begins: 01/29/2018 Jdgmnt Date: 02/23/2018  Interest Rate: .12 Daily Interest Rate: .000329 
+Damages: Damage Amt: 5786.02 Filing Fees: 195.00 Costs Pd to Court: 55.00 
+	Judgment Total: 6,083.61
+
+</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>03/06/2018</td><td class="formattedText">Execution Issued:
+Execution on Money Judgment
+Judgment Debtor: Stephenson, Shiaye
+Judgment Creditor: Hines MIP Cambridge Park Drive LLC
+Terms of Execution:
+EXON Issuance Date:  03/06/2018
+Judgment Total:  6,083.61			
+Post Judgment Int. Rate:  .12  		Post Judgment Int. Total:  22.02
+Execution Subtotal:  6,105.63		
+Execution Total:  6,105.63</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>03/06/2018</td><td class="formattedText">Execution Issued:
+Execution on Possession of a Dwelling
+Judgment Debtor: Stephenson, Shiaye
+Judgment Creditor: Hines MIP Cambridge Park Drive LLC
+Terms of Execution:
+EXON Issuance Date:  03/06/2018
+Judgment Total:  6,083.61			
+Post Judgment Int. Rate:  .12  		Post Judgment Int. Total:  22.02
+Execution Subtotal:  6,105.63		
+Execution Total:  6,105.63</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>04/09/2018</td><td class="formattedText">Event Scheduled
+Event: Hearing
+Date: 01/03/2019  Time: 09:00 AM
+Result: Not Held But Event Resolved</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>04/09/2018</td><td class="formattedText">Agreement to vacate default and stipulation of continuance</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>04/09/2018</td><td class="formattedText">Execution Writ for rent returned unsatisfied.</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>04/09/2018</td><td class="formattedText">Execution Writ for possession returned unsatisfied.</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>12/27/2018</td><td class="formattedText">Motion For entry of Judgment Nun Pro Tunc &amp; Issuance of Execution for Possession filed by Hines MIP Cambridge Park Drive LLC.</td><td class="currency"></td><td>5</td>
+        </tr><tr class="roweven">
+                <td>01/03/2019</td><td class="formattedText">Event Resulted:  Hearing scheduled on: 
+        01/03/2019 09:00 AM
+Has been: Not Held But Event Resolved
+Hon. Dominic J Paratore, Presiding
+Appeared:
+Staff:</td><td class="currency"></td><td></td>
+        </tr><tr class="rowodd">
+                <td>01/08/2019</td><td class="formattedText">Judgment Entered:: Judgment for Plaintiff for Possession and Rent    , by agreement of the parties    Presiding: Hon. Roanne Sragow-Licht
+ 
+	Judgment For:		Hines MIP Cambridge Park Drive LLC
+
+	Judgment Against:	Shiaye Stephenson
+
+Terms of Judgment:  Interest Begins: 01/29/2018 Jdgmnt Date: 01/08/2019  Interest Rate: .12 Daily Interest Rate: .000329 
+Damages: Damage Amt: .00 
+
+</td><td class="currency"></td><td></td>
+        </tr><tr class="roweven">
+                <td>03/12/2019</td><td class="formattedText">Execution Issued:
+Execution on Possession of a Dwelling
+Judgment Debtor: Stephenson, Shiaye
+Judgment Creditor: Hines MIP Cambridge Park Drive LLC
+Terms of Execution:
+EXON Issuance Date:  03/12/2019
+Post Judgment Int. Rate:  .12  		
+Execution Total:  .00</td><td class="currency"></td><td></td>
+        </tr>
+</tbody>
+</table>
+	  
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+		<div class="allInfoPanel" id="idaa7">
+
+
+	
+
+
+
+
+	
+<div id="dispositionInfo" class="subsection2 bgClr1">
+	 <div class="subSectionHeader"><h4><span>Case Disposition</span></h4></div>
+	<table id="ida91" summary="Table displaying the dispositions on this case ordered chronologically." class="tablesorter">
+<thead>
+  
+	<tr class="headers">
+		
+			<th scope="col" role="columnheader" aria-label="Disposition">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDCaQ6o9pJ946OLRm-H-PEvMeVa49GCOwkQe4oQe8l8DaijxUJCDM-wTYhBBKsBU2DrS1tc9qZ8zfYEfFnYhLV6sPi4a*tQ5DUYtdB0O4pNejFembtzaEzoY"><span>Disposition</span></a>
+			</th>
+		
+			<th scope="col" role="columnheader" aria-label="Date">
+					<a href="?x=9ZjrNVGCd0yYHp6q-aD24L24h7Zx9JQEwJz9KAZA6svllEQ53JEYgm7NhmFOfKSUHEKwZsUXg18EjiFtFzxGDCaQ6o9pJ946OLRm-H-PEvMeVa49GCOwkQe4oQe8l8DaijxUJCDM-wRJdZrtNXKfFDXfA7ycMS-uedJiAjPwmNHDbz*3HiLdlDzX5qPd*rWagRd7BScpnuM"><span>Date</span></a>
+			</th>
+		
+	</tr>
+
+</thead>
+<tfoot>
+        
+</tfoot>
+<tbody>
+        <tr class="rowodd">
+                <td>Pending</td><td></td>
+        </tr>
+</tbody>
+</table>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+	
+</div>
+</div>
+	</div>
+	<div id="moreInformationContainer" aria-live="assertive" aria-atomic="true" aria-relevant="all"></div>
+</div>
+
+</div>
+
+<div id="ida92"></div>
+<div id="idaa8" style="display:none">
+	<div id="idaa9" style="display:none"></div>
+</div>
+<div class="ui-layout-south" style="display: block;">
+	<div id="footer" role="contentinfo">
+<div id="footerLogo" title="eServices provided by CourtView Justice Solutions.">
+	<span class="visually-hidden">eServices provided by equivant.</span>
+</div>
+<div id="footerContent">
+	<p>CourtView Justice Solutions Inc. an equivant company, Copyright 2020</p>
+	<div class="versionId">1.25.06</div>
+	
+	
+</div>
+</div>
+</div>
+<div id="sessionLocaleLanguage" class="hidden">EN-US</div>
+<div id="serverName" class="hidden">xxx.xxx.xxx.xxx</div>
+<div id="sessionId" class="hidden">yyyyyyyyyyyyyy</div>
+<div id="generationTime" class="hidden">0000</div>
+<div id="generationSize" class="hidden">0000</div>
+<div style="display: none;" id="processingDialog">
+	<b><span id="idaaa" style="display:none"></span></b>
+	<br />
+	<br />
+	<br />
+	<div style="text-align: center;"><img src="resources/org.apache.wicket.ajax.AbstractDefaultAjaxBehavior/indicator.gif" alt="loading"/></div>
+</div>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var myLayout; // a var is required because this page utilizes: myLayout.allowOverflow() method
+		window.cjsBrowserRenderEndTime = new Date();
+	});
+</script>
+<script type="text/javascript" id="JavaScriptMarkupResponseLastScript"><!--/*--><![CDATA[/*><!--*/
+window.cjsBrowserRenderEndTime = new Date();
+/*-->]]>*/</script>
+
+</body>
+<a hidden href="/iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html">iVTTinFhgcWutoQcUj-t2DGZHPCZt8wBgJqBbSg1Lm8=.html</a></html>

@@ -1,0 +1,245 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_forms.css,v 1.19 2017/04/07 16:03:52 areo Exp $ */
+
+/*********************** Global form styles *****************************/
+form legend {
+	display: none;
+} /* legend tag to appear only in aural style sheet */
+input {
+	border: #ccc solid 1px;
+	font-size: 1em;
+	margin: 0 10px 0 0;
+	border-radius: 3px;
+	box-shadow: 2px 2px 3px #ccc;
+	vertical-align: top;
+}
+
+input[type=checkbox], input[type=radio], input[type=hidden] {
+	border: none;
+	box-shadow: none;
+} /* uniform for all browsers */
+input[type=text], input[type=password], input[type=textarea] {
+	padding: 1px 3px 1px 3px;
+} /* for text input character spacing */
+select {
+	width: auto;
+	max-width: 500px;
+	min-width: 50px;
+	font-size: 1em;
+	border-radius: 3px;
+	border: #ccc solid 1px;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+form select {
+	width: auto;
+	max-width: 500px;
+	min-width: 50px;
+	font-size: 1em;
+	border-radius: 3px;
+	border: #ccc solid 1px;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+select.error {
+	border: red solid 2px;
+}
+
+input[type=textarea], textarea {
+	width: 73%;
+	height: 75px;
+	font-size: 1.2em;
+	font-weight: normal !important;
+	border-radius: 3px;
+	border: #ccc solid 1px;
+	box-shadow: 2px 2px 3px #ccc;
+}
+
+form select option {
+	width: auto;
+	font-size: 1em;
+}
+
+form select .long {
+	width: auto;
+	max-width: 500px;
+	min-width: 50px;
+}
+
+input[type=checkbox] {
+	box-shadow: none !important;
+}
+
+/* ************************************  Form Element styles ******************************** */
+.formElements {
+	background: #eee;
+	padding: 3px 5px 10px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	box-shadow: 0 2px 3px #999999;
+	margin-top: 5px;
+	margin-right: 10px;
+}
+
+.formElement {
+	margin-top: 5px !important;
+}
+
+.formElement label {
+	display: inline-block;
+	margin: 0 5px 0 0;
+	font-weight: bold;
+	padding-right: 5px;
+	vertical-align: top;
+	text-align: right;
+	width: 120px;
+	color: #41537c;
+}
+
+.formElement .alignLeft {
+	text-align: left;
+}
+
+.formElement .requiredField {
+	color: #900 !important;
+	font-weight: bold;
+	background: url(../images/themes/default/requiredField.gif) right
+		no-repeat;
+	padding-right: 15px;
+	width: 110px;
+}
+
+.formElement .requiredFieldLong {
+	color: #900 !important;
+	font-weight: bold;
+	background: url(../images/themes/default/requiredField.gif) right
+		no-repeat;
+	padding-right: 15px;
+	width: 140px;
+}
+
+.formElement .date {
+	margin-right: 2px;
+}
+
+.formElement .fieldHint {
+	float: none !important;
+	font-weight: normal !important;
+	color: ##616161;
+	padding-left: 4px;
+	text-align: left;
+	white-space: nowrap;
+}
+
+/* ************************************  Check Select styles ******************************** */
+.checkSelect {
+	margin-top: 5px;
+}
+
+.checkSelect label {
+	font-weight: bold;
+	color: #41537c;
+	margin-top: 5px;
+}
+
+/************************ Input styles for field length ********************************/
+.month, .day, .stateAbbr {
+	width: 26px;
+}
+
+.day {
+	height: 35px;
+}
+
+.year {
+	width: 38px;
+}
+
+.date {
+	width: 75px;
+}
+
+.small, .zip {
+	width: 55px;
+}
+
+.zipWith4 {
+	width: 70px;
+}
+
+.phoneNum {
+	width: 95px;
+}
+
+.exSmall {
+	width: 40px;
+}
+
+.long {
+	width: 230px;
+}
+
+.exLong {
+	width: 380px;
+}
+
+.widthAutoOverride {
+	width: auto !important
+}
+
+.formSeparator {
+	margin-top: 5px;
+}
+
+.errorMsgId {
+	visibility: hidden !important;
+}
+
+.calendarHead {
+	background: #cccccc;
+	background: -webkit-linear-gradient(bottom, #cccccc, #ffffff); 
+    background: -o-linear-gradient(bottom, #cccccc, #ffffff); 
+    background: -moz-linear-gradient(bottom, #cccccc, #ffffff); 
+    background: linear-gradient(bottom, #cccccc, #ffffff); 
+}
+
+.calendarDay.selected {
+	background: #e3e3e3;
+}
+
+.calendarDateContainer {
+	background: #f6e7d1;
+	text-align: right;
+	min-width: 83px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.calendarDate {
+	padding-right: 3px;
+}
+
+.calendarDay {
+	height: 44px !important;
+	width: 14% !important;
+	text-align: center;
+	display: table-cell !important;
+	float: none !important;
+	padding: 0;
+	border: 1px	solid #CCC;
+}
+
+.calendarDay a {
+	font-size: 1.1em;
+	display: block;
+	width: 100%;
+}
+
+.calendarDayOfWeek {
+	text-align: center;
+}
+
+.calEventList > form > #SelectListPanel > .listPanelResults {
+	margin: 0 !important;
+}

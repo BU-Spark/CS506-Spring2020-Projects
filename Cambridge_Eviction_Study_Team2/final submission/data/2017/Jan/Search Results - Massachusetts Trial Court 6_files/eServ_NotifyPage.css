@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_NotifyPage.css,v 1.2 2013/10/22 16:05:36 mfuller Exp $ */
+
+
+/* ********************************* Notification Page Layout Styles *********************************** */
+
+#notifyPagePaneCenter {  background:#98a7ac url(../images/themes/default/contrastBack.gif)  repeat-x center top; padding-bottom:10px; overflow:auto; }
+
+.notifyInstruct { min-height:150px; margin: auto; width: 200;}
+
+.notifyInstruct p, h4 { float:none; }
+
+.notifyInstructSec { min-height:150px; margin: auto; width: 200;}
+
+.notifyInstruct .link { cursor: default; }
+

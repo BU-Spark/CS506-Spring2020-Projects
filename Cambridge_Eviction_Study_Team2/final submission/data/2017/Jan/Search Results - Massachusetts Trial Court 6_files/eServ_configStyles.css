@@ -1,0 +1,577 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_configStyles.css,v 1.67 2017/07/21 17:18:47 sdavies Exp $ */
+
+/* *********************************  Admin/Configuration Section General styles ********************************* */
+/* *************************************************************************************************************** */
+
+#configTree { width:18em; position:absolute; left:0; top:0; bottom:0; border-right:#ccc solid 1px; }
+
+#configTree table { border:none !important; }
+
+#tree { position: fixed; width:18em; border-right:#ccc solid 1px; padding-top:15px; height: 80%; overflow-y: auto; -ms-overflow-style: none; }
+#tree::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+#configPane { position:absolute; left:17em; top:0; right:20px; padding:15px; }
+
+#Manage #mainContent { background:#fff; background-image:none; padding-bottom:10px; }
+
+#Manage .subsection2 { margin:0 0 15px 0; }
+
+.adminContentHead { background:url(../images/themes/default/accordianHeadActive.jpg) repeat-x !important; border-bottom:#8c8c8c solid 2px !important; font-weight:bold !important; font-size:1em; height:16px; border-radius:5px 5px 0 0; }
+
+.adminContentHead span { display:inline-block; padding:2px 0 0 5px; font-weight:bold; }
+
+.adminContentHead i {float: right; padding-right: 15px; font-size: initial;}
+
+/* *******  adminSubsection styles are for the secondary containers within the adminContent containers  *********  */
+
+.adminSubsection { border:#999 solid 1px; display:inline-block !important; vertical-align:top; margin:8px 0 8px 8px; width:97%; border-radius:5px; box-shadow:2px 2px 2px #777; }
+
+.admSubsectionHeader { display:block !important; margin-bottom:10px; border-bottom:#ccc solid 1px; width:100%; height:21px; background: url(../images/themes/default/adminHeaderBarBack.gif) repeat-x bottom center; border-radius:5px 5px 0 0; color:#fff;  }
+
+.admSubsectionHeader span { color:#fff; display:block; font-weight:bold; padding-top:4px; }
+
+.adminSubsectionButtons { margin:8px 0 8px 8px; }
+
+
+/* ************************************** Admin Configurable Tab styles ************************************** */
+						
+#Manage .tab-row { margin:0; }
+
+#Manage .tab-row  li  { position:relative; top:1px; padding:4px 0 4px 2px; margin:0px 0px 0px 0px; background:#ddd url(../images/themes/default/tabBack.jpg) bottom repeat-x; border:#999 solid 1px; border-left:solid 1px #ccc; cursor:pointer; }
+
+#Manage .tab-row  li input { margin:0 !important; vertical-align:middle; }
+
+#Manage .tab-row  li:hover  { background-color:#ccc; color:#222; background-image:none; }
+
+#Manage .tab-row  li a { padding:0 3px; font-size:.95em; background:none; border:none; display:inline-block; }
+
+#Manage .tab-row  .selected { background-color:#eee; border-bottom:1px solid #eee; background-image:none; }
+
+
+/* ************************************** selectable list table (palette) styles ************************************** */
+
+.palette { background:inherit !important; }
+
+.palette td { background:#d8d8d8; }
+
+.palette .header {
+	background: #4e688e url(../images/themes/default/collapseBar.gif)
+		repeat-x 1px center;
+	color: #222;
+	width: 49% !important;
+	border-left: 1px solid #729ac2;
+	border-right: 1px solid #729ac2;
+}
+
+.palette select { height:250px !important; width:100% !important; }
+
+.palette button { width:23px !important; height:25px !important; background:#9bb8dc url(../images/themes/default/button.gif) repeat-x; border:#222 solid 1px; background-position:center bottom; border-radius:4px; width:auto !important; padding-left:1px; padding-right:1px; }
+
+.palette button:hover { background:#b7cce6 url(../images/themes/default/buttonOver.gif) repeat-x; background-position:center bottom;  }
+
+
+/* ************************************** SelectListPanel/ Breadcrumb styles ************************************** */
+
+.listPanelResults { margin:10px; width: 97%;}
+
+.listPanelResults table { border-top:none; }
+
+.listPanelResults tr { height:21px; cursor:pointer !important; }
+
+.listPanelResults .ui-state-hover, .listPanelResults .ui-widget-content .ui-state-hover, .listPanelResults .ui-state-focus, .ui-widget-content .ui-state-focus { background:#f6e7d1 !important; color:#000 !important; }
+
+.selectListHeader { height:18px; position:relative; }
+
+.selectListHeader span { padding:2px 0 0 5px; font-weight:bold; float:left; display:block;   }
+
+.selectListHeader a { padding:0 15px 1px 25px; font-weight:bold; background:url(../images/themes/default/addItemButton.gif) no-repeat 0px center; position:absolute; right:0px; display:block;  }
+
+.selectListHeader a:hover { background:url(../images/themes/default/addItemButtonOver.gif) no-repeat left center; }
+
+.selectListHeader a span { float:none; font-weight:bold; padding:1px; }
+			
+.searchParamElement { width:49%; display:inline-block; vertical-align:top; }
+
+.searchParamElement .date { margin-right:0px; }
+
+.breadCrumb { border-bottom:#ccc solid 1px; margin-bottom:10px; padding-bottom:3px; }
+
+.breadCrumb a, .breadCrumb em { margin:0 3px; }
+
+.noBreadCrumb .breadCrumb { display: none; }
+
+/*CVESVC- 201511241633 swd added scrollbars to table and size so that "save", and table head were always visible*/
+table[id^="dataViewContainer"]{
+	display: block;
+	height: 465px;;
+	overflow-y: scroll;
+}
+
+/* ****************************************    Header Definitions    *************************************** */
+
+/* .adminMainHeader { display:block !important; margin-bottom:10px; width:100%; height:35px; background: url(../images/themes/default/adminHeaderBarBack.gif) repeat-x;  box-shadow:4px 4px 5px #000000; } */
+
+.adminMainHeader { display:block !important; margin-bottom:10px; height:21px; background: url(../images/themes/default/adminHeaderBarBack.gif) repeat-x;  box-shadow:4px 4px 5px #000000;  border-radius:5px; color:#fff;  padding-left:5px;}
+
+.adminMainHead span { display:block; padding-left:5px; font-weight:bold; }
+
+.adminMainHeaderImage { display:block !important; width:603px; height:55px; }
+
+#Manage #caseTypeHeaderImage { background: url(../images/themes/default/caseTypesHeader.jpg) no-repeat; }
+
+
+/* ***************************  Admin/Configuration Section specific page styles ********************************* */
+/* *************************************************************************************************************** */
+
+/* ************************************** GeneralConfig styles ******************************************** */
+				
+.portalInfo dl { display:inline; }
+
+.portalInfo dt, #admGeneralConfig .portalInfo dd { width:auto; }
+
+.portalInfo .portalURL { display:block; }
+
+.deactivatePortal { width:27px; height:27px; background:url(../images/themes/default/powerBtnActive.png) no-repeat; margin-right:10px; border-width:0px !important; cursor:pointer; box-shadow:none; }
+
+.reactivatePortal { width:27px; height:27px; background:url(../images/themes/default/powerBtnInactive.png) no-repeat; margin-right:10px; border-width:0px !important; cursor:pointer; box-shadow:none; }
+
+.reactivatePortal:hover { background:url(../images/themes/default/powerBtnInactiveHover.png) no-repeat; }
+
+.authReqItems { display:inline; }
+
+.genSettingsConstraints .requiredField { width:280px !important; }
+
+.genSettingsConstraints label { width:293px !important; }
+
+.genSettingsAuthOptions { background:#f6e7d1; width:440px; padding-bottom:5px; }
+
+.genSettingsAuthOptions .subsectionInlineForm { padding:4px 0px 4px 4px; }
+
+.genSettingsAuthOptions .subsectionInlineForm label { width:auto; }
+
+.genSettingsAuthOptions .subsectionInlineForm2 label { width:auto; }
+
+.genSettingsEmail { width:200px; }
+
+.genSettingsEPayOptions { width:880px; }
+
+.genSettingsEPayOptions .subsectionInlineForm2 label { width:198px; }
+
+.genSettingsEPayOptions .subsectionInlineForm2 .requiredField { width:188px; }
+
+.genSettingsActions { width:170px; }
+
+#constraintImage { display:block !important; width:19px; height:19px; background: url(../images/themes/default/constraintIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#epayImage { display:block !important; width:23px; height:18px; background: url(../images/themes/default/epayIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#authenticationImage { display:block !important; width:30px; height:19px; background: url(../images/themes/default/authenticationIcon.png) no-repeat; margin:1px 8px 0 5px; float:left; }
+
+
+/* ************************************** InfoNavPanelConfig styles ******************************************** */
+
+#Manage .dynamicNav { display:block; background:#fff; float:none; margin:8px 10px 20px 0; border-left:#ccc solid 1px; border-top:#ccc solid 1px; border-radius:5px; box-shadow:2px 2px 2px #777; vertical-align:top; width:auto; padding:5px; }
+
+#Manage .dynamicNav ul li { margin:5px 10px; list-style:none; display: block; }
+#Manage .dynamicNav ul li a { font-size:1em; }
+
+#Manage .dynamicNav .sectionHeader { position:relative; }
+
+#Manage .dynamicNav .sectionHeader .anchorButton { position:absolute; top:-3px; right:10px; font-size:.8em; }
+
+#Manage .dynamicNav .formElement input { width:300px; }
+
+
+/* ************************************** SearchPanelTabConfig styles ******************************************** */
+
+.configTabBox { margin:15px 15px 15px 10px; }
+					
+.srchPanelHelpTextDiv textarea { height:140px; font-size:1.3em; }
+					
+.caseTypeSelection { display:block; margin-bottom:20px; }
+
+.compCaseSelector { padding:0px !important }
+
+/*  the following styles are from the SearchQualifierConfig panel JMAX only and need reviewed */
+.editRadioGroup { border:#ccc solid 1px; background:#fff; padding: 5px; margin:15px 0 0 0; }
+
+.editRadioGroup img{ border:#777 solid 1px; margin:5px 0 0 0; }
+
+.editRadioGroup input { margin-left:40px; }
+
+
+/* ************************************** WelcomePagePanel styles ******************************************** */
+
+#Manage #welcomePageHeader { display:block !important; }
+
+#Manage .welcomePageSec { margin:22px 0; border-left:#ccc solid 1px; border-top:#ccc solid 1px; }
+
+#Manage .welcomePageSec .anchorButton span, #Manage .welcomePageSec .inputSection, #Manage .welcomePageSec .acknowlegeText span, #Manage .welcomePageSec #notice span span, #Manage .welcomePageSec .payButton span { border:#f00 solid 1px; padding:1px 3px; }
+
+#Manage .welcomePageSec .inputSection { border:#f00 solid 1px !important; }
+
+.welcomePageSec .anchorButton input, .welcomePageSec .payButton input { width:40%; box-shadow:none; }
+
+.welcomePageSec #notice input { width:40%; }
+
+.welcomePageSec .acknowlegeText input { width:70%; }
+
+
+/* ************************************** CalendarConfig styles ******************************************** */
+
+#CalendarConfig .formElement label { width:300px; }
+
+.calJudgeSelection { display:block; margin-bottom:20px; margin-top:20px; }
+					
+.calEventSelection { display:block; margin-bottom:20px; }
+
+
+/* ************************************** CollectionJurisdiction styles ******************************************** */
+
+#jurisdictionDetail .collectionMsgs h5 { margin-top:15px; }
+
+
+/* ************************************** Detail Tabs styles ******************************************** */
+
+/* ******************  Case Type Selection Styles  ******************* */
+.formElement .configured { background:#c8e79f; }
+					
+.configCaseCd  { position:relative; margin-right:0px; }
+					
+.configCaseCd .published { background:#f9f5b8; color:#3856a5; }
+					
+.configCaseCd select { max-width:480px; min-height:100px; }
+					
+.configLegend { border:#999 solid 1px; position:absolute; top:25px; left:30px; width:90px; border-radius:5px; }
+
+.configLegend h5 { padding:4px 0 0 4px; }
+					
+.configLegend select { width:90px; min-height:50px !important; }
+
+.configLnk { margin:2px 0 0 0 !important; display:block !important; text-align:right; }
+
+.configLnk .anchorButton em { color:#777; }
+
+/* ******************  Results Section/Warning Styles  ******************* */
+.listWrapper { padding:10px 0; border-top:#d5cbbe solid 1px; }
+
+.cautionHead { background:#ad171b  url(../images/themes/default/cautionBack.gif) repeat-x; border-bottom:#777 solid 1px; min-height:19px; padding:2px; }
+
+.cautionHead h4 { background:url(../images/themes/default/caution.png) no-repeat; color:#fff; vertical-align:bottom; padding-left:25px; margin-left:4px;  }
+
+.configMsg { position:relative; }
+
+.configMsg h5  { padding-top:4px; display:block; font-weight:normal; }
+
+.configMsg .publishChkBx { position:absolute; top:3px; right:0; }
+
+.configMsg .publishChkBx  label {  display:inline; }
+
+.configMsg .publishChkBx  input { box-shadow:none; }
+
+.configMsg #configImage { display:block !important; width:19px; height:19px; background: url(../images/themes/default/constraintIcon.png) no-repeat; margin:0px 8px 0 5px; float:left; }
+
+.confirmList { padding:2px; }
+
+.confirmList div { display:inline-block; }
+
+.confirmList .site { width:180px; }
+
+.confirmList .casecd { font-weight:bold; }
+
+/* ******************  Detail Tab Common Styles  ******************* */
+.helpTooltipText { margin-bottom:10px; }
+
+.checkboxPanel label { font-weight:bold; color:#41537c; }
+
+#Manage .subSectionHeader2 h5, .wicket-modal .subSectionHeader2 h5 { display:inline-block; }
+
+#Manage .subSectionHeader2 .displayData { padding-right:15px; display:inline-block; }
+
+#Manage .financialSection { padding-bottom:0; }
+
+/* *************************************************************** */
+/* ******************  Party Panel Tab Styles  ******************* */
+#Manage .ptyPersInfo { width:125px; }
+
+
+/* ******************  Ticket/Citation Tab Styles  ******************* */
+#Manage .citOfficer, #Manage .citIncident { width:120px; }
+
+#Manage .citLicense { width:150px; }
+
+#Manage .citVehicle { width:80px; }
+
+
+/* ******************  Party Charge Tab Styles  ******************* */
+#Manage .chgPhase { width:150px; }
+
+#Manage .chgOffense { width:150px; }
+
+#Manage .chgDisp { width:150px; }
+
+.ptyChrgSentActnTrack .displayData { padding-right:275px; display:inline-block; }
+
+
+/* ******************  Judgement Tab Styles  ******************* */
+.jdgmntAddFields input[type="checkbox"] { float:left; margin:4px; }
+
+
+/* ************************************** Security Policy styles ******************************************** */
+
+.admSecurityCaptcha label { width:180px; }
+
+#passwordOptions, #otherSecurityOptions { width: 400px; }
+
+#passwordHeader  #passwordHeadImage { display:block !important; width:31px; height:18px; background: url(../images/themes/default/passwordIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#userSecurityHeader  #userSecurityHeadImage { display:block !important; width:16px; height:19px; background: url(../images/themes/default/userSecurityIcon.png) no-repeat; margin:1px 8px 0 5px; float:left; }
+
+#userSecurityOptions { width: 400px; }
+
+
+/* ************************************** Registered User styles ******************************************** */
+
+#regUserDetailPnl { min-height: 500px; }
+
+.regUserPersInfo { width:400px; }
+
+.regUserEfileItems { width:400px; }
+
+.changePsswd { width:150px; }
+
+.selfRegItems { width:400px; }
+
+.regUserPortalPnl { width: 240px; }
+
+.regUserEnhancedCasesPnl { width: 240px; }
+
+#actionHeadImage { display:block !important; width:18px; height:18px; background:url(../images/themes/default/actionIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#selfRegHeadImage { display:block !important; width:18px; height:18px; background:url(../images/themes/default/selfRegIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#portalHeadImage { display:block !important; width:24px; height:18px; background:url(../images/themes/default/availPortalIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#persInformationImage { display:block !important; width:31px; height:18px; background:url(../images/themes/default/userPersInfoIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#eFileImage { display:block !important; width:37px; height:21px; background:url(../images/themes/default/userEfileIcon.png) no-repeat; margin:0px 8px 0 5px; float:left; }
+
+.addrLines { width:240px; display:inline-block; }
+
+.addrLines input:first-child { margin-top:0px; }
+
+.addrLines input { margin-top:5px; }
+
+.signaturePreview { }
+
+/* ************************************** ePayment Type styles ******************************************** */
+
+#emailHeadImage { display:block !important; width:23px; height:18px; background:url(../images/themes/default/emailIcon.png) no-repeat; margin:2px 8px 0 5px; float:left; }
+
+#epayTypeDetailPnl .formElement label { width:225px; }
+
+#epayTypeDetailPnl .formElement textarea { width:60%; }
+
+.radioSelectionItems { display:inline-block;  }
+
+.radioSelectionItems .radioItem { display:block; padding:0 15px 0 0; margin-bottom:2px; }
+
+#epayTypeDetailPnl .radioSelectionItems .radioItem label { width:auto; text-align:left; }
+
+#passwordLinks li { list-style:none; margin:6px 0 6px 0px; }
+
+.epayDtlFeePercent input { width:35px; margin-right:2px; }
+
+#epayDtlEmail  { width:300px; margin:5px 0; }
+
+
+/* ************************************** ePayment Options styles ******************************************** */
+
+#epayOptionsDetailPnl label  { width:150px; }
+
+#epayOptionsDetailPnl textarea  { width:60%; height:200px; }
+
+
+/* ************************************** eFile General Config styles **************************************** */
+
+.efileConfigGenConfig { border-top:#ababab solid 1px; }
+
+.efileConfigGenConfig th, .efileConfigPayTypes th { color: black; }
+
+.efileConfigGenConfig .fieldHint { color: #6B6B6B; float: none !important; font-weight: normal !important; padding-left: 4px; text-align: left; }
+
+.efileConfigGenConfig .userValue, .efileConfigGenConfig .systemValue { border-bottom: 1px dotted black; text-align: left; }
+
+.systemValue { color: maroon; }
+
+/* ************************************** eFile Code Maint styles ******************************************** */
+
+.eFileAdmTbl.listPanelResults tr { cursor: default !important }
+
+.eFileAdmTbl .cmsRow td { color:#41537C; font-weight: normal; }
+
+.eFileAdmTbl .eFileRow td { padding-bottom:4px; }
+
+.efileTblDscr { max-width:250px; }
+
+.eFileAdmTbl select { max-width:175px; }
+.eFileAdmTbl select[disabled] { background-color: #EBEBE4; }
+
+.eFileAdmTbl .efileDktCDWrapper { width:182px; }
+
+.eFileAdmTbl .minimal { padding-left:2px; }
+
+.efileMaintCdLbl { position:relative; top:1.2em; }
+
+#Manage .navigator { text-align:right; }
+
+/* .cmsRow {background-color: #85A3D6;}
+.cmsRow > td > span, div {
+	color: white;
+	font-style: bold;
+} */
+
+/* ************************************** eServiceConfigDetail styles ******************************************** */
+
+#eServiceConfigDetail label { width:230px; }
+
+#eServiceConfigDetail label.systemValue { width: auto; color: maroon; text-align: left; }
+
+.previewUpload { height:79px; width:700px; overflow:auto;  margin:2px 0 0 15px; }
+
+
+/* ************************************** LicenseConfigPanel styles ******************************************** */
+
+.manageLicense tbody tr { position:relative; }
+
+.manageLicense tr td, .manageLicense tr th { padding-left:2px; }
+
+.manageLicense tbody tr td label { margin-top:1px; }
+
+.manageLicense tbody tr td input { margin-top:1px; width:98%; }
+
+.delLicDialog .alert { display:block; float:left; margin-right:10px; background: url(../images/themes/default/alertIcon.gif) left center no-repeat; width:18px; height:16px; margin-bottom:20px; }
+
+.delLicDialog .alertTxt { color:#f30; font-weight:bold; }
+
+.delLicDialog .delKeyList { padding:5px 5px 5px 28px; margin:10px 0; font-weight:bold; }
+
+.delLicDialog .delKeyList p { color:#3d6bc8; }
+
+.editLinkSection td { background:#f6e7d1 !important; }
+
+						
+/* ************************************  Self Registration General Styles   *********************************** */
+					
+.wicketExtensionsWizard{ border-radius:5px; box-shadow:4px 4px 5px #000000; margin: 22px 18px; background:#e3e3e3; }
+
+.wicketExtensionsWizardOuterTable { border-top:none; width:100%; }
+
+.wicketExtensionsWizardInnerTable { border:#fff solid 0px !important; width:100% !important; }
+
+.wicketExtensionsWizardInnerTable tr { background:#e3e3e3; }
+
+.wicketExtensionsWizardHeaderRow { height: 20px; }
+
+.wicketExtensionsWizardHeader { border: 0px solid #fff !important; }
+
+.wicketExtensionsWizardHeaderTitle { background:#fcb245 url(../images/themes/default/eFileHeader.gif) repeat-x center bottom !important; border-bottom:#8c8c8c solid 2px !important; font-weight:bold !important; font-size:1em; height:14px; padding:2px; }
+
+.wicketExtensionsWizardHeaderSummary { margin: 10px 10px 5px; }
+
+.wicketExtensionsWizardView { border:0px solid #fff !important; }
+
+.wicketExtensionsWizard .formElement label { display:inline-block; width:220px !important; margin:0 10px 0 0; font-weight:bold; }
+
+.wicketExtensionsWizardOuterTable tbody .wicketExtensionsWizardButtonBar { text-align:left !important; padding:10px 0 20px 20px !important; }
+
+
+/* ******************************** Registration Wizard individual panel styles ********************************* */
+
+.captchaWizard .subsection1 { margin:0px; padding:0px; border:none; background:none !important; }
+
+.captchaWizard { margin:8px; background:url(../images/themes/default/captchaBack.jpg) no-repeat; width:698px; height:168px; padding-top:10px; }
+
+.captchaWizard .captchaInstructions { margin:15px 0 3px 260px; display:inline; font-style:italic; }
+
+.captchaWizard .captchaImg { margin:10px 0 3px 260px; }
+
+.captchaWizard .captchaTxt { margin:0 0 3px 260px; }
+
+.recaptchaWizard .subsection1 { margin:0px; padding:0px; border:none; background:none !important; }
+
+.recaptchaWizard { margin:8px; background:none; no-repeat; width:698px; padding-top:10px; padding-left:10px;}
+
+.recaptchaWizard .captchaInstructions { margin-bottom:5px; display:inline; font-style:italic; }
+
+.attyRegStep { margin:8px; background:url(../images/themes/default/attorneyBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }
+
+.emailRegStep  { margin:8px; background:url(../images/themes/default/emailBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }
+
+.emailRegInstructions  { margin:15px 0 3px 240px; display:block; font-style:italic; }
+
+.wicketExtensionsWizard #regUserDetailPnl .formElement label { width:120px !important; }
+
+.wicketExtensionsWizard #regUserDetailPnl .formElement .requiredField { width:110px !important; }
+
+.regConfirm { margin:8px auto; background:url(../images/themes/default/confirmBack.jpg) no-repeat; width:598px; height:168px; padding-top:10px; }
+
+/* ************************************** Merchant Types styles *********************************************/
+
+#eServiceMerchantDetail label { width:230px; }
+
+#eServiceMerchantDetail label.systemValue { width: auto; color: maroon; text-align: left; }
+
+#eServiceMerchantDetail .deleteMerchant {
+float: right;
+margin-top:10px;
+margin-bottom:10px;
+margin-right:10px;
+}
+
+#eServiceMerchantDetail .addCashbook {
+float: right;
+margin-top:10px;
+margin-bottom:10px;
+margin-right:10px;
+}
+
+#eServiceMerchantDetail table {
+margin-top:10px;
+}
+
+.efileManage_label {
+    color: #41537c;
+	display: inline-block;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 7px 3px 25px; 
+    text-align: right;
+    width: 35%;
+}
+
+@-moz-document url-prefix() {
+    .efileManage_label {padding-left:35px;}
+}
+
+.efileManage_input {
+	display: inline-block;
+}
+
+.efileConfigPayTypes > .paymentInfo > .mceEditor {
+	/* display: inline-table; */
+	width: 60%;
+}
+
+.paymentInfo > .mceEditor {
+	display: inline-table;
+}
+
+.paymentMessageLabel {
+	width: 37% !important;
+}

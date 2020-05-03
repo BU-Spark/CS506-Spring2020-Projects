@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_Tablet.css,v 1.1 2013/03/05 19:48:38 kcrawford Exp $ */
+
+/* *********************************************** Global Style overrides ***************************************** */
+
+.globalNavigation ul li { display:inline-block; margin:0 2px 0 0; padding:0 3px; font-weight:bold; border-left: transparent solid 1px; border-right: transparent solid 1px; }
+
+
+/* *********************************************** Search Style overrides ***************************************** */
+
+.locationForm .formElement { display:block; }
+
+#advAttorneyFieldset, #nameFieldset { width:auto; display:block; }
+
+#caseTypeFieldset { width:auto; display:block; }
+
+#caseTypeFieldset label { width:120px; }
+
+#caseTypeFieldset select { max-width:300px; }
+
+.widthAutoOverride { width:auto !important; max-width:300px; }
+
+
+/* *********************************************** eFiling Style overrides ***************************************** */
+
+.efileEditPanel .formElement label { display:inline-block; margin:0 10px 0 0; font-weight:bold; padding-right:5px; vertical-align:top; text-align:right; width:70px !important; color:#41537c; }
+
+.efileEditPanel .formElement .requiredField { color:#900 !important; font-weight:bold; background:url(../images/themes/default/requiredField.gif) right no-repeat; padding-right:15px; width:60px !important; }
+
+.efileEditPanel input { max-width:92px !important; margin:0 4px 0 0; }
+
+.efileEditPanel .efileFees label { width: 120px !important; }
+
+.efilePartyList select { max-width:102px; }
+
+.efilePtyAddr2 input[type="text"], .efilePtyAddr3 input[type="text"] { margin-left:88px; }
+
+.efileEditReviewerTxt { width:88%; }
+
+.efileAfflSec { width:300px; }
+
+.efileNotes { width: 59% !important; }
+
+.efileDocketInfo textarea, .efileDocketInfo select { max-width: 190px; }
+
+
+/* *********************************************** Calendar Style overrides ***************************************** */
+
+#calendarPagePaneEast, #calendarPagePaneCenter { background-color:#98a7ac !important; }
+
+#calendarPagePaneEast { top:412px !important; display:block !important; background-color:inherit; border: 1px solid #777777; overflow:auto !important; padding: 0 !important; width:100% !important; bottom:43px !important; height:auto !important; }
+
+#calendarPagePaneCenter { top:80px !important; display:block !important; background-color:inherit; border: 1px solid #777777; overflow:auto !important; padding: 0 !important; width:100% !important; bottom:0px !important; height:332px !important; }
+
+#calendarPagePaneEast-resizer, #calendarPagePaneNorth-resizer, #calendarPagePaneSouth-resizer { display:none !important; }
+
+
+.eServCalendar .ptyContact, .eServCalendar .ptyAffl, .eServCalendar .ptyAtty, .eServCalendar .ptyPersInfo, .eServCalendar .chgPhase, .eServCalendar .chgOffense, .eServCalendar .citOfficer, .eServCalendar .citIncident, .eServCalendar .citLicense, .eServCalendar .citVehicle { display: block; float: left; }

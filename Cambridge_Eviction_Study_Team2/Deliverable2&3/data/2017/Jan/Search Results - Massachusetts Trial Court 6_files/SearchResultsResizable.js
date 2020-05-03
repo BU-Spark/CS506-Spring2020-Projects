@@ -1,0 +1,1 @@
+$(document).ready(function(){$('th').resizable({maxHeight: 10}).css('border-right', "1px solid white");});

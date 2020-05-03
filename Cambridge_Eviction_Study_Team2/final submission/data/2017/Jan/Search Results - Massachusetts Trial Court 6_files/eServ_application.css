@@ -1,0 +1,97 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_application.css,v 1.8 2015/03/27 18:36:01 zcarter Exp $ */
+
+/************************* standard styles for adding to elements ************************/
+.bold {font-weight: bold !important; }
+
+.ctr { text-align:center; }
+
+.phone, .b { font-weight:bold; }
+
+.hidden { display:none; }
+
+.contentCenter { margin:0 auto; }
+
+.clearfloat { clear:both; }
+
+.clearBorder { border:none !important; }
+
+.clearMargin { margin:0 !important; }
+
+.allcaps { text-transform:uppercase; }
+
+.currency, .numeric { text-align:right; }
+
+thead .currency:before { content: none; text-align:right; }
+
+/*
+
+.currency:before { content: "$"; }
+
+.currency:before { content: "£"; }
+
+.currency:before { content: "€"; }
+
+.currency:before { content: "¥"; }
+
+*/
+
+.fltrt { float: right; margin-left: 8px; }
+
+.fltlft { float: left; margin-right: 8px; }
+
+.noHover { background:none !important; background-image:none !important; }
+
+.disabledLink { color:#999; }
+
+.formattedText { white-space:pre-wrap; }
+
+.clickable { cursor:pointer; }
+
+.inlineBlk { display: inline-block; }
+
+.nowrap { white-space: nowrap; }
+
+
+/************************************ Error Styles ***************************************/
+
+.feedback { color:#f30; margin-top:5px; font-weight:bold; padding-top:5px; }
+
+.feedback ul li { list-style:none; }
+
+.feedbackPanel { background:#f6e7d1; border-radius: 5px 5px 5px 5px; display:block; margin:10px !important; width:auto; padding: 2px 5px; border:#ccc solid 1px; }
+
+.feedbackPanelERROR { display:block; color:#f30; font-weight:bold !important; font-size:1em; text-align:left; }
+
+#LoginPage .feedbackPanelERROR { text-align:center; }
+
+.feedback .feedbackPanel .feedbackPanelINFO span { background: url(../images/themes/default/valid.gif) left center no-repeat; padding:8px 5px 8px 25px; }
+
+.feedback .feedbackPanel .feedbackPanelERROR span { background: url(../images/themes/default/alertIcon.gif) left center no-repeat; padding:8px 5px 8px 25px; }
+
+.helpPanel { position:absolute; bottom:10px; right:10px; }
+
+.restricted { margin-top:5px; }
+
+
+/************************* Spinner icon, no markup **********************/
+
+.loadingIcon { background:#fff url(../images/spinner_new.gif) center center no-repeat; width:16px; margin:4px auto 0 auto; padding:0; height:16px; }
+
+#placeholderPanel img { background:#fff; }
+
+
+/************************* Global jQuery override styles  **********************/
+
+.ui-widget { font-size:1em !important; }  /* overrides the default size of 1.1em that makes the font sizing inconsistant */
+
+.ui-widget-header { background:#c2d2e4 url(../images/themes/default/collapseBar2.gif) repeat-x !important; background-position:0px -38px !important; }
+
+.ui-state-highlight { border: 2px solid #f00 !important; vertical-align:bottom; height:12px; }
+
+.ui-dialog.confirmDialog { border-color: black; 10px 10px 5px black; }
+
+.dialogTxt, .dialogContent { margin-bottom:10px; color:#3d6bc8; }
+
+.listMultipleChoicePanelClearLink { font-size: smaller; padding-left: 135px; display: block; }

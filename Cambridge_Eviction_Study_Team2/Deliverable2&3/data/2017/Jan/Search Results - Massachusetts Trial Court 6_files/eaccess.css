@@ -1,0 +1,1095 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eaccess.css,v 1.85 2017/07/10 15:50:54 sdavies Exp $ */
+
+
+ul {
+  list-style: none;
+}
+
+
+/*  ***************************************  Password styles  *********************************** */
+#passwordChange {
+	margin: 10px 5px 30px 0;
+} /*  password change panel in display mode. */
+.dialogBoxSmall {
+	width: 340px;
+	margin: 20px auto 0px auto;
+	padding: 5px;
+}
+
+#loginFieldset .formButtons {
+	text-align: center;
+}
+
+/*  ***************************************  Main Page styles  *********************************** */
+.dynamicNav {
+	display: block;
+	float: left;
+	width: 18em;
+	padding: 0 0 20px 0;
+}
+
+.dynamicNav ul li {
+	margin: 5px 10px;
+	list-style: none;
+}
+
+.dynamicNav ul li a {
+	font-size: .95em;
+}
+
+.captcha {
+	margin: 8px;
+	background: url(../images/themes/default/captchaBack.jpg) no-repeat;
+	width: 698px;
+	height: 168px;
+	padding-top: 10px;
+}
+
+.subsection1 .captcha {
+	background-image: none;
+	width: auto;
+	height: auto;
+	padding-top: 0px;
+}
+
+.captchaInstructions {
+	margin: 3px 0 3px 0px;
+	display: inline;
+	font-style: normal;
+}
+
+.captcha input {
+	vertical-align: bottom;
+}
+
+.captchaImg {
+	margin: 0px;
+	border: #777 solid 1px;
+	padding: 0px;
+	vertical-align: bottom;
+}
+
+.captchaTxt {
+	margin: 0 0 0px 10px;
+	width: 100px;
+	display: inline;
+}
+
+.captchaLink {
+	margin: 0 0 0px 10px;
+	display: inline;
+}
+
+#acknowledgement {
+	margin: 20px 0px 0px 0;
+	font-weight: bold;
+}
+
+#acknowledgement .anchorButton {
+	display: inline;
+}
+
+.acknowlegeText {
+	margin-left: 5px;
+}
+
+#welcomePageHeader {
+	display: none !important;
+} /* hides header from config version of page */
+.inputSection * {
+	font-family: inherit;
+}
+	/* required so the styles configured in the rich markup editor are preserved */
+
+/*  **************************************  Search Page styles  *********************************** */
+.instructions {
+	margin-bottom: 8px;
+}
+
+.locationForm label {
+	vertical-align: top;
+	margin: 0 10px 0 0;
+	font-weight: bold;
+	padding-right: 14px;
+	width: auto !important;
+}
+
+.locationForm .formElement {
+	display: inline-block;
+	vertical-align: top;
+}
+
+#SSNSearch label {
+	width: 150px !important;
+}
+
+#searchTabSection {
+	position: relative;
+}
+
+.portalInstructions {
+	padding: 5px;
+	text-align: center;
+	width: auto;
+} /* my cases */
+#advAttorneyFieldset, #nameFieldset, #caseTypeSearchFieldset {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#caseTypeFieldset {
+	width: 58%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#caseTypeFieldset label {
+	width: 80px;
+}
+
+#caseTypeFieldset select {
+	max-width: 300px;
+	width: 300px;
+}
+
+#nameFieldset select {
+	max-width: 120px;
+}
+
+#caseTypeSearchFieldset select {
+	max-width: 250px;
+}
+
+.dateFieldset {
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
+	margin-top: 5px;
+}
+
+/*  *****************************  Search Results Page styles  ********************************* */
+#srchResultNotice {
+	color: #000;
+	height: 22px;
+}
+
+#srchResultNotice .feedbackPanel .feedbackPanelINFO span {
+	color: #000;
+	background: none;
+	background-image: none;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 1px;
+}
+
+#srchResultNoticeNomatch {
+	color: #CC2900;
+	height: 22px;
+	background: none;
+	background-image: none;
+	padding-top: 8px;
+	padding-right: 5px;
+	padding-bottom: 8px;
+	padding-left: 1px;
+}
+
+.bookmarkablePageLinkPropertyColumn {
+	cursor: pointer
+}
+
+.bookmarkablePageLinkPropertyColumn a {
+	color: #000;
+	text-decoration: none;
+}
+
+.bookmarkablePageLinkPropertyColumnLink {
+	cursor: pointer;
+}
+
+.bookmarkablePageLinkPropertyColumnLink a {
+	text-decoration: underline;
+}
+
+.searchResults .helpPanel {
+	position: static;
+}
+
+.tableResults>tbody>tr>td { /*added 20151021 13:08 swd*/
+	padding: 5px 8px 5px 2px;
+}
+
+.column40px { /*added 20151021 14:10:53 swd*/
+	width: 40px;
+}
+
+.column120px { /*added 201511051402 swd*/
+	min-width: 120px;
+}
+
+/*  *****************************  Case Detail Page styles  ********************************* */
+.caseInfoItems {
+	width: 800px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+/* .caseInfoItems dt {
+	width: 95px;
+}
+
+.caseInfoItems dd {
+	width: 260px;
+} */
+
+.caseInfo {
+	margin-bottom: 0px;
+}
+
+.caseInfo .buttonBar div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.additionalCaseInfoPanel {
+	border: #ccc solid 1px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.additionalCaseInfoPanel li {
+	list-style: none;
+	
+}
+
+.additionalCaseInfoPanel > ul,
+.additionalCaseInfoPanel > ul > li  {
+padding-left: 0px;
+padding-top: 2px;
+padding-bottom: 10px;
+}
+
+.checkboxPanel>.caseInfoDetailBox>.additionalCaseInfoPanel {
+	width: 100%;
+}
+
+.caseInfoDetailBox {
+	width: 30%;
+	min-width: 165px;
+	border: #ccc solid 1px;
+	background: #e3e3e3;
+}
+
+.caseInfoDetailBox h4 {
+	font-size: 1em;
+}
+
+.caseInfo-col1 {
+width: 25%;
+min-width: 380px;}
+
+.caseInfo-col1 > dd {
+width: 250px;
+}
+
+.caseInfo-col2 {
+min-width: 620px;
+width: 40%;
+}
+.caseInfo-col2 > dd {
+width: 490px;
+}
+
+.caseInfo-col3 {
+width: 33%;
+display: inline-table;
+vertical-align: top;
+}
+
+.caseInfo-col3 > div {
+	padding: 1px 0 1px 0;
+}
+
+.caseInfo-col3 > div > li {
+	width: 68%;
+}
+
+.caseInfo-col3 > div >  ul > .ptyInfoLabel {
+	width: 120px;
+}
+
+#calendarCaseContent .caseInfo-col3 {
+	width: 45%;
+}
+
+.infoBox > dd{
+	width: 100%;
+}
+
+
+
+#caseDetail .helpPanel {
+	position: static;
+	float: right;
+	margin: 3px 15px 0 0;
+}
+
+#caseDetail .buttonBar .helpPanel {
+	margin: 0px;
+}
+
+#caseDetail .financialSection .helpPanel {
+	float: none;
+}
+
+.marriageInfo li {
+	display: inline;
+	width: 100px;
+}
+
+.housingPropertyDetailBox {
+	border: #ccc solid 1px;
+	background: #e3e3e3;
+}
+
+.housingPropertyDetailBox h4 {
+	font-size: 1em;
+}
+
+/* **************************************  Inherited <div> Data Panel Styles  ************************************ */
+.box {
+	float: left;
+	margin: 2px 10px 3px 3px;
+	border-radius: 5px;
+}
+
+.infoInstance {
+	background: #f3f3f3;
+	margin: 5px 0 8px 0;
+}
+
+.infoChildSection .infoInstance:after {
+	content: ".";
+	display: block;
+	height: 0;
+	font-size: 0;
+	clear: both;
+	visibility: hidden;
+} /* IMPORTANT: expands containing div to include floated content */
+.moreInfo {
+	display: block;
+	clear: both;
+	padding: 0 3px 3px 3px;
+	text-align: right;
+}
+
+.wicket-modal {
+	padding: 0px;
+}
+
+.wicket-modal .subBox {
+	border: #ccc solid 1px;
+	display: inline-block;
+	width: 450px;
+	margin: 10px 0 0 10px;
+	vertical-align: top;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.wicket-modal .subBox h6 {
+	font-size: 1.01em;
+	font-weight: bold;
+	background: #d8d8d8;
+	padding: 1px 3px 1px 0;
+	color: #41537c;
+	border-radius: 5px 5px 0 0;
+}
+
+.wicket-modal .subBox dd {
+	width: 220px;
+}
+
+/* ******************************************  Party Panel Styles  **************************************** */
+.ptyPersInfoBox {
+	width: 240px;
+}
+
+
+
+.ptyContact {
+	width: 260px;
+	padding: 2px;
+	border: #ccc solid 1px;
+	background: #f3f3f3;
+}
+
+.ptyContact dt {
+	width: 55px;
+}
+
+.ptyAddr .displayData div {
+	display: block;
+	width: 160px;
+}
+
+.ptyAffl {
+	width: 260px;
+	padding: 2px;
+	border: #ccc solid 1px;
+}
+
+.ptyAfflName {
+	width: 140px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.ptyAfflDscr {
+	color: #41537c;
+    font-weight: bold;
+	width: 105px;
+	margin-left: 5px;
+	vertical-align: middle;
+	display: inline;
+}
+
+.ptyAffl .rowodd {
+	background-color: #dedede;
+}
+
+.ptyAtty {
+	width: 260px;
+	padding: 2px;
+	border: #ccc solid 1px;
+	background: #e3e3e3;
+}
+
+/* .ptyAtty dt {
+	width: 55px;
+} */
+
+.inlineHeader {
+	display: inline-block;
+}
+
+.ptyName {
+	
+}
+
+.ptyType {
+	font-weight: normal;
+	color: #000;
+	display:inline-block;
+	/*vertical-align: middle;*/
+} /*  Also used in the PtychrgPanel and PtychrgSentencePanel */
+
+.ptyRole {
+	padding-left: 35px;
+}
+.ptyExtRepCap {
+	border: none !important;
+	padding-left: 10px;
+	display: block;
+}
+
+#ptyAttyListTbl {
+	border: none;
+}
+
+#ptyAttyListTbl tr {
+	background: none;
+}
+
+#ptyAttyListTbl td {
+	width: 200px;
+}
+
+#ptyAttyListTbl thead tr th {
+	border: none;
+	background: none;
+}
+
+#ptyAttyListTbl .rowodd td {
+	background: #e3e3e3;
+}
+
+#ptyAttyListTbl .roweven td {
+	background: #f5f5f5f5;
+}
+
+.ptyAffl dl dt, .ptyAffl dl dd {
+	margin: 0;
+	border: none;
+}
+
+.ptyAffl div ul:nth-of-type(odd) {
+	background: #f3f3f3;
+}
+
+.ptyAffl h5 {
+	background: none;
+    color: #41537C;
+    padding: 2px;
+}
+
+.ptyAtty h5 {
+	background: none;
+	color: #41537C;
+	padding-bottom: 2px;
+}
+
+.alertsHead {
+	background: #ad171b url(../images/themes/default/cautionBack.gif)
+		repeat-x;
+	border-bottom: #777 solid 1px;
+	min-height: 19px;
+	padding: 2px;
+}
+
+.pendingCasesHead {
+	background: #a2d56d url(../images/themes/default/pendingBar.gif)
+		repeat-x;
+	border-bottom: #777 solid 1px;
+	min-height: 19px;
+	padding: 2px;
+}
+
+.alertsPendingCasesMore {
+	display: block;
+	clear: both;
+	padding: 0 3px 3px 3px;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+
+.alertsPendingCasesMore span {
+	width: 20px;
+	height: 18px;
+	display: inline-block;
+	background: url(../images/themes/default/caution.png) no-repeat;
+	color: #fff;
+	vertical-align: bottom;
+	padding-left: 5px;
+	margin-left: 4px;
+}
+
+.alertsPendingCasesMore:hover, .alertsPendingCasesMore:focus {
+	color: #fff;
+}
+
+#AlertPendingInfo {
+	width: 650px;
+}
+
+/* ******************************************  Tax Lien Panel   **************************************** */
+.taxLienInfo {
+	width: 350px;
+}
+
+.taxLienInfo dt {
+	width: 150px;
+}
+
+/* ******************************************  Judgement Panel  **************************************** */
+#judmntPgInfo .judgementTbl {
+	border-top: none;
+	margin: 5px;
+}
+
+#judmntPgInfo dt {
+	width: 90px;
+}
+
+#judmntPgInfo dd {
+	width: 110px;
+}
+
+#judmntPgInfo .longLbl dt {
+	width: 120px;
+}
+
+#judmntPgInfo .longDscr dd {
+	width: 330px;
+}
+
+#judmntPgInfo .addlFldsSec {
+	width: 480px;
+	float: none;
+}
+
+#judmntPgInfo .addlFields dt {
+	width: 250px;
+}
+
+#judmntPgInfo .addlFields dd {
+	width: 210px;
+}
+
+#judmntPgInfo #additionalFieldsInfo, #judmntPgInfo .judgementsInfo {
+	box-shadow: none;
+	margin: 0;
+}
+
+#judmntPgInfo #additionalFieldsInfo .subSectionHeader, #judmntPgInfo .judgementsInfo .subSectionHeader
+	{
+	background: #f6e7d1;
+	background-image: none;
+}
+
+#judmntPgInfo #additionalFieldsInfo .subsection2, #judmntPgInfo .judgementsInfo .subsection2
+	{
+	margin: 0;
+}
+
+.judgementsInfo {
+	display: block;
+}
+
+.judgementsInfo table {
+	border-top: none;
+	margin: 5px;
+}
+
+/* *****************************************  Charge Panel Styles  **************************************** */
+.chgLbl {
+	background: #0C1B33;
+	border-radius: 3px;
+	color: #fff;
+	display: inline;
+	padding: 1px 3px;
+	font-weight: bold;
+}
+
+/* .chgHeadInfo {
+	margin: 10px 20px 5px 0;
+} */
+
+.chgHeadMargin {
+	margin: 5px 0 5px 0;
+}
+
+.chgHeadActn {
+	padding-left: 10px;
+	color: #41537c;
+    diplay: inline-block;
+}
+
+.chgHeadCounts {
+	padding-left: 2px;
+    color: #41537c;
+    diplay: inline-block;
+}
+
+.chgHeadDeg {
+	color: #41537c;
+}
+
+.chgHeadDscr {
+	padding-left: 20px;
+	padding-right: 10px;
+	font-weight: normal;
+}
+
+.chgPhase {
+	max-width: 550px;
+	width: 45%;
+}
+
+.chgOffense {
+	width: 300px;
+	border: #ccc solid 1px;
+	padding: 2px;
+	background: #e3e3e3;
+}
+
+.chgOffense dt {
+	width: 95px;
+}
+
+.chgOffense dd {
+	width: 120px;
+}
+
+.chrg {
+	display: inline-block;
+}
+
+.subSectionHeader2 h5 {
+	display: inline-block;
+	background: none;
+	border: none;
+}
+
+.chgDisp {
+	border: #999 solid 1px;
+	min-width: 250px;
+	max-width: 26%;
+	width: auto;
+}
+
+/*.chgDisp dt { width:90px; }
+
+.chgDisp dd { width:160px; }*/
+.chgDisp h6 {
+	font-size: 1em;
+	font-weight: bold;
+	border-bottom: none;
+	background: #c2d2e4 !important;
+	border-radius: 5px 5px 0 0;
+	padding: 3px;
+}
+
+.chgDisp div:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.dspHeader {
+	background-color: #eaeaea;
+	padding: 2px 0 2px 4px;
+}
+
+.dataLabel {
+	display: inline-block;
+	width: 110px;
+	font-weight: bold;
+	color: #41537c;
+}
+
+.dspDtField, .dspCdField {
+	display: table-cell;
+	padding: 3px 0 3px 2px;
+}
+
+.dspCdField {
+	padding-right: 5px;
+	width: auto;
+}
+
+.dspDtField {
+	width: 110px;
+}
+
+.costFine .currency {
+	background: #e3e3e3;
+}
+	/* needed for right justification of currency fields to show alignment */
+.chgAdditional {
+	padding: 4px;
+}
+
+/* ****************************************  Cost Summary Panel Styles  *************************************** */
+.splitTable {
+	width: 48%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #999;
+	border: #ccc solid 1px;
+}
+
+.wholeTable {
+	width: 98%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #999;
+	border: #ccc solid 1px;
+}
+
+.narrowTable {
+	width: 32%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #999;
+	border: #ccc solid 1px;
+}
+
+.wideTable {
+	width: 64%;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 3px #999;
+	border: #ccc solid 1px;
+}
+
+/* ****************************************    Docket Panel Styles    *************************************** */
+.dktImage {
+	display: block;
+	padding-left: 25px;
+	background: url(../images/themes/default/document2.gif) no-repeat;
+	height: 19px;
+}
+
+.financialSection {
+	padding-bottom: 10px;
+}
+
+/* ****************************************  Citation Panel Styles  *************************************** */
+#citInfo h5 {
+	color: #41537c;
+}
+
+.citOffDt {
+	margin-left: 45px;
+	font-weight: normal;
+	color: #000;
+	vertical-align: middle;
+}
+
+#citInfo .subSectionHeader2 div {
+	display: inline;
+}
+
+#citInfo .subSectionHeader2 dl {
+	display: inline;
+	margin-left: 60px;
+}
+
+#citInfo .subSectionHeader2 dt {
+	width: 75px;
+}
+
+.citOfficer {
+	width: 272px;
+}
+
+.citOfficer dt {
+	width: 85px;
+}
+
+.citOfficer dd {
+	width: 180px;
+}
+
+.citIncident {
+	padding: 2px;
+	border: #ccc solid 1px;
+	background: #e3e3e3;
+}
+
+.citIncident dt {
+	width: 85px;
+}
+
+.citIncident dd {
+	width: 140px;
+}
+
+.citLicense {
+	width: 300px;
+	padding: 2px;
+	border: #ccc solid 1px;
+}
+
+.citLicense dt {
+	width: 95px;
+}
+
+.citLicense dd {
+	width: 190px;
+}
+
+.citVehicle {
+	padding: 2px;
+	border: #999 solid 1px;
+	background: #d8d8d8;
+}
+
+.citVehicle dt {
+	width: 45px;
+}
+
+.citVehicle dd {
+	width: 140px;
+}
+
+/* ****************************************  Additional Fields Panel Styles  *************************************** */
+.addlFldsSec {
+	width: 480px;
+	float: none;
+}
+
+.addlFields dt {
+	width: 250px;
+}
+
+.addlFields dd {
+	width: 210px;
+}
+
+/* ****************************************  Tooltip Styles  *************************************** */
+.ui-cluetip-header {
+	padding: 2px !important
+}
+
+.cluetip-jtip #cluetip-outer {
+	background: #fff;
+}
+
+.cluetip-jtip #cluetip-inner {
+	border: none !important;
+	width: 96%;
+}
+
+.cluetip-jtip #cluetip-inner table {
+	margin-bottom: 20px;
+}
+
+.alignLeft {
+	text-align: left;
+}
+
+#mainContent .restrictedAccessBox {
+	background: #fff;
+	margin: 0px;
+	padding: 0px;
+	padding-bottom: 10px;
+	text-align: center;
+	border: #ccc solid 1px;
+	border-radius: 5px;
+	box-shadow: 4px 4px 5px #000000;
+	margin: 0px 10px 30px 10px;
+}
+
+/***************** EpaymentCaseTitle styles ***********************/
+.epaymentCaseTitleItems {
+	width: 1000px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.epaymentCaseTitleItems div {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.epaymentCaseTitleItems .caseNbrLbl { 
+	width: 40px;
+	color: #41537c;
+    font-weight: bold;
+}
+
+.epaymentCaseTitleItems .ticketNbrLbl {
+	width: 130px;
+	padding-left: 25px;	
+	color: #41537c;
+    font-weight: bold;
+}
+
+.epaymentCaseTitleItems dd {
+	width: 40%;
+}
+
+/************************** CaseCd Maintenance Screen *****************************************/
+
+.eFileRow > li, .cmsRow > li {
+  display:inline-block;
+  vertical-align: top;
+  /*padding: 0 10px 10px 10px;*/
+}
+
+
+.tableBody{ 
+  height: 350px;
+  overflow-y: auto; n
+}
+
+.resultsInfo {height: 25px;}
+
+li.navigator { float: right;}
+
+ul.cmsRow {
+  padding-left: 15px;
+  background-color: #E0E8FF ;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+li.cmsRow {
+	padding: 5px 55px 5px 0;
+}
+
+ul.eFileRow {
+  background-color: #eaeaea;
+  border-bottom: 3px solid white;
+  padding: 3px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+ul.eFileRow > li {
+  padding-right: 44px;
+}
+
+.mapped, .persisted{
+ margin: 5px 0 5px 0;
+}
+
+.efileDscr {
+  padding-left: 26px;
+}
+
+.efileDscr > span, .efileConvFeeInfo > span,
+.efileConfigOptions > span,
+.fees > span {
+ display: block;
+ padding: 0 0 2px 3px;
+}
+
+.persisted > div {
+  display: inline;
+  padding: 10px;
+}
+
+.fees {
+ padding: 10px 30px 0 0;
+display: inline-block;
+}
+
+.efileConfigOptions {
+display:inline-block;
+padding-bottom: 1px;
+}
+
+.label_padding {
+padding: 1px 10px 0 0;
+}
+
+.efileOptions {
+padding: 0 0 10px 0;
+}
+
+.efileDktCDWrapper {
+padding-bottom: 10px;
+}
+
+@media only screen and (min-height: 1024px) {
+    .tableBody {
+        height: 550px;
+    }
+}
+
+[id^="_wicket_window_3"] > div > div > div > div > #titleBar{
+    position: relative;
+    top: 0px;
+    width: 100%;
+}
+
+.ptcpts {
+	list-style: none;
+}
+
+

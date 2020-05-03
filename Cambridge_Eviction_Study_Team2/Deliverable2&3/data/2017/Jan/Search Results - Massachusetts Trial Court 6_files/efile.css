@@ -1,0 +1,268 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: efile.css,v 1.55 2016/07/29 16:52:59 zcarter Exp $ */
+
+/* **********************************   Efile global classes ******************************** */
+
+input[type="file"] { width: 180px; }
+
+em { font-style: normal; }
+
+.nowrap { white-space: nowrap; }
+
+.successIcon { background: url(../images/themes/default/valid.gif) right no-repeat; width:16px; height:16px;}
+
+.errorIcon { background: url(../images/themes/default/alertIcon.gif) right no-repeat; width:16px; height:16px;}
+
+.pendingIcon { background: url(../images/themes/default/pendingIcon.gif) right no-repeat; width:16px; height:16px;}
+
+.viewIcon { background: url(../images/eye.png) no-repeat left; width: 20px; padding-left: 20px;}
+
+.efileInput.invalid { border:#f30 1px solid; }
+
+.efileInputIndicator.invalid { display:inline-block; width:18px; height:16px; background: url(../images/themes/default/alertIcon.gif) right no-repeat; }
+
+.rejectedIcon { display:inline-block !important; width:17px; height:17px; background:url(../images/themes/default/caution.png) no-repeat; }
+
+.rejected { display:block !important; background-color:gold; }
+
+.efileDisplay { white-space: nowrap; padding-right: 4px; }
+
+.efileInputField { }
+
+.efileFieldContainer { white-space: nowrap; }
+
+.noRecordsFoundMsg { font-weight: bold; font-size: larger; }
+
+/* ********************************** Main Efile classes ******************************** */
+
+.efileAddSec { padding-top:2px !important; }
+
+.efileAddSec .anchorButton { margin-left:5px; margin-bottom:2px; display:inline-block; }
+
+.efileEditReviewerTxt { padding: 5px; }
+
+.efileEditReviewerTxt .efileDispOnly { }
+
+.efileReviewSec { margin-right: 5px; margin-bottom: 14px; }
+.efileReviewSec textarea { width: 100%; height: 44px; }
+.efileReviewSec label { width: 120px !important; }
+
+.efileReviewCaseSec textarea { width: 99%; height: 44px; margin-bottom: 2px;}
+
+.efileSecFeedbk { margin:0 0 0 8px; width:91%; }
+
+.efileItemButtonDelete { position:absolute; bottom:8px; right:4px; }
+
+.eFileProcessStatus { color:#000; font-weight: bold; }
+
+.efileDispOnly { display: inline-block; vertical-align: top; }
+
+
+/* ********************************** Efile Info Section classes ******************************** */
+
+#eFilePanelHeader { display:none !important; }
+
+.efileInfo label { width: 105px !important; }
+
+.efileInfo .requiredField { }
+
+.efileInfoFiler { }
+
+.efileInfoAtty { }
+
+.efileInfoAtty .efileDispOnly {  }
+
+.efileInfoReviewer { }
+
+.efileInfoSelections { padding: 8px 0; }
+
+.efileInfoSelections select { max-width: 800px; }
+
+.efileInfoSection { }
+
+.efileUserCompanyName { color: #4D4D42; margin-top: 0 !important }
+
+.efileSubsection { border-radius:5px; display:block; vertical-align:top; }
+
+div.wicket-modal { width: 100%; }
+
+/* **********************************   Party Section styles ******************************** */
+					
+.efilePartyList { position:relative; border:#999 solid 0px; padding:8px 0 18px 0; margin:0; }
+
+.efilePartyList input { margin-right:4px; max-width:146px; vertical-align:top; }
+
+.efilePartyList select { max-width:175px; }
+
+.efilePtyIdentInfo, .efilePtyAddrInfo, .efilePtyContactInfo { }
+
+.efilePtyPnl label { width: 85px; }
+
+.efilePtyPnl .requiredField { width:75px !important; }
+
+.efilePtyAddr2 input[type="text"], .efilePtyAddr3 input[type="text"] { display:inline; margin-left:98px; margin-top: 2px; }
+
+.efilePtyAddr2 .efileDispOnly, .efilePtyAddr3 .efileDispOnly { display:inline-block; margin-left:98px; margin-top:2px; }
+
+.onBehalfOf { margin: 5px; }
+
+.efileAddressLines { border: none; }
+.efileAddressLines tr { background-color: inherit; }
+
+/* **********************************   Efile Affiliation styles ******************************** */
+
+.efileAfflSec { position: relative; width: 350px; margin:5px 10px 5px 5px; }
+
+.efileAfflInfo { margin:0 10px 10px; }
+
+
+/* **********************************   Document Section styles ******************************** */
+
+.efileDocketInfo { display: inline-block; vertical-align: top; }
+
+.efileDocketInfo label { }
+
+.efileDocketInfo .requiredField { }
+
+.efileDocketInfo textarea { height: 42px; width: 220px; margin-bottom: 2px; margin-top: 2px; margin-right: 2px; }
+
+.efileDocketFiles { margin: 0 0 8px 8px; display: block; }
+
+.efileDocketFiles input[type="button"] { padding: 1px 5px; }
+
+.efileDocketFiles label { width: 140px; text-align: left; }
+
+.efileDocketList { position:relative; border:#999 solid 0px; padding:8px 0 18px 0; margin:0; }
+
+.efileDocketList .filingFee { float:left; width:210px; clear:none; }
+
+.efileDocketList .pageCount { float:left; width:210px; }
+
+.efileDocUploadTbl {  background:none; width:100%; border-top:0px solid #ababab; border-color:#ccc; }
+
+.efileDocUploadTbl th { background:#d8d8d8; padding-left:3px; }
+
+.efileDocUploadTbl td { border-bottom:#d8d8d8 solid 1px; padding: 5px 0 5px 3px; }
+
+.efileDocUploadTbl .rejected { display:table-row !important; }
+
+.efileDocUploadTbl .rejected td { background:gold; }
+
+.efileDocUploadTbl .efileDateTime { width:110px; }
+
+.efileDocUploadTbl .efileDel { width:55px; }
+
+.efileDocUploadTbl td input[type="checkbox"] { margin-right: 0px; }
+
+.uploadForm { padding:3px; }
+
+
+/* ******************************   Efile Notes Section styles ***************************** */
+
+.efileNotesFees { width: 100%; }
+.efileNotesFees fieldset { padding: 4px; min-width: 340px; }
+
+.efileFees { vertical-align:top; width: 305px; }
+.efileFees .efileDisplay { width: 75px; text-align: right; display: inline-block; }
+.efileTotAmt .efileDisplay { border-top:#000 solid 1px; }
+.efileRecDep { border: none; }
+
+.efileNotes { vertical-align:top; width: 100%}
+
+
+/* **********************************   Efile Search styles ******************************** */
+
+#efileListPanel .REJECTED { color:#f30; }
+
+#efileListPanel .caseNumberQuickEntry label { width: auto; white-space: nowrap; padding-left: 8px; }
+
+#efileListPanel .efileStatusSec { float:left; width:auto; white-space: nowrap; margin-right: 8px; }
+
+#efileListPanel .efileSearchTypSec { float:left; width:auto; white-space: nowrap; }
+
+#efileListPanel .efileSrchCritSec { float:left; width:auto; white-space: nowrap; }
+#efileListPanel .efileSrchCritSec label { width:90px; margin-right:5px; }
+
+#efileListPanel .efileDateCritSec { float:left; width:auto; white-space: nowrap; }
+#efileListPanel .efileDateCritSec label { width: 130px !important; }
+
+#efileListPanel .efileCasecdCritSec { display: block; float: left; width: auto; margin-left: 8px; }
+#efileListPanel .efileCasecdCritSec label { width: auto; margin-right: 4px; }
+#efileListPanel .efileCasecdCritSec select { width: 100%; }
+
+#efileListPanel .buttonBar { padding-top: 10px; }
+
+.eFileList .breadCrumb { display:none; }
+
+.efileQueueResults tr { height:21px;  }
+
+.efileQueueResults .ui-state-hover, .efileQueueResults .ui-widget-content .ui-state-hover, .efileQueueResults .ui-state-focus, .ui-widget-content .ui-state-focus { background:#f6e7d1 !important; color:#000 !important; }
+
+.individualRow label { display:inline !important; }
+
+.eFileListDel { text-align:right; margin-right:0px; }
+
+
+/* **********************************   Efile Payment styles ******************************** */
+
+.efileDataTable { border-top:none; }
+
+.efileDataTable tbody { }
+
+.efileDataTable tfoot { background:#ccc; }
+
+.efileDataTable tfoot tr { background:inherit; }
+
+.efileDataTable tbody dl { width:450px; }
+
+.efileDataTable tbody dd { width:300px; }
+
+.efileDataTable tfoot dt { width:90px; }
+
+.efileDataTable tfoot dd { width:65px; }
+
+.efileCartFees { width: 175px; }
+
+.efileCartButtons .delButton { float:right; }
+
+.efileCart { background: url(../images/cart.png) left no-repeat; padding-left:25px;}
+
+.statusMsg { font-weight: bold; font-size: larger; color: green; }
+
+.efileProcessStatusFeedbackPanel { margin: 0px !important; }
+
+.statusMsg.error, .efileProcessStatus.FAILURE { color: red; }
+
+.efileProcessStatus.SUCCESS { color: green; }
+
+.efileProcessFailedTxt { font-weight: normal; }
+
+.efileInput input[type="checkbox"] { color: black; font-weight: bold; }
+
+
+/* Proposed Orders ***************************************************************************** */
+.poContainer { display: inline-block; width: 100%; }
+.poTable { background: none; width: 100%; border-top: 0px solid #ababab; border-color: #ccc; }
+.poTable th { background: #d8d8d8; padding-left: 4px; }
+.poTable td { border-bottom: #d8d8d8 solid 1px; padding: 4px; }
+.poRow tr { height: 24px; }
+.poCell { border-left: #d8d8d8 solid 1px; }
+.poSigned { background: url(../images/themes/default/valid.gif) no-repeat; background-position-x: center; width:16px; height:15px; }
+.poViewSignedPDF { font-size: smaller; }
+.poViewSignedPDFGraphic { background: url(../images/themes/default/efileDocIcon.png) no-repeat; background-position: left; }
+.poInputFields { float: left; }
+.poInputField label { vertical-align: middle; width: 80px; }
+.poInputField textarea { width: 300px; height: 44px; vertical-align: top;}
+.poInputButtonContainer { display: inline-block; margin: 16px 8px 8px 8px; width: 100%; }
+.poInputFieldAssign label { width: auto; }
+.poFeedback { padding-top: 0px; }
+.poStatus.ACCEPTED, .poStatus.COMPLETED { background-color: #32cd32; }
+.poStatus.PASSED { background-color: #FFFF66; }
+.poStatus.REJECTED { background-color: #ff4500; }
+.poNoteTxt { color: #777; }
+.smaller { font-size: smaller; }
+
+.efileQueueCrit > .efileCasecdCritSec { width: auto; margin-left: 8px; }
+.efileQueueCrit > .efileCasecdCritSec label { width: 100%; text-align: left; }
+.efileQueueCrit >  .efileCasecdCritSec select { width: 100%; }

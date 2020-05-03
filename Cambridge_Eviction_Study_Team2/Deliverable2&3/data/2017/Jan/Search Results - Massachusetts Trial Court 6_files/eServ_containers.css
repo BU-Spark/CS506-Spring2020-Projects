@@ -1,0 +1,209 @@
+@charset "utf-8";
+/* CSS Document */
+/* $Id: eServ_containers.css,v 1.13 2017/04/04 18:27:08 mbuckingham Exp $ */
+
+/* ******************************************** Container Styles ***************************************** */
+
+.formSec { border-radius:5px; box-shadow:4px 4px 5px #000000; margin: 8px 8px; padding:4px 4px 4px 4px; }
+
+.formSec2 { border-radius:5px; box-shadow: 4px 4px 5px #000000; margin:0px 10px 30px 10px; /*border:#ccc solid 1px;*/ }
+
+.formSec3 { border-radius:5px; box-shadow:4px 4px 5px #000000; margin: 8px 8px; }
+
+.formSec p, .formSec ul, .formSec ol, .formSec .tab-row p, .formSec .tab-row ul, .formSec .tab-row ol  { margin:5px 5px 0 0px; }
+
+.subsection1 { border:#ccc solid 1px; border-radius:5px; margin:10px 0; padding:5px 0; width:auto; }
+
+.subsection2 { border:#ccc solid 1px; border-radius:5px; box-shadow: 4px 4px 5px #000000; margin:0px 10px 30px 10px; }
+
+.subsection3 { border-left:#ccc solid 1px; border-top:#ccc solid 1px; border-radius:5px; box-shadow:2px 2px 2px #777; display:inline-block; margin-right:10px; vertical-align:top; }
+
+.subsection4 { display:inline-block; vertical-align:top; padding-bottom:10px; }
+
+.subsection5 { border:#ccc solid 1px; border-radius:5px; display:block; vertical-align:top; }
+
+.subsectionInlineForm { border:#ccc solid 1px; border-radius:5px; display:block; vertical-align:top; margin-top:5px; padding:4px 0px 4px 0px; }
+
+.subsectionInlineForm2 { border:none; border-radius:5px; display:block; vertical-align:top; margin-top:5px; padding:4px 0px 4px 0px; }
+
+.identifierInfoPanelHeader {
+	font-size: 1em;
+    font-weight: bold;
+    background: #d8d8d8;
+    padding: 1px 3px;
+    color: #2873c7;
+    border-radius: 5px 5px 0 0;
+}
+
+.bgClr1 { background:#eee; }  /* gray1 */
+
+.bgClr2 { background:#d8d8d8; }  /* gray3 */
+
+.bgClr3 { background:#fff; }  /* white */
+
+.bgClr4 { background:#f6e7d1; }  /* ivory */
+
+.bgClr5 { background:#ccc; }  /* gray4 */
+
+.bgClr6 { background:#e3e3e3; }  /* gray2 */
+
+.containerSpacing { padding:4px 4px 4px 8px; }
+
+#mainContent, .mainContent { background:#98a7ac; margin:0px; padding:0px; padding-bottom:10px; }
+
+.panelContent { background:#98a7ac; margin:0px; padding:0px; padding-bottom:10px; overflow-x: auto; }
+
+.searchColumn { display: inline-block; vertical-align: top; }
+
+.searchColumn .dropDownChoiceMultiChoiceLabel { vertical-align: top; display:block; background:#f6e7d1; padding:1px 5px; font-weight:bold; color:#222; border-radius: 5px 5px 0 0; box-shadow:0px 2px 3px #999; margin-bottom:3px; border-top:#ccc solid 1px; }
+.searchColumn .dropDownChoiceMultiChoiceLabel:AFTER { content: "\a"; white-space: pre; }
+
+/* ******************************************** Header Styles ***************************************** */
+
+#caseHeader, #caseHeaderJMAX { margin-top: 29px;}
+#titleBar {
+	position: fixed;
+    width: 100%;
+    top: 82px;
+    z-index: 100; 
+    }
+
+.checkboxPanel > #titleBar {
+	position: inherit;
+	width: auto;
+}
+
+.checkboxPanel li {
+  list-style: none;
+}
+    
+.sectionHeader { background:#fcb245; border:#999 solid 1px; border-bottom:#4D4D4D solid 1px; color:#4D4D4D; font-weight:bold; padding-left:5px; }
+
+.subSectionHeader { padding:2px 5px; background:#c2d2e4;  background-position:0px -38px; color:#000; border-bottom:#999 solid 1px; border-radius:5px 5px 0 0; }
+
+.subSectionHeader2 { display:block; background:#f6e7d1; padding:1px 5px; font-weight:bold; color:#222; border-radius: 5px 5px 0 0; box-shadow:0px 2px 3px #999; margin-bottom:3px; border-top:#ccc solid 1px; } 
+
+.subSectionHeader3 { display:block; background:#ccc; padding:1px 5px; font-weight:bold; color:#222; border-radius: 5px 5px 0 0; box-shadow:0px 2px 3px #999; margin-bottom:3px; } 
+
+.subSectionHeaderInst { border-bottom:#ccc solid 1px; margin:0 0 5px 0; background:#d8d8d8; padding:3px 5px; }
+
+
+/* ******************************************** Tabbed Section Styles ***************************************** */
+
+.tab-row {  margin:0 0 4px 0; }
+
+.tab-row li { display:inline-block; padding:0; margin: 0px -4px 0px 0px; box-shadow:2px 4px 3px #000000; }
+
+.tab-row li a { position: relative; top: 1px; padding: 4px 10px; margin: 0px 0px 0px 0px; font-size:0.85em;  font-weight:bold; background:#ddd; list-style: none; border-left: solid 1px #ccc; border-bottom: solid 1px #999; border-top: solid 1px #999; border-right: solid 1px #999; -moz-user-select: none; -khtml-user-select: none; cursor: pointer; text-decoration:none; margin: 0 0 -4px; display:block; }
+
+.tab-row li a:hover { background-color: #ccc; color:#222; background-image:none; }
+
+.tab-row .selected a { background-color: #fff; border-bottom: 1px solid #eee; color:#0f1784; background-image:none; }
+
+.tab-panel{ border:none; background-color: #fff; padding:15px 8px 8px 8px; border-radius:0 5px 5px 5px; box-shadow:#000 5px 5px 4px; position:relative; }
+
+.tabSection { margin: 8px 8px; padding:0; background:none; }
+
+
+
+/* ******************************************** Definition list Styles ***************************************** */
+.col  {
+display: inline-block;
+vertical-align: top;
+}
+
+ .ptyInfoLabel { 
+    color: #41537c;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.ptyInfo {
+	display: inline-block;
+    margin: 2px 0 2px 0;
+}
+
+.additionalCaseLabel, .caseHdrLabel, .ptyChgLabel, .ptyPersLabel, .ptyContactLabel, .ptyAttyLabel,
+.ptyCiteLabel, .officerLabel, .citationLicenseLabel, .citationVehicleLabel, 
+.arPartyLabel, .modalIdntLabel, .modalCharLabel, .efileCartLabel, .taxLienLabel, .lienLabel {
+	color: #41537c;
+    display: inline-block;
+    font-weight: bold;
+	padding: 1px 0 2px 5px;
+    vertical-align: top;
+    width: 100px;
+}
+
+.additionalCaseInfo, .caseHdrInfo, .ptyChgInfo, .ptyContactInfo, .ptyPersInfo, .ptyContactInfo,
+  .ptyAttyInfo, .ptyCiteInfo, .officerInfo, .citationLicenseInfo, .citationVehicleInfo,
+ .arPartyInfo, .modalIndtInfo, .modalCharInfo, .efileCartInfo, .taxLienInfo, .lienInfo {
+	display: inline-block;
+	padding: 1px 0 2px 0;
+	min-width: 150px;
+    max-width: 67%;
+}
+
+.additionalCaseLabel {
+	width: 125px;
+}
+
+.ptyChgInfo {
+	max-width: 425px; 
+}
+
+.ptyNameLabel, .ptyNameInfo {
+	display: inline;
+}
+
+.ptychrgSentenceComp > ul {
+	display: inline;	
+}
+
+.ptyAttyInfo {
+	max-width: 58%;
+}
+
+.officerInfo {
+	width: 160px;
+}
+
+
+.efileCartInfo {
+	width: 75px;
+}
+
+.efileCartDetails {
+	margin-right: 0 !important;
+	width: 260px;
+}
+
+.caseHdrTitle {
+}
+
+.infoWidth75 {
+    width: 75px;
+}
+
+.infoWidth120 {
+	width: 120px;
+}
+
+
+
+
+@media only screen and (max-width: 1281px) {
+    .caseInfo-col1 > dd {
+    width: 170px;
+    overflow-x: hidden;
+    height: 1.25em;
+	}
+	
+	.caseInfo-col2 > dd {
+    width: 365px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 1.25em;
+    }
+}
+
+
