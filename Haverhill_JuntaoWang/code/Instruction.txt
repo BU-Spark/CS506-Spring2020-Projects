@@ -1,0 +1,7 @@
+Environment: Python3
+
+Packages need to install: folium, geopandas, PyQt5
+
+After all the environments are prepared, run haverhill.py.
+
+If you have any difficulty with how to set up the environment, please email juntaow@bu.edu directly.
