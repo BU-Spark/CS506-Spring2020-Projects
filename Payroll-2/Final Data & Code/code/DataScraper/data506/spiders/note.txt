@@ -1,0 +1,5 @@
+Note to whoever needs to use:
+
+run using:
+
+scrapy crawl [spider name] -o [file name].csv
