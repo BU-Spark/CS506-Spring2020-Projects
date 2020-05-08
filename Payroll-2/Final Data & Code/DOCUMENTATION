@@ -1,0 +1,24 @@
+DOCUMENTATION:
+
+- finalData: all csv files containing only police, including their 
+  expected race and gender
+
+- rawData: all raw csv files gathered with spider
+    - splitNameData: all raw data after names have been split (not including state 
+      because names were already split)
+
+- namsorGraphs: all the graphs created from gender and salary finalData
+
+- ethnicolrGraphs: all the graphs created from race and salary finalData
+
+- code: all code used to gather/analyze data 
+    - all_data.py: parsed all csv files in finalData and created a new csv 
+      file containing only gender, salary, and race for all assigned cities
+    - namsor.py: ran namsor api on all raw csv data files (edited for each csv file)
+    - only_police.py: went through all occupations for a specific city and removed obvious 
+      nonpolice people (edited for each csv file)
+    - graphs.py: created graphs in namsorGraphs (edited for each csv file) 
+    - separate_names.py: separated first and last name as well as filtered for certain 
+      occupationsin raw csv data files in order to use them to run namsor and ethnicolr
+    - cities_race_graphs.ipynb: created graphs in ethnicolrGraphs
+    - DataScraper: all files used to scrape raw data off govsalaries.com
