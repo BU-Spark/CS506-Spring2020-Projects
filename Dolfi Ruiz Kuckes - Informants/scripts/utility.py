@@ -24,10 +24,7 @@ appeals_old = json.load(open(old_appeals_court))
 
 #returns all cases, cleaned and grouped into two categories
 #Daniel's code
-<<<<<<< HEAD
 #return all_sjc, all_state_appeals
-=======
->>>>>>> selenium_base
 def combine_cases():
     import pandas as pd
 
@@ -55,7 +52,7 @@ def combine_cases():
     new_appeals = pd.DataFrame(new_appeals)
     
     # Making two pandas dataframes with all the data, one for sjc cases, one for appeals courts. 
-    all_cases = cases.append(new_cases)
-    all_appeals = appeals.append(new_appeals)
+    all_cases = cases.append(new_cases, ignore_index=True)
+    all_appeals = appeals.append(new_appeals, ignore_index=True)
     return all_cases, all_appeals
 
